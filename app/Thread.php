@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Thread extends Model
 {
+    protected $fillable = [
+        'user_id',
+        'title',
+        'body'
+    ];
+
     public function creator()
     {
         return $this->belongsTo(User::class, 'user_id');

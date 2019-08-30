@@ -14,8 +14,8 @@ class ReplyController extends Controller
     public function store(Thread $thread)
     {
         $thread->addReply([
-            'body' => request('body'),
-            'user_id' => auth()->id()
+            'user_id' => auth()->id(),
+            'body' => request('body')
         ]);
 
         return redirect($thread->path());
