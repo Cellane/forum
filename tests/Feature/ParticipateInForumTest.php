@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use App\Reply;
 use App\Thread;
-use App\User;
 use Illuminate\Auth\AuthenticationException;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -18,8 +17,8 @@ class ParticipateInForumTest extends TestCase
     {
         $this->expectException(AuthenticationException::class);
 
-        $thread = factory(Thread::class)->create();
-        $reply = factory(Reply::class)->raw();
+        $thread = create(Thread::class);
+        $reply = raw(Reply::class);
 
         $this->post($thread->path() . '/replies', $reply);
     }
@@ -27,10 +26,10 @@ class ParticipateInForumTest extends TestCase
     /** @test */
     public function an_authenticated_user_may_participate_in_forum_threads()
     {
-        $this->actingAs(factory(User::class)->create());
+        $this->signIn();
 
-        $thread = factory(Thread::class)->create();
-        $reply = factory(Reply::class)->raw();
+        $thread = create(Thread::class);
+        $reply = raw(Reply::class);
 
         $this->post($thread->path() . '/replies', $reply);
 
