@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Thread;
-use Illuminate\Auth\AuthenticationException;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
@@ -14,11 +13,19 @@ class CreateThreadsTest extends TestCase
     /** @test */
     public function unauthenticated_users_may_not_create_threads()
     {
-        $this->expectException(AuthenticationException::class);
-
         $attributes = raw(Thread::class);
 
-        $this->post('/threads', $attributes);
+        $this->withExceptionHandling()
+            ->post('/threads', $attributes)
+            ->assertRedirect('login');
+    }
+
+    /** @test */
+    public function unauthenticated_users_cannot_see_the_create_thread_page()
+    {
+        $this->withExceptionHandling()
+            ->get('/threads/create')
+            ->assertRedirect('login');
     }
 
     /** @test */
