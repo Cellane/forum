@@ -13,18 +13,11 @@ class CreateThreadsTest extends TestCase
     /** @test */
     public function unauthenticated_users_may_not_create_threads()
     {
-        $attributes = raw(Thread::class);
+        $this->withExceptionHandling();
 
-        $this->withExceptionHandling()
-            ->post('/threads', $attributes)
+        $this->get('/threads/create')
             ->assertRedirect('login');
-    }
-
-    /** @test */
-    public function unauthenticated_users_cannot_see_the_create_thread_page()
-    {
-        $this->withExceptionHandling()
-            ->get('/threads/create')
+        $this->post('/threads', raw(Thread::class))
             ->assertRedirect('login');
     }
 
@@ -33,9 +26,7 @@ class CreateThreadsTest extends TestCase
     {
         $this->signIn();
 
-        $attributes = raw(Thread::class);
-
-        $this->post('/threads', $attributes)
+        $this->post('/threads', $attributes = raw(Thread::class))
             ->followRedirects()
             ->assertSee($attributes['title'])
             ->assertSee($attributes['body']);
