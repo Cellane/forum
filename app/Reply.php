@@ -27,6 +27,13 @@ class Reply extends Model
         }
     }
 
+    public function isFavorited()
+    {
+        return $this->favorites()
+            ->where('user_id', auth()->id())
+            ->exists();
+    }
+
     public function path()
     {
         return "/replies/{$this->id}";
