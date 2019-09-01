@@ -50,7 +50,7 @@ class ReadThreadsTest extends TestCase
     {
         $channel = create(Channel::class);
         $threadInChannel = create(Thread::class, ['channel_id' => $channel->id]);
-        $threadNotInChannel = create(Thread::class);
+        $threadNotInChannel = $this->thread;
 
         $this->get('/threads/' . $channel->slug)
             ->assertSee($threadInChannel->title)
@@ -63,10 +63,25 @@ class ReadThreadsTest extends TestCase
         $this->signIn(create(User::class, ['name' => 'John']));
 
         $threadByJohn = create(Thread::class, ['user_id' => auth()->id()]);
-        $threadNotByJohn = create(Thread::class);
+        $threadNotByJohn = $this->thread;
 
         $this->get('/threads?by=John')
             ->assertSee($threadByJohn->title)
             ->assertDontSee($threadNotByJohn->title);
+    }
+
+    /** @test */
+    public function a_user_can_filter_threads_by_popularity()
+    {
+        $threadWithTwoReplies = create(Thread::class);
+        $threadWithThreeReplies = create(Thread::class);
+        $threadWithNoReplies = $this->thread;
+
+        create(Reply::class, ['thread_id' => $threadWithTwoReplies->id], 2);
+        create(Reply::class, ['thread_id' => $threadWithThreeReplies->id], 3);
+
+        $response = $this->getJson('/threads?popular=1')->json();
+
+        $this->assertEquals([3, 2, 0], array_column($response, 'replies_count'));
     }
 }
