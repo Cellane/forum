@@ -10,11 +10,16 @@ class Reply extends Model
     use RecordsActivity;
 
     protected $fillable = ['user_id', 'body'];
-    protected $with = ['owner', 'favorites'];
+    protected $with = ['owner', 'favorites', 'thread'];
 
     public function owner()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function thread()
+    {
+        return $this->belongsTo(Thread::class);
     }
 
     public function path()
