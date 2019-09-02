@@ -52,7 +52,7 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Threads <span class="caret"></span>
+            Channels <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             @foreach($channels as $channel)

@@ -19,7 +19,10 @@
                   <a href="{{ route('profile', $thread->creator) }}">
                     {{ $thread->creator->name }}
                   </a>
-                  posted: {{ $thread->title }}
+                  posted:
+                  <a href="{{ $thread->path() }}">
+                    {{ $thread->title }}
+                  </a>
                 </span>
 
                 <span>
