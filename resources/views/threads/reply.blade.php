@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div id="reply-{{ $reply->id }}" class="panel panel-default">
   <div class="panel-heading">
     <div class="level">
       <h5 class="flex">
@@ -9,7 +9,7 @@
       </h5>
 
       <div>
-        <form action="{{ $reply->path() . '/favorites' }}" method="post">
+        <form action="{{ $reply->resourcePath() . '/favorites' }}" method="post">
           {{ csrf_field() }}
 
           <button

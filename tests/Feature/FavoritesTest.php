@@ -16,7 +16,7 @@ class FavoritesTest extends TestCase
         $reply = create(Reply::class);
 
         $this->withExceptionHandling()
-            ->post($reply->path() . '/favorites')
+            ->post($reply->resourcePath() . '/favorites')
             ->assertRedirect('login');
     }
 
@@ -26,7 +26,7 @@ class FavoritesTest extends TestCase
         $reply = create(Reply::class);
 
         $this->signIn()
-            ->post($reply->path() . '/favorites');
+            ->post($reply->resourcePath() . '/favorites');
 
         $this->assertCount(1, $reply->favorites);
     }
@@ -39,8 +39,8 @@ class FavoritesTest extends TestCase
         $this->signIn();
 
         try {
-            $this->post($reply->path() . '/favorites');
-            $this->post($reply->path() . '/favorites');
+            $this->post($reply->resourcePath() . '/favorites');
+            $this->post($reply->resourcePath() . '/favorites');
         } catch (\Exception $e) {
             $this->fail('Did not expect to insert the same record set twice.');
         }
