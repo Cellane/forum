@@ -11,6 +11,7 @@ class Reply extends Model
 
     protected $fillable = ['user_id', 'body'];
     protected $with = ['owner', 'favorites', 'thread'];
+    protected $appends = ['favoritesCount', 'isFavorited'];
 
     public function owner()
     {

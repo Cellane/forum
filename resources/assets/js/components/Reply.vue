@@ -1,4 +1,6 @@
 <script>
+import Favorite from "./Favorite"
+
 export default {
   props: ["attributes"],
 
@@ -34,6 +36,10 @@ export default {
       this.body = this.originalBody
       this.editing = false
     }
+  },
+
+  components: {
+    Favorite
   }
 }
 </script>
