@@ -22,6 +22,7 @@ class ReplyController extends Controller
             'body' => request('body')
         ]);
 
-        return redirect($thread->path());
+        return redirect($thread->path())
+            ->with('flash', 'Your reply has been left.');
     }
 }
