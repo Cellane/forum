@@ -2037,6 +2037,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         flash("Updated!");
       });
     },
+    destroy: function destroy() {
+      var _this2 = this;
+
+      axios.delete("/replies/" + this.attributes.id).then(function () {
+        $(_this2.$el).fadeOut(700, function () {
+          flash("Your reply has been deleted.");
+        });
+      });
+    },
     cancel: function cancel() {
       this.body = this.originalBody;
       this.editing = false;

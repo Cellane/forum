@@ -22,6 +22,14 @@ export default {
         })
     },
 
+    destroy() {
+      axios.delete(`/replies/${this.attributes.id}`).then(() => {
+        $(this.$el).fadeOut(700, () => {
+          flash("Your reply has been deleted.")
+        })
+      })
+    },
+
     cancel() {
       this.body = this.originalBody
       this.editing = false

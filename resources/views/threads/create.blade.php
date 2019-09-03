@@ -9,7 +9,7 @@
 
           <div class="panel-body">
             <form action="/threads" method="post">
-              {{ @csrf_field() }}
+              {{ csrf_field() }}
 
               <div class="form-group">
                 <label for="channel_id">Choose a Channel:</label>

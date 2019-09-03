@@ -41,12 +41,7 @@
     @can('update', $reply)
       <div class="panel-footer level">
         <button class="btn btn-xs mr-1" @click="editing = true">Edit</button>
-        <form action="{{ $reply->resourcePath() }}" method="post">
-          {{ csrf_field() }}
-          {{ method_field('delete') }}
-
-          <button type="submit" class="btn btn-danger btn-xs">Delete</button>
-        </form>
+        <button class="btn btn-danger btn-xs" @click="destroy">Destroy</button>
       </div>
     @endcan
   </div>
