@@ -1,5 +1,5 @@
 <template>
-  <button :class="classes" @click="toggle">
+  <button :class="classes" @click="toggle" :disabled="disabled">
     <span class="glyphicon glyphicon-heart"></span>
     <span>{{ count }}</span>
   </button>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  props: ["reply"],
+  props: ["reply", "disabled"],
 
   data() {
     return {

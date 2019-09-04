@@ -2024,8 +2024,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       editing: false,
-      body: this.attributes.body,
-      originalBody: this.attributes.body
+      body: this.attributes.body
     };
   },
 
@@ -2038,6 +2037,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         body: this.body
       }).then(function () {
         _this.editing = false;
+        _this.attributes.body = _this.body;
         flash("Updated!");
       });
     },
@@ -2051,7 +2051,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     cancel: function cancel() {
-      this.body = this.originalBody;
+      this.body = this.attributes.body;
       this.editing = false;
     }
   },
@@ -45110,7 +45110,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["reply"],
+  props: ["reply", "disabled"],
 
   data: function data() {
     return {
@@ -45152,6 +45152,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('button', {
     class: _vm.classes,
+    attrs: {
+      "disabled": _vm.disabled
+    },
     on: {
       "click": _vm.toggle
     }

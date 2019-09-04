@@ -7,8 +7,7 @@ export default {
   data() {
     return {
       editing: false,
-      body: this.attributes.body,
-      originalBody: this.attributes.body
+      body: this.attributes.body
     }
   },
 
@@ -20,6 +19,7 @@ export default {
         })
         .then(() => {
           this.editing = false
+          this.attributes.body = this.body
           flash("Updated!")
         })
     },
@@ -33,7 +33,7 @@ export default {
     },
 
     cancel() {
-      this.body = this.originalBody
+      this.body = this.attributes.body
       this.editing = false
     }
   },
