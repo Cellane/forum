@@ -48,7 +48,7 @@ class Thread extends Model
 
     public function addReply($attributes)
     {
-        $this->replies()->create($attributes);
+        return $this->replies()->create($attributes);
     }
 
     public function path()

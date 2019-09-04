@@ -23,7 +23,7 @@ class ThreadController extends Controller
     {
         $threads = $this->getThreads($channel, $filters);
 
-        if (request()->wantsJson()) {
+        if (request()->expectsJson()) {
             return $threads;
         }
 

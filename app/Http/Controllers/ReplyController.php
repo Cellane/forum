@@ -18,10 +18,15 @@ class ReplyController extends Controller
         $this->validate(request(), [
             'body' => 'required'
         ]);
-        $thread->addReply([
+
+        $reply = $thread->addReply([
             'user_id' => auth()->id(),
             'body' => request('body')
         ]);
+
+        if (request()->expectsJson()) {
+            return $reply->load('owner');
+        }
 
         return redirect($thread->path())
             ->with('flash', 'Your reply has been left.');
