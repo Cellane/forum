@@ -18,6 +18,12 @@ require("bootstrap-sass")
 
 window.Vue = require("vue")
 
+window.Vue.prototype.authorize = function(handler) {
+  const user = window.App.user
+
+  return user ? handler(user) : false
+}
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
