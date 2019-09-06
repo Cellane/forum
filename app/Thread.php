@@ -49,9 +49,7 @@ class Thread extends Model
         $reply = $this->replies()->create($attributes);
 
         $this->subscriptions
-            ->filter(function ($subscription) use ($reply) {
-                return $subscription->user->id != $reply->owner->id;
-            })
+            ->where('user_id', '!=', $reply->owner->id)
             ->each
             ->notify($reply);
 
