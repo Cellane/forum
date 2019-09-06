@@ -23,6 +23,7 @@ class CreateFavoritesTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
+
             $table->unique(['user_id', 'favorited_id', 'favorited_type']);
         });
     }

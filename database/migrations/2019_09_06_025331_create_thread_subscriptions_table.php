@@ -28,6 +28,8 @@ class CreateThreadSubscriptionsTable extends Migration
                 ->references('id')
                 ->on('threads')
                 ->onDelete('cascade');
+
+            $table->unique(['user_id', 'thread_id']);
         });
     }
 
