@@ -54,8 +54,35 @@ class ThreadTest extends TestCase
     /** @test */
     public function it_belongs_to_a_channel()
     {
-        $thread = create(Thread::class);
+        $this->assertInstanceOf(Channel::class, $this->thread->channel);
+    }
 
-        $this->assertInstanceOf(Channel::class, $thread->channel);
+    /** @test */
+    public function it_can_be_subscribed_to()
+    {
+        $this->thread->subscribe($userId = 1);
+
+        $this->assertEquals(
+            1,
+            $this->thread->subscriptions()->where(['user_id' => $userId])->count()
+        );
+    }
+
+    /** @test */
+    public function it_can_be_unsubscribed_from()
+    {
+        $this->thread->subscribe($userId = 1);
+
+        $this->assertEquals(
+            1,
+            $this->thread->subscriptions()->where(['user_id' => $userId])->count()
+        );
+
+        $this->thread->unsubscribe($userId);
+
+        $this->assertEquals(
+            0,
+            $this->thread->subscriptions()->where(['user_id' => $userId])->count()
+        );
     }
 }
