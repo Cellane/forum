@@ -11,6 +11,10 @@
                 <h4 class="flex">
                   <a href="{{ $thread->path() }}">
                     {{ $thread->title }}
+
+                    @if ($thread->hasUpdatesFor(auth()->user()))
+                      <span class="badge">Unread</span>
+                    @endif
                   </a>
                 </h4>
 
