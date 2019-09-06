@@ -48,10 +48,7 @@ class Thread extends Model
     {
         $reply = $this->replies()->create($attributes);
 
-        $this->subscriptions
-            ->where('user_id', '!=', $reply->owner->id)
-            ->each
-            ->notify($reply);
+        $this->notifySubscribers($reply);
 
         return $reply;
     }
@@ -96,5 +93,13 @@ class Thread extends Model
     public function scopeFilter($query, ThreadFilters $filters)
     {
         return $filters->apply($query);
+    }
+
+    private function notifySubscribers($reply)
+    {
+        $this->subscriptions
+            ->where('user_id', '!=', $reply->owner->id)
+            ->each
+            ->notify($reply);
     }
 }
