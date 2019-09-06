@@ -18,6 +18,8 @@ use App\Reply;
 use App\Thread;
 use App\User;
 use Faker\Generator;
+use Illuminate\Notifications\DatabaseNotification;
+use Ramsey\Uuid\Uuid;
 
 $factory->define(User::class, function (Generator $faker) {
     static $password;
@@ -53,5 +55,17 @@ $factory->define(Channel::class, function (Generator $faker) {
     return [
         'name' => $name,
         'slug' => $name
+    ];
+});
+
+$factory->define(DatabaseNotification::class, function (Generator $faker) {
+    return [
+        'id' => Uuid::uuid4()->toString(),
+        'type' => 'App\Notifications\ThreadWasUpdated',
+        'notifiable_id' => auth()->id() ?: factory(User::class),
+        'notifiable_type' => 'App\User',
+        'data' => [
+            'foo' => 'bar'
+        ]
     ];
 });
