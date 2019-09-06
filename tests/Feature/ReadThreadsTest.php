@@ -37,15 +37,6 @@ class ReadThreadsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_read_replies_that_are_associated_with_a_thread()
-    {
-        $reply = create(Reply::class, ['thread_id' => $this->thread->id]);
-
-        $this->get($this->thread->path())
-            ->assertSee($reply->body);
-    }
-
-    /** @test */
     public function a_user_can_filter_threads_according_to_a_channel()
     {
         $channel = create(Channel::class);
@@ -82,6 +73,19 @@ class ReadThreadsTest extends TestCase
         $response = $this->getJson('/threads?popular=1')->json();
 
         $this->assertEquals([3, 2, 0], array_column($response, 'replies_count'));
+    }
+
+    /** @test */
+    public function a_user_can_filter_threads_by_those_that_are_unanswered()
+    {
+        $threadWithReplies = create(Thread::class);
+        $threadWithoutReplies = $this->thread;
+
+        create(Reply::class, ['thread_id' => $threadWithReplies->id]);
+
+        $this->get('/threads?unanswered=1')
+            ->assertSee($threadWithoutReplies->title)
+            ->assertDontSee($threadWithReplies->title);
     }
 
     /** @test */

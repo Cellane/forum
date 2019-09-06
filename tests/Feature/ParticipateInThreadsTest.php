@@ -29,8 +29,8 @@ class ParticipateInThreadsTest extends TestCase
         $this->signIn()
             ->post($thread->path() . '/replies', $attributes = raw(Reply::class));
 
-        $this->get($thread->path())
-            ->assertSee($attributes['body']);
+        $this->assertDatabaseHas('replies', ['body' => $attributes['body']]);
+        $this->assertEquals(1, $thread->fresh()->replies_count);
     }
 
     /** @test */
@@ -67,9 +67,8 @@ class ParticipateInThreadsTest extends TestCase
         $this->delete($reply->resourcePath())
             ->assertStatus(302);
 
-        $this->assertDatabaseMissing('replies', [
-            'id' => $reply->id
-        ]);
+        $this->assertDatabaseMissing('replies', ['id' => $reply->id]);
+        $this->assertEquals(0, $reply->thread->fresh()->replies_count);
     }
 
     /** @test */
