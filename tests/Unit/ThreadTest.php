@@ -90,18 +90,9 @@ class ThreadTest extends TestCase
     public function it_can_be_unsubscribed_from()
     {
         $this->thread->subscribe($userId = 1);
-
-        $this->assertEquals(
-            1,
-            $this->thread->subscriptions()->where(['user_id' => $userId])->count()
-        );
-
         $this->thread->unsubscribe($userId);
 
-        $this->assertEquals(
-            0,
-            $this->thread->subscriptions()->where(['user_id' => $userId])->count()
-        );
+        $this->assertCount(0, $this->thread->subscriptions);
     }
 
     /** @test */

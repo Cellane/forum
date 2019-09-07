@@ -103,21 +103,23 @@ class ParticipateInThreadsTest extends TestCase
     /** @test */
     public function replies_that_contain_spam_may_not_be_created()
     {
-        $this->signIn();
+        $this->withExceptionHandling()
+            ->signIn();
 
         $thread = create(Thread::class);
         $reply = raw(Reply::class, [
             'body' => 'Yahoo Customer Support'
         ]);
 
-        $this->post($thread->path() . '/replies', $reply)
+        $this->json('post', $thread->path() . '/replies', $reply)
             ->assertStatus(422);
     }
 
     /** @test */
     public function users_may_only_reply_a_maximum_of_once_per_minute()
     {
-        $this->signIn();
+        $this->withExceptionHandling()
+            ->signIn();
 
         $thread = create(Thread::class);
         $reply = raw(Reply::class);
