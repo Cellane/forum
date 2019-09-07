@@ -18,11 +18,12 @@ class ReplyController extends Controller
         return $thread->replies()->paginate(20);
     }
 
-    public function store($channel, Thread $thread)
+    public function store($channel, Thread $thread, Spam $spam)
     {
         $this->validate(request(), [
             'body' => 'required'
         ]);
+        $spam->detect(request('body'));
 
         $reply = $thread->addReply([
             'user_id' => auth()->id(),
