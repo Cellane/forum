@@ -19,12 +19,9 @@ class ReplyController extends Controller
         return $thread->replies()->paginate(20);
     }
 
-    public function store($channel, Thread $thread, Spam $spam)
+    public function store($channel, Thread $thread)
     {
-        $this->validate(request(), [
-            'body' => 'required'
-        ]);
-        $spam->detect(request('body'));
+        $this->validateReply();
 
         $reply = $thread->addReply([
             'user_id' => auth()->id(),
@@ -42,7 +39,7 @@ class ReplyController extends Controller
     public function update(Reply $reply)
     {
         $this->authorize('update', $reply);
-        $this->validate(request(), ['body' => 'required']);
+        $this->validateReply();
         $reply->update(request(['body']));
     }
 
@@ -56,5 +53,13 @@ class ReplyController extends Controller
         }
 
         return back();
+    }
+
+    protected function validateReply()
+    {
+        $this->validate(request(), [
+            'body' => 'required'
+        ]);
+        resolve(Spam::class)->detect(request('body'));
     }
 }
