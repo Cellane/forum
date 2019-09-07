@@ -19,7 +19,7 @@
           <textarea class="form-control" v-model="body"></textarea>
         </div>
 
-        <button class="btn btn-xs btn-primary" @click.once="update">
+        <button class="btn btn-xs btn-primary" @click="update">
           Update
         </button>
         <button class="btn btn-xs btn-link" @click="cancel">Cancel</button>
@@ -74,6 +74,7 @@ export default {
           this.data.body = this.body
           flash("Updated!")
         })
+        .catch(({ response }) => flash(response.data, "danger"))
     },
 
     destroy() {

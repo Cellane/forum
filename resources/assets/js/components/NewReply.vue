@@ -47,7 +47,7 @@ export default {
           this.$emit("created", data)
           flash("Your reply has been posted.")
         })
-        .catch(error => console.error(error))
+        .catch(({ response }) => flash(response.data, "danger"))
     }
   }
 }
