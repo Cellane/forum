@@ -110,8 +110,7 @@ class ParticipateInThreadsTest extends TestCase
             'body' => 'Yahoo Customer Support'
         ]);
 
-        $this->expectException(\Exception::class);
-
-        $this->post($thread->path() . '/replies', $reply);
+        $this->post($thread->path() . '/replies', $reply)
+            ->assertStatus(422);
     }
 }

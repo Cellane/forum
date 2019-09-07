@@ -24,7 +24,7 @@ class CreateThreadsTest extends TestCase
     }
 
     /** @test */
-    public function an_authenticated_user_can_crate_new_form_threads()
+    public function an_authenticated_user_can_create_new_form_threads()
     {
         $this->signIn()
             ->post('/threads', $attributes = raw(Thread::class))
