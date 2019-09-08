@@ -23,6 +23,9 @@
 </template>
 
 <script>
+import "at.js"
+import "jquery.caret"
+
 export default {
   props: ["endpoint"],
 
@@ -30,6 +33,22 @@ export default {
     return {
       body: ""
     }
+  },
+
+  mounted() {
+    $("#body").atwho({
+      at: "@",
+      delay: 500,
+      callbacks: {
+        remoteFilter: (name, callback) => {
+          if (name == null || name.length < 2) {
+            return callback([])
+          }
+
+          $.getJSON("/api/users/", { name }, usernames => callback(usernames))
+        }
+      }
+    })
   },
 
   computed: {
