@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\ThreadReceivedNewReply;
 use App\Filters\ThreadFilters;
 use Illuminate\Database\Eloquent\Model;
 
@@ -48,7 +49,7 @@ class Thread extends Model
     {
         $reply = $this->replies()->create($attributes);
 
-        $this->notifySubscribers($reply);
+        event(new ThreadReceivedNewReply($this, $reply));
 
         return $reply;
     }
@@ -100,13 +101,5 @@ class Thread extends Model
         $key = $user->visitedThreadCacheKey($this);
 
         return $this->updated_at > cache($key);
-    }
-
-    private function notifySubscribers($reply)
-    {
-        $this->subscriptions
-            ->where('user_id', '!=', $reply->owner->id)
-            ->each
-            ->notify($reply);
     }
 }
