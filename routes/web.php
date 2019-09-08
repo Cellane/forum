@@ -39,7 +39,7 @@ Route::get('/profiles/{user}/notifications', 'UserNotificationController@index')
 Route::delete('/profiles/{user}/notifications/{notification}', 'UserNotificationController@destroy');
 
 Route::get('/api/users', 'Api\UserController@index');
-Route::post('/api/users/{user}/avatar', 'Api\UserAvatarController@store');
+Route::post('/api/users/{user}/avatar', 'Api\UserAvatarController@store')->name('avatar');
 
 Auth::routes();
 
