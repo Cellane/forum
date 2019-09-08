@@ -12,6 +12,7 @@ require("./bootstrap")
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.component("avatar-form", require("./components/AvatarForm.vue"))
 Vue.component("flash", require("./components/Flash.vue"))
 Vue.component(
   "user-notifications",
