@@ -25,11 +25,13 @@
       </div>
     </div>
     <div class="panel-body">
-      <article>
-        <div class="body">
-          {{ $thread->body }}
-        </div>
-      </article>
+      <div class="body">
+        {{ $thread->body }}
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      {{ $thread->visits }} Visits
     </div>
   </div>
 @empty

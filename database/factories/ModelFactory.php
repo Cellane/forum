@@ -37,7 +37,8 @@ $factory->define(Thread::class, function (Generator $faker) {
         'user_id' => factory(User::class),
         'channel_id' => factory(Channel::class),
         'title' => $faker->sentence,
-        'body' => $faker->paragraph
+        'body' => $faker->paragraph,
+        'visits' => 0
     ];
 });
 

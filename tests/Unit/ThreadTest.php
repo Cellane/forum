@@ -108,7 +108,7 @@ class ThreadTest extends TestCase
     }
 
     /** @test */
-    public function a_thread_can_check_if_the_authenticated_user_has_read_all_replies()
+    public function it_can_check_if_the_authenticated_user_has_read_all_replies()
     {
         $this->signIn();
 
@@ -119,5 +119,15 @@ class ThreadTest extends TestCase
 
             $this->assertFalse($this->thread->hasUpdatesFor($user));
         });
+    }
+
+    /** @test */
+    public function it_records_a_new_visit_each_time_the_thread_is_read()
+    {
+        $this->assertEquals(0, $this->thread->visits);
+
+        $this->get($this->thread->path());
+
+        $this->assertEquals(1, $this->thread->fresh()->visits);
     }
 }
