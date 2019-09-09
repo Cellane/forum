@@ -37,7 +37,7 @@
 
     @yield('content')
 
-    <flash :initial-data="{{ json_encode(['message' => session('flash')]) }}"></flash>
+    <flash :initial-data="{{ json_encode(['message' => session('flash'), 'level' => session('flash_level')]) }}"></flash>
   </div>
 
   <!-- Scripts -->

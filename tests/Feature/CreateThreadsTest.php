@@ -24,6 +24,14 @@ class CreateThreadsTest extends TestCase
     }
 
     /** @test */
+    public function authenticated_users_must_first_confirm_their_email_address_before_creating_threads()
+    {
+        $this->publishThread()
+            ->assertRedirect('/threads')
+            ->assertSessionHas('flash', 'You must first confirm your email address.');
+    }
+
+    /** @test */
     public function an_authenticated_user_can_create_new_form_threads()
     {
         $this->signIn()
@@ -86,7 +94,7 @@ class CreateThreadsTest extends TestCase
         $this->assertEquals(0, Activity::count());
     }
 
-    private function publishThread($overrides)
+    private function publishThread($overrides = [])
     {
         return $this->withExceptionHandling()
             ->signIn()
