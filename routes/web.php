@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/threads', 'ThreadController@index');
+Route::get('/threads', 'ThreadController@index')->name('threads');
 Route::get('/threads/create', 'ThreadController@create');
 Route::get('/threads/{channel}/{thread}', 'ThreadController@show');
 Route::post('/threads', 'ThreadController@store');
@@ -37,6 +37,8 @@ Route::get('/profiles/{user}', 'ProfileController@show')->name('profile');
 
 Route::get('/profiles/{user}/notifications', 'UserNotificationController@index');
 Route::delete('/profiles/{user}/notifications/{notification}', 'UserNotificationController@destroy');
+
+Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index');
 
 Route::get('/api/users', 'Api\UserController@index');
 Route::post('/api/users/{user}/avatar', 'Api\UserAvatarController@store')->name('avatar');
