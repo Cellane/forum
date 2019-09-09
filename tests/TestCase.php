@@ -14,7 +14,7 @@ abstract class TestCase extends BaseTestCase
 
     private $oldExceptionHandler;
 
-    protected function setUp()
+    public function setUp()
     {
         parent::setUp();
 
