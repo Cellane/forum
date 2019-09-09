@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Activity;
 use App\Reply;
 use App\Thread;
+use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
@@ -18,24 +19,29 @@ class CreateThreadsTest extends TestCase
         $this->withExceptionHandling();
 
         $this->get('/threads/create')
-            ->assertRedirect('login');
-        $this->post('/threads', raw(Thread::class))
-            ->assertRedirect('login');
+            ->assertRedirect(route('login'));
+        $this->post(route('threads'), raw(Thread::class))
+            ->assertRedirect(route('login'));
     }
 
     /** @test */
-    public function authenticated_users_must_first_confirm_their_email_address_before_creating_threads()
+    public function new_users_must_first_confirm_their_email_address_before_creating_threads()
     {
-        $this->publishThread()
-            ->assertRedirect('/threads')
+        $user = factory(User::class)->states('unconfirmed')->create();
+        $thread = raw(Thread::class);
+
+        $this->signIn($user);
+
+        $this->post(route('threads'), $thread)
+            ->assertRedirect(route('threads'))
             ->assertSessionHas('flash', 'You must first confirm your email address.');
     }
 
     /** @test */
-    public function an_authenticated_user_can_create_new_form_threads()
+    public function a_user_can_create_new_form_threads()
     {
         $this->signIn()
-            ->post('/threads', $attributes = raw(Thread::class))
+            ->post(route('threads'), $attributes = raw(Thread::class))
             ->followRedirects()
             ->assertSee($attributes['title'])
             ->assertSee($attributes['body']);
@@ -71,7 +77,7 @@ class CreateThreadsTest extends TestCase
 
         $this->withExceptionHandling()
             ->delete($thread->path())
-            ->assertRedirect('login');
+            ->assertRedirect(route('login'));
 
         $this->signIn()
             ->delete($thread->path())
@@ -98,6 +104,6 @@ class CreateThreadsTest extends TestCase
     {
         return $this->withExceptionHandling()
             ->signIn()
-            ->post('/threads', raw(Thread::class, $overrides));
+            ->post(route('threads'), raw(Thread::class, $overrides));
     }
 }

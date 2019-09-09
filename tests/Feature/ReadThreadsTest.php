@@ -25,7 +25,7 @@ class ReadThreadsTest extends TestCase
     /** @test */
     public function a_user_can_view_all_threads()
     {
-        $this->get('/threads')
+        $this->get(route('threads'))
             ->assertSee($this->thread->title);
     }
 
@@ -56,7 +56,7 @@ class ReadThreadsTest extends TestCase
         $threadByJohn = create(Thread::class, ['user_id' => auth()->id()]);
         $threadNotByJohn = $this->thread;
 
-        $this->get('/threads?by=John')
+        $this->get(route('threads', ['by' => 'John']))
             ->assertSee($threadByJohn->title)
             ->assertDontSee($threadNotByJohn->title);
     }

@@ -122,7 +122,7 @@ class ThreadController extends Controller
         $this->authorize('update', $thread);
         $thread->delete();
 
-        return redirect('/threads');
+        return redirect(route('threads'));
     }
 
     protected function getThreads(Channel $channel, ThreadFilters $filters)
