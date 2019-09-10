@@ -14,6 +14,7 @@ class Thread extends Model
         'slug',
         'user_id',
         'channel_id',
+        'best_reply_id',
         'title',
         'body'
     ];
@@ -62,6 +63,11 @@ class Thread extends Model
         event(new ThreadReceivedNewReply($this, $reply));
 
         return $reply;
+    }
+
+    public function markBestReply($reply)
+    {
+        $this->update(['best_reply_id' => $reply->id]);
     }
 
     public function subscribe($userId = null)
