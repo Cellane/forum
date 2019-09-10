@@ -62653,27 +62653,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       editing: false,
       id: this.data.id,
       body: this.data.body,
-      isBest: false,
-      reply: this.data
+      isBest: this.data.isBest
     };
+  },
+  created: function created() {
+    var _this = this;
+
+    window.events.$on("best-reply-selected", function (id) {
+      _this.isBest = _this.id === id;
+    });
   },
 
 
   computed: {
     ago: function ago() {
       return __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.data.created_at).fromNow() + "\u2026";
+    },
+    canUpdate: function canUpdate() {
+      return this.authorize("updateReply", this.data);
+    },
+    canMarkBestReply: function canMarkBestReply() {
+      return this.authorize("markBestReply", this.data) && !this.isBest;
     }
   },
 
   methods: {
     update: function update() {
-      var _this = this;
+      var _this2 = this;
 
       axios.patch("/replies/" + this.data.id, {
         body: this.body
       }).then(function () {
-        _this.editing = false;
-        _this.data.body = _this.body;
+        _this2.editing = false;
+        _this2.data.body = _this2.body;
         flash("Updated!");
       }).catch(function (_ref) {
         var response = _ref.response;
@@ -62681,14 +62693,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       });
     },
     destroy: function destroy() {
-      var _this2 = this;
+      var _this3 = this;
 
       axios.delete("/replies/" + this.data.id).then(function () {
-        _this2.$emit("deleted", _this2.data.id);
+        _this3.$emit("deleted", _this3.data.id);
       });
     },
     markBestReply: function markBestReply() {
-      this.isBest = true;
+      var _this4 = this;
+
+      axios.post("/replies/" + this.data.id + "/best").then(function () {
+        window.events.$emit("best-reply-selected", _this4.data.id);
+      });
     },
     cancel: function cancel() {
       this.body = this.data.body;
@@ -63163,9 +63179,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     domProps: {
       "innerHTML": _vm._s(_vm.body)
     }
-  })]), _vm._v(" "), (_vm.canUpdate || !_vm.isBest) ? _c('div', {
+  })]), _vm._v(" "), (_vm.canUpdate || _vm.canMarkBestReply) ? _c('div', {
     staticClass: "panel-footer level"
-  }, [(_vm.authorize('updateReply', _vm.reply)) ? _c('div', [_c('button', {
+  }, [(_vm.canUpdate) ? _c('div', [_c('button', {
     staticClass: "btn btn-xs mr-1",
     on: {
       "click": function($event) {
@@ -63177,7 +63193,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.destroy
     }
-  }, [_vm._v("Destroy")])]) : _vm._e(), _vm._v(" "), (!_vm.isBest) ? _c('button', {
+  }, [_vm._v("Destroy")])]) : _vm._e(), _vm._v(" "), (_vm.canMarkBestReply) ? _c('button', {
     staticClass: "btn btn-success btn-xs ml-a",
     on: {
       "click": _vm.markBestReply
@@ -65300,6 +65316,9 @@ var user = window.App.user;
 /* harmony default export */ __webpack_exports__["a"] = ({
   updateReply: function updateReply(reply) {
     return reply.user_id === user.id;
+  },
+  markBestReply: function markBestReply(reply) {
+    return reply.thread.creator.id === user.id;
   }
 });
 

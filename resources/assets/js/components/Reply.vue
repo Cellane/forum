@@ -33,15 +33,15 @@
       <div v-else v-html="body"></div>
     </div>
 
-    <div class="panel-footer level" v-if="canUpdate || !isBest">
-      <div v-if="authorize('updateReply', reply)">
+    <div class="panel-footer level" v-if="canUpdate || canMarkBestReply">
+      <div v-if="canUpdate">
         <button class="btn btn-xs mr-1" @click="editing = true">Edit</button>
         <button class="btn btn-danger btn-xs" @click="destroy">Destroy</button>
       </div>
       <button
         class="btn btn-success btn-xs ml-a"
         @click="markBestReply"
-        v-if="!isBest"
+        v-if="canMarkBestReply"
       >
         Best reply?
       </button>
@@ -61,14 +61,27 @@ export default {
       editing: false,
       id: this.data.id,
       body: this.data.body,
-      isBest: false,
-      reply: this.data
+      isBest: this.data.isBest
     }
+  },
+
+  created() {
+    window.events.$on("best-reply-selected", id => {
+      this.isBest = this.id === id
+    })
   },
 
   computed: {
     ago() {
       return `${moment(this.data.created_at).fromNow()}…`
+    },
+
+    canUpdate() {
+      return this.authorize("updateReply", this.data)
+    },
+
+    canMarkBestReply() {
+      return this.authorize("markBestReply", this.data) && !this.isBest
     }
   },
 
@@ -93,7 +106,9 @@ export default {
     },
 
     markBestReply() {
-      this.isBest = true
+      axios.post(`/replies/${this.data.id}/best`).then(() => {
+        window.events.$emit("best-reply-selected", this.data.id)
+      })
     },
 
     cancel() {
