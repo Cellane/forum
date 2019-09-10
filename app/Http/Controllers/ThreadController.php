@@ -60,6 +60,7 @@ class ThreadController extends Controller
         ]);
 
         $thread = Thread::create([
+            'slug' => str_slug(request('title')),
             'user_id' => auth()->id(),
             'channel_id' => request('channel_id'),
             'title' => request('title'),
