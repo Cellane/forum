@@ -47,7 +47,8 @@ $factory->define(Thread::class, function (Generator $faker) {
         'channel_id' => factory(Channel::class),
         'title' => $title,
         'body' => $faker->paragraph,
-        'visits' => 0
+        'visits' => 0,
+        'locked' => false
     ];
 });
 

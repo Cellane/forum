@@ -16,12 +16,17 @@ class Thread extends Model
         'channel_id',
         'best_reply_id',
         'title',
-        'body'
+        'body',
+        'locked'
     ];
 
     protected $with = ['creator', 'channel'];
 
     protected $appends = ['isSubscribedTo'];
+
+    protected $casts = [
+        'locked' => 'boolean'
+    ];
 
     protected static function boot()
     {
@@ -56,6 +61,11 @@ class Thread extends Model
         return $this->hasMany(Reply::class);
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(ThreadSubscription::class);
+    }
+
     public function addReply($attributes)
     {
         $reply = $this->replies()->create($attributes);
@@ -88,9 +98,9 @@ class Thread extends Model
             ->delete();
     }
 
-    public function subscriptions()
+    public function lock()
     {
-        return $this->hasMany(ThreadSubscription::class);
+        $this->update(['locked' => true]);
     }
 
     public function getIsSubscribedToAttribute()
