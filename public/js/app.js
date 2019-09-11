@@ -62667,7 +62667,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   computed: {
     ago: function ago() {
-      return __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.data.created_at).fromNow() + "\u2026";
+      return __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.data.created_at).fromNow();
     },
     canUpdate: function canUpdate() {
       return this.authorize("updateReply", this.data);
