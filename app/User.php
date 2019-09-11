@@ -59,6 +59,19 @@ class User extends Authenticatable
             ->latest();
     }
 
+    public function confirm()
+    {
+        $this->confirmed = true;
+        $this->confirmation_token = null;
+
+        $this->save();
+    }
+
+    public function isAdmin()
+    {
+        return in_array($this->name, ['Milan']);
+    }
+
     public function visitedThreadCacheKey($thread)
     {
         return sprintf('users.%s.visits.%s', $this->id, $thread->id);
@@ -67,13 +80,5 @@ class User extends Authenticatable
     public function getAvatarPathAttribute($avatar)
     {
         return asset($avatar ?: 'images/avatars/default.png');
-    }
-
-    public function confirm()
-    {
-        $this->confirmed = true;
-        $this->confirmation_token = null;
-
-        $this->save();
     }
 }
