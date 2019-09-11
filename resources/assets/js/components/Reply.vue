@@ -77,11 +77,11 @@ export default {
     },
 
     canUpdate() {
-      return this.authorize("updateReply", this.data)
+      return this.authorize("owns", this.data)
     },
 
     canMarkBestReply() {
-      return this.authorize("markBestReply", this.data) && !this.isBest
+      return this.authorize("owns", this.data.thread) && !this.isBest
     }
   },
 

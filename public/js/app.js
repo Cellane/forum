@@ -62670,10 +62670,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.data.created_at).fromNow();
     },
     canUpdate: function canUpdate() {
-      return this.authorize("updateReply", this.data);
+      return this.authorize("owns", this.data);
     },
     canMarkBestReply: function canMarkBestReply() {
-      return this.authorize("markBestReply", this.data) && !this.isBest;
+      return this.authorize("owns", this.data.thread) && !this.isBest;
     }
   },
 
@@ -65314,11 +65314,10 @@ if (false) {
 var user = window.App.user;
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  updateReply: function updateReply(reply) {
-    return reply.user_id === user.id;
-  },
-  markBestReply: function markBestReply(reply) {
-    return reply.thread.creator.id === user.id;
+  owns: function owns(model) {
+    var prop = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "user_id";
+
+    return model[prop] === user.id;
   }
 });
 
