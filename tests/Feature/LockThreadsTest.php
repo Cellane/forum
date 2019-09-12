@@ -31,15 +31,26 @@ class LockThreadsTest extends TestCase
 
         $this->signIn($user)
             ->post(route('locked-threads.store', $thread));
+
         $this->assertTrue($thread->fresh()->locked);
+    }
+
+    /** @test */
+    public function administrators_can_unlock_threads()
+    {
+        $user = factory(User::class)->states('administrator')->create();
+        $thread = create(Thread::class, ['locked' => true]);
+
+        $this->signIn($user)
+            ->delete(route('locked-threads.destroy', $thread));
+
+        $this->assertFalse($thread->fresh()->locked);
     }
 
     /** @test */
     public function once_locked_a_thread_may_not_receive_new_replies()
     {
-        $thread = create(Thread::class);
-
-        $thread->lock();
+        $thread = create(Thread::class, ['locked' => true]);
 
         $this->signIn()
             ->post($thread->path() . '/replies', [

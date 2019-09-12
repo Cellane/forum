@@ -62236,15 +62236,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["initialRepliesCount", "initialLocked"],
+  props: ["thread"],
 
   data: function data() {
     return {
-      repliesCount: this.initialRepliesCount,
-      locked: this.initialLocked
+      repliesCount: this.thread.replies_count,
+      locked: this.thread.locked
     };
   },
 
+
+  methods: {
+    toggleLock: function toggleLock() {
+      var _this = this;
+
+      var method = this.locked ? "delete" : "post";
+
+      axios[method]("/locked-threads/" + this.thread.slug).then(function () {
+        _this.locked = method === "post";
+      });
+    }
+  },
 
   components: {
     Replies: __WEBPACK_IMPORTED_MODULE_0__components_Replies___default.a,
@@ -63358,8 +63370,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     subscribe: function subscribe() {
       var _this = this;
 
-      axios[this.method](location.pathname + "/subscriptions").then(function (response) {
-        _this.isSubscribed = !_this.isSubscribed;
+      axios[this.method](location.pathname + "/subscriptions").then(function () {
+        _this.isSubscribed = _this.method === "post";
       });
     }
   }

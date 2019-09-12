@@ -28,11 +28,9 @@ export default {
 
   methods: {
     subscribe() {
-      axios[this.method](`${location.pathname}/subscriptions`).then(
-        response => {
-          this.isSubscribed = !this.isSubscribed
-        }
-      )
+      axios[this.method](`${location.pathname}/subscriptions`).then(() => {
+        this.isSubscribed = this.method === "post"
+      })
     }
   }
 }

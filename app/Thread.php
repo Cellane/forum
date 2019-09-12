@@ -98,11 +98,6 @@ class Thread extends Model
             ->delete();
     }
 
-    public function lock()
-    {
-        $this->update(['locked' => true]);
-    }
-
     public function getIsSubscribedToAttribute()
     {
         return $this->subscriptions()

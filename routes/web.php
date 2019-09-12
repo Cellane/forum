@@ -23,6 +23,7 @@ Route::get('/threads/{channel}', 'ThreadController@index');
 Route::delete('/threads/{channel}/{thread}', 'ThreadController@destroy');
 
 Route::post('/locked-threads/{thread}', 'LockedThreadController@store')->name('locked-threads.store');
+Route::delete('/locked-threads/{thread}', 'LockedThreadController@destroy')->name('locked-threads.destroy');
 
 Route::post('/replies/{reply}/favorites', 'FavoriteController@store');
 Route::delete('/replies/{reply}/favorites', 'FavoriteController@destroy');
