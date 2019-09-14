@@ -18,6 +18,7 @@
   "dependencies": {
     "at.js": "^1.5.3",
     "jquery.caret": "^0.3.1",
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "vue-instantsearch": "^2.4.0"
   }
 }
