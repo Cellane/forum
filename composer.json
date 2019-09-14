@@ -9,8 +9,10 @@
   "type": "project",
   "require": {
     "php": ">=5.6.4",
+    "algolia/algoliasearch-client-php": "^2.4",
     "kitetail/zttp": "^0.6.0",
     "laravel/framework": "5.5.*",
+    "laravel/scout": "^7.1",
     "laravel/tinker": "~1.0",
     "predis/predis": "^1.1"
   },
