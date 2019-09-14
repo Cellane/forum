@@ -18,6 +18,10 @@ require("bootstrap-sass")
 
 window.Vue = require("vue")
 
+import InstantSearch from "vue-instantsearch"
+
+Vue.use(InstantSearch)
+
 import authorizations from "./authorizations"
 
 Vue.prototype.authorize = function(...params) {
