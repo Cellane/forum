@@ -85438,17 +85438,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["name", "value"],
+  props: ["name", "value", "placeholder", "shouldClear"],
 
   mounted: function mounted() {
     var _this = this;
 
     this.$refs.trix.addEventListener("trix-change", function (e) {
       return _this.$emit("input", e.target.innerHTML);
+    });
+
+    this.$watch("shouldClear", function () {
+      _this.$refs.trix.value = "";
     });
   }
 });
@@ -85469,8 +85479,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('trix-editor', {
     ref: "trix",
+    staticClass: "form-control",
+    staticStyle: {
+      "height": "auto"
+    },
     attrs: {
-      "input": "trix"
+      "input": "trix",
+      "placeholder": _vm.placeholder
     }
   })], 1)
 },staticRenderFns: []}
@@ -85773,9 +85788,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 
@@ -85785,7 +85797,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   data: function data() {
     return {
-      body: ""
+      body: "",
+      completed: false
     };
   },
   mounted: function mounted() {
@@ -85816,10 +85829,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         _this.body = "";
         _this.$emit("created", data);
+        _this.completed = true;
         flash("Your reply has been posted.");
       }).catch(function (_ref2) {
         var response = _ref2.response;
         return flash(response.data, "danger");
+      }).finally(function () {
+        _this.completed = false;
       });
     }
   }
@@ -87497,30 +87513,19 @@ $.fn.caret.apis = methods;
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return (_vm.signedIn) ? _c('div', [_c('div', {
     staticClass: "form-group"
-  }, [_c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.body),
-      expression: "body"
-    }],
-    staticClass: "form-control",
+  }, [_c('wysiwyg', {
     attrs: {
-      "name": "body",
-      "id": "body",
-      "rows": "5",
-      "placeholder": "Have something to say?"
+      "placeholder": "Have something to say?",
+      "shouldClear": _vm.completed
     },
-    domProps: {
-      "value": (_vm.body)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.body = $event.target.value
-      }
+    model: {
+      value: (_vm.body),
+      callback: function($$v) {
+        _vm.body = $$v
+      },
+      expression: "body"
     }
-  })]), _vm._v(" "), _c('button', {
+  })], 1), _vm._v(" "), _c('button', {
     staticClass: "btn btn-default",
     attrs: {
       "type": "submit"
@@ -87596,6 +87601,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Favorite__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Favorite___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Favorite__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -88151,60 +88165,50 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "form-group"
-  }, [_c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
+  }, [_c('wysiwyg', {
+    model: {
       value: (_vm.body),
+      callback: function($$v) {
+        _vm.body = $$v
+      },
       expression: "body"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "required": ""
-    },
-    domProps: {
-      "value": (_vm.body)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.body = $event.target.value
-      }
     }
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xs btn-primary"
+  })], 1)])]) : _c('div', {
+    domProps: {
+      "innerHTML": _vm._s(_vm.body)
+    }
+  })]), _vm._v(" "), (_vm.canUpdate || _vm.canMarkBestReply) ? _c('div', {
+    staticClass: "panel-footer"
+  }, [_c('div', {
+    staticClass: "level"
+  }, [(_vm.canUpdate) ? [(_vm.editing) ? [_c('button', {
+    staticClass: "btn btn-xs btn-primary mr-1"
   }, [_vm._v("Update")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xs btn-link",
+    staticClass: "btn btn-xs mr-1",
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancel
     }
-  }, [_vm._v("\n          Cancel\n        ")])])]) : _c('div', {
-    domProps: {
-      "innerHTML": _vm._s(_vm.body)
+  }, [_vm._v("\n            Cancel\n          ")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-danger btn-xs",
+    on: {
+      "click": _vm.destroy
     }
-  })]), _vm._v(" "), (_vm.canUpdate || _vm.canMarkBestReply) ? _c('div', {
-    staticClass: "panel-footer level"
-  }, [(_vm.canUpdate) ? _c('div', [_c('button', {
+  }, [_vm._v("\n            Destroy\n          ")])] : _c('button', {
     staticClass: "btn btn-xs mr-1",
     on: {
       "click": function($event) {
         _vm.editing = true
       }
     }
-  }, [_vm._v("Edit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-danger btn-xs",
-    on: {
-      "click": _vm.destroy
-    }
-  }, [_vm._v("Destroy")])]) : _vm._e(), _vm._v(" "), (_vm.canMarkBestReply) ? _c('button', {
+  }, [_vm._v("\n          Edit\n        ")])] : _vm._e(), _vm._v(" "), (_vm.canMarkBestReply) ? _c('button', {
     staticClass: "btn btn-success btn-xs ml-a",
     on: {
       "click": _vm.markBestReply
     }
-  }, [_vm._v("\n      Best reply?\n    ")]) : _vm._e()]) : _vm._e()])
+  }, [_vm._v("\n        Best reply?\n      ")]) : _vm._e()], 2)]) : _vm._e()])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

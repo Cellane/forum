@@ -21,30 +21,39 @@
       <div v-if="editing">
         <form @submit.prevent="update">
           <div class="form-group">
-            <textarea class="form-control" v-model="body" required></textarea>
+            <wysiwyg v-model="body"></wysiwyg>
           </div>
-
-          <button class="btn btn-xs btn-primary">Update</button>
-          <button class="btn btn-xs btn-link" type="button" @click="cancel">
-            Cancel
-          </button>
         </form>
       </div>
       <div v-else v-html="body"></div>
     </div>
 
-    <div class="panel-footer level" v-if="canUpdate || canMarkBestReply">
-      <div v-if="canUpdate">
-        <button class="btn btn-xs mr-1" @click="editing = true">Edit</button>
-        <button class="btn btn-danger btn-xs" @click="destroy">Destroy</button>
+    <div class="panel-footer" v-if="canUpdate || canMarkBestReply">
+      <div class="level">
+        <template v-if="canUpdate">
+          <template v-if="editing">
+            <button class="btn btn-xs btn-primary mr-1">Update</button>
+            <button class="btn btn-xs mr-1" type="button" @click="cancel">
+              Cancel
+            </button>
+            <button class="btn btn-danger btn-xs" @click="destroy">
+              Destroy
+            </button>
+          </template>
+
+          <button class="btn btn-xs mr-1" @click="editing = true" v-else>
+            Edit
+          </button>
+        </template>
+
+        <button
+          class="btn btn-success btn-xs ml-a"
+          @click="markBestReply"
+          v-if="canMarkBestReply"
+        >
+          Best reply?
+        </button>
       </div>
-      <button
-        class="btn btn-success btn-xs ml-a"
-        @click="markBestReply"
-        v-if="canMarkBestReply"
-      >
-        Best reply?
-      </button>
     </div>
   </div>
 </template>
