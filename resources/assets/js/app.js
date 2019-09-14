@@ -19,6 +19,7 @@ Vue.component(
   require("./components/UserNotifications.vue")
 )
 Vue.component("paginator", require("./components/Paginator.vue"))
+Vue.component("wysiwyg", require("./components/WYSIWYG.vue"))
 
 Vue.component("thread-view", require("./pages/Thread.vue"))
 
