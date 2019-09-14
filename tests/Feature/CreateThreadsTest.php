@@ -8,13 +8,13 @@ use App\Rules\Recaptcha;
 use App\Thread;
 use App\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 
 class CreateThreadsTest extends TestCase
 {
-    use DatabaseMigrations;
+    use RefreshDatabase;
     use MockeryPHPUnitIntegration;
 
     public function setUp()

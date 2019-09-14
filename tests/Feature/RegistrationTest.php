@@ -5,12 +5,12 @@ namespace Tests\Feature;
 use App\Mail\PleaseConfirmYourEmail;
 use App\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 
 class RegistrationTest extends TestCase
 {
-    use DatabaseMigrations;
+    use RefreshDatabase;
 
     /** @test */
     public function a_confirmation_email_is_sent_upon_registration()

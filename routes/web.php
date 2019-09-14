@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/threads', 'ThreadController@index')->name('threads');
 Route::get('/threads/create', 'ThreadController@create');
+Route::get('/threads/search', 'SearchController@show');
 Route::get('/threads/{channel}', 'ThreadController@index');
 Route::post('/threads', 'ThreadController@store');
 Route::get('/threads/{channel}/{thread}', 'ThreadController@show');

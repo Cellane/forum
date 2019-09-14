@@ -5,11 +5,11 @@ namespace Tests\Feature;
 use App\Thread;
 use App\Trending;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class TrendingThreadsTest extends TestCase
 {
-    use DatabaseMigrations;
+    use RefreshDatabase;
 
     private $trending;
 

@@ -134,4 +134,13 @@ class Thread extends Model
 
         return $this->updated_at > cache($key);
     }
+
+    public function searchableAs()
+    {
+        if (env('APP_ENV') === 'testing') {
+            return 'test_threads';
+        }
+
+        return 'threads';
+    }
 }
