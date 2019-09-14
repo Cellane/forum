@@ -65373,96 +65373,7 @@ var user = window.App.user;
 });
 
 /***/ }),
-/* 223 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__capitalize__ = __webpack_require__(391);
-/* unused harmony reexport capitalize */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__isDomElement__ = __webpack_require__(305);
-/* unused harmony reexport isDomElement */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getContainerNode__ = __webpack_require__(392);
-/* unused harmony reexport getContainerNode */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__isSpecialClick__ = __webpack_require__(393);
-/* unused harmony reexport isSpecialClick */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prepareTemplateProps__ = __webpack_require__(394);
-/* unused harmony reexport prepareTemplateProps */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__renderTemplate__ = __webpack_require__(395);
-/* unused harmony reexport renderTemplate */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__getRefinements__ = __webpack_require__(399);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_6__getRefinements__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clearRefinements__ = __webpack_require__(400);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_7__clearRefinements__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__escapeRefinement__ = __webpack_require__(401);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_8__escapeRefinement__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__unescapeRefinement__ = __webpack_require__(307);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_9__unescapeRefinement__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__checkRendering__ = __webpack_require__(402);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_10__checkRendering__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__getPropertyByPath__ = __webpack_require__(403);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_11__getPropertyByPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__noop__ = __webpack_require__(308);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_12__noop__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__isFiniteNumber__ = __webpack_require__(404);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return __WEBPACK_IMPORTED_MODULE_13__isFiniteNumber__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__isPlainObject__ = __webpack_require__(309);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return __WEBPACK_IMPORTED_MODULE_14__isPlainObject__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__uniq__ = __webpack_require__(275);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_15__uniq__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__range__ = __webpack_require__(405);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_16__range__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__isEqual__ = __webpack_require__(406);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_17__isEqual__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__escape__ = __webpack_require__(407);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_18__escape__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__find__ = __webpack_require__(306);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_19__find__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__findIndex__ = __webpack_require__(408);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_20__findIndex__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__mergeDeep__ = __webpack_require__(409);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_21__mergeDeep__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__logger__ = __webpack_require__(410);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return __WEBPACK_IMPORTED_MODULE_22__logger__["a"]; });
-/* unused harmony reexport deprecate */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__documentation__ = __webpack_require__(411);
-/* unused harmony reexport createDocumentationLink */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_23__documentation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__geo_search__ = __webpack_require__(412);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_24__geo_search__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_24__geo_search__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__hits_absolute_position__ = __webpack_require__(413);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_25__hits_absolute_position__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__hits_query_id__ = __webpack_require__(414);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_26__hits_query_id__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
+/* 223 */,
 /* 224 */
 /***/ (function(module, exports) {
 
@@ -65871,78 +65782,7 @@ module.exports = identity;
 
 
 /***/ }),
-/* 236 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TAG_PLACEHOLDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TAG_REPLACEMENT; });
-/* harmony export (immutable) */ __webpack_exports__["c"] = escapeHits;
-/* harmony export (immutable) */ __webpack_exports__["d"] = escapeFacets;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var TAG_PLACEHOLDER = {
-  highlightPreTag: '__ais-highlight__',
-  highlightPostTag: '__/ais-highlight__'
-};
-var TAG_REPLACEMENT = {
-  highlightPreTag: '<mark>',
-  highlightPostTag: '</mark>'
-};
-
-function replaceTagsAndEscape(value) {
-  return Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["g" /* escape */])(value).replace(new RegExp(TAG_PLACEHOLDER.highlightPreTag, 'g'), TAG_REPLACEMENT.highlightPreTag).replace(new RegExp(TAG_PLACEHOLDER.highlightPostTag, 'g'), TAG_REPLACEMENT.highlightPostTag);
-}
-
-function recursiveEscape(input) {
-  if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["p" /* isPlainObject */])(input) && typeof input.value !== 'string') {
-    return Object.keys(input).reduce(function (acc, key) {
-      return _objectSpread({}, acc, _defineProperty({}, key, recursiveEscape(input[key])));
-    }, {});
-  }
-
-  if (Array.isArray(input)) {
-    return input.map(recursiveEscape);
-  }
-
-  return _objectSpread({}, input, {
-    value: replaceTagsAndEscape(input.value)
-  });
-}
-
-function escapeHits(hits) {
-  if (hits.__escaped === undefined) {
-    hits = hits.map(function (hit) {
-      if (hit._highlightResult) {
-        hit._highlightResult = recursiveEscape(hit._highlightResult);
-      }
-
-      if (hit._snippetResult) {
-        hit._snippetResult = recursiveEscape(hit._snippetResult);
-      }
-
-      return hit;
-    });
-    hits.__escaped = true;
-  }
-
-  return hits;
-}
-function escapeFacets(facetHits) {
-  return facetHits.map(function (h) {
-    return _objectSpread({}, h, {
-      highlighted: replaceTagsAndEscape(h.highlighted)
-    });
-  });
-}
-
-/***/ }),
+/* 236 */,
 /* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -67279,776 +67119,8 @@ module.exports = createCtor;
 
 
 /***/ }),
-/* 275 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function uniq(array) {
-  return array.filter(function (value, index, self) {
-    return self.indexOf(value) === index;
-  });
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (uniq);
-
-/***/ }),
-/* 276 */
-/***/ (function(module, exports, __webpack_require__) {
-
-(function (global, factory) {
-	 true ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.preact = {})));
-}(this, (function (exports) { 'use strict';
-
-	var VNode = function VNode() {};
-
-	var options = {};
-
-	var stack = [];
-
-	var EMPTY_CHILDREN = [];
-
-	function h(nodeName, attributes) {
-		var children = EMPTY_CHILDREN,
-		    lastSimple = void 0,
-		    child = void 0,
-		    simple = void 0,
-		    i = void 0;
-		for (i = arguments.length; i-- > 2;) {
-			stack.push(arguments[i]);
-		}
-		if (attributes && attributes.children != null) {
-			if (!stack.length) stack.push(attributes.children);
-			delete attributes.children;
-		}
-		while (stack.length) {
-			if ((child = stack.pop()) && child.pop !== undefined) {
-				for (i = child.length; i--;) {
-					stack.push(child[i]);
-				}
-			} else {
-				if (typeof child === 'boolean') child = null;
-
-				if (simple = typeof nodeName !== 'function') {
-					if (child == null) child = '';else if (typeof child === 'number') child = String(child);else if (typeof child !== 'string') simple = false;
-				}
-
-				if (simple && lastSimple) {
-					children[children.length - 1] += child;
-				} else if (children === EMPTY_CHILDREN) {
-					children = [child];
-				} else {
-					children.push(child);
-				}
-
-				lastSimple = simple;
-			}
-		}
-
-		var p = new VNode();
-		p.nodeName = nodeName;
-		p.children = children;
-		p.attributes = attributes == null ? undefined : attributes;
-		p.key = attributes == null ? undefined : attributes.key;
-
-		if (options.vnode !== undefined) options.vnode(p);
-
-		return p;
-	}
-
-	function extend(obj, props) {
-	  for (var i in props) {
-	    obj[i] = props[i];
-	  }return obj;
-	}
-
-	function applyRef(ref, value) {
-	  if (ref) {
-	    if (typeof ref == 'function') ref(value);else ref.current = value;
-	  }
-	}
-
-	var defer = typeof Promise == 'function' ? Promise.resolve().then.bind(Promise.resolve()) : setTimeout;
-
-	function cloneElement(vnode, props) {
-	  return h(vnode.nodeName, extend(extend({}, vnode.attributes), props), arguments.length > 2 ? [].slice.call(arguments, 2) : vnode.children);
-	}
-
-	var NO_RENDER = 0;
-
-	var SYNC_RENDER = 1;
-
-	var FORCE_RENDER = 2;
-
-	var ASYNC_RENDER = 3;
-
-	var ATTR_KEY = '__preactattr_';
-
-	var IS_NON_DIMENSIONAL = /acit|ex(?:s|g|n|p|$)|rph|ows|mnc|ntw|ine[ch]|zoo|^ord/i;
-
-	var items = [];
-
-	function enqueueRender(component) {
-		if (!component._dirty && (component._dirty = true) && items.push(component) == 1) {
-			(options.debounceRendering || defer)(rerender);
-		}
-	}
-
-	function rerender() {
-		var p = void 0;
-		while (p = items.pop()) {
-			if (p._dirty) renderComponent(p);
-		}
-	}
-
-	function isSameNodeType(node, vnode, hydrating) {
-		if (typeof vnode === 'string' || typeof vnode === 'number') {
-			return node.splitText !== undefined;
-		}
-		if (typeof vnode.nodeName === 'string') {
-			return !node._componentConstructor && isNamedNode(node, vnode.nodeName);
-		}
-		return hydrating || node._componentConstructor === vnode.nodeName;
-	}
-
-	function isNamedNode(node, nodeName) {
-		return node.normalizedNodeName === nodeName || node.nodeName.toLowerCase() === nodeName.toLowerCase();
-	}
-
-	function getNodeProps(vnode) {
-		var props = extend({}, vnode.attributes);
-		props.children = vnode.children;
-
-		var defaultProps = vnode.nodeName.defaultProps;
-		if (defaultProps !== undefined) {
-			for (var i in defaultProps) {
-				if (props[i] === undefined) {
-					props[i] = defaultProps[i];
-				}
-			}
-		}
-
-		return props;
-	}
-
-	function createNode(nodeName, isSvg) {
-		var node = isSvg ? document.createElementNS('http://www.w3.org/2000/svg', nodeName) : document.createElement(nodeName);
-		node.normalizedNodeName = nodeName;
-		return node;
-	}
-
-	function removeNode(node) {
-		var parentNode = node.parentNode;
-		if (parentNode) parentNode.removeChild(node);
-	}
-
-	function setAccessor(node, name, old, value, isSvg) {
-		if (name === 'className') name = 'class';
-
-		if (name === 'key') {} else if (name === 'ref') {
-			applyRef(old, null);
-			applyRef(value, node);
-		} else if (name === 'class' && !isSvg) {
-			node.className = value || '';
-		} else if (name === 'style') {
-			if (!value || typeof value === 'string' || typeof old === 'string') {
-				node.style.cssText = value || '';
-			}
-			if (value && typeof value === 'object') {
-				if (typeof old !== 'string') {
-					for (var i in old) {
-						if (!(i in value)) node.style[i] = '';
-					}
-				}
-				for (var _i in value) {
-					node.style[_i] = typeof value[_i] === 'number' && IS_NON_DIMENSIONAL.test(_i) === false ? value[_i] + 'px' : value[_i];
-				}
-			}
-		} else if (name === 'dangerouslySetInnerHTML') {
-			if (value) node.innerHTML = value.__html || '';
-		} else if (name[0] == 'o' && name[1] == 'n') {
-			var useCapture = name !== (name = name.replace(/Capture$/, ''));
-			name = name.toLowerCase().substring(2);
-			if (value) {
-				if (!old) node.addEventListener(name, eventProxy, useCapture);
-			} else {
-				node.removeEventListener(name, eventProxy, useCapture);
-			}
-			(node._listeners || (node._listeners = {}))[name] = value;
-		} else if (name !== 'list' && name !== 'type' && !isSvg && name in node) {
-			try {
-				node[name] = value == null ? '' : value;
-			} catch (e) {}
-			if ((value == null || value === false) && name != 'spellcheck') node.removeAttribute(name);
-		} else {
-			var ns = isSvg && name !== (name = name.replace(/^xlink:?/, ''));
-
-			if (value == null || value === false) {
-				if (ns) node.removeAttributeNS('http://www.w3.org/1999/xlink', name.toLowerCase());else node.removeAttribute(name);
-			} else if (typeof value !== 'function') {
-				if (ns) node.setAttributeNS('http://www.w3.org/1999/xlink', name.toLowerCase(), value);else node.setAttribute(name, value);
-			}
-		}
-	}
-
-	function eventProxy(e) {
-		return this._listeners[e.type](options.event && options.event(e) || e);
-	}
-
-	var mounts = [];
-
-	var diffLevel = 0;
-
-	var isSvgMode = false;
-
-	var hydrating = false;
-
-	function flushMounts() {
-		var c = void 0;
-		while (c = mounts.shift()) {
-			if (options.afterMount) options.afterMount(c);
-			if (c.componentDidMount) c.componentDidMount();
-		}
-	}
-
-	function diff(dom, vnode, context, mountAll, parent, componentRoot) {
-		if (!diffLevel++) {
-			isSvgMode = parent != null && parent.ownerSVGElement !== undefined;
-
-			hydrating = dom != null && !(ATTR_KEY in dom);
-		}
-
-		var ret = idiff(dom, vnode, context, mountAll, componentRoot);
-
-		if (parent && ret.parentNode !== parent) parent.appendChild(ret);
-
-		if (! --diffLevel) {
-			hydrating = false;
-
-			if (!componentRoot) flushMounts();
-		}
-
-		return ret;
-	}
-
-	function idiff(dom, vnode, context, mountAll, componentRoot) {
-		var out = dom,
-		    prevSvgMode = isSvgMode;
-
-		if (vnode == null || typeof vnode === 'boolean') vnode = '';
-
-		if (typeof vnode === 'string' || typeof vnode === 'number') {
-			if (dom && dom.splitText !== undefined && dom.parentNode && (!dom._component || componentRoot)) {
-				if (dom.nodeValue != vnode) {
-					dom.nodeValue = vnode;
-				}
-			} else {
-				out = document.createTextNode(vnode);
-				if (dom) {
-					if (dom.parentNode) dom.parentNode.replaceChild(out, dom);
-					recollectNodeTree(dom, true);
-				}
-			}
-
-			out[ATTR_KEY] = true;
-
-			return out;
-		}
-
-		var vnodeName = vnode.nodeName;
-		if (typeof vnodeName === 'function') {
-			return buildComponentFromVNode(dom, vnode, context, mountAll);
-		}
-
-		isSvgMode = vnodeName === 'svg' ? true : vnodeName === 'foreignObject' ? false : isSvgMode;
-
-		vnodeName = String(vnodeName);
-		if (!dom || !isNamedNode(dom, vnodeName)) {
-			out = createNode(vnodeName, isSvgMode);
-
-			if (dom) {
-				while (dom.firstChild) {
-					out.appendChild(dom.firstChild);
-				}
-				if (dom.parentNode) dom.parentNode.replaceChild(out, dom);
-
-				recollectNodeTree(dom, true);
-			}
-		}
-
-		var fc = out.firstChild,
-		    props = out[ATTR_KEY],
-		    vchildren = vnode.children;
-
-		if (props == null) {
-			props = out[ATTR_KEY] = {};
-			for (var a = out.attributes, i = a.length; i--;) {
-				props[a[i].name] = a[i].value;
-			}
-		}
-
-		if (!hydrating && vchildren && vchildren.length === 1 && typeof vchildren[0] === 'string' && fc != null && fc.splitText !== undefined && fc.nextSibling == null) {
-			if (fc.nodeValue != vchildren[0]) {
-				fc.nodeValue = vchildren[0];
-			}
-		} else if (vchildren && vchildren.length || fc != null) {
-				innerDiffNode(out, vchildren, context, mountAll, hydrating || props.dangerouslySetInnerHTML != null);
-			}
-
-		diffAttributes(out, vnode.attributes, props);
-
-		isSvgMode = prevSvgMode;
-
-		return out;
-	}
-
-	function innerDiffNode(dom, vchildren, context, mountAll, isHydrating) {
-		var originalChildren = dom.childNodes,
-		    children = [],
-		    keyed = {},
-		    keyedLen = 0,
-		    min = 0,
-		    len = originalChildren.length,
-		    childrenLen = 0,
-		    vlen = vchildren ? vchildren.length : 0,
-		    j = void 0,
-		    c = void 0,
-		    f = void 0,
-		    vchild = void 0,
-		    child = void 0;
-
-		if (len !== 0) {
-			for (var i = 0; i < len; i++) {
-				var _child = originalChildren[i],
-				    props = _child[ATTR_KEY],
-				    key = vlen && props ? _child._component ? _child._component.__key : props.key : null;
-				if (key != null) {
-					keyedLen++;
-					keyed[key] = _child;
-				} else if (props || (_child.splitText !== undefined ? isHydrating ? _child.nodeValue.trim() : true : isHydrating)) {
-					children[childrenLen++] = _child;
-				}
-			}
-		}
-
-		if (vlen !== 0) {
-			for (var _i = 0; _i < vlen; _i++) {
-				vchild = vchildren[_i];
-				child = null;
-
-				var _key = vchild.key;
-				if (_key != null) {
-					if (keyedLen && keyed[_key] !== undefined) {
-						child = keyed[_key];
-						keyed[_key] = undefined;
-						keyedLen--;
-					}
-				} else if (min < childrenLen) {
-						for (j = min; j < childrenLen; j++) {
-							if (children[j] !== undefined && isSameNodeType(c = children[j], vchild, isHydrating)) {
-								child = c;
-								children[j] = undefined;
-								if (j === childrenLen - 1) childrenLen--;
-								if (j === min) min++;
-								break;
-							}
-						}
-					}
-
-				child = idiff(child, vchild, context, mountAll);
-
-				f = originalChildren[_i];
-				if (child && child !== dom && child !== f) {
-					if (f == null) {
-						dom.appendChild(child);
-					} else if (child === f.nextSibling) {
-						removeNode(f);
-					} else {
-						dom.insertBefore(child, f);
-					}
-				}
-			}
-		}
-
-		if (keyedLen) {
-			for (var _i2 in keyed) {
-				if (keyed[_i2] !== undefined) recollectNodeTree(keyed[_i2], false);
-			}
-		}
-
-		while (min <= childrenLen) {
-			if ((child = children[childrenLen--]) !== undefined) recollectNodeTree(child, false);
-		}
-	}
-
-	function recollectNodeTree(node, unmountOnly) {
-		var component = node._component;
-		if (component) {
-			unmountComponent(component);
-		} else {
-			if (node[ATTR_KEY] != null) applyRef(node[ATTR_KEY].ref, null);
-
-			if (unmountOnly === false || node[ATTR_KEY] == null) {
-				removeNode(node);
-			}
-
-			removeChildren(node);
-		}
-	}
-
-	function removeChildren(node) {
-		node = node.lastChild;
-		while (node) {
-			var next = node.previousSibling;
-			recollectNodeTree(node, true);
-			node = next;
-		}
-	}
-
-	function diffAttributes(dom, attrs, old) {
-		var name = void 0;
-
-		for (name in old) {
-			if (!(attrs && attrs[name] != null) && old[name] != null) {
-				setAccessor(dom, name, old[name], old[name] = undefined, isSvgMode);
-			}
-		}
-
-		for (name in attrs) {
-			if (name !== 'children' && name !== 'innerHTML' && (!(name in old) || attrs[name] !== (name === 'value' || name === 'checked' ? dom[name] : old[name]))) {
-				setAccessor(dom, name, old[name], old[name] = attrs[name], isSvgMode);
-			}
-		}
-	}
-
-	var recyclerComponents = [];
-
-	function createComponent(Ctor, props, context) {
-		var inst = void 0,
-		    i = recyclerComponents.length;
-
-		if (Ctor.prototype && Ctor.prototype.render) {
-			inst = new Ctor(props, context);
-			Component.call(inst, props, context);
-		} else {
-			inst = new Component(props, context);
-			inst.constructor = Ctor;
-			inst.render = doRender;
-		}
-
-		while (i--) {
-			if (recyclerComponents[i].constructor === Ctor) {
-				inst.nextBase = recyclerComponents[i].nextBase;
-				recyclerComponents.splice(i, 1);
-				return inst;
-			}
-		}
-
-		return inst;
-	}
-
-	function doRender(props, state, context) {
-		return this.constructor(props, context);
-	}
-
-	function setComponentProps(component, props, renderMode, context, mountAll) {
-		if (component._disable) return;
-		component._disable = true;
-
-		component.__ref = props.ref;
-		component.__key = props.key;
-		delete props.ref;
-		delete props.key;
-
-		if (typeof component.constructor.getDerivedStateFromProps === 'undefined') {
-			if (!component.base || mountAll) {
-				if (component.componentWillMount) component.componentWillMount();
-			} else if (component.componentWillReceiveProps) {
-				component.componentWillReceiveProps(props, context);
-			}
-		}
-
-		if (context && context !== component.context) {
-			if (!component.prevContext) component.prevContext = component.context;
-			component.context = context;
-		}
-
-		if (!component.prevProps) component.prevProps = component.props;
-		component.props = props;
-
-		component._disable = false;
-
-		if (renderMode !== NO_RENDER) {
-			if (renderMode === SYNC_RENDER || options.syncComponentUpdates !== false || !component.base) {
-				renderComponent(component, SYNC_RENDER, mountAll);
-			} else {
-				enqueueRender(component);
-			}
-		}
-
-		applyRef(component.__ref, component);
-	}
-
-	function renderComponent(component, renderMode, mountAll, isChild) {
-		if (component._disable) return;
-
-		var props = component.props,
-		    state = component.state,
-		    context = component.context,
-		    previousProps = component.prevProps || props,
-		    previousState = component.prevState || state,
-		    previousContext = component.prevContext || context,
-		    isUpdate = component.base,
-		    nextBase = component.nextBase,
-		    initialBase = isUpdate || nextBase,
-		    initialChildComponent = component._component,
-		    skip = false,
-		    snapshot = previousContext,
-		    rendered = void 0,
-		    inst = void 0,
-		    cbase = void 0;
-
-		if (component.constructor.getDerivedStateFromProps) {
-			state = extend(extend({}, state), component.constructor.getDerivedStateFromProps(props, state));
-			component.state = state;
-		}
-
-		if (isUpdate) {
-			component.props = previousProps;
-			component.state = previousState;
-			component.context = previousContext;
-			if (renderMode !== FORCE_RENDER && component.shouldComponentUpdate && component.shouldComponentUpdate(props, state, context) === false) {
-				skip = true;
-			} else if (component.componentWillUpdate) {
-				component.componentWillUpdate(props, state, context);
-			}
-			component.props = props;
-			component.state = state;
-			component.context = context;
-		}
-
-		component.prevProps = component.prevState = component.prevContext = component.nextBase = null;
-		component._dirty = false;
-
-		if (!skip) {
-			rendered = component.render(props, state, context);
-
-			if (component.getChildContext) {
-				context = extend(extend({}, context), component.getChildContext());
-			}
-
-			if (isUpdate && component.getSnapshotBeforeUpdate) {
-				snapshot = component.getSnapshotBeforeUpdate(previousProps, previousState);
-			}
-
-			var childComponent = rendered && rendered.nodeName,
-			    toUnmount = void 0,
-			    base = void 0;
-
-			if (typeof childComponent === 'function') {
-
-				var childProps = getNodeProps(rendered);
-				inst = initialChildComponent;
-
-				if (inst && inst.constructor === childComponent && childProps.key == inst.__key) {
-					setComponentProps(inst, childProps, SYNC_RENDER, context, false);
-				} else {
-					toUnmount = inst;
-
-					component._component = inst = createComponent(childComponent, childProps, context);
-					inst.nextBase = inst.nextBase || nextBase;
-					inst._parentComponent = component;
-					setComponentProps(inst, childProps, NO_RENDER, context, false);
-					renderComponent(inst, SYNC_RENDER, mountAll, true);
-				}
-
-				base = inst.base;
-			} else {
-				cbase = initialBase;
-
-				toUnmount = initialChildComponent;
-				if (toUnmount) {
-					cbase = component._component = null;
-				}
-
-				if (initialBase || renderMode === SYNC_RENDER) {
-					if (cbase) cbase._component = null;
-					base = diff(cbase, rendered, context, mountAll || !isUpdate, initialBase && initialBase.parentNode, true);
-				}
-			}
-
-			if (initialBase && base !== initialBase && inst !== initialChildComponent) {
-				var baseParent = initialBase.parentNode;
-				if (baseParent && base !== baseParent) {
-					baseParent.replaceChild(base, initialBase);
-
-					if (!toUnmount) {
-						initialBase._component = null;
-						recollectNodeTree(initialBase, false);
-					}
-				}
-			}
-
-			if (toUnmount) {
-				unmountComponent(toUnmount);
-			}
-
-			component.base = base;
-			if (base && !isChild) {
-				var componentRef = component,
-				    t = component;
-				while (t = t._parentComponent) {
-					(componentRef = t).base = base;
-				}
-				base._component = componentRef;
-				base._componentConstructor = componentRef.constructor;
-			}
-		}
-
-		if (!isUpdate || mountAll) {
-			mounts.push(component);
-		} else if (!skip) {
-
-			if (component.componentDidUpdate) {
-				component.componentDidUpdate(previousProps, previousState, snapshot);
-			}
-			if (options.afterUpdate) options.afterUpdate(component);
-		}
-
-		while (component._renderCallbacks.length) {
-			component._renderCallbacks.pop().call(component);
-		}if (!diffLevel && !isChild) flushMounts();
-	}
-
-	function buildComponentFromVNode(dom, vnode, context, mountAll) {
-		var c = dom && dom._component,
-		    originalComponent = c,
-		    oldDom = dom,
-		    isDirectOwner = c && dom._componentConstructor === vnode.nodeName,
-		    isOwner = isDirectOwner,
-		    props = getNodeProps(vnode);
-		while (c && !isOwner && (c = c._parentComponent)) {
-			isOwner = c.constructor === vnode.nodeName;
-		}
-
-		if (c && isOwner && (!mountAll || c._component)) {
-			setComponentProps(c, props, ASYNC_RENDER, context, mountAll);
-			dom = c.base;
-		} else {
-			if (originalComponent && !isDirectOwner) {
-				unmountComponent(originalComponent);
-				dom = oldDom = null;
-			}
-
-			c = createComponent(vnode.nodeName, props, context);
-			if (dom && !c.nextBase) {
-				c.nextBase = dom;
-
-				oldDom = null;
-			}
-			setComponentProps(c, props, SYNC_RENDER, context, mountAll);
-			dom = c.base;
-
-			if (oldDom && dom !== oldDom) {
-				oldDom._component = null;
-				recollectNodeTree(oldDom, false);
-			}
-		}
-
-		return dom;
-	}
-
-	function unmountComponent(component) {
-		if (options.beforeUnmount) options.beforeUnmount(component);
-
-		var base = component.base;
-
-		component._disable = true;
-
-		if (component.componentWillUnmount) component.componentWillUnmount();
-
-		component.base = null;
-
-		var inner = component._component;
-		if (inner) {
-			unmountComponent(inner);
-		} else if (base) {
-			if (base[ATTR_KEY] != null) applyRef(base[ATTR_KEY].ref, null);
-
-			component.nextBase = base;
-
-			removeNode(base);
-			recyclerComponents.push(component);
-
-			removeChildren(base);
-		}
-
-		applyRef(component.__ref, null);
-	}
-
-	function Component(props, context) {
-		this._dirty = true;
-
-		this.context = context;
-
-		this.props = props;
-
-		this.state = this.state || {};
-
-		this._renderCallbacks = [];
-	}
-
-	extend(Component.prototype, {
-		setState: function setState(state, callback) {
-			if (!this.prevState) this.prevState = this.state;
-			this.state = extend(extend({}, this.state), typeof state === 'function' ? state(this.state, this.props) : state);
-			if (callback) this._renderCallbacks.push(callback);
-			enqueueRender(this);
-		},
-		forceUpdate: function forceUpdate(callback) {
-			if (callback) this._renderCallbacks.push(callback);
-			renderComponent(this, FORCE_RENDER);
-		},
-		render: function render() {}
-	});
-
-	function render(vnode, parent, merge) {
-	  return diff(merge, vnode, {}, false, parent, false);
-	}
-
-	function createRef() {
-		return {};
-	}
-
-	var preact = {
-		h: h,
-		createElement: h,
-		cloneElement: cloneElement,
-		createRef: createRef,
-		Component: Component,
-		render: render,
-		rerender: rerender,
-		options: options
-	};
-
-	exports.default = preact;
-	exports.h = h;
-	exports.createElement = h;
-	exports.cloneElement = cloneElement;
-	exports.createRef = createRef;
-	exports.Component = Component;
-	exports.render = render;
-	exports.rerender = rerender;
-	exports.options = options;
-
-	Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
-//# sourceMappingURL=preact.umd.js.map
-
-
-/***/ }),
+/* 275 */,
+/* 276 */,
 /* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -71442,1093 +70514,20 @@ module.exports = {
 
 
 /***/ }),
-/* 305 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function isDomElement(object) {
-  return object instanceof HTMLElement || Boolean(object) && object.nodeType > 0;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (isDomElement);
-
-/***/ }),
-/* 306 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// We aren't using the native `Array.prototype.find` because the refactor away from Lodash is not
-// published as a major version.
-// Relying on the `find` polyfill on user-land, which before was only required for niche use-cases,
-// was decided as too risky.
-// @MAJOR Replace with the native `Array.prototype.find` method
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
-function find(items, predicate, thisArg) {
-  if (!Array.prototype.find) {
-    return items.filter(predicate, thisArg)[0];
-  }
-
-  return items.find(predicate, thisArg);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (find);
-
-/***/ }),
-/* 307 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function unescapeRefinement(value) {
-  return String(value).replace(/^\\-/, '-');
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (unescapeRefinement);
-
-/***/ }),
-/* 308 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function noop() {}
-
-/* harmony default export */ __webpack_exports__["a"] = (noop);
-
-/***/ }),
-/* 309 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/**
- * This implementation is taken from Lodash implementation.
- * See: https://github.com/lodash/lodash/blob/master/isPlainObject.js
- */
-function getTag(value) {
-  if (value === null) {
-    return value === undefined ? '[object Undefined]' : '[object Null]';
-  }
-
-  return Object.prototype.toString.call(value);
-}
-
-function isObjectLike(value) {
-  return _typeof(value) === 'object' && value !== null;
-}
-/**
- * Checks if `value` is a plain object.
- *
- * A plain object is an object created by the `Object`
- * constructor or with a `[[Prototype]]` of `null`.
- */
-
-
-function isPlainObject(value) {
-  if (!isObjectLike(value) || getTag(value) !== '[object Object]') {
-    return false;
-  }
-
-  if (Object.getPrototypeOf(value) === null) {
-    return true;
-  }
-
-  var proto = value;
-
-  while (Object.getPrototypeOf(proto) !== null) {
-    proto = Object.getPrototypeOf(proto);
-  }
-
-  return Object.getPrototypeOf(value) === proto;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (isPlainObject);
-
-/***/ }),
-/* 310 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectHits;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_utils__ = __webpack_require__(223);
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'hits',
-  connector: true
-});
-/**
- * @typedef {Object} HitsRenderingOptions
- * @property {Object[]} hits The matched hits from Algolia API.
- * @property {Object} results The complete results response from Algolia API.
- * @property {Object} widgetParams All original widget options forwarded to the `renderFn`.
- */
-
-/**
- * @typedef {Object} CustomHitsWidgetOptions
- * @property {boolean} [escapeHTML = true] Whether to escape HTML tags from `hits[i]._highlightResult`.
- * @property {function(Object[]):Object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * **Hits** connector provides the logic to create custom widgets that will render the results retrieved from Algolia.
- * @type {Connector}
- * @param {function(HitsRenderingOptions, boolean)} renderFn Rendering function for the custom **Hits** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomHitsWidgetOptions)} Re-usable widget factory for a custom **Hits** widget.
- * @example
- * // custom `renderFn` to render the custom Hits widget
- * function renderFn(HitsRenderingOptions) {
- *   HitsRenderingOptions.widgetParams.containerNode.html(
- *     HitsRenderingOptions.hits.map(function(hit) {
- *       return '<div>' + hit._highlightResult.name.value + '</div>';
- *     })
- *   );
- * }
- *
- * // connect `renderFn` to Hits logic
- * var customHits = instantsearch.connectors.connectHits(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customHits({
- *     containerNode: $('#custom-hits-container'),
- *   })
- * );
- */
-
-function connectHits(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_1__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var _widgetParams$escapeH = widgetParams.escapeHTML,
-        escapeHTML = _widgetParams$escapeH === void 0 ? true : _widgetParams$escapeH,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-    return {
-      getConfiguration: function getConfiguration() {
-        return escapeHTML ? __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["a" /* TAG_PLACEHOLDER */] : undefined;
-      },
-      init: function init(_ref) {
-        var instantSearchInstance = _ref.instantSearchInstance;
-        renderFn({
-          hits: [],
-          results: undefined,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref2) {
-        var results = _ref2.results,
-            instantSearchInstance = _ref2.instantSearchInstance;
-
-        if (escapeHTML && results.hits.length > 0) {
-          results.hits = Object(__WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["c" /* default */])(results.hits);
-        }
-
-        var initialEscaped = results.hits.__escaped;
-        results.hits = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["a" /* addAbsolutePosition */])(results.hits, results.page, results.hitsPerPage);
-        results.hits = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["b" /* addQueryID */])(results.hits, results.queryID);
-        results.hits = transformItems(results.hits); // Make sure the escaped tag stays, even after mapping over the hits.
-        // This prevents the hits from being double-escaped if there are multiple
-        // hits widgets mounted on the page.
-
-        results.hits.__escaped = initialEscaped;
-        renderFn({
-          hits: results.hits,
-          results: results,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 311 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__client__ = __webpack_require__(418);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__client__["a"]; });
-/* unused harmony reexport inferInsightsPayload */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listener__ = __webpack_require__(419);
-/* unused harmony reexport withInsightsListener */
-
-
-
-/***/ }),
-/* 312 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(313);
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(422)(ReactIs.isElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = require('./factoryWithThrowingShims')();
-}
-
-
-/***/ }),
-/* 313 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {
-  module.exports = require('./cjs/react-is.production.min.js');
-} else {
-  module.exports = __webpack_require__(421);
-}
-
-
-/***/ }),
-/* 314 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-/* 315 */
-/***/ (function(module, exports, __webpack_require__) {
-
-!function(n,t){ true?t(exports,__webpack_require__(276)):"function"==typeof define&&define.amd?define(["exports","preact"],t):t((n=n||self).preactContext={},n.preact)}(this,function(n,t){"use strict";var i={register:function(n){console.warn("Consumer used without a Provider")},unregister:function(n){},val:function(n){}};function r(n){var t=n.children;return{child:1===t.length?t[0]:null,children:t}}var e,u=window&&window.__extends||(e=function(n,t){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,t){n.__proto__=t}||function(n,t){for(var i in t)t.hasOwnProperty(i)&&(n[i]=t[i])})(n,t)},function(n,t){function i(){this.constructor=n}e(n,t),n.prototype=null===t?Object.create(t):(i.prototype=t.prototype,new i)});function o(n){return r(n).child||"render"in n&&n.render}var c=1073741823,f=function(){return c},s=0;function a(n,e){var a="_preactContextProvider-"+s++;return{Provider:function(n){function i(t){var i=n.call(this,t)||this;return i.t=function(n,t){var i=[],r=n,e=function(n){return 0|t(r,n)};return{register:function(n){i.push(n),n(r,e(r))},unregister:function(n){i=i.filter(function(t){return t!==n})},val:function(n){if(void 0===n||n==r)return r;var t=e(n);return r=n,i.forEach(function(i){return i(n,t)}),r}}}(t.value,e||f),i}return u(i,n),i.prototype.getChildContext=function(){var n;return(n={})[a]=this.t,n},i.prototype.componentDidUpdate=function(){this.t.val(this.props.value)},i.prototype.render=function(){var n=r(this.props),i=n.child,e=n.children;return i||t.h("span",null,e)},i}(t.Component),Consumer:function(t){function r(i,r){var e=t.call(this,i,r)||this;return e.i=function(n,t){var i=e.props.unstable_observedBits,r=void 0===i||null===i?c:i;0!=((r|=0)&t)&&e.setState({value:n})},e.state={value:e.u().val()||n},e}return u(r,t),r.prototype.componentDidMount=function(){this.u().register(this.i)},r.prototype.shouldComponentUpdate=function(n,t){return this.state.value!==t.value||o(this.props)!==o(n)},r.prototype.componentWillUnmount=function(){this.u().unregister(this.i)},r.prototype.componentDidUpdate=function(n,t,r){var e=r[a];e!==this.context[a]&&((e||i).unregister(this.i),this.componentDidMount())},r.prototype.render=function(){var n="render"in this.props&&this.props.render,t=o(this.props);if(n&&n!==t&&console.warn("Both children and a render function are defined. Children will be used"),"function"==typeof t)return t(this.state.value);console.warn("Consumer is expecting a function as one and only child but didn't find any")},r.prototype.u=function(){return this.context[a]||i},r}(t.Component)}}var d=a;n.default=a,n.createContext=d,Object.defineProperty(n,"__esModule",{value:!0})});
-
-/***/ }),
-/* 316 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = readDataAttributes;
-/* harmony export (immutable) */ __webpack_exports__["a"] = hasDataAttributes;
-/* unused harmony export writeDataAttributes */
-/* unused harmony export default */
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function readDataAttributes(domElement) {
-  var method = domElement.getAttribute('data-insights-method');
-  var serializedPayload = domElement.getAttribute('data-insights-payload');
-
-  if (typeof serializedPayload !== 'string') {
-    throw new Error('The insights helper expects `data-insights-payload` to be a base64-encoded JSON string.');
-  }
-
-  try {
-    var payload = JSON.parse(atob(serializedPayload));
-    return {
-      method: method,
-      payload: payload
-    };
-  } catch (error) {
-    throw new Error('The insights helper was unable to parse `data-insights-payload`.');
-  }
-}
-function hasDataAttributes(domElement) {
-  return domElement.hasAttribute('data-insights-method');
-}
-function writeDataAttributes(_ref) {
-  var method = _ref.method,
-      payload = _ref.payload;
-
-  if (_typeof(payload) !== 'object') {
-    throw new Error("The insights helper expects the payload to be an object.");
-  }
-
-  var serializedPayload;
-
-  try {
-    serializedPayload = btoa(JSON.stringify(payload));
-  } catch (error) {
-    throw new Error("Could not JSON serialize the payload object.");
-  }
-
-  return "data-insights-method=\"".concat(method, "\" data-insights-payload=\"").concat(serializedPayload, "\"");
-}
-function insights(method, payload) {
-  return writeDataAttributes({
-    method: method,
-    payload: payload
-  });
-}
-
-/***/ }),
-/* 317 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_utils__ = __webpack_require__(223);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'infinite-hits',
-  connector: true
-});
-/**
- * @typedef {Object} InfiniteHitsRenderingOptions
- * @property {Array<Object>} hits The aggregated matched hits from Algolia API of all pages.
- * @property {Object} results The complete results response from Algolia API.
- * @property {function} showMore Loads the next page of hits.
- * @property {boolean} isLastPage Indicates if the last page of hits has been reached.
- * @property {Object} widgetParams All original widget options forwarded to the `renderFn`.
- */
-
-/**
- * @typedef {Object} CustomInfiniteHitsWidgetOptions
- * @property {boolean} [escapeHTML = true] Whether to escape HTML tags from `hits[i]._highlightResult`.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * **InfiniteHits** connector provides the logic to create custom widgets that will render an continuous list of results retrieved from Algolia.
- *
- * This connector provides a `InfiniteHitsRenderingOptions.showMore()` function to load next page of matched results.
- * @type {Connector}
- * @param {function(InfiniteHitsRenderingOptions, boolean)} renderFn Rendering function for the custom **InfiniteHits** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomInfiniteHitsWidgetOptions)} Re-usable widget factory for a custom **InfiniteHits** widget.
- * @example
- * // custom `renderFn` to render the custom InfiniteHits widget
- * function renderFn(InfiniteHitsRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     InfiniteHitsRenderingOptions.widgetParams.containerNode
- *       .html('<div id="hits"></div><button id="show-more">Load more</button>');
- *
- *     InfiniteHitsRenderingOptions.widgetParams.containerNode
- *       .find('#show-more')
- *       .on('click', function(event) {
- *         event.preventDefault();
- *         InfiniteHitsRenderingOptions.showMore();
- *       });
- *   }
- *
- *   InfiniteHitsRenderingOptions.widgetParams.containerNode.find('#hits').html(
- *     InfiniteHitsRenderingOptions.hits.map(function(hit) {
- *       return '<div>' + hit._highlightResult.name.value + '</div>';
- *     })
- *   );
- * };
- *
- * // connect `renderFn` to InfiniteHits logic
- * var customInfiniteHits = instantsearch.connectors.connectInfiniteHits(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customInfiniteHits({
- *     containerNode: $('#custom-infinite-hits-container'),
- *   })
- * );
- */
-
-var connectInfiniteHits = function connectInfiniteHits(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_1__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function (widgetParams) {
-    var _ref = widgetParams || {},
-        _ref$escapeHTML = _ref.escapeHTML,
-        escapeHTML = _ref$escapeHTML === void 0 ? true : _ref$escapeHTML,
-        _ref$transformItems = _ref.transformItems,
-        transformItems = _ref$transformItems === void 0 ? function (items) {
-      return items;
-    } : _ref$transformItems,
-        _ref$showPrevious = _ref.showPrevious,
-        hasShowPrevious = _ref$showPrevious === void 0 ? false : _ref$showPrevious;
-
-    var hitsCache = [];
-    var firstReceivedPage = Infinity;
-    var lastReceivedPage = -1;
-    var prevState;
-    var showPrevious;
-    var showMore;
-
-    var getShowPrevious = function getShowPrevious(helper) {
-      return function () {
-        // Using the helper's `overrideStateWithoutTriggeringChangeEvent` method
-        // avoid updating the browser URL when the user displays the previous page.
-        helper.overrideStateWithoutTriggeringChangeEvent(_objectSpread({}, helper.state, {
-          page: firstReceivedPage - 1
-        })).search();
-      };
-    };
-
-    var getShowMore = function getShowMore(helper) {
-      return function () {
-        helper.setPage(lastReceivedPage + 1).search();
-      };
-    };
-
-    return {
-      getConfiguration: function getConfiguration() {
-        return escapeHTML ? __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["a" /* TAG_PLACEHOLDER */] : {};
-      },
-      init: function init(_ref2) {
-        var instantSearchInstance = _ref2.instantSearchInstance,
-            helper = _ref2.helper;
-        showPrevious = getShowPrevious(helper);
-        showMore = getShowMore(helper);
-        firstReceivedPage = helper.state.page;
-        lastReceivedPage = helper.state.page;
-        renderFn({
-          hits: hitsCache,
-          results: undefined,
-          showPrevious: showPrevious,
-          showMore: showMore,
-          isFirstPage: firstReceivedPage === 0,
-          isLastPage: true,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref3) {
-        var results = _ref3.results,
-            state = _ref3.state,
-            instantSearchInstance = _ref3.instantSearchInstance;
-
-        // Reset cache and received pages if anything changes in the
-        // search state, except for the page.
-        //
-        // We're doing this to "reset" the widget if a refinement or the
-        // query changes between renders, but we want to keep it as is
-        // if we only change pages.
-        var page = state.page,
-            currentState = _objectWithoutProperties(state, ["page"]);
-
-        if (!Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["n" /* isEqual */])(currentState, prevState)) {
-          hitsCache = [];
-          firstReceivedPage = page;
-          lastReceivedPage = page;
-          prevState = currentState;
-        }
-
-        if (escapeHTML && results.hits.length > 0) {
-          results.hits = Object(__WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["c" /* default */])(results.hits);
-        }
-
-        var initialEscaped = results.hits.__escaped;
-        results.hits = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["a" /* addAbsolutePosition */])(results.hits, results.page, results.hitsPerPage);
-        results.hits = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["b" /* addQueryID */])(results.hits, results.queryID);
-        results.hits = transformItems(results.hits); // Make sure the escaped tag stays after mapping over the hits.
-        // This prevents the hits from being double-escaped if there are multiple
-        // hits widgets mounted on the page.
-
-        results.hits.__escaped = initialEscaped;
-
-        if (lastReceivedPage < page || !hitsCache.length) {
-          hitsCache = [].concat(_toConsumableArray(hitsCache), _toConsumableArray(results.hits));
-          lastReceivedPage = page;
-        } else if (firstReceivedPage > page) {
-          hitsCache = [].concat(_toConsumableArray(results.hits), _toConsumableArray(hitsCache));
-          firstReceivedPage = page;
-        }
-
-        var isFirstPage = firstReceivedPage === 0;
-        var isLastPage = results.nbPages <= results.page + 1;
-        renderFn({
-          hits: hitsCache,
-          results: results,
-          showPrevious: showPrevious,
-          showMore: showMore,
-          isFirstPage: isFirstPage,
-          isLastPage: isLastPage,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-        var page = searchParameters.page;
-
-        if (!hasShowPrevious || page === 0 || page + 1 === uiState.page) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          page: page + 1
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-
-        if (!hasShowPrevious) {
-          return searchParameters;
-        }
-
-        var uiPage = uiState.page;
-
-        if (uiPage) {
-          return searchParameters.setQueryParameter('page', uiPage - 1);
-        }
-
-        return searchParameters.setQueryParameter('page', 0);
-      }
-    };
-  };
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (connectInfiniteHits);
-
-/***/ }),
-/* 318 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = enhanceConfiguration;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_events__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_events__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RoutingManager__ = __webpack_require__(596);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stateMappings_simple__ = __webpack_require__(597);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routers_history__ = __webpack_require__(598);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__version__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__createHelpers__ = __webpack_require__(599);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils__ = __webpack_require__(223);
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-
-
-
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_7__utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'instantsearch'
-});
-var ROUTING_DEFAULT_OPTIONS = {
-  stateMapping: Object(__WEBPACK_IMPORTED_MODULE_3__stateMappings_simple__["a" /* default */])(),
-  router: Object(__WEBPACK_IMPORTED_MODULE_4__routers_history__["a" /* default */])()
-};
-
-function defaultCreateURL() {
-  return '#';
-}
-/**
- * Widgets are the building blocks of InstantSearch.js. Any
- * valid widget must have at least a `render` or a `init` function.
- * @typedef {Object} Widget
- * @property {function} [render] Called after each search response has been received
- * @property {function} [getConfiguration] Let the widget update the configuration
- * of the search with new parameters
- * @property {function} [init] Called once before the first search
- */
-
-/**
- * The actual implementation of the InstantSearch. This is
- * created using the `instantsearch` factory function.
- * @fires Instantsearch#render This event is triggered each time a render is done
- */
-
-
-var InstantSearch =
-/*#__PURE__*/
-function (_EventEmitter) {
-  _inherits(InstantSearch, _EventEmitter);
-
-  function InstantSearch(options) {
-    var _this;
-
-    _classCallCheck(this, InstantSearch);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(InstantSearch).call(this));
-    var _options$indexName = options.indexName,
-        indexName = _options$indexName === void 0 ? null : _options$indexName,
-        numberLocale = options.numberLocale,
-        _options$searchParame = options.searchParameters,
-        searchParameters = _options$searchParame === void 0 ? {} : _options$searchParame,
-        _options$routing = options.routing,
-        routing = _options$routing === void 0 ? null : _options$routing,
-        searchFunction = options.searchFunction,
-        _options$stalledSearc = options.stalledSearchDelay,
-        stalledSearchDelay = _options$stalledSearc === void 0 ? 200 : _options$stalledSearc,
-        _options$searchClient = options.searchClient,
-        searchClient = _options$searchClient === void 0 ? null : _options$searchClient,
-        _options$insightsClie = options.insightsClient,
-        insightsClient = _options$insightsClie === void 0 ? null : _options$insightsClie;
-
-    if (indexName === null) {
-      throw new Error(withUsage('The `indexName` option is required.'));
-    }
-
-    if (searchClient === null) {
-      throw new Error(withUsage('The `searchClient` option is required.'));
-    }
-
-    if (typeof options.urlSync !== 'undefined') {
-      throw new Error(withUsage('The `urlSync` option was removed in InstantSearch.js 3. You may want to use the `routing` option.'));
-    }
-
-    if (typeof searchClient.search !== 'function') {
-      throw new Error("The `searchClient` must implement a `search` method.\n\nSee: https://www.algolia.com/doc/guides/building-search-ui/going-further/backend-search/in-depth/backend-instantsearch/js/");
-    }
-
-    if (typeof searchClient.addAlgoliaAgent === 'function') {
-      searchClient.addAlgoliaAgent("instantsearch.js (".concat(__WEBPACK_IMPORTED_MODULE_5__version__["a" /* default */], ")"));
-    }
-
-    if (insightsClient && typeof insightsClient !== 'function') {
-      throw new Error('The provided `insightsClient` must be a function.');
-    }
-
-    _this.client = searchClient;
-    _this.insightsClient = insightsClient;
-    _this.helper = null;
-    _this.indexName = indexName;
-    _this.searchParameters = _objectSpread({}, searchParameters, {
-      index: indexName
-    });
-    _this.widgets = [];
-    _this.templatesConfig = {
-      helpers: Object(__WEBPACK_IMPORTED_MODULE_6__createHelpers__["a" /* default */])({
-        numberLocale: numberLocale
-      }),
-      compileOptions: {}
-    };
-    _this._stalledSearchDelay = stalledSearchDelay;
-
-    if (searchFunction) {
-      _this._searchFunction = searchFunction;
-    }
-
-    if (routing === true) _this.routing = ROUTING_DEFAULT_OPTIONS;else if (Object(__WEBPACK_IMPORTED_MODULE_7__utils__["p" /* isPlainObject */])(routing)) _this.routing = _objectSpread({}, ROUTING_DEFAULT_OPTIONS, {}, routing);
-    return _this;
-  }
-  /**
-   * Adds a widget. This can be done before and after InstantSearch has been started. Adding a
-   * widget after InstantSearch started is considered **EXPERIMENTAL** and therefore
-   * it is possibly buggy, if you find anything please
-   * [open an issue](https://github.com/algolia/instantsearch.js/issues/new?title=Problem%20with%20hot%20addWidget).
-   * @param  {Widget} widget The widget to add to InstantSearch. Widgets are simple objects
-   * that have methods that map the search life cycle in a UI perspective. Usually widgets are
-   * created by [widget factories](widgets.html) like the one provided with InstantSearch.js.
-   * @return {undefined} This method does not return anything
-   */
-
-
-  _createClass(InstantSearch, [{
-    key: "addWidget",
-    value: function addWidget(widget) {
-      this.addWidgets([widget]);
-    }
-    /**
-     * Adds multiple widgets. This can be done before and after the InstantSearch has been started. This feature
-     * is considered **EXPERIMENTAL** and therefore it is possibly buggy, if you find anything please
-     * [open an issue](https://github.com/algolia/instantsearch.js/issues/new?title=Problem%20with%20addWidgets).
-     * @param  {Widget[]} widgets The array of widgets to add to InstantSearch.
-     * @return {undefined} This method does not return anything
-     */
-
-  }, {
-    key: "addWidgets",
-    value: function addWidgets(widgets) {
-      var _this2 = this;
-
-      if (!Array.isArray(widgets)) {
-        throw new Error(withUsage('The `addWidgets` method expects an array of widgets. Please use `addWidget`.'));
-      } // The routing manager widget is always added manually at the last position.
-      // By removing it from the last position and adding it back after, we ensure
-      // it keeps this position.
-      // fixes #3148
-
-
-      var lastWidget = this.widgets.pop();
-      widgets.forEach(function (widget) {
-        // Add the widget to the list of widget
-        if (widget.render === undefined && widget.init === undefined) {
-          throw new Error("The widget definition expects a `render` and/or an `init` method.\n\nSee: https://www.algolia.com/doc/guides/building-search-ui/widgets/create-your-own-widgets/js/");
-        }
-
-        _this2.widgets.push(widget);
-      }); // Second part of the fix for #3148
-
-      if (lastWidget) this.widgets.push(lastWidget); // Init the widget directly if instantsearch has been already started
-
-      if (this.started && Boolean(widgets.length)) {
-        this.searchParameters = this.widgets.reduce(enhanceConfiguration, _objectSpread({}, this.helper.state));
-        this.helper.setState(this.searchParameters);
-        widgets.forEach(function (widget) {
-          if (widget.init) {
-            widget.init({
-              state: _this2.helper.state,
-              helper: _this2.helper,
-              templatesConfig: _this2.templatesConfig,
-              createURL: _this2._createAbsoluteURL,
-              onHistoryChange: _this2._onHistoryChange,
-              instantSearchInstance: _this2
-            });
-          }
-        });
-        this.helper.search();
-      }
-    }
-    /**
-     * Removes a widget. This can be done after the InstantSearch has been started. This feature
-     * is considered **EXPERIMENTAL** and therefore it is possibly buggy, if you find anything please
-     * [open an issue](https://github.com/algolia/instantsearch.js/issues/new?title=Problem%20with%20removeWidget).
-     * @param  {Widget} widget The widget instance to remove from InstantSearch. This widget must implement a `dispose()` method in order to be gracefully removed.
-     * @return {undefined} This method does not return anything
-     */
-
-  }, {
-    key: "removeWidget",
-    value: function removeWidget(widget) {
-      this.removeWidgets([widget]);
-    }
-    /**
-     * Removes multiple widgets. This can be done only after the InstantSearch has been started. This feature
-     * is considered **EXPERIMENTAL** and therefore it is possibly buggy, if you find anything please
-     * [open an issue](https://github.com/algolia/instantsearch.js/issues/new?title=Problem%20with%20addWidgets).
-     * @param  {Widget[]} widgets Array of widgets instances to remove from InstantSearch.
-     * @return {undefined} This method does not return anything
-     */
-
-  }, {
-    key: "removeWidgets",
-    value: function removeWidgets(widgets) {
-      var _this3 = this;
-
-      if (!Array.isArray(widgets)) {
-        throw new Error(withUsage('The `removeWidgets` method expects an array of widgets. Please use `removeWidget`.'));
-      }
-
-      widgets.forEach(function (widget) {
-        if (!_this3.widgets.includes(widget) || typeof widget.dispose !== 'function') {
-          throw new Error("The `dispose` method is required to remove the widget.\n\nSee: https://www.algolia.com/doc/guides/building-search-ui/widgets/create-your-own-widgets/js/#the-widget-lifecycle-and-api");
-        }
-
-        _this3.widgets = _this3.widgets.filter(function (w) {
-          return w !== widget;
-        });
-        var nextState = widget.dispose({
-          helper: _this3.helper,
-          state: _this3.helper.state
-        }); // re-compute remaining widgets to the state
-        // in a case two widgets were using the same configuration but we removed one
-
-        if (nextState) {
-          _this3.searchParameters = _this3.widgets.reduce(enhanceConfiguration, _objectSpread({}, nextState));
-
-          _this3.helper.setState(_this3.searchParameters);
-        }
-      }); // If there's multiple call to `removeWidget()` let's wait until they are all made
-      // and then check for widgets.length & make a search on next tick
-      //
-      // This solves an issue where you unmount a page and removing widget by widget
-
-      setTimeout(function () {
-        // no need to trigger a search if we don't have any widgets left
-        if (_this3.widgets.length > 0) {
-          _this3.helper.search();
-        }
-      }, 0);
-    }
-    /**
-     * Clears the cached answers from Algolia and triggers a new search.
-     *
-     * @return {undefined} Does not return anything
-     */
-
-  }, {
-    key: "refresh",
-    value: function refresh() {
-      if (this.helper) {
-        this.helper.clearCache().search();
-      }
-    }
-    /**
-     * Ends the initialization of InstantSearch.js and triggers the
-     * first search. This method should be called after all widgets have been added
-     * to the instance of InstantSearch.js. InstantSearch.js also supports adding and removing
-     * widgets after the start as an **EXPERIMENTAL** feature.
-     *
-     * @return {undefined} Does not return anything
-     */
-
-  }, {
-    key: "start",
-    value: function start() {
-      var _this4 = this;
-
-      if (this.started) {
-        throw new Error(withUsage('The `start` method has already been called once.'));
-      }
-
-      if (this.routing) {
-        var routingManager = new __WEBPACK_IMPORTED_MODULE_2__RoutingManager__["a" /* default */](_objectSpread({}, this.routing, {
-          instantSearchInstance: this
-        }));
-        this._onHistoryChange = routingManager.onHistoryChange.bind(routingManager);
-        this._createURL = routingManager.createURL.bind(routingManager);
-        this._createAbsoluteURL = this._createURL;
-        this.widgets.push(routingManager);
-      } else {
-        this._createURL = defaultCreateURL;
-        this._createAbsoluteURL = defaultCreateURL;
-        this._onHistoryChange = __WEBPACK_IMPORTED_MODULE_7__utils__["r" /* noop */];
-      }
-
-      this.searchParameters = this.widgets.reduce(enhanceConfiguration, this.searchParameters);
-      var helper = __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper___default()(this.client, this.searchParameters.index || this.indexName, this.searchParameters);
-
-      if (this._searchFunction) {
-        this._mainHelperSearch = helper.search.bind(helper);
-
-        helper.search = function () {
-          var helperSearchFunction = __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper___default()({
-            search: function search() {
-              return new Promise(__WEBPACK_IMPORTED_MODULE_7__utils__["r" /* noop */]);
-            }
-          }, helper.state.index, helper.state);
-          helperSearchFunction.once('search', function (state) {
-            helper.overrideStateWithoutTriggeringChangeEvent(state);
-
-            _this4._mainHelperSearch();
-          });
-
-          _this4._searchFunction(helperSearchFunction);
-        };
-      }
-
-      this.helper = helper;
-
-      this._init(helper.state, this.helper);
-
-      this.helper.on('result', this._render.bind(this, this.helper));
-      this.helper.on('error', function (e) {
-        _this4.emit('error', e);
-      });
-      this._searchStalledTimer = null;
-      this._isSearchStalled = true;
-      this.helper.search();
-      this.helper.on('search', function () {
-        if (!_this4._isSearchStalled && !_this4._searchStalledTimer) {
-          _this4._searchStalledTimer = setTimeout(function () {
-            _this4._isSearchStalled = true;
-
-            _this4._render(_this4.helper, _this4.helper.lastResults, _this4.helper.lastResults._state);
-          }, _this4._stalledSearchDelay);
-        }
-      }); // track we started the search if we add more widgets,
-      // to init them directly after add
-
-      this.started = true;
-    }
-    /**
-     * Removes all widgets without triggering a search afterwards. This is an **EXPERIMENTAL** feature,
-     * if you find an issue with it, please
-     * [open an issue](https://github.com/algolia/instantsearch.js/issues/new?title=Problem%20with%20dispose).
-     * @return {undefined} This method does not return anything
-     */
-
-  }, {
-    key: "dispose",
-    value: function dispose() {
-      this.removeWidgets(this.widgets); // You can not start an instance two times, therefore a disposed instance needs to set started as false
-      // otherwise this can not be restarted at a later point.
-
-      this.started = false; // The helper needs to be reset to perform the next search from a fresh state.
-      // If not reset, it would use the state stored before calling `dispose()`.
-
-      this.helper.removeAllListeners();
-      this.helper = null;
-    }
-  }, {
-    key: "createURL",
-    value: function createURL(params) {
-      if (!this._createURL) {
-        throw new Error('The `start` method needs to be called before `createURL`.');
-      }
-
-      return this._createURL(this.helper.state.setQueryParameters(params));
-    }
-  }, {
-    key: "_render",
-    value: function _render(helper, results, state) {
-      var _this5 = this;
-
-      if (!this.helper.hasPendingRequests()) {
-        clearTimeout(this._searchStalledTimer);
-        this._searchStalledTimer = null;
-        this._isSearchStalled = false;
-      }
-
-      this.widgets.forEach(function (widget) {
-        if (!widget.render) {
-          return;
-        }
-
-        widget.render({
-          templatesConfig: _this5.templatesConfig,
-          results: results,
-          state: state,
-          helper: helper,
-          createURL: _this5._createAbsoluteURL,
-          instantSearchInstance: _this5,
-          searchMetadata: {
-            isSearchStalled: _this5._isSearchStalled
-          }
-        });
-      });
-      /**
-       * Render is triggered when the rendering of the widgets has been completed
-       * after a search.
-       * @event InstantSearch#render
-       */
-
-      this.emit('render');
-    }
-  }, {
-    key: "_init",
-    value: function _init(state, helper) {
-      var _this6 = this;
-
-      this.widgets.forEach(function (widget) {
-        if (widget.init) {
-          widget.init({
-            state: state,
-            helper: helper,
-            templatesConfig: _this6.templatesConfig,
-            createURL: _this6._createAbsoluteURL,
-            onHistoryChange: _this6._onHistoryChange,
-            instantSearchInstance: _this6
-          });
-        }
-      });
-    }
-  }]);
-
-  return InstantSearch;
-}(__WEBPACK_IMPORTED_MODULE_1_events___default.a);
-
-function enhanceConfiguration(configuration, widgetDefinition) {
-  if (!widgetDefinition.getConfiguration) {
-    return configuration;
-  } // Get the relevant partial configuration asked by the widget
-
-
-  var partialConfiguration = widgetDefinition.getConfiguration(configuration);
-
-  if (!partialConfiguration) {
-    return configuration;
-  }
-
-  if (!partialConfiguration.hierarchicalFacets) {
-    return Object(__WEBPACK_IMPORTED_MODULE_7__utils__["q" /* mergeDeep */])(configuration, partialConfiguration);
-  }
-
-  var hierarchicalFacets = partialConfiguration.hierarchicalFacets,
-      partialWithoutHierarchcialFacets = _objectWithoutProperties(partialConfiguration, ["hierarchicalFacets"]); // The `mergeDeep` function uses a `uniq` function under the hood, but the
-  // implementation does not support arrays of objects (we also had the issue
-  // with the Lodash version). The `hierarchicalFacets` attribute is an array
-  // of objects, which means that this attribute is never deduplicated. It
-  // becomes problematic when widgets are frequently added/removed, since the
-  // function `enhanceConfiguration` is called at each operation.
-  // https://github.com/algolia/instantsearch.js/issues/3278
-
-
-  var configurationWithHierarchicalFacets = _objectSpread({}, configuration, {
-    hierarchicalFacets: hierarchicalFacets.reduce(function (facets, facet) {
-      var index = Object(__WEBPACK_IMPORTED_MODULE_7__utils__["j" /* findIndex */])(facets, function (_) {
-        return _.name === facet.name;
-      });
-
-      if (index === -1) {
-        return facets.concat(facet);
-      }
-
-      var nextFacets = facets.slice();
-      nextFacets.splice(index, 1, facet);
-      return nextFacets;
-    }, configuration.hierarchicalFacets || [])
-  });
-
-  return Object(__WEBPACK_IMPORTED_MODULE_7__utils__["q" /* mergeDeep */])(configurationWithHierarchicalFacets, partialWithoutHierarchcialFacets);
-}
-/* harmony default export */ __webpack_exports__["a"] = (InstantSearch);
-
-/***/ }),
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
 /* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -75552,8029 +73551,2332 @@ module.exports = '2.28.0';
 
 
 /***/ }),
-/* 383 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ('3.6.0');
-
-/***/ }),
-/* 384 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__highlight__ = __webpack_require__(385);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__snippet__ = __webpack_require__(387);
-/* unused harmony namespace reexport */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__highlight__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__snippet__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__insights__ = __webpack_require__(316);
-/* unused harmony reexport insights */
-
-
-
-
-
-
-/***/ }),
-/* 385 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = highlight;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_suit__ = __webpack_require__(386);
-
-
-
-var suit = Object(__WEBPACK_IMPORTED_MODULE_2__lib_suit__["a" /* component */])('Highlight');
-function highlight(_ref) {
-  var attribute = _ref.attribute,
-      _ref$highlightedTagNa = _ref.highlightedTagName,
-      highlightedTagName = _ref$highlightedTagNa === void 0 ? 'mark' : _ref$highlightedTagNa,
-      hit = _ref.hit;
-  var attributeValue = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["k" /* getPropertyByPath */])(hit, "_highlightResult.".concat(attribute, ".value")) || '';
-  var className = suit({
-    descendantName: 'highlighted'
-  });
-  return attributeValue.replace(new RegExp(__WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPreTag, 'g'), "<".concat(highlightedTagName, " class=\"").concat(className, "\">")).replace(new RegExp(__WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPostTag, 'g'), "</".concat(highlightedTagName, ">"));
-}
-
-/***/ }),
-/* 386 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return component; });
-var NAMESPACE = 'ais';
-var component = function component(componentName) {
-  return function () {
-    var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-        descendantName = _ref.descendantName,
-        modifierName = _ref.modifierName;
-
-    var descendent = descendantName ? "-".concat(descendantName) : '';
-    var modifier = modifierName ? "--".concat(modifierName) : '';
-    return "".concat(NAMESPACE, "-").concat(componentName).concat(descendent).concat(modifier);
-  };
-};
-
-/***/ }),
-/* 387 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = snippet;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_suit__ = __webpack_require__(386);
-
-
-
-var suit = Object(__WEBPACK_IMPORTED_MODULE_2__lib_suit__["a" /* component */])('Snippet');
-function snippet(_ref) {
-  var attribute = _ref.attribute,
-      _ref$highlightedTagNa = _ref.highlightedTagName,
-      highlightedTagName = _ref$highlightedTagNa === void 0 ? 'mark' : _ref$highlightedTagNa,
-      hit = _ref.hit;
-  var attributeValue = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["k" /* getPropertyByPath */])(hit, "_snippetResult.".concat(attribute, ".value")) || '';
-  var className = suit({
-    descendantName: 'highlighted'
-  });
-  return attributeValue.replace(new RegExp(__WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPreTag, 'g'), "<".concat(highlightedTagName, " class=\"").concat(className, "\">")).replace(new RegExp(__WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPostTag, 'g'), "</".concat(highlightedTagName, ">"));
-}
-
-/***/ }),
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
 /* 388 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export AisAutocomplete */
-/* unused harmony export AisBreadcrumb */
-/* unused harmony export AisClearRefinements */
-/* unused harmony export AisConfigure */
-/* unused harmony export AisCurrentRefinements */
-/* unused harmony export AisHierarchicalMenu */
-/* unused harmony export AisHighlight */
-/* unused harmony export AisHits */
-/* unused harmony export AisHitsPerPage */
-/* unused harmony export AisInfiniteHits */
-/* unused harmony export AisInstantSearch */
-/* unused harmony export AisInstantSearchSsr */
-/* unused harmony export AisMenu */
-/* unused harmony export AisMenuSelect */
-/* unused harmony export AisNumericMenu */
-/* unused harmony export AisPagination */
-/* unused harmony export AisPanel */
-/* unused harmony export AisPoweredBy */
-/* unused harmony export AisQueryRuleContext */
-/* unused harmony export AisQueryRuleCustomData */
-/* unused harmony export AisRangeInput */
-/* unused harmony export AisRatingMenu */
-/* unused harmony export AisRefinementList */
-/* unused harmony export AisSearchBox */
-/* unused harmony export AisSnippet */
-/* unused harmony export AisSortBy */
-/* unused harmony export AisStateResults */
-/* unused harmony export AisStats */
-/* unused harmony export AisToggleRefinement */
-/* unused harmony export AisVoiceSearch */
-/* unused harmony export createInstantSearch */
-/* unused harmony export createWidgetMixin */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_instantsearch_js_es__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper__);
-var L=new Set;function P(e){L.has(e)||(L.add(e),console.warn(e))}var A=function(e){void 0===e&&(e={});var t=e.connector;return{inject:{instantSearchInstance:{name:"instantSearchInstance",default:function(){var e=this.$options._componentTag;throw new TypeError('It looks like you forgot to wrap your Algolia search component "<'+e+'>" inside of an "<ais-instant-search>" component.')}}},data:function(){return{state:null}},created:function(){if("function"==typeof t){this.factory=t(this.updateState,function(){}),this.widget=this.factory(this.widgetParams),this.instantSearchInstance.addWidget(this.widget);var e=this.instantSearchInstance,s=e.hydrated;if(!e.started&&s||this.$isServer){if("function"!=typeof this.instantSearchInstance.__forceRender)throw new Error("You are using server side rendering with <ais-instant-search> instead of <ais-instant-search-ssr>.");this.instantSearchInstance.__forceRender(this.widget)}}else!0!==t&&P("You are using the InstantSearch widget mixin, but didn't provide a connector.\nWhile this is technically possible, and will give you access to the Helper,\nit's not the recommended way of making custom components.\n\nIf you want to disable this message, pass { connector: true } to the mixin.\n\nRead more on using connectors: https://alg.li/vue-custom")},beforeDestroy:function(){this.widget&&this.widget.dispose&&this.instantSearchInstance.started&&this.instantSearchInstance.removeWidget(this.widget)},watch:{widgetParams:{handler:function(e){this.state=null,this.widget.dispose&&this.instantSearchInstance.started&&this.instantSearchInstance.removeWidget(this.widget),this.widget=this.factory(e),this.instantSearchInstance.addWidget(this.widget)},deep:!0}},methods:{updateState:function(e,t){void 0===e&&(e={}),t||(this.state=e)}}}};var x=function(e){var t=e.name;return{props:{classNames:{type:Object,default:void 0}},methods:{suit:function(e,s){var n=function(e,t,s){if(!e)throw new Error("You need to provide `widgetName` in your data");var n=["ais-"+e];return t&&n.push("-"+t),s&&n.push("--"+s),n.join("")}(t,e,s),i=this.classNames&&this.classNames[n];return i?[n,i].join(" "):n}}}},M={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("p",[e._v("This widget doesn't render anything without a filled in default slot.")]),e._v(" "),s("p",[e._v("query, function to refine and results are provided.")]),e._v(" "),s("pre",[e._v("refine: Function")]),e._v(" "),s("pre",[e._v('currentRefinement: "'+e._s(e.state.currentRefinement)+'"')]),e._v(" "),s("details",[e._m(0),e._v(" "),s("pre",[e._v(e._s(e.state.indices))])])],{refine:e.state.refine,currentRefinement:e.state.currentRefinement,indices:e.state.indices})],2):e._e()},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("summary",[t("code",[this._v("indices")]),this._v(":")])}],name:"AisAutocomplete",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["a" /* connectAutocomplete */]}),x({name:"Autocomplete"})],props:{indices:{type:Array,required:!1,default:void 0},escapeHTML:{type:Boolean,required:!1,default:!0}},computed:{widgetParams:function(){return{indices:this.indices,escapeHTML:this.escapeHTML}}}},I=function(e){var t=e.mapStateToCanRefine;return{inject:{emitter:{from:"instantSearchPanelEmitter",default:function(){return{$emit:function(){}}}}},data:function(){return{state:null,hasAlreadyEmitted:!1}},watch:{state:function(e,s){if(s&&e){var n=t(s),i=t(e);this.hasAlreadyEmitted&&n===i||(this.emitter.$emit("PANEL_CHANGE_EVENT",i),this.hasAlreadyEmitted=!0)}}}}},F={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.state.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("ul",{class:e.suit("list")},[s("li",{class:[e.suit("item"),!e.state.items.length&&e.suit("item","selected")]},[Boolean(e.state.items.length)?s("a",{class:e.suit("link"),attrs:{href:e.state.createURL()},on:{click:function(t){t.preventDefault(),e.state.refine()}}},[e._t("rootLabel",[e._v("Home")])],2):s("span",[e._t("rootLabel",[e._v("Home")])],2)]),e._v(" "),e._l(e.state.items,function(t,n){return s("li",{key:t.label,class:[e.suit("item"),e.isLastItem(n)&&e.suit("item","selected")]},[s("span",{class:e.suit("separator"),attrs:{"aria-hidden":"true"}},[e._t("separator",[e._v(">")])],2),e._v(" "),e.isLastItem(n)?s("span",[e._v(e._s(t.label))]):s("a",{class:e.suit("link"),attrs:{href:e.state.createURL(t.value)},on:{click:function(s){s.preventDefault(),e.state.refine(t.value)}}},[e._v(e._s(t.label))])])})],2)],{items:e.state.items,canRefine:e.state.canRefine,refine:e.state.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisBreadcrumb",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["b" /* connectBreadcrumb */]}),I({mapStateToCanRefine:function(e){return e.canRefine}}),x({name:"Breadcrumb"})],props:{attributes:{type:Array,required:!0},separator:{type:String,default:" > "},rootPath:{type:String,default:null},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{attributes:this.attributes,separator:this.separator,rootPath:this.rootPath,transformItems:this.transformItems}}},methods:{isLastItem:function(e){return this.state.items.length-1===e}}},k={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("button",{class:[e.suit("button"),!e.canRefine&&e.suit("button","disabled")],attrs:{type:"reset",disabled:!e.canRefine},on:{click:function(t){return t.preventDefault(),e.state.refine(t)}}},[e._t("resetLabel",[e._v("Clear refinements")])],2)],{canRefine:e.canRefine,refine:e.state.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisClearRefinements",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["c" /* connectClearRefinements */]}),I({mapStateToCanRefine:function(e){return e.hasRefinements}}),x({name:"ClearRefinements"})],props:{excludedAttributes:{type:Array},includedAttributes:{type:Array},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{includedAttributes:this.includedAttributes,excludedAttributes:this.excludedAttributes,transformItems:this.transformItems}},canRefine:function(){return this.state.hasRefinements}}},T={inheritAttrs:!1,name:"AisConfigure",mixins:[x({name:"Configure"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["d" /* connectConfigure */]})],computed:{widgetParams:function(){return{searchParameters:this.$attrs}}},render:function(e){return this.state&&this.$scopedSlots.default?e("div",{class:this.suit()},[this.$scopedSlots.default({refine:this.state.refine,searchParameters:this.state.widgetParams.searchParameters})]):null}},N={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),e.noRefinement&&e.suit("","noRefinement")]},[e._t("default",[s("ul",{class:e.suit("list")},e._l(e.state.items,function(t){return s("li",{key:t.attribute,class:e.suit("item")},[e._t("item",[s("span",{class:e.suit("label")},[e._v(e._s(e._f("capitalize")(t.label))+": ")]),e._v(" "),e._l(t.refinements,function(n){return s("span",{key:e.createItemKey(n),class:e.suit("category")},[e._t("refinement",[s("span",{class:e.suit("categoryLabel")},["query"===n.attribute?s("q",[e._v(e._s(n.label))]):[e._v(" "+e._s(n.label)+" ")]],2),e._v(" "),s("button",{class:e.suit("delete"),on:{click:function(e){t.refine(n)}}},[e._v(" ✕ ")])],{refine:t.refine,refinement:n,createURL:e.state.createURL})],2)})],{refine:t.refine,item:t,createURL:e.state.createURL})],2)}))],{refine:e.state.refine,items:e.state.items,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisCurrentRefinements",mixins:[x({name:"CurrentRefinements"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["e" /* connectCurrentRefinements */]}),I({mapStateToCanRefine:function(e){return e.items.length>0}})],props:{includedAttributes:{type:Array},excludedAttributes:{type:Array},transformItems:{type:Function,default:function(e){return e}}},computed:{noRefinement:function(){return this.state&&0===this.state.items.length},widgetParams:function(){return{includedAttributes:this.includedAttributes,excludedAttributes:this.excludedAttributes,transformItems:this.transformItems}}},methods:{createItemKey:function(e){var t=e.attribute,s=e.value;return[t,e.type,s,e.operator].join(":")}},filters:{capitalize:function(e){return e?e.toString().charAt(0).toLocaleUpperCase()+e.toString().slice(1):""}}},C={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("ul",{class:[e.suit("list"),e.level>0&&e.suit("list","child"),e.suit("list","lvl"+e.level)]},e._l(e.items,function(t){return s("li",{key:t.value,class:[e.suit("item"),t.data&&e.suit("item","parent"),t.isRefined&&e.suit("item","selected")]},[s("a",{class:e.suit("link"),attrs:{href:e.createURL(t.value)},on:{click:function(s){s.preventDefault(),e.refine(t.value)}}},[s("span",{class:e.suit("label")},[e._v(e._s(t.label))]),e._v(" "),s("span",{class:e.suit("count")},[e._v(e._s(t.count))])]),e._v(" "),t.data?s("hierarchical-menu-list",{attrs:{items:t.data,level:e.level+1,refine:e.refine,createURL:e.createURL,suit:e.suit}}):e._e()],1)}))},staticRenderFns:[],name:"HierarchicalMenuList",props:{items:{type:Array,required:!0},level:{type:Number,required:!0},refine:{type:Function,required:!0},createURL:{type:Function,required:!0},suit:{type:Function,required:!0}}},B=function(e){return e.items.length>0},U={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("hierarchical-menu-list",{attrs:{items:e.state.items,level:0,refine:e.state.refine,createURL:e.state.createURL,suit:e.suit}}),e._v(" "),e.showMore?s("button",{class:[e.suit("showMore"),!e.state.canToggleShowMore&&e.suit("showMore","disabled")],attrs:{disabled:!e.state.canToggleShowMore},on:{click:function(t){return t.preventDefault(),e.state.toggleShowMore(t)}}},[e._t("showMoreLabel",[e._v(e._s(e.state.isShowingMore?"Show less":"Show more"))],{isShowingMore:e.state.isShowingMore})],2):e._e()],{items:e.state.items,canRefine:e.canRefine,canToggleShowMore:e.state.canToggleShowMore,isShowingMore:e.state.isShowingMore,refine:e.state.refine,createURL:e.state.createURL,toggleShowMore:e.state.toggleShowMore})],2):e._e()},staticRenderFns:[],name:"AisHierarchicalMenu",mixins:[x({name:"HierarchicalMenu"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["f" /* connectHierarchicalMenu */]}),I({mapStateToCanRefine:B})],components:{HierarchicalMenuList:C},props:{attributes:{type:Array,required:!0},limit:{type:Number,default:10},showMoreLimit:{type:Number,default:20},showMore:{type:Boolean,default:!1},sortBy:{type:[Array,Function],default:function(){return["name:asc"]}},separator:{type:String,default:" > "},rootPath:{type:String,default:null},showParentLevel:{type:Boolean,default:!0},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{attributes:this.attributes,limit:this.limit,showMore:this.showMore,showMoreLimit:this.showMoreLimit,separator:this.separator,rootPath:this.rootPath,showParentLevel:this.showParentLevel,sortBy:this.sortBy,transformItems:this.transformItems}},canRefine:function(){return B(this.state)}}},$=function(e,t){return t.split(".").reduce(function(e,t){return e&&e[t]},e)},E={render:function(){var e=this.$createElement;return(this._self._c||e)("span",{class:this.suit(),domProps:{innerHTML:this._s(this.innerHTML)}})},staticRenderFns:[],name:"AisHighlight",mixins:[x({name:"Highlight"})],props:{hit:{type:Object,required:!0},attribute:{type:String,required:!0},highlightedTagName:{type:String,default:"mark"}},computed:{innerHTML:function(){var e=$(this.hit,"_highlightResult."+this.attribute+".value")||"";return"production"!=="development"&&""===e&&P('The "'+this.attribute+'" attribute might currently not be configured to be highlighted in Algolia.See https://www.algolia.com/doc/api-reference/api-parameters/attributesToHighlight/.'),e.replace(new RegExp("<mark>","g"),"<"+this.highlightedTagName+' class="'+this.suit("highlighted")+'">').replace(new RegExp("</mark>","g"),"</"+this.highlightedTagName+">")}}},q={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("ol",{class:e.suit("list")},e._l(e.items,function(t,n){return s("li",{key:t.objectID,class:e.suit("item")},[e._t("item",[e._v("objectID: "+e._s(t.objectID)+", index: "+e._s(n))],{item:t,index:n,insights:e.state.insights})],2)}))],{items:e.items,insights:e.state.insights})],2):e._e()},staticRenderFns:[],name:"AisHits",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["h" /* connectHitsWithInsights */]}),x({name:"Hits"})],props:{escapeHTML:{type:Boolean,default:!0},transformItems:{type:Function,default:function(e){return e}}},computed:{items:function(){return this.state.hits},widgetParams:function(){return{escapeHTML:this.escapeHTML,transformItems:this.transformItems}}}},H={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("select",{directives:[{name:"model",rawName:"v-model",value:e.selected,expression:"selected"}],class:e.suit("select"),on:{change:[function(t){var s=Array.prototype.filter.call(t.target.options,function(e){return e.selected}).map(function(e){return"_value"in e?e._value:e.value});e.selected=t.target.multiple?s:s[0]},e.handleChange]}},e._l(e.state.items,function(t){return s("option",{key:t.value,class:e.suit("option"),domProps:{value:t.value}},[e._v(e._s(t.label))])}))],{items:e.state.items,refine:e.state.refine,hasNoResults:e.state.hasNoResults})],2):e._e()},staticRenderFns:[],name:"AisHitsPerPage",mixins:[x({name:"HitsPerPage"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["g" /* connectHitsPerPage */]}),I({mapStateToCanRefine:function(e){return!e.hasNoResults}})],props:{items:{type:Array,required:!0,default:function(){return[]}},transformItems:{type:Function,default:function(e){return e}}},data:function(){return{selected:this.items.find(function(e){return!0===e.default}).value}},computed:{widgetParams:function(){return{items:this.items,transformItems:this.transformItems}}},methods:{handleChange:function(){this.state.refine(this.selected)}}};function V(e){for(var t=arguments,s=1;s<arguments.length;s++){var n=null!=t[s]?t[s]:{},i=Object.keys(n);"function"==typeof Object.getOwnPropertySymbols&&(i=i.concat(Object.getOwnPropertySymbols(n).filter(function(e){return Object.getOwnPropertyDescriptor(n,e).enumerable}))),i.forEach(function(t){D(e,t,n[t])})}return e}function D(e,t,s){return t in e?Object.defineProperty(e,t,{value:s,enumerable:!0,configurable:!0,writable:!0}):e[t]=s,e}var z=function(e){return V({mixins:[x({name:"InstantSearch"})],provide:function(){return{instantSearchInstance:this.instantSearchInstance}},watch:{searchClient:function(e){this.instantSearchInstance.helper.setClient(e).search()},indexName:function(e){this.instantSearchInstance.helper.setIndex(e).search()},stalledSearchDelay:function(e){this.instantSearchInstance._stalledSearchDelay=e},routing:function(){throw new Error("routing configuration can not be changed dynamically at this point.\n\nPlease open a new issue: https://github.com/algolia/vue-instantsearch/issues/new?template=feature.md")},searchFunction:function(e){this.instantSearchInstance._searchFunction=e}},created:function(){var e=this.instantSearchInstance.client;"function"==typeof e.addAlgoliaAgent&&(e.addAlgoliaAgent("Vue ("+__WEBPACK_IMPORTED_MODULE_1_vue___default.a.version+")"),e.addAlgoliaAgent("Vue InstantSearch (2.4.0)"))},mounted:function(){var e=this;this.$nextTick(function(){e.instantSearchInstance.started||e.instantSearchInstance.start()})},beforeDestroy:function(){this.instantSearchInstance.started&&(this.instantSearchInstance.dispose(),this.instantSearchInstance.started=!1,this.instantSearchInstance.helper=null),this.instantSearchInstance.hydrated=!1}},e)},j="Vue InstantSearch: You used the prop api-key or app-id.\nThese have been replaced by search-client.\n\nSee more info here: https://www.algolia.com/doc/api-reference/widgets/instantsearch/vue/#widget-param-search-client",O=z({name:"AisInstantSearch",props:{searchClient:{type:Object,required:!0},insightsClient:{type:Function,required:!1},indexName:{type:String,required:!0},routing:{default:null,validator:function(e){return!("boolean"==typeof e||!e.router||!e.stateMapping)||(P("routing should be an object, with `router` and `stateMapping`. See https://www.algolia.com/doc/api-reference/widgets/instantsearch/vue/#widget-param-routing"),!1)}},stalledSearchDelay:{type:Number,default:200},searchFunction:{type:Function,default:null},apiKey:{type:String,default:null,validator:function(e){return e&&P(j),!1}},appId:{type:String,default:null,validator:function(e){return e&&P(j),!1}}},data:function(){return{instantSearchInstance:Object(__WEBPACK_IMPORTED_MODULE_2_instantsearch_js_es__["a" /* default */])({searchClient:this.searchClient,insightsClient:this.insightsClient,indexName:this.indexName,routing:this.routing,stalledSearchDelay:this.stalledSearchDelay,searchFunction:this.searchFunction})}},render:function(e){var t;return e("div",{class:(t={},t[this.suit()]=!0,t[this.suit("","ssr")]=!1,t)},this.$slots.default)}}),Q=z({name:"AisInstantSearchSsr",inject:{$_ais:{default:function(){throw new Error("`rootMixin` is required when using SSR.")}}},data:function(){return{instantSearchInstance:this.$_ais}},render:function(e){var t;return e("div",{class:(t={},t[this.suit()]=!0,t[this.suit("","ssr")]=!0,t)},this.$slots.default)}}),Y={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e.showPrevious?e._t("loadPrevious",[s("button",{class:[e.suit("loadPrevious"),e.state.isFirstPage&&e.suit("loadPrevious","disabled")],attrs:{disabled:e.state.isFirstPage},on:{click:function(t){e.refinePrevious()}}},[e._v("Show previous results")])],{refinePrevious:e.refinePrevious,page:e.state.results.page,isFirstPage:e.state.isFirstPage}):e._e(),e._v(" "),e._t("default",[s("ol",{class:e.suit("list")},e._l(e.items,function(t,n){return s("li",{key:t.objectID,class:e.suit("item")},[e._t("item",[e._v("objectID: "+e._s(t.objectID)+", index: "+e._s(n))],{item:t,index:n,insights:e.state.insights})],2)})),e._v(" "),e._t("loadMore",[s("button",{class:[e.suit("loadMore"),e.state.isLastPage&&e.suit("loadMore","disabled")],attrs:{disabled:e.state.isLastPage},on:{click:function(t){e.refineNext()}}},[e._v("Show more results")])],{refineNext:e.refineNext,refine:e.refineNext,page:e.state.results.page,isLastPage:e.state.isLastPage})],{items:e.items,results:e.state.results,isLastPage:e.state.isLastPage,refinePrevious:e.refinePrevious,refineNext:e.refineNext,refine:e.refineNext,insights:e.state.insights})],2):e._e()},staticRenderFns:[],name:"AisInfiniteHits",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["i" /* connectInfiniteHitsWithInsights */]}),x({name:"InfiniteHits"})],props:{showPrevious:{type:Boolean,default:!1},escapeHTML:{type:Boolean,default:!0},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{showPrevious:this.showPrevious,escapeHTML:this.escapeHTML,transformItems:this.transformItems}},items:function(){return this.state.hits}},methods:{refinePrevious:function(){this.state.showPrevious()},refineNext:function(){this.state.showMore()}}},W={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.state.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("ul",{class:e.suit("list")},e._l(e.state.items,function(t){return s("li",{key:t.value,class:[e.suit("item"),t.isRefined&&e.suit("item","selected")]},[s("a",{class:e.suit("link"),attrs:{href:e.state.createURL(t.value)},on:{click:function(s){s.preventDefault(),e.state.refine(t.value)}}},[s("span",{class:e.suit("label")},[e._v(e._s(t.label))]),e._v(" "),s("span",{class:e.suit("count")},[e._v(e._s(t.count))])])])})),e._v(" "),e.showShowMoreButton?s("button",{class:[e.suit("showMore"),!e.state.canToggleShowMore&&e.suit("showMore","disabled")],attrs:{disabled:!e.state.canToggleShowMore},on:{click:function(t){t.preventDefault(),e.state.toggleShowMore()}}},[e._t("showMoreLabel",[e._v(e._s(e.state.isShowingMore?"Show less":"Show more"))],{isShowingMore:e.state.isShowingMore})],2):e._e()],{items:e.state.items,canRefine:e.state.canRefine,canToggleShowMore:e.state.canToggleShowMore,isShowingMore:e.state.isShowingMore,refine:e.state.refine,createURL:e.state.createURL,toggleShowMore:e.state.toggleShowMore})],2):e._e()},staticRenderFns:[],name:"AisMenu",mixins:[x({name:"Menu"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["j" /* connectMenu */]}),I({mapStateToCanRefine:function(e){return e.canRefine}})],props:{attribute:{type:String,required:!0},limit:{type:Number,default:10},showMoreLimit:{type:Number,default:20},showMore:{type:Boolean,default:!1},sortBy:{type:[Array,Function],default:function(){return["count:desc","name:asc"]}},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{attribute:this.attribute,limit:this.limit,showMore:this.showMore,showMoreLimit:this.showMoreLimit,sortBy:this.sortBy,transformItems:this.transformItems}},showShowMoreButton:function(){return this.state.canRefine&&this.showMore}}},G={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.state.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("select",{class:e.suit("select"),on:{change:function(t){e.refine(t.currentTarget.value)}}},[s("option",{class:e.suit("option"),attrs:{value:""}},[e._t("defaultOption",[e._v("See all")])],2),e._v(" "),e._l(e.state.items,function(t){return s("option",{key:t.value,class:e.suit("option"),domProps:{value:t.value,selected:t.isRefined}},[e._t("item",[e._v(e._s(t.label)+" ("+e._s(t.count)+")")],{item:t})],2)})],2)],{items:e.state.items,canRefine:e.state.canRefine,refine:e.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisMenuSelect",mixins:[x({name:"MenuSelect"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["j" /* connectMenu */]}),I({mapStateToCanRefine:function(e){return e.canRefine}})],props:{attribute:{type:String,required:!0},limit:{type:Number,default:10},sortBy:{type:[Array,Function],default:function(){return["name:asc"]}},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{attribute:this.attribute,limit:this.limit,sortBy:this.sortBy,transformItems:this.transformItems}}},methods:{refine:function(e){this.state.refine(e)}}},K={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("ul",{class:[e.suit("list")]},e._l(e.state.items,function(t){return s("li",{key:t.label,class:[e.suit("item"),t.isRefined&&e.suit("item","selected")]},[s("label",{class:e.suit("label")},[s("input",{class:e.suit("radio"),attrs:{type:"radio",name:e.attribute},domProps:{value:t.value,checked:t.isRefined},on:{change:function(t){e.state.refine(t.target.value)}}}),e._v(" "),s("span",{class:e.suit("labelText")},[e._v(e._s(t.label))])])])}))],{items:e.state.items,canRefine:e.canRefine,refine:e.state.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisNumericMenu",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["k" /* connectNumericMenu */]}),x({name:"NumericMenu"}),I({mapStateToCanRefine:function(e){return!e.hasNoResults}})],props:{attribute:{type:String,required:!0},items:{type:Array,required:!0},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{attribute:this.attribute,transformItems:this.transformItems,items:this.items}},canRefine:function(){return!this.state.hasNoResults}}},J={render:function(){var e,t,s,n,i=this,a=i.$createElement,r=i._self._c||a;return i.state?r("div",{class:i.suit()},[i._t("default",[r("ul",{class:i.suit("list")},[i.showFirst?r("li",{class:(e={},e[i.suit("item")]=!0,e[i.suit("item","firstPage")]=!0,e[i.suit("item","disabled")]=i.state.isFirstPage,e)},[i._t("first",[i.state.isFirstPage?[r("span",{class:i.suit("link"),attrs:{"aria-label":"First"}},[i._v("‹‹")])]:[r("a",{class:i.suit("link"),attrs:{"aria-label":"First",href:i.state.createURL(0)},on:{click:function(e){e.preventDefault(),i.refine(0)}}},[i._v("‹‹")])]],{createURL:function(){return i.state.createURL(0)},isFirstPage:i.state.isFirstPage,refine:function(){return i.refine(0)}})],2):i._e(),i._v(" "),i.showPrevious?r("li",{class:(t={},t[i.suit("item")]=!0,t[i.suit("item","previousPage")]=!0,t[i.suit("item","disabled")]=i.state.isFirstPage,t)},[i._t("previous",[i.state.isFirstPage?[r("span",{class:i.suit("link"),attrs:{"aria-label":"Previous"}},[i._v("‹")])]:[r("a",{class:i.suit("link"),attrs:{"aria-label":"Previous",href:i.state.createURL(i.state.currentRefinement-1)},on:{click:function(e){e.preventDefault(),i.refine(i.state.currentRefinement-1)}}},[i._v("‹")])]],{createURL:function(){return i.state.createURL(i.state.currentRefinement-1)},isFirstPage:i.state.isFirstPage,refine:function(){return i.refine(i.state.currentRefinement-1)}})],2):i._e(),i._v(" "),i._l(i.state.pages,function(e){var t;return r("li",{key:e,class:(t={},t[i.suit("item")]=!0,t[i.suit("item","selected")]=i.state.currentRefinement===e,t)},[i._t("item",[r("a",{class:i.suit("link"),attrs:{href:i.state.createURL(e)},on:{click:function(t){t.preventDefault(),i.refine(e)}}},[i._v(i._s(e+1))])],{page:e,createURL:function(){return i.state.createURL(e)},isFirstPage:i.state.isFirstPage,isLastPage:i.state.isLastPage,refine:function(){return i.refine(e)}})],2)}),i._v(" "),i.showNext?r("li",{class:(s={},s[i.suit("item")]=!0,s[i.suit("item","nextPage")]=!0,s[i.suit("item","disabled")]=i.state.isLastPage,s)},[i._t("next",[i.state.isLastPage?[r("span",{class:i.suit("link"),attrs:{"aria-label":"Next"}},[i._v("›")])]:[r("a",{class:i.suit("link"),attrs:{"aria-label":"Next",href:i.state.createURL(i.state.currentRefinement+1)},on:{click:function(e){e.preventDefault(),i.refine(i.state.currentRefinement+1)}}},[i._v("›")])]],{createURL:function(){return i.state.createURL(i.state.currentRefinement+1)},isLastPage:i.state.isLastPage,refine:function(){return i.refine(i.state.currentRefinement+1)}})],2):i._e(),i._v(" "),i.showLast?r("li",{class:(n={},n[i.suit("item")]=!0,n[i.suit("item","lastPage")]=!0,n[i.suit("item","disabled")]=i.state.isLastPage,n)},[i._t("last",[i.state.isLastPage?[r("span",{class:i.suit("link"),attrs:{"aria-label":"Last"}},[i._v("››")])]:[r("a",{class:i.suit("link"),attrs:{"aria-label":"Last",href:i.state.createURL(i.state.nbPages-1)},on:{click:function(e){e.preventDefault(),i.refine(i.state.nbPages-1)}}},[i._v("››")])]],{createURL:function(){return i.state.createURL(i.state.nbPages-1)},isLastPage:i.state.isLastPage,refine:function(){return i.refine(i.state.nbPages-1)}})],2):i._e()],2)],{refine:i.refine,createURL:i.state.createURL,currentRefinement:i.state.currentRefinement,nbHits:i.state.nbHits,nbPages:i.state.nbPages,pages:i.state.pages,isFirstPage:i.state.isFirstPage,isLastPage:i.state.isLastPage})],2):i._e()},staticRenderFns:[],name:"AisPagination",mixins:[x({name:"Pagination"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["l" /* connectPagination */]}),I({mapStateToCanRefine:function(e){return e.nbPages>1}})],props:{padding:{type:Number,default:3,validator:function(e){return e>0}},totalPages:{type:Number,default:void 0,validator:function(e){return e>0}},showFirst:{type:Boolean,default:!0},showLast:{type:Boolean,default:!0},showNext:{type:Boolean,default:!0},showPrevious:{type:Boolean,default:!0}},computed:{widgetParams:function(){return{padding:this.padding,totalPages:this.totalPages}}},methods:{refine:function(e){var t=Math.min(Math.max(e,0),this.state.nbPages-1);this.state.refine(t),this.$emit("page-change",t)}}},X={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("div",{class:[e.suit(),!e.canRefine&&e.suit("","noRefinement")]},[e.$slots.header||e.$scopedSlots.header?s("div",{class:e.suit("header")},[e._t("header",null,{hasRefinements:e.canRefine})],2):e._e(),e._v(" "),s("div",{class:e.suit("body")},[e._t("default",null,{hasRefinements:e.canRefine})],2),e._v(" "),e.$slots.footer||e.$scopedSlots.footer?s("div",{class:e.suit("footer")},[e._t("footer",null,{hasRefinements:e.canRefine})],2):e._e()])},staticRenderFns:[],name:"AisPanel",mixins:[x({name:"Panel"}),{props:{emitter:{type:Object,required:!1,default:function(){return new __WEBPACK_IMPORTED_MODULE_1_vue___default.a({name:"PanelProvider"})}}},provide:function(){var e;return(e={}).instantSearchPanelEmitter=this.emitter,e},data:function(){return{canRefine:!0}},created:function(){var e=this;this.emitter.$on("PANEL_CHANGE_EVENT",function(t){e.updateCanRefine(t)})},beforeDestroy:function(){this.emitter.$destroy()},methods:{updateCanRefine:function(e){this.canRefine=e}}}]},Z={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("div",{class:e.suit()},[s("a",{class:e.suit("link"),attrs:{href:e.algoliaUrl,target:"_blank",rel:"noopener","aria-label":"search by Algolia"}},[s("svg",{class:[e.suit("logo"),e.suit("",e.theme)],staticStyle:{height:"1.2em",width:"auto"},attrs:{viewBox:"0 0 168 24"}},[s("path",{attrs:{fill:"dark"===e.theme?"#FFF":"#5D6494",d:"M6.97 6.68V8.3a4.47 4.47 0 0 0-2.42-.67 2.2 2.2 0 0 0-1.38.4c-.34.26-.5.6-.5 1.02 0 .43.16.77.49 1.03.33.25.83.53 1.51.83a7.04 7.04 0 0 1 1.9 1.08c.34.24.58.54.73.89.15.34.23.74.23 1.18 0 .95-.33 1.7-1 2.24a4 4 0 0 1-2.6.81 5.71 5.71 0 0 1-2.94-.68v-1.71c.84.63 1.81.94 2.92.94.58 0 1.05-.14 1.39-.4.34-.28.5-.65.5-1.13 0-.29-.1-.55-.3-.8a2.2 2.2 0 0 0-.65-.53 23.03 23.03 0 0 0-1.64-.78 13.67 13.67 0 0 1-1.11-.64c-.12-.1-.28-.22-.46-.4a1.72 1.72 0 0 1-.39-.5 4.46 4.46 0 0 1-.22-.6c-.07-.23-.1-.48-.1-.75 0-.91.33-1.63 1-2.17a4 4 0 0 1 2.57-.8c.97 0 1.8.18 2.47.52zm7.47 5.7v-.3a2.26 2.26 0 0 0-.5-1.44c-.3-.35-.74-.53-1.32-.53-.53 0-.99.2-1.37.58-.38.39-.62.95-.72 1.68h3.91zm1 2.79v1.4c-.6.34-1.38.51-2.36.51a4.02 4.02 0 0 1-3-1.13 4.04 4.04 0 0 1-1.11-2.97c0-1.3.34-2.32 1.02-3.06a3.38 3.38 0 0 1 2.6-1.1c1.03 0 1.85.32 2.46.96.6.64.9 1.57.9 2.78 0 .33-.03.68-.09 1.04h-5.31c.1.7.4 1.24.89 1.61.49.38 1.1.56 1.85.56.86 0 1.58-.2 2.15-.6zm6.61-1.78h-1.21c-.6 0-1.05.12-1.35.36-.3.23-.46.53-.46.89 0 .37.12.66.36.88.23.2.57.32 1.02.32.5 0 .9-.15 1.2-.43.3-.28.44-.65.44-1.1v-.92zm-4.07-2.55V9.33a4.96 4.96 0 0 1 2.5-.55c2.1 0 3.17 1.03 3.17 3.08V17H22.1v-.96c-.42.68-1.15 1.02-2.19 1.02-.76 0-1.38-.22-1.84-.66-.46-.44-.7-1-.7-1.68 0-.78.3-1.38.88-1.81.59-.43 1.4-.65 2.46-.65h1.34v-.46c0-.55-.13-.97-.4-1.25-.26-.29-.7-.43-1.32-.43-.86 0-1.65.24-2.35.72zm9.34-1.93v1.42c.39-1 1.1-1.5 2.12-1.5.15 0 .31.02.5.05v1.53c-.23-.1-.48-.14-.76-.14-.54 0-.99.24-1.34.71a2.8 2.8 0 0 0-.52 1.71V17h-1.57V8.91h1.57zm5 4.09a3 3 0 0 0 .76 2.01c.47.53 1.14.8 2 .8.64 0 1.24-.18 1.8-.53v1.4c-.53.32-1.2.48-2 .48a3.98 3.98 0 0 1-4.17-4.18c0-1.16.38-2.15 1.14-2.98a4 4 0 0 1 3.1-1.23c.7 0 1.34.15 1.92.44v1.44a3.24 3.24 0 0 0-1.77-.5A2.65 2.65 0 0 0 32.33 13zm7.92-7.28v4.58c.46-1 1.3-1.5 2.5-1.5.8 0 1.42.24 1.9.73.48.5.72 1.17.72 2.05V17H43.8v-5.1c0-.56-.14-.99-.43-1.29-.28-.3-.65-.45-1.1-.45-.54 0-1 .2-1.42.6-.4.4-.61 1.02-.61 1.85V17h-1.56V5.72h1.56zM55.2 15.74c.6 0 1.1-.25 1.5-.76.4-.5.6-1.16.6-1.95 0-.92-.2-1.62-.6-2.12-.4-.5-.92-.74-1.55-.74-.56 0-1.05.22-1.5.67-.44.45-.66 1.13-.66 2.06 0 .96.22 1.67.64 2.14.43.47.95.7 1.57.7zM53 5.72v4.42a2.74 2.74 0 0 1 2.43-1.34c1.03 0 1.86.38 2.51 1.15.65.76.97 1.78.97 3.05 0 1.13-.3 2.1-.92 2.9-.62.81-1.47 1.21-2.54 1.21s-1.9-.45-2.46-1.34V17h-1.58V5.72H53zm9.9 11.1l-3.22-7.9h1.74l1 2.62 1.26 3.42c.1-.32.48-1.46 1.15-3.42l.91-2.63h1.66l-2.92 7.87c-.78 2.07-1.96 3.1-3.56 3.1-.28 0-.53-.02-.73-.07v-1.34c.17.04.35.06.54.06 1.03 0 1.76-.57 2.17-1.7z"}}),e._v(" "),s("path",{attrs:{fill:"#5468FF",d:"M78.99.94h16.6a2.97 2.97 0 0 1 2.96 2.96v16.6a2.97 2.97 0 0 1-2.97 2.96h-16.6a2.97 2.97 0 0 1-2.96-2.96V3.9A2.96 2.96 0 0 1 79 .94"}}),e._v(" "),s("path",{attrs:{fill:"#FFF",d:"M89.63 5.97v-.78a.98.98 0 0 0-.98-.97h-2.28a.98.98 0 0 0-.97.97V6c0 .09.08.15.17.13a7.13 7.13 0 0 1 3.9-.02c.08.02.16-.04.16-.13m-6.25 1L83 6.6a.98.98 0 0 0-1.38 0l-.46.46a.97.97 0 0 0 0 1.38l.38.39c.06.06.15.04.2-.02a7.49 7.49 0 0 1 1.63-1.62c.07-.04.08-.14.02-.2m4.16 2.45v3.34c0 .1.1.17.2.12l2.97-1.54c.06-.03.08-.12.05-.18a3.7 3.7 0 0 0-3.08-1.87c-.07 0-.14.06-.14.13m0 8.05a4.49 4.49 0 1 1 0-8.98 4.49 4.49 0 0 1 0 8.98m0-10.85a6.37 6.37 0 1 0 0 12.74 6.37 6.37 0 0 0 0-12.74"}}),e._v(" "),s("path",{attrs:{fill:"dark"===e.theme?"#FFF":"#5468FF",d:"M120.92 18.8c-4.38.02-4.38-3.54-4.38-4.1V1.36l2.67-.42v13.25c0 .32 0 2.36 1.71 2.37v2.24zm-10.84-2.18c.82 0 1.43-.04 1.85-.12v-2.72a5.48 5.48 0 0 0-1.57-.2c-.3 0-.6.02-.9.07-.3.04-.57.12-.81.24-.24.11-.44.28-.58.49a.93.93 0 0 0-.22.65c0 .63.22 1 .61 1.23.4.24.94.36 1.62.36zm-.23-9.7c.88 0 1.62.11 2.23.33.6.22 1.09.53 1.44.92.36.4.61.92.76 1.48.16.56.23 1.17.23 1.85v6.87c-.4.1-1.03.2-1.86.32-.84.12-1.78.18-2.82.18-.69 0-1.32-.07-1.9-.2a4 4 0 0 1-1.46-.63c-.4-.3-.72-.67-.96-1.13a4.3 4.3 0 0 1-.34-1.8c0-.66.13-1.08.39-1.53.26-.45.6-.82 1.04-1.1.45-.3.95-.5 1.54-.62a8.8 8.8 0 0 1 3.79.05v-.44c0-.3-.04-.6-.11-.87a1.78 1.78 0 0 0-1.1-1.22c-.31-.12-.7-.2-1.15-.2a9.75 9.75 0 0 0-2.95.46l-.33-2.19c.34-.12.84-.23 1.48-.35.65-.12 1.34-.18 2.08-.18zm52.84 9.63c.82 0 1.43-.05 1.85-.13V13.7a5.42 5.42 0 0 0-1.57-.2c-.3 0-.6.02-.9.07-.3.04-.57.12-.81.24-.24.12-.44.28-.58.5a.93.93 0 0 0-.22.65c0 .63.22.99.61 1.23.4.24.94.36 1.62.36zm-.23-9.7c.88 0 1.63.11 2.23.33.6.22 1.1.53 1.45.92.35.39.6.92.76 1.48.15.56.23 1.18.23 1.85v6.88c-.41.08-1.03.19-1.87.31-.83.12-1.77.18-2.81.18-.7 0-1.33-.06-1.9-.2a4 4 0 0 1-1.47-.63c-.4-.3-.72-.67-.95-1.13a4.3 4.3 0 0 1-.34-1.8c0-.66.13-1.08.38-1.53.26-.45.61-.82 1.05-1.1.44-.3.95-.5 1.53-.62a8.8 8.8 0 0 1 3.8.05v-.43c0-.31-.04-.6-.12-.88-.07-.28-.2-.52-.38-.73a1.78 1.78 0 0 0-.73-.5c-.3-.1-.68-.2-1.14-.2a9.85 9.85 0 0 0-2.95.47l-.32-2.19a11.63 11.63 0 0 1 3.55-.53zm-8.03-1.27a1.62 1.62 0 0 0 0-3.24 1.62 1.62 0 1 0 0 3.24zm1.35 13.22h-2.7V7.27l2.7-.42V18.8zm-4.72 0c-4.38.02-4.38-3.54-4.38-4.1l-.01-13.34 2.67-.42v13.25c0 .32 0 2.36 1.72 2.37v2.24zm-8.7-5.9a4.7 4.7 0 0 0-.74-2.79 2.4 2.4 0 0 0-2.07-1 2.4 2.4 0 0 0-2.06 1 4.7 4.7 0 0 0-.74 2.8c0 1.16.25 1.94.74 2.62a2.4 2.4 0 0 0 2.07 1.02c.88 0 1.57-.34 2.07-1.02.49-.68.73-1.46.73-2.63zm2.74 0a6.46 6.46 0 0 1-1.52 4.23c-.49.53-1.07.94-1.76 1.22-.68.29-1.73.45-2.26.45-.53 0-1.58-.15-2.25-.45a5.1 5.1 0 0 1-2.88-3.13 7.3 7.3 0 0 1-.01-4.84 5.13 5.13 0 0 1 2.9-3.1 5.67 5.67 0 0 1 2.22-.42c.81 0 1.56.14 2.24.42.69.29 1.28.69 1.75 1.22.49.52.87 1.15 1.14 1.89a7 7 0 0 1 .43 2.5zm-20.14 0c0 1.11.25 2.36.74 2.88.5.52 1.13.78 1.91.78a4.07 4.07 0 0 0 2.12-.6V9.33c-.19-.04-.99-.2-1.76-.23a2.67 2.67 0 0 0-2.23 1 4.73 4.73 0 0 0-.78 2.8zm7.44 5.27c0 1.82-.46 3.16-1.4 4-.94.85-2.37 1.27-4.3 1.27-.7 0-2.17-.13-3.34-.4l.43-2.11c.98.2 2.27.26 2.95.26 1.08 0 1.84-.22 2.3-.66.46-.43.68-1.08.68-1.94v-.44a5.2 5.2 0 0 1-2.54.6 5.6 5.6 0 0 1-2.01-.36 4.2 4.2 0 0 1-2.58-2.71 9.88 9.88 0 0 1 .02-5.35 4.92 4.92 0 0 1 2.93-2.96 6.6 6.6 0 0 1 2.43-.46 19.64 19.64 0 0 1 4.43.66v10.6z"}})])])])},staticRenderFns:[],name:"AisPoweredBy",mixins:[x({name:"PoweredBy"})],props:{theme:{default:"light",validator:function(e){return-1!==["light","dark"].indexOf(e)}}},computed:{algoliaUrl:function(){return"https://www.algolia.com/?utm_source=vue-instantsearch&utm_medium=website&utm_content="+(location?location.hostname:"")+"&utm_campaign=poweredby"}}},ee={name:"AisQueryRuleContext",mixins:[x({name:"QueryRuleContext"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["m" /* connectQueryRules */]})],props:{trackedFilters:{type:Object,required:!0},transformRuleContexts:{type:Function,required:!1,default:function(e){return e}}},computed:{widgetParams:function(){return{trackedFilters:this.trackedFilters,transformRuleContexts:this.transformRuleContexts}}},render:function(){return null}},te={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",e._l(e.state.items,function(t,n){return s("div",{key:n},[e._t("item",[s("pre",[e._v(e._s(t))])],{item:t})],2)}),{items:e.state.items})],2):e._e()},staticRenderFns:[],name:"AisQueryRuleCustomData",mixins:[x({name:"QueryRuleCustomData"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["m" /* connectQueryRules */]})],props:{transformItems:{type:Function,required:!1,default:function(e){return e}}},computed:{widgetParams:function(){return{transformItems:this.transformItems}}}},se=function(e){return e&&e.range&&e.range.min!==e.range.max},ne={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("form",{class:e.suit("form"),on:{submit:function(t){t.preventDefault(),e.refine({min:e.minInput,max:e.maxInput})}}},[s("label",{class:e.suit("label")},[e._t("minLabel"),e._v(" "),s("input",{class:[e.suit("input"),e.suit("input","min")],attrs:{type:"number",step:e.step,min:e.state.range.min,max:e.state.range.max,placeholder:e.state.range.min},domProps:{value:e.values.min},on:{change:function(t){e.minInput=t.currentTarget.value}}})],2),e._v(" "),s("span",{class:e.suit("separator")},[e._t("separator",[e._v("to")])],2),e._v(" "),s("label",{class:e.suit("label")},[e._t("maxLabel"),e._v(" "),s("input",{class:[e.suit("input"),e.suit("input","max")],attrs:{type:"number",step:e.step,min:e.state.range.min,max:e.state.range.max,placeholder:e.state.range.max},domProps:{value:e.values.max},on:{change:function(t){e.maxInput=t.currentTarget.value}}})],2),e._v(" "),s("button",{class:e.suit("submit"),attrs:{type:"submit"}},[e._t("submitLabel",[e._v("Go")])],2)])],{currentRefinement:e.values,refine:e.refine,canRefine:e.canRefine,range:e.state.range})],2):e._e()},staticRenderFns:[],name:"AisRangeInput",mixins:[x({name:"RangeInput"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["n" /* connectRange */]}),I({mapStateToCanRefine:se})],props:{attribute:{type:String,required:!0},min:{type:Number,required:!1,default:-1/0},max:{type:Number,required:!1,default:1/0},precision:{type:Number,required:!1,default:0}},data:function(){return{minInput:void 0,maxInput:void 0}},computed:{widgetParams:function(){return{attribute:this.attribute,min:this.min,max:this.max,precision:this.precision}},canRefine:function(){return se(this.state)},step:function(){return 1/Math.pow(10,this.precision)},values:function(){var e=this.state.start,t=e[0],s=e[1],n=this.state.range,i=n.min,a=n.max;return{min:t!==-1/0&&t!==i?t:null,max:s!==1/0&&s!==a?s:null}}},methods:{refine:function(e){var t=e.min,s=e.max;this.state.refine([t,s])}}},ie={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("svg",{staticStyle:{display:"none"},attrs:{xmlns:"http://www.w3.org/2000/svg"}},[s("symbol",{attrs:{id:"ais-RatingMenu-starSymbol",viewBox:"0 0 24 24"}},[s("path",{attrs:{d:"M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"}})]),e._v(" "),s("symbol",{attrs:{id:"ais-RatingMenu-starEmptySymbol",viewBox:"0 0 24 24"}},[s("path",{attrs:{d:"M12 6.76l1.379 4.246h4.465l-3.612 2.625 1.379 4.246-3.611-2.625-3.612 2.625 1.379-4.246-3.612-2.625h4.465l1.38-4.246zm0-6.472l-2.833 8.718h-9.167l7.416 5.389-2.833 8.718 7.417-5.388 7.416 5.388-2.833-8.718 7.417-5.389h-9.167l-2.833-8.718z"}})])]),e._v(" "),s("ul",{class:e.suit("list")},e._l(e.state.items,function(t,n){return s("li",{key:n,class:[e.suit("item"),t.isRefined&&e.suit("item","selected")]},[s("a",{class:e.suit("link"),attrs:{href:e.state.createURL(t),"aria-label":t.value+" & Up"},on:{click:function(s){s.preventDefault(),e.state.refine(t.value)}}},[e._l(t.stars,function(t,n){return[t?s("svg",{key:n,class:[e.suit("starIcon"),e.suit("starIcon--full")],attrs:{"aria-hidden":"true",width:"24",height:"24"}},[s("use",{attrs:{"xlink:href":"#ais-RatingMenu-starSymbol"}})]):s("svg",{key:n,class:[e.suit("starIcon"),e.suit("starIcon--empty")],attrs:{"aria-hidden":"true",width:"24",height:"24"}},[s("use",{attrs:{"xlink:href":"#ais-RatingMenu-starEmptySymbol"}})])]}),e._v(" "),s("span",{class:e.suit("label"),attrs:{"aria-hidden":"true"}},[e._t("andUp",[e._v("& Up")])],2),e._v(" "),s("span",{class:e.suit("count")},[e._v(e._s(t.count))])],2)])}))],{items:e.state.items,refine:e.state.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisRatingMenu",mixins:[x({name:"RatingMenu"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["o" /* connectRatingMenu */]}),I({mapStateToCanRefine:function(e){return!e.hasNoResults}})],props:{attribute:{type:String,required:!0},max:{type:Number,default:5}},computed:{widgetParams:function(){return{attribute:this.attribute,max:this.max}}}},ae={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("form",{class:e.suit("form"),attrs:{action:"",role:"search",novalidate:""},on:{submit:function(t){return t.preventDefault(),e.onFormSubmit(t)},reset:function(t){return t.preventDefault(),e.onFormReset(t)}}},[s("input",{ref:"input",class:e.suit("input"),attrs:{type:"search",autocorrect:"off",autocapitalize:"off",autocomplete:"off",spellcheck:"false",required:"",maxlength:"512","aria-label":"Search",placeholder:e.placeholder,autofocus:e.autofocus},domProps:{value:e.value},on:{focus:function(t){e.$emit("focus",t)},blur:function(t){e.$emit("blur",t)},input:function(t){e.$emit("input",t.target.value)}}}),e._v(" "),s("button",{class:e.suit("submit"),attrs:{type:"submit",title:e.submitTitle,hidden:e.showLoadingIndicator&&e.shouldShowLoadingIndicator}},[e._t("submit-icon",[s("svg",{class:e.suit("submitIcon"),attrs:{role:"img",xmlns:"http://www.w3.org/2000/svg",width:"10",height:"10",viewBox:"0 0 40 40"}},[s("path",{attrs:{d:"M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z",fillRule:"evenodd"}})])])],2),e._v(" "),s("button",{class:e.suit("reset"),attrs:{type:"reset",title:e.resetTitle,hidden:!e.value||e.showLoadingIndicator&&e.shouldShowLoadingIndicator}},[e._t("reset-icon",[s("svg",{class:e.suit("resetIcon"),attrs:{role:"img",xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 20 20"}},[s("path",{attrs:{d:"M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z",fillRule:"evenodd"}})])])],2),e._v(" "),e.showLoadingIndicator?s("span",{class:e.suit("loadingIndicator"),attrs:{hidden:!e.shouldShowLoadingIndicator}},[e._t("loading-indicator",[s("svg",{class:e.suit("loadingIcon"),attrs:{role:"img","aria-label":"Results are loading",width:"16",height:"16",xmlns:"http://www.w3.org/2000/svg",stroke:"#444",viewBox:"0 0 38 38"}},[s("g",{attrs:{fill:"none","fill-rule":"evenodd"}},[s("g",{attrs:{transform:"translate(1 1)","stroke-width":"2"}},[s("circle",{attrs:{"stroke-opacity":".5",cx:"18",cy:"18",r:"18"}}),e._v(" "),s("path",{attrs:{d:"M36 18c0-9.94-8.06-18-18-18"}},[s("animateTransform",{attrs:{attributeName:"transform",type:"rotate",from:"0 18 18",to:"360 18 18",dur:"1s",repeatCount:"indefinite"}})],1)])])])])],2):e._e()])},staticRenderFns:[],name:"SearchInput",mixins:[x({name:"SearchBox"})],props:{placeholder:{type:String,default:"Search here…"},autofocus:{type:Boolean,default:!1},showLoadingIndicator:{type:Boolean,default:!1},shouldShowLoadingIndicator:{type:Boolean,default:!1},submitTitle:{type:String,default:"Search"},resetTitle:{type:String,default:"Clear"},value:{type:String,required:!0}},data:function(){return{query:""}},methods:{onFormSubmit:function(){this.$refs.input.blur()},onFormReset:function(){this.$emit("input",""),this.$emit("reset")}}},re=function(){},oe={render:function(){var e,t=this,s=t.$createElement,n=t._self._c||s;return t.state?n("div",{class:[t.suit(),!t.state.canRefine&&t.suit("","noRefinement")]},[t._t("default",[t.searchable?n("div",{class:t.suit("searchBox")},[n("search-input",{attrs:{placeholder:t.searchablePlaceholder,"class-names":t.classNames},model:{value:t.searchForFacetValues,callback:function(e){t.searchForFacetValues=e},expression:"searchForFacetValues"}})],1):t._e(),t._v(" "),t.state.isFromSearch&&0===t.items.length?t._t("noResults",[n("div",{class:t.suit("noResults")},[t._v("No results.")])],{query:t.searchForFacetValues}):t._e(),t._v(" "),n("ul",{class:t.suit("list")},t._l(t.items,function(e){return n("li",{key:e.value,class:[t.suit("item"),e.isRefined&&t.suit("item","selected")]},[t._t("item",[n("label",{class:t.suit("label")},[n("input",{class:t.suit("checkbox"),attrs:{type:"checkbox"},domProps:{value:e.value,checked:e.isRefined},on:{change:function(s){t.refine(e.value)}}}),t._v(" "),t.searchable?n("span",{class:t.suit("labelText")},[n("ais-highlight",{attrs:{attribute:"item",hit:e}})],1):n("span",{class:t.suit("labelText")},[t._v(t._s(e.label))]),t._v(" "),n("span",{class:t.suit("count")},[t._v(t._s(e.count))])])],{item:e,refine:t.refine,createURL:t.state.createURL})],2)})),t._v(" "),t.showMore?n("button",{class:[t.suit("showMore"),(e={},e[t.suit("showMore","disabled")]=!t.state.canToggleShowMore,e)],attrs:{disabled:!t.state.canToggleShowMore},on:{click:t.toggleShowMore}},[t._t("showMoreLabel",[t._v("Show "+t._s(t.state.isShowingMore?"less":"more"))],{isShowingMore:t.state.isShowingMore})],2):t._e()],{items:t.items,refine:t.refine,searchForItems:t.state.searchForItems,searchForItemsQuery:t.searchForFacetValuesQuery,toggleShowMore:t.toggleShowMore,canToggleShowMore:t.state.canToggleShowMore,isShowingMore:t.state.isShowingMore,createURL:t.state.createURL,isFromSearch:t.state.isFromSearch,canRefine:t.state.canRefine})],2):t._e()},staticRenderFns:[],name:"AisRefinementList",components:{SearchInput:ae,AisHighlight:E},mixins:[x({name:"RefinementList"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["p" /* connectRefinementList */]}),I({mapStateToCanRefine:function(e){return e.canRefine}})],props:{attribute:{type:String,required:!0},searchable:{type:Boolean,default:!1},searchablePlaceholder:{default:"Search here…",type:String,required:!1},operator:{default:"or",validator:function(e){return"and"===e||"or"===e},required:!1},limit:{type:Number,default:10,required:!1},showMoreLimit:{type:Number,default:20,required:!1},showMore:{type:Boolean,default:!1,required:!1},sortBy:{type:[Array,Function],default:function(){return["isRefined","count:desc","name:asc"]},required:!1},transformItems:{type:Function,default:function(e){return e},required:!1}},data:function(){return{searchForFacetValuesQuery:""}},computed:{searchForFacetValues:{get:function(){return this.searchForFacetValuesQuery},set:function(e){this.state.searchForItems(e),this.searchForFacetValuesQuery=e}},toggleShowMore:function(){return this.state.toggleShowMore||re},items:function(){return this.state.items.map(function(e){return Object.assign({},e,{_highlightResult:{item:{value:e.highlighted}}})})},widgetParams:function(){return{attribute:this.attribute,operator:this.operator,limit:this.limit,showMore:this.showMore,showMoreLimit:this.showMoreLimit,sortBy:this.sortBy,escapeFacetValues:!0,transformItems:this.transformItems}}},methods:{refine:function(e){this.state.refine(e),this.searchForFacetValuesQuery=""}}},ue={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state&&e.state.results?s("div",{class:e.suit()},[e._t("default",[s("p",[e._v("Use this component to have a different layout based on a certain state.")]),e._v(" "),e._m(0),e._v(" "),s("pre",[e._v(e._s(Object.keys(e.state.results)))])],null,e.state.results)],2):e._e()},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("p",[this._v("Fill in the slot, and get access to the following things on the "),t("code",[this._v("slot-scope")]),this._v(":")])}],name:"AisStateResults",mixins:[A({connector:function(e,t){return function(s){return void 0===s&&(s={}),{init:function(t){var n=t.instantSearchInstance;e({results:void 0,instantSearchInstance:n,widgetParams:s},!0)},render:function(t){var n=t.results,i=t.instantSearchInstance,a=Object.assign({},n);delete a._state,e({results:a,instantSearchInstance:i,widgetParams:s},!1)},dispose:function(){t()}}}}}),x({name:"StateResults"})]},ce={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("search-input",{attrs:{placeholder:e.placeholder,autofocus:e.autofocus,"show-loading-indicator":e.showLoadingIndicator,"should-show-loading-indicator":e.state.isSearchStalled,"submit-title":e.submitTitle,"reset-title":e.resetTitle,"class-names":e.classNames},on:{focus:function(t){e.$emit("focus",t)},blur:function(t){e.$emit("blur",t)},reset:function(t){e.$emit("reset")}},model:{value:e.currentRefinement,callback:function(t){e.currentRefinement=t},expression:"currentRefinement"}},[e._t("loading-indicator",null,{slot:"loading-indicator"}),e._v(" "),e._t("submit-icon",null,{slot:"submit-icon"}),e._v(" "),e._t("reset-icon",null,{slot:"reset-icon"})],2)],{currentRefinement:e.currentRefinement,isSearchStalled:e.state.isSearchStalled,refine:e.state.refine})],2):e._e()},staticRenderFns:[],name:"AisSearchBox",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["q" /* connectSearchBox */]}),x({name:"SearchBox"})],components:{SearchInput:ae},props:{placeholder:{type:String,default:"Search here…"},autofocus:{type:Boolean,default:!1},showLoadingIndicator:{type:Boolean,default:!1},submitTitle:{type:String,default:"Search"},resetTitle:{type:String,default:"Clear"},value:{type:String,default:void 0}},data:function(){return{localValue:""}},methods:{onFormSubmit:function(){this.$el.querySelector("input[type=search]").blur()},onFormReset:function(){this.state.refine("")}},computed:{isControlled:function(){return void 0!==this.value},currentRefinement:{get:function(){return this.isControlled&&this.value!==this.localValue&&(this.localValue=this.value,this.$emit("input",this.value),this.state.refine(this.value)),this.value||this.state.query||""},set:function(e){this.localValue=e,this.state.refine(e),this.isControlled&&this.$emit("input",e)}}}},le={render:function(){var e=this.$createElement;return(this._self._c||e)("span",{class:this.suit(),domProps:{innerHTML:this._s(this.innerHTML)}})},staticRenderFns:[],name:"AisSnippet",mixins:[x({name:"Snippet"})],props:{hit:{type:Object,required:!0},attribute:{type:String,required:!0},highlightedTagName:{type:String,default:"mark"}},computed:{innerHTML:function(){var e=$(this.hit,"_snippetResult."+this.attribute+".value")||"";return"production"!=="development"&&""===e&&P('The "'+this.attribute+'" attribute might currently not be configured to be snippeted in Algolia.See https://www.algolia.com/doc/api-reference/api-parameters/attributesToSnippet/.'),e.replace(new RegExp("<em>","g"),"<"+this.highlightedTagName+' class="'+this.suit("highlighted")+'">').replace(new RegExp("</em>","g"),"</"+this.highlightedTagName+">")}}},he={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("select",{class:e.suit("select"),on:{change:function(t){e.state.refine(t.currentTarget.value)}}},e._l(e.state.options,function(t){return s("option",{key:t.value,class:e.suit("option"),domProps:{value:t.value,selected:t.value===e.state.currentRefinement}},[e._v(e._s(t.label))])}))],{items:e.state.options,hasNoResults:e.state.hasNoResults,refine:e.state.refine,currentRefinement:e.state.currentRefinement})],2):e._e()},staticRenderFns:[],name:"AisSortBy",mixins:[x({name:"SortBy"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["r" /* connectSortBy */]}),I({mapStateToCanRefine:function(e){return!e.hasNoResults}})],props:{items:{type:Array,required:!0},transformItems:{type:Function,default:function(e){return e}}},computed:{widgetParams:function(){return{items:this.items,transformItems:this.transformItems}}}},fe={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("span",{class:e.suit("text")},[e._v(e._s(e.state.nbHits.toLocaleString())+" results found in "+e._s(e.state.processingTimeMS.toLocaleString())+"ms")])],{results:e.state.instantSearchInstance.helper.lastResults},e.state)],2):e._e()},staticRenderFns:[],name:"AisStats",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["s" /* connectStats */]}),x({name:"Stats"})],computed:{widgetParams:function(){return{}}}},me=function(e){return Boolean(e.value.count)},de={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:[e.suit(),!e.canRefine&&e.suit("","noRefinement")]},[e._t("default",[s("label",{class:e.suit("label")},[s("input",{class:e.suit("checkbox"),attrs:{type:"checkbox",name:e.state.value.name},domProps:{value:e.on,checked:e.state.value.isRefined},on:{change:function(t){e.state.refine(e.state.value)}}}),e._v(" "),s("span",{class:e.suit("labelText")},[e._v(e._s(e.label))]),e._v(" "),null!==e.state.value.count?s("span",{class:e.suit("count")},[e._v(e._s(e.state.value.count.toLocaleString()))]):e._e()])],{value:e.state.value,canRefine:e.canRefine,refine:e.state.refine,createURL:e.state.createURL})],2):e._e()},staticRenderFns:[],name:"AisToggleRefinement",mixins:[x({name:"ToggleRefinement"}),A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["t" /* connectToggleRefinement */]}),I({mapStateToCanRefine:me})],props:{attribute:{type:String,required:!0},label:{type:String,required:!0},on:{type:[String,Number,Boolean],required:!1,default:!0},off:{type:[String,Number,Boolean],required:!1,default:void 0}},computed:{widgetParams:function(){return{attribute:this.attribute,label:this.label,on:this.on,off:this.off}},canRefine:function(){return me(this.state)}}},pe={render:function(){var e=this,t=e.$createElement,s=e._self._c||t;return e.state?s("div",{class:e.suit()},[e._t("default",[s("button",{class:e.suit("button"),attrs:{type:"button",title:e.state.isBrowserSupported?e.buttonTitle:e.disabledButtonTitle,disabled:!e.state.isBrowserSupported},on:{click:e.handleClick}},[e._t("buttonText",[e.errorNotAllowed?s("svg",e._b({},"svg",e.buttonSvgAttrs,!1),[s("line",{attrs:{x1:"1",y1:"1",x2:"23",y2:"23"}}),e._v(" "),s("path",{attrs:{d:"M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"}}),e._v(" "),s("path",{attrs:{d:"M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"}}),e._v(" "),s("line",{attrs:{x1:"12",y1:"19",x2:"12",y2:"23"}}),e._v(" "),s("line",{attrs:{x1:"8",y1:"23",x2:"16",y2:"23"}})]):s("svg",e._b({},"svg",e.buttonSvgAttrs,!1),[s("path",{attrs:{d:"M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z",fill:e.state.isListening?"currentColor":"none"}}),e._v(" "),s("path",{attrs:{d:"M19 10v2a7 7 0 0 1-14 0v-2"}}),e._v(" "),s("line",{attrs:{x1:"12",y1:"19",x2:"12",y2:"23"}}),e._v(" "),s("line",{attrs:{x1:"8",y1:"23",x2:"16",y2:"23"}})])],null,e.innerSlotProps)],2),e._v(" "),s("div",{class:e.suit("status")},[e._t("status",[s("p",[e._v(e._s(e.state.voiceListeningState.transcript))])],null,e.innerSlotProps)],2)],null,e.rootSlotProps)],2):e._e()},staticRenderFns:[],name:"AisVoiceSearch",mixins:[A({connector:__WEBPACK_IMPORTED_MODULE_0_instantsearch_js_es_connectors__["u" /* connectVoiceSearch */]}),x({name:"VoiceSearch"})],props:{searchAsYouSpeak:{type:Boolean,required:!1,default:void 0},buttonTitle:{type:String,required:!1,default:"Search by voice"},disabledButtonTitle:{type:String,required:!1,default:"Search by voice (not supported on this browser)"}},data:function(){return{buttonSvgAttrs:{xmlns:"http://www.w3.org/2000/svg",width:"16",height:"16",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"}}},computed:{widgetParams:function(){return{searchAsYouSpeak:this.searchAsYouSpeak}},errorNotAllowed:function(){return"error"===this.state.voiceListeningState.status&&"not-allowed"===this.state.voiceListeningState.errorCode},rootSlotProps:function(){return{isBrowserSupported:this.state.isBrowserSupported,isListening:this.state.isListening,toggleListening:this.state.toggleListening,voiceListeningState:this.state.voiceListeningState}},innerSlotProps:function(){return{status:this.state.voiceListeningState.status,errorCode:this.state.voiceListeningState.errorCode,isListening:this.state.isListening,transcript:this.state.voiceListeningState.transcript,isSpeechFinal:this.state.voiceListeningState.isSpeechFinal,isBrowserSupported:this.state.isBrowserSupported}}},methods:{handleClick:function(e){e.currentTarget.blur(),this.state.toggleListening()}}},ge=Object.freeze({AisAutocomplete:M,AisBreadcrumb:F,AisClearRefinements:k,AisConfigure:T,AisCurrentRefinements:N,AisHierarchicalMenu:U,AisHighlight:E,AisHits:q,AisHitsPerPage:H,AisInstantSearch:O,AisInstantSearchSsr:Q,AisInfiniteHits:Y,AisMenu:W,AisMenuSelect:G,AisNumericMenu:K,AisPagination:J,AisPanel:X,AisPoweredBy:Z,AisQueryRuleContext:ee,AisQueryRuleCustomData:te,AisRangeInput:ne,AisRatingMenu:ie,AisRefinementList:oe,AisStateResults:ue,AisSearchBox:ce,AisSnippet:le,AisSortBy:he,AisStats:fe,AisToggleRefinement:de,AisVoiceSearch:pe}),ve={install:function(e){Object.keys(ge).forEach(function(t){e.component(ge[t].name,ge[t])})}},_e=__WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper___default.a.SearchParameters,be=__WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper___default.a.SearchResults,Re=function(e){var t=Object(__WEBPACK_IMPORTED_MODULE_2_instantsearch_js_es__["a" /* default */])(e),s=e.searchClient,n=e.indexName;return t.findResultsState=function(e){return t.helper=__WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper___default()(s,n,V({},e,{highlightPreTag:"__ais-highlight__",highlightPostTag:"__/ais-highlight__"})),t.helper.searchOnce().then(function(e){var s=e.content;t.helper.lastResults=s})},t.__forceRender=function(e){t.helper?(e.init({state:t.helper.lastResults._state,helper:t.helper,templatesConfig:{},createURL:function(){return"#"},onHistoryChange:function(){},instantSearchInstance:t}),e.render({state:t.helper.lastResults._state,results:t.helper.lastResults,helper:t.helper,templatesConfig:{},createURL:function(){return"#"},instantSearchInstance:t,searchMetadata:{isSearchStalled:!1}})):P("`instantsearch.findResultsState()` needs to be called when using `ais-instant-search-ssr`.")},t.getState=function(){if(null!==t.helper&&t.helper.lastResults)return{lastResults:JSON.parse(JSON.stringify(t.helper.lastResults))}},t.hydrate=function(e){if(e&&e.lastResults){var i=e.lastResults;t.searchParameters=i._state,t.helper=__WEBPACK_IMPORTED_MODULE_3_algoliasearch_helper___default()(s,n,i._state),t.helper.lastResults=new be(new _e(i._state),i._rawResults),t.hydrated=!0}else P("The result of `getState()` needs to be passed to `hydrate()`.")},{instantsearch:t,rootMixin:{provide:function(){return{$_ais:t}}}}};/* harmony default export */ __webpack_exports__["a"] = (ve);
-//# sourceMappingURL=vue-instantsearch.esm.js.map
-
-
-/***/ }),
-/* 389 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__clear_refinements_connectClearRefinements__ = __webpack_require__(390);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__clear_refinements_connectClearRefinements__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__current_refinements_connectCurrentRefinements__ = __webpack_require__(415);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__current_refinements_connectCurrentRefinements__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hierarchical_menu_connectHierarchicalMenu__ = __webpack_require__(416);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_2__hierarchical_menu_connectHierarchicalMenu__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__hits_connectHits__ = __webpack_require__(310);
-/* unused harmony reexport connectHits */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hits_connectHitsWithInsights__ = __webpack_require__(417);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_4__hits_connectHitsWithInsights__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hits_per_page_connectHitsPerPage__ = __webpack_require__(425);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_5__hits_per_page_connectHitsPerPage__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__infinite_hits_connectInfiniteHits__ = __webpack_require__(317);
-/* unused harmony reexport connectInfiniteHits */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__infinite_hits_connectInfiniteHitsWithInsights__ = __webpack_require__(426);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_7__infinite_hits_connectInfiniteHitsWithInsights__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__menu_connectMenu__ = __webpack_require__(427);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_8__menu_connectMenu__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__numeric_menu_connectNumericMenu__ = __webpack_require__(428);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_9__numeric_menu_connectNumericMenu__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pagination_connectPagination__ = __webpack_require__(429);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_10__pagination_connectPagination__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__range_connectRange__ = __webpack_require__(431);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_11__range_connectRange__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__refinement_list_connectRefinementList__ = __webpack_require__(432);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return __WEBPACK_IMPORTED_MODULE_12__refinement_list_connectRefinementList__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__search_box_connectSearchBox__ = __webpack_require__(433);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_13__search_box_connectSearchBox__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__sort_by_connectSortBy__ = __webpack_require__(434);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_14__sort_by_connectSortBy__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__rating_menu_connectRatingMenu__ = __webpack_require__(435);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return __WEBPACK_IMPORTED_MODULE_15__rating_menu_connectRatingMenu__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__stats_connectStats__ = __webpack_require__(436);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_16__stats_connectStats__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__toggleRefinement_connectToggleRefinement__ = __webpack_require__(437);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_17__toggleRefinement_connectToggleRefinement__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__breadcrumb_connectBreadcrumb__ = __webpack_require__(438);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_18__breadcrumb_connectBreadcrumb__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__geo_search_connectGeoSearch__ = __webpack_require__(439);
-/* unused harmony reexport connectGeoSearch */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__powered_by_connectPoweredBy__ = __webpack_require__(440);
-/* unused harmony reexport connectPoweredBy */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__configure_connectConfigure__ = __webpack_require__(441);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_21__configure_connectConfigure__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__autocomplete_connectAutocomplete__ = __webpack_require__(600);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_22__autocomplete_connectAutocomplete__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__query_rules_connectQueryRules__ = __webpack_require__(601);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_23__query_rules_connectQueryRules__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__voice_search_connectVoiceSearch__ = __webpack_require__(602);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_24__voice_search_connectVoiceSearch__["a"]; });
+/* unused harmony export Component */
+/* unused harmony export FACET_AND */
+/* unused harmony export FACET_OR */
+/* unused harmony export FACET_TREE */
+/* unused harmony export createFromAlgoliaCredentials */
+/* unused harmony export createFromAlgoliaClient */
+/* unused harmony export createFromSerialized */
+/* unused harmony export Store */
+/* unused harmony export Index */
+/* unused harmony export Highlight */
+/* unused harmony export Snippet */
+/* unused harmony export Input */
+/* unused harmony export Results */
+/* unused harmony export Stats */
+/* unused harmony export Pagination */
+/* unused harmony export ResultsPerPageSelector */
+/* unused harmony export TreeMenu */
+/* unused harmony export Menu */
+/* unused harmony export SortBySelector */
+/* unused harmony export SearchBox */
+/* unused harmony export Clear */
+/* unused harmony export Rating */
+/* unused harmony export RangeInput */
+/* unused harmony export NoResults */
+/* unused harmony export RefinementList */
+/* unused harmony export PriceRange */
+/* unused harmony export PoweredBy */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_lite__ = __webpack_require__(616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_lite___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_algoliasearch_lite__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_escape_html__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_escape_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_escape_html__);
 
 
 
 
+var version = "1.7.0";
 
+var serialize = function(helper) {
+  if (!(helper instanceof __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default.a.AlgoliaSearchHelper)) {
+    throw new TypeError('Serialize expects an algolia helper instance.');
+  }
 
+  var client = helper.getClient();
 
+  var response = helper.lastResults ? helper.lastResults._rawResults : null;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 390 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectClearRefinements;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'clear-refinements',
-  connector: true
-});
-/**
- * @typedef {Object} CustomClearRefinementsWidgetOptions
- * @property {string[]} [includedAttributes = []] The attributes to include in the refinements to clear (all by default). Cannot be used with `excludedAttributes`.
- * @property {string[]} [excludedAttributes = ['query']] The attributes to exclude from the refinements to clear. Cannot be used with `includedAttributes`.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} ClearRefinementsRenderingOptions
- * @property {function} refine Triggers the clear of all the currently refined values.
- * @property {boolean} hasRefinements Indicates if search state is refined.
- * @property {function} createURL Creates a url for the next state when refinements are cleared.
- * @property {Object} widgetParams All original `CustomClearRefinementsWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **ClearRefinements** connector provides the logic to build a custom widget that will give the user
- * the ability to reset the search state.
- *
- * This connector provides a `refine` function to remove the current refined facets.
- *
- * The behaviour of this function can be changed with widget options. If `clearsQuery`
- * is set to `true`, `refine` will also clear the query and `excludedAttributes` can
- * prevent certain attributes from being cleared.
- *
- * @type {Connector}
- * @param {function(ClearRefinementsRenderingOptions, boolean)} renderFn Rendering function for the custom **ClearRefinements** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomClearRefinementsWidgetOptions)} Re-usable widget factory for a custom **ClearRefinements** widget.
- * @example
- * // custom `renderFn` to render the custom ClearRefinements widget
- * function renderFn(ClearRefinementsRenderingOptions, isFirstRendering) {
- *   var containerNode = ClearRefinementsRenderingOptions.widgetParams.containerNode;
- *   if (isFirstRendering) {
- *     var markup = $('<button id="custom-clear-all">Clear All</button>');
- *     containerNode.append(markup);
- *
- *     markup.on('click', function(event) {
- *       event.preventDefault();
- *       ClearRefinementsRenderingOptions.refine();
- *     })
- *   }
- *
- *   var clearRefinementsCTA = containerNode.find('#custom-clear-all');
- *   clearRefinementsCTA.attr('disabled', !ClearRefinementsRenderingOptions.hasRefinements)
- * };
- *
- * // connect `renderFn` to ClearRefinements logic
- * var customClearRefinementsWidget = instantsearch.connectors.connectClearRefinements(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customClearRefinementsWidget({
- *     containerNode: $('#custom-clear-all-container'),
- *   })
- * );
- */
-
-function connectClearRefinements(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-    if (widgetParams.includedAttributes && widgetParams.excludedAttributes) {
-      throw new Error(withUsage('The options `includedAttributes` and `excludedAttributes` cannot be used together.'));
-    }
-
-    var _widgetParams$include = widgetParams.includedAttributes,
-        includedAttributes = _widgetParams$include === void 0 ? [] : _widgetParams$include,
-        _widgetParams$exclude = widgetParams.excludedAttributes,
-        excludedAttributes = _widgetParams$exclude === void 0 ? ['query'] : _widgetParams$exclude,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            instantSearchInstance = _ref.instantSearchInstance,
-            createURL = _ref.createURL;
-        var attributesToClear = getAttributesToClear({
-          helper: helper,
-          includedAttributes: includedAttributes,
-          excludedAttributes: excludedAttributes,
-          transformItems: transformItems
-        });
-        var hasRefinements = attributesToClear.length > 0;
-
-        this._refine = function () {
-          helper.setState(Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["e" /* clearRefinements */])({
-            helper: helper,
-            attributesToClear: getAttributesToClear({
-              helper: helper,
-              includedAttributes: includedAttributes,
-              excludedAttributes: excludedAttributes,
-              transformItems: transformItems
-            })
-          })).search();
-        };
-
-        this._createURL = function () {
-          return createURL(Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["e" /* clearRefinements */])({
-            helper: helper,
-            attributesToClear: getAttributesToClear({
-              helper: helper,
-              includedAttributes: includedAttributes,
-              excludedAttributes: excludedAttributes,
-              transformItems: transformItems
-            })
-          }));
-        };
-
-        renderFn({
-          hasRefinements: hasRefinements,
-          refine: this._refine,
-          createURL: this._createURL,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref2) {
-        var helper = _ref2.helper,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        var attributesToClear = getAttributesToClear({
-          helper: helper,
-          includedAttributes: includedAttributes,
-          excludedAttributes: excludedAttributes,
-          transformItems: transformItems
-        });
-        var hasRefinements = attributesToClear.length > 0;
-        renderFn({
-          hasRefinements: hasRefinements,
-          refine: this._refine,
-          createURL: this._createURL,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
-    };
+  var serialized = {
+    searchParameters: Object.assign({}, helper.state),
+    appId: client.applicationID,
+    apiKey: client.apiKey,
+    response: response,
   };
-}
 
-function getAttributesToClear(_ref3) {
-  var helper = _ref3.helper,
-      includedAttributes = _ref3.includedAttributes,
-      excludedAttributes = _ref3.excludedAttributes,
-      transformItems = _ref3.transformItems;
-  var clearsQuery = includedAttributes.indexOf('query') !== -1 || excludedAttributes.indexOf('query') === -1;
-  return transformItems(Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["l" /* getRefinements */])(helper.lastResults || {}, helper.state, clearsQuery).map(function (refinement) {
-    return refinement.attributeName;
-  }).filter(function (attribute) {
-    return (// If the array is empty (default case), we keep all the attributes
-      includedAttributes.length === 0 || // Otherwise, only add the specified attributes
-      includedAttributes.indexOf(attribute) !== -1
+  return serialized;
+};
+
+var deserialize = function(data) {
+  var client = __WEBPACK_IMPORTED_MODULE_0_algoliasearch_lite___default()(data.appId, data.apiKey);
+  var helper = __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default()(
+    client,
+    data.searchParameters.index,
+    data.searchParameters
+  );
+
+  if (data.response) {
+    helper.lastResults = new __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default.a.SearchResults(
+      helper.state,
+      data.response
     );
-  }).filter(function (attribute) {
-    return (// If the query is included, we ignore the default `excludedAttributes = ['query']`
-      attribute === 'query' && clearsQuery || // Otherwise, ignore the excluded attributes
-      excludedAttributes.indexOf(attribute) === -1
+  }
+
+  return helper;
+};
+
+var sanitizeResults = function(
+  results,
+  safePreTag,
+  safePostTag,
+  preTag,
+  postTag
+) {
+  if ( preTag === void 0 ) preTag = '<em>';
+  if ( postTag === void 0 ) postTag = '</em>';
+
+  if (!Array.isArray(results)) {
+    throw new TypeError('Results should be provided as an array.');
+  }
+
+  if (typeof safePreTag !== 'string' || typeof safePostTag !== 'string') {
+    throw new TypeError(
+      'safePreTag and safePostTag should be provided as strings.'
     );
-  }));
-}
+  }
 
-/***/ }),
-/* 391 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  var sanitized = [];
+  for (var i = 0, list = results; i < list.length; i += 1) {
+    var result = list[i];
 
-"use strict";
-function capitalize(text) {
-  return text.toString().charAt(0).toUpperCase() + text.toString().slice(1);
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (capitalize);
-
-/***/ }),
-/* 392 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__isDomElement__ = __webpack_require__(305);
-
-/**
- * Return the container. If it's a string, it is considered a
- * css selector and retrieves the first matching element. Otherwise
- * test if it validates that it's a correct DOMElement.
- *
- * @param {string|HTMLElement} selectorOrHTMLElement CSS Selector or container node.
- * @return {HTMLElement} Container node
- * @throws Error when the type is not correct
- */
-
-function getContainerNode(selectorOrHTMLElement) {
-  var isSelectorString = typeof selectorOrHTMLElement === 'string';
-  var domElement = isSelectorString ? document.querySelector(selectorOrHTMLElement) : selectorOrHTMLElement;
-
-  if (!Object(__WEBPACK_IMPORTED_MODULE_0__isDomElement__["a" /* default */])(domElement)) {
-    var errorMessage = 'Container must be `string` or `HTMLElement`.';
-
-    if (isSelectorString) {
-      errorMessage += " Unable to find ".concat(selectorOrHTMLElement);
+    if ('_highlightResult' in result) {
+      result._highlightResult = sanitizeHighlights(
+        result._highlightResult,
+        safePreTag,
+        safePostTag,
+        preTag,
+        postTag
+      );
     }
 
-    throw new Error(errorMessage);
-  }
-
-  return domElement;
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (getContainerNode);
-
-/***/ }),
-/* 393 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function isSpecialClick(event) {
-  var isMiddleClick = event.button === 1;
-  return isMiddleClick || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (isSpecialClick);
-
-/***/ }),
-/* 394 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__uniq__ = __webpack_require__(275);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-
-
-function prepareTemplates() {
-  var defaultTemplates = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var templates = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var allKeys = Object(__WEBPACK_IMPORTED_MODULE_0__uniq__["a" /* default */])([].concat(_toConsumableArray(Object.keys(defaultTemplates)), _toConsumableArray(Object.keys(templates))));
-  return allKeys.reduce(function (config, key) {
-    var defaultTemplate = defaultTemplates[key];
-    var customTemplate = templates[key];
-    var isCustomTemplate = customTemplate !== undefined && customTemplate !== defaultTemplate;
-    config.templates[key] = isCustomTemplate ? customTemplate : defaultTemplate;
-    config.useCustomCompileOptions[key] = isCustomTemplate;
-    return config;
-  }, {
-    templates: {},
-    useCustomCompileOptions: {}
-  });
-}
-/**
- * Prepares an object to be passed to the Template widget
- * @param {object} unknownBecauseES6 an object with the following attributes:
- *  - defaultTemplate
- *  - templates
- *  - templatesConfig
- * @return {object} the configuration with the attributes:
- *  - defaultTemplate
- *  - templates
- *  - useCustomCompileOptions
- */
-
-
-function prepareTemplateProps(_ref) {
-  var defaultTemplates = _ref.defaultTemplates,
-      templates = _ref.templates,
-      templatesConfig = _ref.templatesConfig;
-  var preparedTemplates = prepareTemplates(defaultTemplates, templates);
-  return _objectSpread({
-    templatesConfig: templatesConfig
-  }, preparedTemplates);
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (prepareTemplateProps);
-
-/***/ }),
-/* 395 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hogan_js__ = __webpack_require__(396);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hogan_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hogan_js__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
- // We add all our template helper methods to the template as lambdas. Note
-// that lambdas in Mustache are supposed to accept a second argument of
-// `render` to get the rendered value, not the literal `{{value}}`. But
-// this is currently broken (see https://github.com/twitter/hogan.js/issues/222).
-
-function transformHelpersToHogan() {
-  var helpers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var compileOptions = arguments.length > 1 ? arguments[1] : undefined;
-  var data = arguments.length > 2 ? arguments[2] : undefined;
-  return Object.keys(helpers).reduce(function (acc, helperKey) {
-    return _objectSpread({}, acc, _defineProperty({}, helperKey, function () {
-      var _this = this;
-
-      return function (text) {
-        var render = function render(value) {
-          return __WEBPACK_IMPORTED_MODULE_0_hogan_js___default.a.compile(value, compileOptions).render(_this);
-        };
-
-        return helpers[helperKey].call(data, text, render);
-      };
-    }));
-  }, {});
-}
-
-function renderTemplate(_ref) {
-  var templates = _ref.templates,
-      templateKey = _ref.templateKey,
-      compileOptions = _ref.compileOptions,
-      helpers = _ref.helpers,
-      data = _ref.data;
-  var template = templates[templateKey];
-
-  var templateType = _typeof(template);
-
-  var isTemplateString = templateType === 'string';
-  var isTemplateFunction = templateType === 'function';
-
-  if (!isTemplateString && !isTemplateFunction) {
-    throw new Error("Template must be 'string' or 'function', was '".concat(templateType, "' (key: ").concat(templateKey, ")"));
-  }
-
-  if (isTemplateFunction) {
-    return template(data);
-  }
-
-  var transformedHelpers = transformHelpersToHogan(helpers, compileOptions, data);
-  return __WEBPACK_IMPORTED_MODULE_0_hogan_js___default.a.compile(template, compileOptions).render(_objectSpread({}, data, {
-    helpers: transformedHelpers
-  })).replace(/[ \n\r\t\f\xA0]+/g, function (spaces) {
-    return spaces.replace(/(^|\xA0+)[^\xA0]+/g, '$1 ');
-  }).trim();
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (renderTemplate);
-
-/***/ }),
-/* 396 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
- *  Copyright 2011 Twitter, Inc.
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
-// This file is for use with Node.js. See dist/ for browser files.
-
-var Hogan = __webpack_require__(397);
-Hogan.Template = __webpack_require__(398).Template;
-Hogan.template = Hogan.Template;
-module.exports = Hogan;
-
-
-/***/ }),
-/* 397 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
- *  Copyright 2011 Twitter, Inc.
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
-(function (Hogan) {
-  // Setup regex  assignments
-  // remove whitespace according to Mustache spec
-  var rIsWhitespace = /\S/,
-      rQuot = /\"/g,
-      rNewline =  /\n/g,
-      rCr = /\r/g,
-      rSlash = /\\/g,
-      rLineSep = /\u2028/,
-      rParagraphSep = /\u2029/;
-
-  Hogan.tags = {
-    '#': 1, '^': 2, '<': 3, '$': 4,
-    '/': 5, '!': 6, '>': 7, '=': 8, '_v': 9,
-    '{': 10, '&': 11, '_t': 12
-  };
-
-  Hogan.scan = function scan(text, delimiters) {
-    var len = text.length,
-        IN_TEXT = 0,
-        IN_TAG_TYPE = 1,
-        IN_TAG = 2,
-        state = IN_TEXT,
-        tagType = null,
-        tag = null,
-        buf = '',
-        tokens = [],
-        seenTag = false,
-        i = 0,
-        lineStart = 0,
-        otag = '{{',
-        ctag = '}}';
-
-    function addBuf() {
-      if (buf.length > 0) {
-        tokens.push({tag: '_t', text: new String(buf)});
-        buf = '';
-      }
+    if ('_snippetResult' in result) {
+      result._snippetResult = sanitizeHighlights(
+        result._snippetResult,
+        safePreTag,
+        safePostTag,
+        preTag,
+        postTag
+      );
     }
 
-    function lineIsWhitespace() {
-      var isAllWhitespace = true;
-      for (var j = lineStart; j < tokens.length; j++) {
-        isAllWhitespace =
-          (Hogan.tags[tokens[j].tag] < Hogan.tags['_v']) ||
-          (tokens[j].tag == '_t' && tokens[j].text.match(rIsWhitespace) === null);
-        if (!isAllWhitespace) {
-          return false;
-        }
-      }
-
-      return isAllWhitespace;
-    }
-
-    function filterLine(haveSeenTag, noNewLine) {
-      addBuf();
-
-      if (haveSeenTag && lineIsWhitespace()) {
-        for (var j = lineStart, next; j < tokens.length; j++) {
-          if (tokens[j].text) {
-            if ((next = tokens[j+1]) && next.tag == '>') {
-              // set indent to token value
-              next.indent = tokens[j].text.toString()
-            }
-            tokens.splice(j, 1);
-          }
-        }
-      } else if (!noNewLine) {
-        tokens.push({tag:'\n'});
-      }
-
-      seenTag = false;
-      lineStart = tokens.length;
-    }
-
-    function changeDelimiters(text, index) {
-      var close = '=' + ctag,
-          closeIndex = text.indexOf(close, index),
-          delimiters = trim(
-            text.substring(text.indexOf('=', index) + 1, closeIndex)
-          ).split(' ');
-
-      otag = delimiters[0];
-      ctag = delimiters[delimiters.length - 1];
-
-      return closeIndex + close.length - 1;
-    }
-
-    if (delimiters) {
-      delimiters = delimiters.split(' ');
-      otag = delimiters[0];
-      ctag = delimiters[1];
-    }
-
-    for (i = 0; i < len; i++) {
-      if (state == IN_TEXT) {
-        if (tagChange(otag, text, i)) {
-          --i;
-          addBuf();
-          state = IN_TAG_TYPE;
-        } else {
-          if (text.charAt(i) == '\n') {
-            filterLine(seenTag);
-          } else {
-            buf += text.charAt(i);
-          }
-        }
-      } else if (state == IN_TAG_TYPE) {
-        i += otag.length - 1;
-        tag = Hogan.tags[text.charAt(i + 1)];
-        tagType = tag ? text.charAt(i + 1) : '_v';
-        if (tagType == '=') {
-          i = changeDelimiters(text, i);
-          state = IN_TEXT;
-        } else {
-          if (tag) {
-            i++;
-          }
-          state = IN_TAG;
-        }
-        seenTag = i;
-      } else {
-        if (tagChange(ctag, text, i)) {
-          tokens.push({tag: tagType, n: trim(buf), otag: otag, ctag: ctag,
-                       i: (tagType == '/') ? seenTag - otag.length : i + ctag.length});
-          buf = '';
-          i += ctag.length - 1;
-          state = IN_TEXT;
-          if (tagType == '{') {
-            if (ctag == '}}') {
-              i++;
-            } else {
-              cleanTripleStache(tokens[tokens.length - 1]);
-            }
-          }
-        } else {
-          buf += text.charAt(i);
-        }
-      }
-    }
-
-    filterLine(seenTag, true);
-
-    return tokens;
+    sanitized.push(result);
   }
 
-  function cleanTripleStache(token) {
-    if (token.n.substr(token.n.length - 1) === '}') {
-      token.n = token.n.substring(0, token.n.length - 1);
-    }
+  return sanitized;
+};
+
+var sanitizeHighlights = function(
+  data,
+  safePreTag,
+  safePostTag,
+  preTag,
+  postTag
+) {
+  if (containsValue(data)) {
+    var sanitized = Object.assign({}, data, {
+      value: __WEBPACK_IMPORTED_MODULE_2_escape_html___default()(data.value)
+        .replace(new RegExp(safePreTag, 'g'), preTag)
+        .replace(new RegExp(safePostTag, 'g'), postTag),
+    });
+
+    return sanitized;
   }
 
-  function trim(s) {
-    if (s.trim) {
-      return s.trim();
-    }
+  if (Array.isArray(data)) {
+    var child = [];
+    data.forEach(function (item) {
+      child.push(
+        sanitizeHighlights(item, safePreTag, safePostTag, preTag, postTag)
+      );
+    });
 
-    return s.replace(/^\s*|\s*$/g, '');
+    return child;
   }
 
-  function tagChange(tag, text, index) {
-    if (text.charAt(index) != tag.charAt(0)) {
-      return false;
-    }
+  if (isObject(data)) {
+    var keys = Object.keys(data);
+    var child$1 = {};
+    keys.forEach(function (key) {
+      child$1[key] = sanitizeHighlights(
+        data[key],
+        safePreTag,
+        safePostTag,
+        preTag,
+        postTag
+      );
+    });
 
-    for (var i = 1, l = tag.length; i < l; i++) {
-      if (text.charAt(index + i) != tag.charAt(i)) {
-        return false;
-      }
-    }
-
-    return true;
+    return child$1;
   }
 
-  // the tags allowed inside super templates
-  var allowedInSuper = {'_t': true, '\n': true, '$': true, '/': true};
+  return data;
+};
 
-  function buildTree(tokens, kind, stack, customTags) {
-    var instructions = [],
-        opener = null,
-        tail = null,
-        token = null;
+var containsValue = function(data) {
+  return isObject(data) && 'matchLevel' in data && 'value' in data;
+};
 
-    tail = stack[stack.length - 1];
+var isObject = function (value) { return typeof value === 'object' && value !== null; };
 
-    while (tokens.length > 0) {
-      token = tokens.shift();
+var FACET_AND = 'and';
+var FACET_OR = 'or';
+var FACET_TREE = 'tree';
 
-      if (tail && tail.tag == '<' && !(token.tag in allowedInSuper)) {
-        throw new Error('Illegal content in < super tag.');
-      }
+var HIGHLIGHT_PRE_TAG = '__ais-highlight__';
+var HIGHLIGHT_POST_TAG = '__/ais-highlight__';
 
-      if (Hogan.tags[token.tag] <= Hogan.tags['$'] || isOpener(token, customTags)) {
-        stack.push(token);
-        token.nodes = buildTree(tokens, token.tag, stack, customTags);
-      } else if (token.tag == '/') {
-        if (stack.length === 0) {
-          throw new Error('Closing tag without opener: /' + token.n);
-        }
-        opener = stack.pop();
-        if (token.n != opener.n && !isCloser(token.n, opener.n, customTags)) {
-          throw new Error('Nesting error: ' + opener.n + ' vs. ' + token.n);
-        }
-        opener.end = token.i;
-        return instructions;
-      } else if (token.tag == '\n') {
-        token.last = (tokens.length == 0) || (tokens[0].tag == '\n');
-      }
+var createFromAlgoliaCredentials = function (appID, apiKey, options) {
+  var client = __WEBPACK_IMPORTED_MODULE_0_algoliasearch_lite___default()(appID, apiKey);
+  var helper = __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default()(client);
 
-      instructions.push(token);
-    }
+  return new Store(helper, options);
+};
 
-    if (stack.length > 0) {
-      throw new Error('missing closing tag: ' + stack.pop().n);
-    }
+var createFromAlgoliaClient = function (client, options) {
+  var helper = __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default()(client);
 
-    return instructions;
+  return new Store(helper, options);
+};
+
+var createFromSerialized = function (data, options) {
+  var helper = deserialize(data.helper);
+
+  var store = new Store(helper, options);
+  store.highlightPreTag = data.highlightPreTag;
+  store.highlightPostTag = data.highlightPostTag;
+
+  return store;
+};
+
+var Store = function Store(helper, ref) {
+  if ( ref === void 0 ) ref = {};
+  var stalledSearchDelay = ref.stalledSearchDelay; if ( stalledSearchDelay === void 0 ) stalledSearchDelay = 200;
+
+  if (!(helper instanceof __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default.a.AlgoliaSearchHelper)) {
+    throw new TypeError(
+      'Store should be constructed with an AlgoliaSearchHelper instance as first parameter.'
+    );
+  }
+  // We require one start() call to execute the first search query.
+  // Allows every widget to alter the state at initialization
+  // without trigger multiple queries.
+  this._stoppedCounter = 1;
+
+  this._highlightPreTag = '<em>';
+  this._highlightPostTag = '</em>';
+
+  this._cacheEnabled = true;
+
+  this._stalledSearchDelay = stalledSearchDelay;
+
+  this.algoliaHelper = helper;
+};
+
+var prototypeAccessors = { algoliaHelper: {},isSearchStalled: {},highlightPreTag: {},highlightPostTag: {},algoliaClient: {},algoliaApiKey: {},algoliaAppId: {},indexName: {},resultsPerPage: {},results: {},page: {},totalPages: {},userData: {},totalResults: {},processingTimeMS: {},maxValuesPerFacet: {},activeRefinements: {},query: {},queryParameters: {} };
+
+prototypeAccessors.algoliaHelper.set = function (helper) {
+  if (this._helper) {
+    this._helper.removeListener('change', onHelperChange);
+    this._helper.removeListener('result', onHelperResult);
+    this._helper.removeListener('search', onHelperSearch);
   }
 
-  function isOpener(token, tags) {
-    for (var i = 0, l = tags.length; i < l; i++) {
-      if (tags[i].o == token.n) {
-        token.tag = '#';
-        return true;
-      }
-    }
-  }
-
-  function isCloser(close, open, tags) {
-    for (var i = 0, l = tags.length; i < l; i++) {
-      if (tags[i].c == close && tags[i].o == open) {
-        return true;
-      }
-    }
-  }
-
-  function stringifySubstitutions(obj) {
-    var items = [];
-    for (var key in obj) {
-      items.push('"' + esc(key) + '": function(c,p,t,i) {' + obj[key] + '}');
-    }
-    return "{ " + items.join(",") + " }";
-  }
-
-  function stringifyPartials(codeObj) {
-    var partials = [];
-    for (var key in codeObj.partials) {
-      partials.push('"' + esc(key) + '":{name:"' + esc(codeObj.partials[key].name) + '", ' + stringifyPartials(codeObj.partials[key]) + "}");
-    }
-    return "partials: {" + partials.join(",") + "}, subs: " + stringifySubstitutions(codeObj.subs);
-  }
-
-  Hogan.stringify = function(codeObj, text, options) {
-    return "{code: function (c,p,i) { " + Hogan.wrapMain(codeObj.code) + " }," + stringifyPartials(codeObj) +  "}";
-  }
-
-  var serialNo = 0;
-  Hogan.generate = function(tree, text, options) {
-    serialNo = 0;
-    var context = { code: '', subs: {}, partials: {} };
-    Hogan.walk(tree, context);
-
-    if (options.asString) {
-      return this.stringify(context, text, options);
-    }
-
-    return this.makeTemplate(context, text, options);
-  }
-
-  Hogan.wrapMain = function(code) {
-    return 'var t=this;t.b(i=i||"");' + code + 'return t.fl();';
-  }
-
-  Hogan.template = Hogan.Template;
-
-  Hogan.makeTemplate = function(codeObj, text, options) {
-    var template = this.makePartials(codeObj);
-    template.code = new Function('c', 'p', 'i', this.wrapMain(codeObj.code));
-    return new this.template(template, text, this, options);
-  }
-
-  Hogan.makePartials = function(codeObj) {
-    var key, template = {subs: {}, partials: codeObj.partials, name: codeObj.name};
-    for (key in template.partials) {
-      template.partials[key] = this.makePartials(template.partials[key]);
-    }
-    for (key in codeObj.subs) {
-      template.subs[key] = new Function('c', 'p', 't', 'i', codeObj.subs[key]);
-    }
-    return template;
-  }
-
-  function esc(s) {
-    return s.replace(rSlash, '\\\\')
-            .replace(rQuot, '\\\"')
-            .replace(rNewline, '\\n')
-            .replace(rCr, '\\r')
-            .replace(rLineSep, '\\u2028')
-            .replace(rParagraphSep, '\\u2029');
-  }
-
-  function chooseMethod(s) {
-    return (~s.indexOf('.')) ? 'd' : 'f';
-  }
-
-  function createPartial(node, context) {
-    var prefix = "<" + (context.prefix || "");
-    var sym = prefix + node.n + serialNo++;
-    context.partials[sym] = {name: node.n, partials: {}};
-    context.code += 't.b(t.rp("' +  esc(sym) + '",c,p,"' + (node.indent || '') + '"));';
-    return sym;
-  }
-
-  Hogan.codegen = {
-    '#': function(node, context) {
-      context.code += 'if(t.s(t.' + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,1),' +
-                      'c,p,0,' + node.i + ',' + node.end + ',"' + node.otag + " " + node.ctag + '")){' +
-                      't.rs(c,p,' + 'function(c,p,t){';
-      Hogan.walk(node.nodes, context);
-      context.code += '});c.pop();}';
-    },
-
-    '^': function(node, context) {
-      context.code += 'if(!t.s(t.' + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,1),c,p,1,0,0,"")){';
-      Hogan.walk(node.nodes, context);
-      context.code += '};';
-    },
-
-    '>': createPartial,
-    '<': function(node, context) {
-      var ctx = {partials: {}, code: '', subs: {}, inPartial: true};
-      Hogan.walk(node.nodes, ctx);
-      var template = context.partials[createPartial(node, context)];
-      template.subs = ctx.subs;
-      template.partials = ctx.partials;
-    },
-
-    '$': function(node, context) {
-      var ctx = {subs: {}, code: '', partials: context.partials, prefix: node.n};
-      Hogan.walk(node.nodes, ctx);
-      context.subs[node.n] = ctx.code;
-      if (!context.inPartial) {
-        context.code += 't.sub("' + esc(node.n) + '",c,p,i);';
-      }
-    },
-
-    '\n': function(node, context) {
-      context.code += write('"\\n"' + (node.last ? '' : ' + i'));
-    },
-
-    '_v': function(node, context) {
-      context.code += 't.b(t.v(t.' + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,0)));';
-    },
-
-    '_t': function(node, context) {
-      context.code += write('"' + esc(node.text) + '"');
-    },
-
-    '{': tripleStache,
-
-    '&': tripleStache
-  }
-
-  function tripleStache(node, context) {
-    context.code += 't.b(t.t(t.' + chooseMethod(node.n) + '("' + esc(node.n) + '",c,p,0)));';
-  }
-
-  function write(s) {
-    return 't.b(' + s + ');';
-  }
-
-  Hogan.walk = function(nodelist, context) {
-    var func;
-    for (var i = 0, l = nodelist.length; i < l; i++) {
-      func = Hogan.codegen[nodelist[i].tag];
-      func && func(nodelist[i], context);
-    }
-    return context;
-  }
-
-  Hogan.parse = function(tokens, text, options) {
-    options = options || {};
-    return buildTree(tokens, '', [], options.sectionTags || []);
-  }
-
-  Hogan.cache = {};
-
-  Hogan.cacheKey = function(text, options) {
-    return [text, !!options.asString, !!options.disableLambda, options.delimiters, !!options.modelGet].join('||');
-  }
-
-  Hogan.compile = function(text, options) {
-    options = options || {};
-    var key = Hogan.cacheKey(text, options);
-    var template = this.cache[key];
-
-    if (template) {
-      var partials = template.partials;
-      for (var name in partials) {
-        delete partials[name].instance;
-      }
-      return template;
-    }
-
-    template = this.generate(this.parse(this.scan(text, options.delimiters), text, options), text, options);
-    return this.cache[key] = template;
-  }
-})( true ? exports : Hogan);
-
-
-/***/ }),
-/* 398 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
- *  Copyright 2011 Twitter, Inc.
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
-var Hogan = {};
-
-(function (Hogan) {
-  Hogan.Template = function (codeObj, text, compiler, options) {
-    codeObj = codeObj || {};
-    this.r = codeObj.code || this.r;
-    this.c = compiler;
-    this.options = options || {};
-    this.text = text || '';
-    this.partials = codeObj.partials || {};
-    this.subs = codeObj.subs || {};
-    this.buf = '';
-  }
-
-  Hogan.Template.prototype = {
-    // render: replaced by generated code.
-    r: function (context, partials, indent) { return ''; },
-
-    // variable escaping
-    v: hoganEscape,
-
-    // triple stache
-    t: coerceToString,
-
-    render: function render(context, partials, indent) {
-      return this.ri([context], partials || {}, indent);
-    },
-
-    // render internal -- a hook for overrides that catches partials too
-    ri: function (context, partials, indent) {
-      return this.r(context, partials, indent);
-    },
-
-    // ensurePartial
-    ep: function(symbol, partials) {
-      var partial = this.partials[symbol];
-
-      // check to see that if we've instantiated this partial before
-      var template = partials[partial.name];
-      if (partial.instance && partial.base == template) {
-        return partial.instance;
-      }
-
-      if (typeof template == 'string') {
-        if (!this.c) {
-          throw new Error("No compiler available.");
-        }
-        template = this.c.compile(template, this.options);
-      }
-
-      if (!template) {
-        return null;
-      }
-
-      // We use this to check whether the partials dictionary has changed
-      this.partials[symbol].base = template;
-
-      if (partial.subs) {
-        // Make sure we consider parent template now
-        if (!partials.stackText) partials.stackText = {};
-        for (key in partial.subs) {
-          if (!partials.stackText[key]) {
-            partials.stackText[key] = (this.activeSub !== undefined && partials.stackText[this.activeSub]) ? partials.stackText[this.activeSub] : this.text;
-          }
-        }
-        template = createSpecializedPartial(template, partial.subs, partial.partials,
-          this.stackSubs, this.stackPartials, partials.stackText);
-      }
-      this.partials[symbol].instance = template;
-
-      return template;
-    },
-
-    // tries to find a partial in the current scope and render it
-    rp: function(symbol, context, partials, indent) {
-      var partial = this.ep(symbol, partials);
-      if (!partial) {
-        return '';
-      }
-
-      return partial.ri(context, partials, indent);
-    },
-
-    // render a section
-    rs: function(context, partials, section) {
-      var tail = context[context.length - 1];
-
-      if (!isArray(tail)) {
-        section(context, partials, this);
-        return;
-      }
-
-      for (var i = 0; i < tail.length; i++) {
-        context.push(tail[i]);
-        section(context, partials, this);
-        context.pop();
-      }
-    },
-
-    // maybe start a section
-    s: function(val, ctx, partials, inverted, start, end, tags) {
-      var pass;
-
-      if (isArray(val) && val.length === 0) {
-        return false;
-      }
-
-      if (typeof val == 'function') {
-        val = this.ms(val, ctx, partials, inverted, start, end, tags);
-      }
-
-      pass = !!val;
-
-      if (!inverted && pass && ctx) {
-        ctx.push((typeof val == 'object') ? val : ctx[ctx.length - 1]);
-      }
-
-      return pass;
-    },
-
-    // find values with dotted names
-    d: function(key, ctx, partials, returnFound) {
-      var found,
-          names = key.split('.'),
-          val = this.f(names[0], ctx, partials, returnFound),
-          doModelGet = this.options.modelGet,
-          cx = null;
-
-      if (key === '.' && isArray(ctx[ctx.length - 2])) {
-        val = ctx[ctx.length - 1];
-      } else {
-        for (var i = 1; i < names.length; i++) {
-          found = findInScope(names[i], val, doModelGet);
-          if (found !== undefined) {
-            cx = val;
-            val = found;
-          } else {
-            val = '';
-          }
-        }
-      }
-
-      if (returnFound && !val) {
-        return false;
-      }
-
-      if (!returnFound && typeof val == 'function') {
-        ctx.push(cx);
-        val = this.mv(val, ctx, partials);
-        ctx.pop();
-      }
-
-      return val;
-    },
-
-    // find values with normal names
-    f: function(key, ctx, partials, returnFound) {
-      var val = false,
-          v = null,
-          found = false,
-          doModelGet = this.options.modelGet;
-
-      for (var i = ctx.length - 1; i >= 0; i--) {
-        v = ctx[i];
-        val = findInScope(key, v, doModelGet);
-        if (val !== undefined) {
-          found = true;
-          break;
-        }
-      }
-
-      if (!found) {
-        return (returnFound) ? false : "";
-      }
-
-      if (!returnFound && typeof val == 'function') {
-        val = this.mv(val, ctx, partials);
-      }
-
-      return val;
-    },
-
-    // higher order templates
-    ls: function(func, cx, partials, text, tags) {
-      var oldTags = this.options.delimiters;
-
-      this.options.delimiters = tags;
-      this.b(this.ct(coerceToString(func.call(cx, text)), cx, partials));
-      this.options.delimiters = oldTags;
-
-      return false;
-    },
-
-    // compile text
-    ct: function(text, cx, partials) {
-      if (this.options.disableLambda) {
-        throw new Error('Lambda features disabled.');
-      }
-      return this.c.compile(text, this.options).render(cx, partials);
-    },
-
-    // template result buffering
-    b: function(s) { this.buf += s; },
-
-    fl: function() { var r = this.buf; this.buf = ''; return r; },
-
-    // method replace section
-    ms: function(func, ctx, partials, inverted, start, end, tags) {
-      var textSource,
-          cx = ctx[ctx.length - 1],
-          result = func.call(cx);
-
-      if (typeof result == 'function') {
-        if (inverted) {
-          return true;
-        } else {
-          textSource = (this.activeSub && this.subsText && this.subsText[this.activeSub]) ? this.subsText[this.activeSub] : this.text;
-          return this.ls(result, cx, partials, textSource.substring(start, end), tags);
-        }
-      }
-
-      return result;
-    },
-
-    // method replace variable
-    mv: function(func, ctx, partials) {
-      var cx = ctx[ctx.length - 1];
-      var result = func.call(cx);
-
-      if (typeof result == 'function') {
-        return this.ct(coerceToString(result.call(cx)), cx, partials);
-      }
-
-      return result;
-    },
-
-    sub: function(name, context, partials, indent) {
-      var f = this.subs[name];
-      if (f) {
-        this.activeSub = name;
-        f(context, partials, this, indent);
-        this.activeSub = false;
-      }
-    }
-
-  };
-
-  //Find a key in an object
-  function findInScope(key, scope, doModelGet) {
-    var val;
-
-    if (scope && typeof scope == 'object') {
-
-      if (scope[key] !== undefined) {
-        val = scope[key];
-
-      // try lookup with get for backbone or similar model data
-      } else if (doModelGet && scope.get && typeof scope.get == 'function') {
-        val = scope.get(key);
-      }
-    }
-
-    return val;
-  }
-
-  function createSpecializedPartial(instance, subs, partials, stackSubs, stackPartials, stackText) {
-    function PartialTemplate() {};
-    PartialTemplate.prototype = instance;
-    function Substitutions() {};
-    Substitutions.prototype = instance.subs;
-    var key;
-    var partial = new PartialTemplate();
-    partial.subs = new Substitutions();
-    partial.subsText = {};  //hehe. substext.
-    partial.buf = '';
-
-    stackSubs = stackSubs || {};
-    partial.stackSubs = stackSubs;
-    partial.subsText = stackText;
-    for (key in subs) {
-      if (!stackSubs[key]) stackSubs[key] = subs[key];
-    }
-    for (key in stackSubs) {
-      partial.subs[key] = stackSubs[key];
-    }
-
-    stackPartials = stackPartials || {};
-    partial.stackPartials = stackPartials;
-    for (key in partials) {
-      if (!stackPartials[key]) stackPartials[key] = partials[key];
-    }
-    for (key in stackPartials) {
-      partial.partials[key] = stackPartials[key];
-    }
-
-    return partial;
-  }
-
-  var rAmp = /&/g,
-      rLt = /</g,
-      rGt = />/g,
-      rApos = /\'/g,
-      rQuot = /\"/g,
-      hChars = /[&<>\"\']/;
-
-  function coerceToString(val) {
-    return String((val === null || val === undefined) ? '' : val);
-  }
-
-  function hoganEscape(str) {
-    str = coerceToString(str);
-    return hChars.test(str) ?
-      str
-        .replace(rAmp, '&amp;')
-        .replace(rLt, '&lt;')
-        .replace(rGt, '&gt;')
-        .replace(rApos, '&#39;')
-        .replace(rQuot, '&quot;') :
-      str;
-  }
-
-  var isArray = Array.isArray || function(a) {
-    return Object.prototype.toString.call(a) === '[object Array]';
-  };
-
-})( true ? exports : Hogan);
-
-
-/***/ }),
-/* 399 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__find__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__unescapeRefinement__ = __webpack_require__(307);
-
-
-
-function getRefinement(state, type, attributeName, name) {
-  var resultsFacets = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : [];
-  var res = {
-    type: type,
-    attributeName: attributeName,
-    name: name
-  };
-  var facet = Object(__WEBPACK_IMPORTED_MODULE_0__find__["a" /* default */])(resultsFacets, function (resultsFacet) {
-    return resultsFacet.name === attributeName;
-  });
-  var count;
-
-  if (type === 'hierarchical') {
-    (function () {
-      var facetDeclaration = state.getHierarchicalFacetByName(attributeName);
-      var nameParts = name.split(facetDeclaration.separator);
-
-      var getFacetRefinement = function getFacetRefinement(facetData) {
-        return function (refinementKey) {
-          return facetData[refinementKey];
-        };
-      };
-
-      var _loop = function _loop(i) {
-        facet = facet && facet.data && Object(__WEBPACK_IMPORTED_MODULE_0__find__["a" /* default */])(Object.keys(facet.data).map(getFacetRefinement(facet.data)), function (refinement) {
-          return refinement.name === nameParts[i];
-        });
-      };
-
-      for (var i = 0; facet !== undefined && i < nameParts.length; ++i) {
-        _loop(i);
-      }
-
-      count = facet && facet.count;
-    })();
+  this._helper = helper;
+
+  // Here we enforce custom highlight tags for handling XSS protection.
+  // We also make sure that we keep the current page as setQueryParameter resets it.
+  var page = this._helper.getPage();
+  this._helper.setQueryParameter('highlightPreTag', HIGHLIGHT_PRE_TAG);
+  this._helper.setQueryParameter('highlightPostTag', HIGHLIGHT_POST_TAG);
+  this._helper.setPage(page);
+
+  if (this._helper.lastResults) {
+    onHelperResult.apply(this, [this._helper.lastResults]);
   } else {
-    count = facet && facet.data && facet.data[res.name];
+    this._results = [];
   }
 
-  var exhaustive = facet && facet.exhaustive;
+  this._helper.on('change', onHelperChange.bind(this));
+  this._helper.on('result', onHelperResult.bind(this));
+  this._helper.on('search', onHelperSearch.bind(this));
 
-  if (count !== undefined) {
-    res.count = count;
+  var client = this._helper.getClient();
+
+  if (typeof client.addAlgoliaAgent === 'function') {
+    client.addAlgoliaAgent(("vue-instantsearch " + version));
   }
 
-  if (exhaustive !== undefined) {
-    res.exhaustive = exhaustive;
+  this._stalledSearchTimer = null;
+  this.isSearchStalled = true;
+};
+
+prototypeAccessors.isSearchStalled.get = function () {
+  return this._isSearchStalled;
+};
+
+prototypeAccessors.isSearchStalled.set = function (isStalled) {
+  this._isSearchStalled = isStalled;
+};
+
+prototypeAccessors.algoliaHelper.get = function () {
+  return this._helper;
+};
+
+prototypeAccessors.highlightPreTag.get = function () {
+  return this._highlightPreTag;
+};
+
+prototypeAccessors.highlightPreTag.set = function (tag) {
+  this._highlightPreTag = tag;
+};
+
+prototypeAccessors.highlightPostTag.get = function () {
+  return this._highlightPostTag;
+};
+
+prototypeAccessors.highlightPostTag.set = function (tag) {
+  this._highlightPostTag = tag;
+};
+
+prototypeAccessors.algoliaClient.set = function (algoliaClient) {
+  this._helper.setClient(algoliaClient);
+
+  // Manually trigger the change given the helper doesn't emit a change event
+  // when a new client is set.
+  onHelperChange();
+};
+
+prototypeAccessors.algoliaClient.get = function () {
+  return this._helper.getClient();
+};
+
+prototypeAccessors.algoliaApiKey.get = function () {
+  return this.algoliaClient.apiKey;
+};
+
+prototypeAccessors.algoliaAppId.get = function () {
+  return this.algoliaClient.applicationID;
+};
+
+Store.prototype.start = function start () {
+  if (this._stoppedCounter < 1) {
+    this._stoppedCounter = 0;
+  } else {
+    this._stoppedCounter--;
+  }
+};
+
+Store.prototype.stop = function stop () {
+  this._stoppedCounter++;
+};
+
+prototypeAccessors.indexName.set = function (index) {
+  this._helper.setIndex(index);
+};
+
+prototypeAccessors.indexName.get = function () {
+  return this._helper.getIndex();
+};
+
+prototypeAccessors.resultsPerPage.set = function (count) {
+  this._helper.setQueryParameter('hitsPerPage', count);
+};
+
+prototypeAccessors.resultsPerPage.get = function () {
+  var resultsPerPage = this._helper.getQueryParameter('hitsPerPage');
+
+  if (resultsPerPage) {
+    return resultsPerPage;
   }
 
-  return res;
-}
+  return this._helper.lastResults ? this._helper.lastResults.hitsPerPage : 0;
+};
 
-function getRefinements(results, state) {
-  var clearsQuery = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  var res = [];
-  var _state$facetsRefineme = state.facetsRefinements,
-      facetsRefinements = _state$facetsRefineme === void 0 ? {} : _state$facetsRefineme,
-      _state$facetsExcludes = state.facetsExcludes,
-      facetsExcludes = _state$facetsExcludes === void 0 ? {} : _state$facetsExcludes,
-      _state$disjunctiveFac = state.disjunctiveFacetsRefinements,
-      disjunctiveFacetsRefinements = _state$disjunctiveFac === void 0 ? {} : _state$disjunctiveFac,
-      _state$hierarchicalFa = state.hierarchicalFacetsRefinements,
-      hierarchicalFacetsRefinements = _state$hierarchicalFa === void 0 ? {} : _state$hierarchicalFa,
-      _state$numericRefinem = state.numericRefinements,
-      numericRefinements = _state$numericRefinem === void 0 ? {} : _state$numericRefinem,
-      _state$tagRefinements = state.tagRefinements,
-      tagRefinements = _state$tagRefinements === void 0 ? [] : _state$tagRefinements;
-  Object.keys(facetsRefinements).forEach(function (attributeName) {
-    var refinements = facetsRefinements[attributeName];
-    refinements.forEach(function (refinement) {
-      res.push(getRefinement(state, 'facet', attributeName, refinement, results.facets));
-    });
-  });
-  Object.keys(facetsExcludes).forEach(function (attributeName) {
-    var refinements = facetsExcludes[attributeName];
-    refinements.forEach(function (refinement) {
-      res.push({
-        type: 'exclude',
-        attributeName: attributeName,
-        name: refinement,
-        exclude: true
-      });
-    });
-  });
-  Object.keys(disjunctiveFacetsRefinements).forEach(function (attributeName) {
-    var refinements = disjunctiveFacetsRefinements[attributeName];
-    refinements.forEach(function (refinement) {
-      res.push(getRefinement(state, 'disjunctive', attributeName, // We unescape any disjunctive refined values with `unescapeRefinement` because
-      // they can be escaped on negative numeric values with `escapeRefinement`.
-      Object(__WEBPACK_IMPORTED_MODULE_1__unescapeRefinement__["a" /* default */])(refinement), results.disjunctiveFacets));
-    });
-  });
-  Object.keys(hierarchicalFacetsRefinements).forEach(function (attributeName) {
-    var refinements = hierarchicalFacetsRefinements[attributeName];
-    refinements.forEach(function (refinement) {
-      res.push(getRefinement(state, 'hierarchical', attributeName, refinement, results.hierarchicalFacets));
-    });
-  });
-  Object.keys(numericRefinements).forEach(function (attributeName) {
-    var operators = numericRefinements[attributeName];
-    Object.keys(operators).forEach(function (operator) {
-      var valueOrValues = operators[operator];
-      var refinements = Array.isArray(valueOrValues) ? valueOrValues : [valueOrValues];
-      refinements.forEach(function (refinement) {
-        res.push({
-          type: 'numeric',
-          attributeName: attributeName,
-          name: "".concat(refinement),
-          numericValue: refinement,
-          operator: operator
-        });
-      });
-    });
-  });
-  tagRefinements.forEach(function (refinement) {
-    res.push({
-      type: 'tag',
-      attributeName: '_tags',
-      name: refinement
-    });
-  });
+prototypeAccessors.results.get = function () {
+  return this._results;
+};
 
-  if (clearsQuery && state.query && state.query.trim()) {
-    res.push({
-      attributeName: 'query',
-      type: 'query',
-      name: state.query,
-      query: state.query
-    });
+prototypeAccessors.page.get = function () {
+  return this._helper.getPage() + 1;
+};
+
+prototypeAccessors.page.set = function (page) {
+  this._helper.setPage(page - 1);
+};
+
+prototypeAccessors.totalPages.get = function () {
+  if (!this._helper.lastResults) {
+    return 0;
   }
 
-  return res;
-}
+  return this._helper.lastResults.nbPages;
+};
 
-/* harmony default export */ __webpack_exports__["a"] = (getRefinements);
+prototypeAccessors.userData.get = function () {
+  if (!this._helper.lastResults) {
+    return undefined;
+  }
 
-/***/ }),
-/* 400 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  return this._helper.lastResults.userData;
+};
 
-"use strict";
-/**
- * Clears the refinements of a SearchParameters object based on rules provided.
- * The included attributes list is applied before the excluded attributes list. If the list
- * is not provided, this list of all the currently refined attributes is used as included attributes.
- * @param {object} $0 parameters
- * @param {Helper} $0.helper instance of the Helper
- * @param {string[]} [$0.attributesToClear = []] list of parameters to clear
- * @returns {SearchParameters} search parameters with refinements cleared
- */
-function clearRefinements(_ref) {
-  var helper = _ref.helper,
-      _ref$attributesToClea = _ref.attributesToClear,
-      attributesToClear = _ref$attributesToClea === void 0 ? [] : _ref$attributesToClea;
-  var finalState = helper.state.setPage(0);
-  attributesToClear.forEach(function (attribute) {
-    if (attribute === '_tags') {
-      finalState = finalState.clearTags();
-    } else {
-      finalState = finalState.clearRefinements(attribute);
+prototypeAccessors.totalResults.get = function () {
+  if (!this._helper.lastResults) {
+    return 0;
+  }
+
+  return this._helper.lastResults.nbHits;
+};
+
+prototypeAccessors.processingTimeMS.get = function () {
+  if (!this._helper.lastResults) {
+    return 0;
+  }
+
+  return this._helper.lastResults.processingTimeMS;
+};
+
+prototypeAccessors.maxValuesPerFacet.set = function (limit) {
+  var currentMaxValuesPerFacet = this._helper.state.maxValuesPerFacet || 0;
+  this._helper.setQueryParameter(
+    'maxValuesPerFacet',
+    Math.max(currentMaxValuesPerFacet, limit)
+  );
+};
+
+Store.prototype.addFacet = function addFacet (attribute, type) {
+    if ( type === void 0 ) type = FACET_AND;
+
+  if (this.hasFacet(attribute, type)) {
+    return;
+  }
+
+  this.stop();
+
+  var state = null;
+  if (type === FACET_AND) {
+    if (!this._helper.state.isConjunctiveFacet(attribute)) {
+      this.removeFacet(attribute);
+      state = this._helper.state.addFacet(attribute);
     }
-  });
-
-  if (attributesToClear.indexOf('query') !== -1) {
-    finalState = finalState.setQuery('');
-  }
-
-  return finalState;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (clearRefinements);
-
-/***/ }),
-/* 401 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function escapeRefinement(value) {
-  if (typeof value === 'number' && value < 0) {
-    value = String(value).replace(/^-/, '\\-');
-  }
-
-  return value;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (escapeRefinement);
-
-/***/ }),
-/* 402 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function checkRendering(rendering, usage) {
-  if (rendering === undefined || typeof rendering !== 'function') {
-    throw new Error("The render function is not valid (got type \"".concat(_typeof(rendering), "\").\n\n").concat(usage));
-  }
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (checkRendering);
-
-/***/ }),
-/* 403 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function getPropertyByPath(object, path) {
-  var parts = path.split('.');
-  return parts.reduce(function (current, key) {
-    return current && current[key];
-  }, object);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (getPropertyByPath);
-
-/***/ }),
-/* 404 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// This is the `Number.isFinite()` polyfill recommended by MDN.
-// We do not provide any tests for this function.
-// See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite#Polyfill
-function isFiniteNumber(value) {
-  return typeof value === 'number' && isFinite(value);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (isFiniteNumber);
-
-/***/ }),
-/* 405 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-function range(_ref) {
-  var _ref$start = _ref.start,
-      start = _ref$start === void 0 ? 0 : _ref$start,
-      end = _ref.end,
-      _ref$step = _ref.step,
-      step = _ref$step === void 0 ? 1 : _ref$step;
-  // We can't divide by 0 so we re-assign the step to 1 if it happens.
-  var limitStep = step === 0 ? 1 : step; // In some cases the array to create has a decimal length.
-  // We therefore need to round the value.
-  // Example:
-  //   { start: 1, end: 5000, step: 500 }
-  //   => Array length = (5000 - 1) / 500 = 9.998
-
-  var arrayLength = Math.round((end - start) / limitStep);
-  return _toConsumableArray(Array(arrayLength)).map(function (_, current) {
-    return (start + current) * limitStep;
-  });
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (range);
-
-/***/ }),
-/* 406 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function isPrimitive(obj) {
-  return obj !== Object(obj);
-}
-
-function isEqual(first, second) {
-  if (first === second) {
-    return true;
-  }
-
-  if (isPrimitive(first) || isPrimitive(second) || typeof first === 'function' || typeof second === 'function') {
-    return first === second;
-  }
-
-  if (Object.keys(first).length !== Object.keys(second).length) {
-    return false;
-  }
-
-  for (var _i = 0, _Object$keys = Object.keys(first); _i < _Object$keys.length; _i++) {
-    var key = _Object$keys[_i];
-
-    if (!(key in second)) {
-      return false;
+  } else if (type === FACET_OR) {
+    if (!this._helper.state.isDisjunctiveFacet(attribute)) {
+      this.removeFacet(attribute);
+      state = this._helper.state.addDisjunctiveFacet(attribute);
     }
-
-    if (!isEqual(first[key], second[key])) {
-      return false;
+  } else if (type === FACET_TREE) {
+    if (!this._helper.state.isHierarchicalFacet(attribute.name)) {
+      this.removeFacet(attribute.name);
+      state = this._helper.state.addHierarchicalFacet(attribute);
     }
   }
 
-  return true;
-}
+  if (state !== null) {
+    this._helper.setState(state);
+  }
+  this.start();
+  this.refresh();
+};
 
-/* harmony default export */ __webpack_exports__["a"] = (isEqual);
+Store.prototype.removeFacet = function removeFacet (attribute) {
+  var state = null;
 
-/***/ }),
-/* 407 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/**
- * This implementation is taken from Lodash implementation.
- * See: https://github.com/lodash/lodash/blob/4.17.11-npm/escape.js
- */
-// Used to map characters to HTML entities.
-var htmlEscapes = {
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
-  '"': '&quot;',
-  "'": '&#39;'
-}; // Used to match HTML entities and HTML characters.
-
-var regexUnescapedHtml = /[&<>"']/g;
-var regexHasUnescapedHtml = RegExp(regexUnescapedHtml.source);
-/**
- * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
- * corresponding HTML entities.
- */
-
-function escape(value) {
-  return value && regexHasUnescapedHtml.test(value) ? value.replace(regexUnescapedHtml, function (character) {
-    return htmlEscapes[character];
-  }) : value;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (escape);
-
-/***/ }),
-/* 408 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// We aren't using the native `Array.prototype.findIndex` because the refactor away from Lodash is not
-// published as a major version.
-// Relying on the `findIndex` polyfill on user-land, which before was only required for niche use-cases,
-// was decided as too risky.
-// @MAJOR Replace with the native `Array.prototype.findIndex` method
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
-function findIndex(array, comparator) {
-  if (!Array.isArray(array)) {
-    return -1;
+  if (this._helper.state.isConjunctiveFacet(attribute)) {
+    state = this._helper.state.removeFacet(attribute);
+  } else if (this._helper.state.isDisjunctiveFacet(attribute)) {
+    state = this._helper.state.removeDisjunctiveFacet(attribute);
+  } else if (this._helper.state.isHierarchicalFacet(attribute)) {
+    state = this._helper.state.removeHierarchicalFacet(attribute);
+  } else {
+    return;
   }
 
-  for (var i = 0; i < array.length; i++) {
-    if (comparator(array[i])) {
-      return i;
-    }
+  this._helper.setState(state);
+};
+
+Store.prototype.hasFacet = function hasFacet (attribute, type) {
+    if ( type === void 0 ) type = FACET_AND;
+
+  assertValidFacetType(type);
+
+  switch (type) {
+    case FACET_AND:
+      return this._helper.state.isConjunctiveFacet(attribute);
+    case FACET_OR:
+      return this._helper.state.isDisjunctiveFacet(attribute);
+    case FACET_TREE:
+      return this._helper.state.isHierarchicalFacet(attribute);
+    default:
+      throw new TypeError((type + " could not be handled."));
+  }
+};
+
+Store.prototype.addFacetRefinement = function addFacetRefinement (attribute, value) {
+  if (this._helper.state.isConjunctiveFacet(attribute)) {
+    this._helper.addFacetRefinement(attribute, value);
+  } else if (this._helper.state.isDisjunctiveFacet(attribute)) {
+    this._helper.addDisjunctiveFacetRefinement(attribute, value);
+  } else if (this._helper.state.isHierarchicalFacet(attribute)) {
+    this._helper.addHierarchicalFacetRefinement(attribute, value);
+  }
+};
+
+Store.prototype.toggleFacetRefinement = function toggleFacetRefinement (facet, value) {
+  this._helper.toggleRefinement(facet, value);
+};
+
+Store.prototype.clearRefinements = function clearRefinements (attribute) {
+  this._helper.clearRefinements(attribute);
+};
+
+Store.prototype.getFacetValues = function getFacetValues (attribute, sortBy, limit) {
+    if ( limit === void 0 ) limit = -1;
+
+  if (!this._helper.lastResults) {
+    return [];
   }
 
-  return -1;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (findIndex);
-
-/***/ }),
-/* 409 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__uniq__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__isPlainObject__ = __webpack_require__(309);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-
-
-/**
- * Deeply merges all the object values in a new object.
- *
- * - Primitive values are replaced
- * - Arrays a concatenated and their values are made unique
- */
-
-function mergeDeep() {
-  for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
-    values[_key] = arguments[_key];
-  }
-
-  return values.reduce(function (acc) {
-    var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    Object.keys(source).forEach(function (key) {
-      var previousValue = acc[key];
-      var nextValue = source[key];
-
-      if (Array.isArray(previousValue) && Array.isArray(nextValue)) {
-        acc[key] = Object(__WEBPACK_IMPORTED_MODULE_0__uniq__["a" /* default */])([].concat(_toConsumableArray(previousValue), _toConsumableArray(nextValue)));
-      } else if (Object(__WEBPACK_IMPORTED_MODULE_1__isPlainObject__["a" /* default */])(previousValue) && Object(__WEBPACK_IMPORTED_MODULE_1__isPlainObject__["a" /* default */])(nextValue)) {
-        acc[key] = mergeDeep(previousValue, nextValue);
-      } else {
-        acc[key] = nextValue;
-      }
+  var values;
+  try {
+    values = this._helper.lastResults.getFacetValues(attribute, {
+      sortBy: sortBy,
     });
-    return acc;
-  }, {});
-}
+  } catch (e) {
+    values = [];
+  }
 
-/* harmony default export */ __webpack_exports__["a"] = (mergeDeep);
+  if (limit === -1) {
+    return values;
+  }
 
-/***/ }),
-/* 410 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  return values.slice(0, limit);
+};
 
-"use strict";
-/* unused harmony export warn */
-/* unused harmony export deprecate */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _warning; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(308);
+Store.prototype.getFacetStats = function getFacetStats (attribute) {
+  if (!this._helper.lastResults) {
+    return {};
+  }
 
-var deprecate = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */];
-var warn = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */];
-/**
- * Logs a warning if the condition is not met.
- * This is used to log issues in development environment only.
- *
- * @returns {undefined}
- */
+  return this._helper.lastResults.getFacetStats(attribute) || {};
+};
 
-var _warning = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */];
+prototypeAccessors.activeRefinements.get = function () {
+  if (!this._helper.lastResults) {
+    return [];
+  }
 
-if (true) {
-  warn = function warn(message) {
-    // eslint-disable-next-line no-console
-    console.warn("[InstantSearch.js]: ".concat(message.trim()));
+  return this._helper.lastResults.getRefinements();
+};
+
+Store.prototype.addNumericRefinement = function addNumericRefinement (attribute, operator, value) {
+  this._helper.addNumericRefinement(attribute, operator, value);
+};
+
+Store.prototype.removeNumericRefinement = function removeNumericRefinement (attribute, operator, value) {
+  this._helper.removeNumericRefinement(attribute, operator, value);
+};
+
+prototypeAccessors.query.set = function (query) {
+  if (this._helper.state.query === query) {
+    return;
+  }
+  this._helper.setQuery(query);
+};
+
+prototypeAccessors.query.get = function () {
+  return this._helper.state.query;
+};
+
+prototypeAccessors.queryParameters.get = function () {
+  return Object.assign({}, this._helper.state, {
+    page: this.page,
+    highlightPreTag: this.highlightPreTag,
+    highlightPostTag: this.highlightPostTag,
+  });
+};
+
+prototypeAccessors.queryParameters.set = function (searchParameters) {
+  var params = Object.assign({}, searchParameters);
+  var paramKeys = Object.keys(params);
+  paramKeys.forEach(function (key) {
+    if (params[key] === null) {
+      params[key] = undefined;
+    }
+  });
+
+  if (params.page !== undefined) {
+    params.page = params.page - 1;
+  }
+
+  if ('highlightPreTag' in params) {
+    this.highlightPreTag = params.highlightPreTag;
+    delete params.highlightPreTag;
+  }
+
+  if ('highlightPostTag' in params) {
+    this.highlightPostTag = params.highlightPostTag;
+    delete params.highlightPostTag;
+  }
+
+  var newSearchParameters = __WEBPACK_IMPORTED_MODULE_1_algoliasearch_helper___default.a.SearchParameters.make(
+    Object.assign({}, this._helper.state, params)
+  );
+  this._helper.setState(newSearchParameters);
+};
+
+Store.prototype.serialize = function serialize$$1 () {
+  return {
+    helper: serialize(this._helper),
+    highlightPreTag: this.highlightPreTag,
+    highlightPostTag: this.highlightPostTag,
   };
+};
 
-  deprecate = function deprecate(fn, message) {
-    var hasAlreadyPrinted = false;
-    return function () {
-      if (!hasAlreadyPrinted) {
-        hasAlreadyPrinted = true;
-        warn(message);
-      }
+Store.prototype.refresh = function refresh () {
+  if (this._stoppedCounter !== 0) {
+    return;
+  }
+  if (this._cacheEnabled === false) {
+    this.clearCache();
+  }
+  this._helper.search();
+};
 
-      return fn.apply(void 0, arguments);
-    };
-  };
+Store.prototype.enableCache = function enableCache () {
+  this._cacheEnabled = true;
+};
 
-  _warning = function warning(condition, message) {
-    if (condition) {
+Store.prototype.disableCache = function disableCache () {
+  this._cacheEnabled = false;
+};
+
+Store.prototype.clearCache = function clearCache () {
+  this.algoliaClient.clearCache();
+};
+
+Store.prototype.waitUntilInSync = function waitUntilInSync () {
+    var this$1 = this;
+
+  return new Promise(function (resolve, reject) {
+    if (this$1._helper.hasPendingRequests() === false) {
+      resolve();
       return;
     }
 
-    var hasAlreadyPrinted = _warning.cache[message];
-
-    if (!hasAlreadyPrinted) {
-      _warning.cache[message] = true;
-      warn(message);
-    }
-  };
-
-  _warning.cache = {};
-}
-
-
-
-/***/ }),
-/* 411 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export createDocumentationLink */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createDocumentationMessageGenerator; });
-var createDocumentationLink = function createDocumentationLink(_ref) {
-  var name = _ref.name,
-      _ref$connector = _ref.connector,
-      connector = _ref$connector === void 0 ? false : _ref$connector;
-  return ['https://www.algolia.com/doc/api-reference/widgets/', name, '/js/', connector ? '#connector' : ''].join('');
-};
-var createDocumentationMessageGenerator = function createDocumentationMessageGenerator() {
-  for (var _len = arguments.length, widgets = new Array(_len), _key = 0; _key < _len; _key++) {
-    widgets[_key] = arguments[_key];
-  }
-
-  var links = widgets.map(function (widget) {
-    return createDocumentationLink(widget);
-  }).join(', ');
-  return function (message) {
-    return [message, "See documentation: ".concat(links)].filter(Boolean).join('\n\n');
-  };
-};
-
-/***/ }),
-/* 412 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = aroundLatLngToPosition;
-/* unused harmony export insideBoundingBoxArrayToBoundingBox */
-/* unused harmony export insideBoundingBoxStringToBoundingBox */
-/* harmony export (immutable) */ __webpack_exports__["b"] = insideBoundingBoxToBoundingBox;
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var latLngRegExp = /^(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)$/;
-function aroundLatLngToPosition(value) {
-  var pattern = value.match(latLngRegExp); // Since the value provided is the one send with the request, the API should
-  // throw an error due to the wrong format. So throw an error should be safe.
-
-  if (!pattern) {
-    throw new Error("Invalid value for \"aroundLatLng\" parameter: \"".concat(value, "\""));
-  }
-
-  return {
-    lat: parseFloat(pattern[1]),
-    lng: parseFloat(pattern[2])
-  };
-}
-function insideBoundingBoxArrayToBoundingBox(value) {
-  var _value = _slicedToArray(value, 1),
-      _value$ = _value[0];
-
-  _value$ = _value$ === void 0 ? [] : _value$;
-
-  var _value$2 = _slicedToArray(_value$, 4),
-      neLat = _value$2[0],
-      neLng = _value$2[1],
-      swLat = _value$2[2],
-      swLng = _value$2[3]; // Since the value provided is the one send with the request, the API should
-  // throw an error due to the wrong format. So throw an error should be safe.
-
-
-  if (!neLat || !neLng || !swLat || !swLng) {
-    throw new Error("Invalid value for \"insideBoundingBox\" parameter: [".concat(value, "]"));
-  }
-
-  return {
-    northEast: {
-      lat: neLat,
-      lng: neLng
-    },
-    southWest: {
-      lat: swLat,
-      lng: swLng
-    }
-  };
-}
-function insideBoundingBoxStringToBoundingBox(value) {
-  var _value$split$map = value.split(',').map(parseFloat),
-      _value$split$map2 = _slicedToArray(_value$split$map, 4),
-      neLat = _value$split$map2[0],
-      neLng = _value$split$map2[1],
-      swLat = _value$split$map2[2],
-      swLng = _value$split$map2[3]; // Since the value provided is the one send with the request, the API should
-  // throw an error due to the wrong format. So throw an error should be safe.
-
-
-  if (!neLat || !neLng || !swLat || !swLng) {
-    throw new Error("Invalid value for \"insideBoundingBox\" parameter: \"".concat(value, "\""));
-  }
-
-  return {
-    northEast: {
-      lat: neLat,
-      lng: neLng
-    },
-    southWest: {
-      lat: swLat,
-      lng: swLng
-    }
-  };
-}
-function insideBoundingBoxToBoundingBox(value) {
-  if (Array.isArray(value)) {
-    return insideBoundingBoxArrayToBoundingBox(value);
-  }
-
-  return insideBoundingBoxStringToBoundingBox(value);
-}
-
-/***/ }),
-/* 413 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addAbsolutePosition; });
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var addAbsolutePosition = function addAbsolutePosition(hits, page, hitsPerPage) {
-  return hits.map(function (hit, idx) {
-    return _objectSpread({}, hit, {
-      __position: hitsPerPage * page + idx + 1
-    });
-  });
-};
-
-/***/ }),
-/* 414 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addQueryID; });
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var addQueryID = function addQueryID(hits, queryID) {
-  if (!queryID) {
-    return hits;
-  }
-
-  return hits.map(function (hit) {
-    return _objectSpread({}, hit, {
-      __queryID: queryID
-    });
-  });
-};
-
-/***/ }),
-/* 415 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectCurrentRefinements;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'current-refinements',
-  connector: true
-});
-/**
- * @typedef {Object} Refinement
- * @property {"facet"|"exclude"|"disjunctive"|"hierarchical"|"numeric"|"query"} type The type of the refinement
- * @property {string} attribute The attribute on which the refinement is applied
- * @property {string} label The label of the refinement to display
- * @property {string} value The raw value of the refinement
- * @property {string} [operator] The value of the operator, only if applicable
- * @property {boolean} [exhaustive] Whether the count is exhaustive, only if applicable
- * @property {number} [count] number of items found, if applicable
- */
-
-/**
- * @typedef {Object} RefinementItem
- * @property {string} attribute The attribute on which the refinement is applied
- * @property {function} refine The function to remove the refinement
- * @property {Refinement[]} refinements The current refinements
- */
-
-/**
- * @typedef {Object} CurrentRefinementsRenderingOptions
- * @property {function(item)} refine Clears a single refinement
- * @property {function(item): string} createURL Creates an individual URL where a single refinement is cleared
- * @property {RefinementItem[]} items All the refinement items
- * @property {Object} widgetParams All original `CustomCurrentRefinementsWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * @typedef {Object} CustomCurrentRefinementsWidgetOptions
- * @property {string[]} [includedAttributes] The attributes to include in the refinements (all by default). Cannot be used with `excludedAttributes`.
- * @property {string[]} [excludedAttributes = ["query"]] The attributes to exclude from the refinements. Cannot be used with `includedAttributes`.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * **CurrentRefinements** connector provides the logic to build a widget that will give
- * the user the ability to see all the currently applied filters and, remove some or all of
- * them.
- *
- * This provides a `refine(item)` function to remove a selected refinement.
- * Those functions can see their behaviour change based on the widget options used.
- * @type {Connector}
- * @param {function(CurrentRefinementsRenderingOptions)} renderFn Rendering function for the custom **CurrentRefinements** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomCurrentRefinementsWidgetOptions)} Re-usable widget factory for a custom **CurrentRefinements** widget.
- * @example
- * // custom `renderFn` to render the custom ClearRefinements widget
- * function renderFn(currentRefinementsRenderingOptions, isFirstRendering) {
- *   var containerNode = currentRefinementsRenderingOptions.widgetParams.containerNode;
- *   if (isFirstRendering) {
- *     containerNode
- *       .html('<ul id="refinements"></ul><div id="cta-container"></div>');
- *   }
- *
- *   containerNode
- *     .find('#cta-container > a')
- *     .off('click');
- *
- *   containerNode
- *     .find('li > a')
- *     .each(function() { $(this).off('click') });
- *
- *   if (currentRefinementsRenderingOptions.items
- *       && currentRefinementsRenderingOptions.items.length > 0) {
- *     var list = currentRefinementsRenderingOptions.items.map(function(item) {
- *       return '<li>' + item.attribute +
- *          '<ul>' +
- *            item.refinements.map(function (refinement) {
- *              return <a href="' + currentRefinementsRenderingOptions.createURL(refinement) + '" data-attribute="' + item.attribute + '">'
- *                + refinement.label + '</a>'
- *              }).join('') +
- *            '</ul>'
- *        '</li>';
- *     });
- *
- *     currentRefinementsRenderingOptions.find('ul').html(list);
- *   } else {
- *     containerNode.find('#cta-container').html('');
- *     containerNode.find('ul').html('');
- *   }
- * }
- *
- * // connect `renderFn` to CurrentRefinements logic
- * var customCurrentRefinements = instantsearch.connectors.connectCurrentRefinements(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customCurrentRefinements({
- *     containerNode: $('#custom-crv-container'),
- *   })
- * );
- */
-
-function connectCurrentRefinements(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-    if (widgetParams.includedAttributes && widgetParams.excludedAttributes) {
-      throw new Error(withUsage('The options `includedAttributes` and `excludedAttributes` cannot be used together.'));
-    }
-
-    var includedAttributes = widgetParams.includedAttributes,
-        _widgetParams$exclude = widgetParams.excludedAttributes,
-        excludedAttributes = _widgetParams$exclude === void 0 ? ['query'] : _widgetParams$exclude,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            _createURL = _ref.createURL,
-            instantSearchInstance = _ref.instantSearchInstance;
-        var items = transformItems(getFilteredRefinements({
-          results: {},
-          state: helper.state,
-          helper: helper,
-          includedAttributes: includedAttributes,
-          excludedAttributes: excludedAttributes
-        }));
-        renderFn({
-          items: items,
-          refine: function refine(refinement) {
-            return clearRefinement(helper, refinement);
-          },
-          createURL: function createURL(refinement) {
-            return _createURL(clearRefinementFromState(helper.state, refinement));
-          },
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref2) {
-        var results = _ref2.results,
-            helper = _ref2.helper,
-            state = _ref2.state,
-            _createURL2 = _ref2.createURL,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        var items = transformItems(getFilteredRefinements({
-          results: results,
-          state: state,
-          helper: helper,
-          includedAttributes: includedAttributes,
-          excludedAttributes: excludedAttributes
-        }));
-        renderFn({
-          items: items,
-          refine: function refine(refinement) {
-            return clearRefinement(helper, refinement);
-          },
-          createURL: function createURL(refinement) {
-            return _createURL2(clearRefinementFromState(helper.state, refinement));
-          },
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
+    var resolvePromise = function () {
+      this$1._helper.removeListener('error', rejectPromise);
+      this$1._stalledSearchTimer = null;
+      clearTimeout(this$1._stalledSearchTimer);
+      this$1.isSearchStalled = false;
+      resolve();
     };
-  };
-}
 
-function getFilteredRefinements(_ref3) {
-  var results = _ref3.results,
-      state = _ref3.state,
-      helper = _ref3.helper,
-      includedAttributes = _ref3.includedAttributes,
-      excludedAttributes = _ref3.excludedAttributes;
-  var clearsQuery = (includedAttributes || []).indexOf('query') !== -1 || (excludedAttributes || []).indexOf('query') === -1;
-  var filterFunction = includedAttributes ? function (item) {
-    return includedAttributes.indexOf(item.attributeName) !== -1;
-  } : function (item) {
-    return excludedAttributes.indexOf(item.attributeName) === -1;
-  };
-  var items = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["l" /* getRefinements */])(results, state, clearsQuery).filter(filterFunction).map(normalizeRefinement);
-  return groupItemsByRefinements(items, helper);
-}
+    var rejectPromise = function (error) {
+      this$1._helper.removeListener('searchQueueEmpty', resolvePromise);
+      this$1._stalledSearchTimer = null;
+      clearTimeout(this$1._stalledSearchTimer);
+      this$1.isSearchStalled = false;
+      reject(error);
+    };
 
-function clearRefinementFromState(state, refinement) {
-  switch (refinement.type) {
-    case 'facet':
-      return state.removeFacetRefinement(refinement.attribute, refinement.value);
+    this$1._helper.once('searchQueueEmpty', resolvePromise);
+    this$1._helper.once('error', rejectPromise);
+  });
+};
 
-    case 'disjunctive':
-      return state.removeDisjunctiveFacetRefinement(refinement.attribute, refinement.value);
+Object.defineProperties( Store.prototype, prototypeAccessors );
 
-    case 'hierarchical':
-      return state.removeHierarchicalFacetRefinement(refinement.attribute);
+var assertValidFacetType = function(type) {
+  if (type === FACET_AND) { return; }
+  if (type === FACET_OR) { return; }
+  if (type === FACET_TREE) { return; }
 
-    case 'exclude':
-      return state.removeExcludeRefinement(refinement.attribute, refinement.value);
+  throw new Error(("Invalid facet type " + type + "."));
+};
 
-    case 'numeric':
-      return state.removeNumericRefinement(refinement.attribute, refinement.operator, refinement.value);
+var onHelperChange = function() {
+  this.refresh();
+};
 
-    case 'tag':
-      return state.removeTagRefinement(refinement.value);
+var onHelperResult = function(response) {
+  this._results = sanitizeResults(
+    response.hits,
+    HIGHLIGHT_PRE_TAG,
+    HIGHLIGHT_POST_TAG,
+    this.highlightPreTag,
+    this.highlightPostTag
+  );
 
-    case 'query':
-      return state.setQueryParameter('query', '');
-
-    default:
-      throw new Error("clearRefinement: type ".concat(refinement.type, " is not handled"));
+  if (!this._helper.hasPendingRequests()) {
+    clearTimeout(this._stalledSearchTimer);
+    this._stalledSearchTimer = null;
+    this.isSearchStalled = false;
   }
-}
+};
 
-function clearRefinement(helper, refinement) {
-  helper.setState(clearRefinementFromState(helper.state, refinement)).search();
-}
+var onHelperSearch = function() {
+  var this$1 = this;
 
-function getOperatorSymbol(operator) {
-  switch (operator) {
-    case '>=':
-      return '≥';
-
-    case '<=':
-      return '≤';
-
-    default:
-      return operator;
+  if (!this._stalledSearchTimer) {
+    this._stalledSearchTimer = setTimeout(function () {
+      this$1.isSearchStalled = true;
+    }, this._stalledSearchDelay);
   }
-}
+};
 
-function normalizeRefinement(refinement) {
-  var value = refinement.type === 'numeric' ? Number(refinement.name) : refinement.name;
-  var label = refinement.operator ? "".concat(getOperatorSymbol(refinement.operator), " ").concat(refinement.name) : refinement.name;
-  var normalizedRefinement = {
-    attribute: refinement.attributeName,
-    type: refinement.type,
-    value: value,
-    label: label
-  };
+var algoliaComponent = {
+  inject: ['_searchStore'],
+  props: {
+    searchStore: {
+      type: Object,
+      default: function default$1$$1() {
+        if (typeof this._searchStore !== 'object') {
+          var tag = this.$options._componentTag;
+          throw new TypeError(
+            ("It looks like you forgot to wrap your Algolia search component \n            \"<" + tag + ">\" inside of an \"<ais-index>\" component. You can also pass a \n            search store as a prop to your component.")
+          );
+        }
+        return this._searchStore;
+      },
+    },
+    classNames: {
+      type: Object,
+      default: function default$2$$1() {
+        return {};
+      },
+    },
+  },
+  beforeCreate: function beforeCreate() {
+    var source = this; // eslint-disable-line consistent-this
+    var provideKey = '_searchStore';
 
-  if (refinement.operator !== undefined) {
-    normalizedRefinement.operator = refinement.operator;
-  }
-
-  if (refinement.count !== undefined) {
-    normalizedRefinement.count = refinement.count;
-  }
-
-  if (refinement.exhaustive !== undefined) {
-    normalizedRefinement.exhaustive = refinement.exhaustive;
-  }
-
-  return normalizedRefinement;
-}
-
-function groupItemsByRefinements(items, helper) {
-  return items.reduce(function (results, currentItem) {
-    return [].concat(_toConsumableArray(results.filter(function (result) {
-      return result.attribute !== currentItem.attribute;
-    })), [{
-      attribute: currentItem.attribute,
-      label: currentItem.attribute,
-      refinements: items.filter(function (result) {
-        return result.attribute === currentItem.attribute;
-      }) // We want to keep the order of refinements except the numeric ones.
-      .sort(function (a, b) {
-        return a.type === 'numeric' ? a.value - b.value : 0;
-      }),
-      refine: function refine(refinement) {
-        return clearRefinement(helper, refinement);
+    while (source) {
+      if (source._provided && provideKey in source._provided) {
+        break;
       }
-    }]);
-  }, []);
-}
-
-/***/ }),
-/* 416 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectHierarchicalMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'hierarchical-menu',
-  connector: true
-});
-/**
- * @typedef {Object} HierarchicalMenuItem
- * @property {string} value Value of the menu item.
- * @property {string} label Human-readable value of the menu item.
- * @property {number} count Number of matched results after refinement is applied.
- * @property {isRefined} boolean Indicates if the refinement is applied.
- * @property {Object} [data = undefined] n+1 level of items, same structure HierarchicalMenuItem (default: `undefined`).
- */
-
-/**
- * @typedef {Object} CustomHierarchicalMenuWidgetOptions
- * @property {string[]} attributes Attributes to use to generate the hierarchy of the menu.
- * @property {string} [separator = '>'] Separator used in the attributes to separate level values.
- * @property {string} [rootPath = null] Prefix path to use if the first level is not the root level.
- * @property {boolean} [showParentLevel=false] Show the siblings of the selected parent levels of the current refined value. This
- * does not impact the root level.
- * @property {number} [limit = 10] Max number of values to display.
- * @property {boolean} [showMore = false] Whether to display the "show more" button.
- * @property {number} [showMoreLimit = 20] Max number of values to display when showing more.
- * @property  {string[]|function} [sortBy = ['name:asc']] How to sort refinements. Possible values: `count|isRefined|name:asc|name:desc`.
- *
- * You can also use a sort function that behaves like the standard Javascript [compareFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Syntax).
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} HierarchicalMenuRenderingOptions
- * @property {function(item.value): string} createURL Creates an url for the next state for a clicked item.
- * @property {HierarchicalMenuItem[]} items Values to be rendered.
- * @property {function(item.value)} refine Sets the path of the hierarchical filter and triggers a new search.
- * @property {Object} widgetParams All original `CustomHierarchicalMenuWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **HierarchicalMenu** connector provides the logic to build a custom widget
- * that will give the user the ability to explore facets in a tree-like structure.
- *
- * This is commonly used for multi-level categorization of products on e-commerce
- * websites. From a UX point of view, we suggest not displaying more than two
- * levels deep.
- *
- * There's a complete example available on how to write a custom **HierarchicalMenu**:
- *  [hierarchicalMenu.js](https://github.com/algolia/instantsearch.js/blob/develop/storybook/app/jquery/widgets/hierarchicalMenu.js)
- * @type {Connector}
- * @param {function(HierarchicalMenuRenderingOptions)} renderFn Rendering function for the custom **HierarchicalMenu** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomHierarchicalMenuWidgetOptions)} Re-usable widget factory for a custom **HierarchicalMenu** widget.
- */
-
-function connectHierarchicalMenu(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attributes = widgetParams.attributes,
-        _widgetParams$separat = widgetParams.separator,
-        separator = _widgetParams$separat === void 0 ? ' > ' : _widgetParams$separat,
-        _widgetParams$rootPat = widgetParams.rootPath,
-        rootPath = _widgetParams$rootPat === void 0 ? null : _widgetParams$rootPat,
-        _widgetParams$showPar = widgetParams.showParentLevel,
-        showParentLevel = _widgetParams$showPar === void 0 ? true : _widgetParams$showPar,
-        _widgetParams$limit = widgetParams.limit,
-        limit = _widgetParams$limit === void 0 ? 10 : _widgetParams$limit,
-        _widgetParams$showMor = widgetParams.showMore,
-        showMore = _widgetParams$showMor === void 0 ? false : _widgetParams$showMor,
-        _widgetParams$showMor2 = widgetParams.showMoreLimit,
-        showMoreLimit = _widgetParams$showMor2 === void 0 ? 20 : _widgetParams$showMor2,
-        _widgetParams$sortBy = widgetParams.sortBy,
-        sortBy = _widgetParams$sortBy === void 0 ? ['name:asc'] : _widgetParams$sortBy,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-
-    if (!attributes || !Array.isArray(attributes) || attributes.length === 0) {
-      throw new Error(withUsage('The `attributes` option expects an array of strings.'));
+      source = source.$parent;
     }
 
-    if (showMore === true && showMoreLimit <= limit) {
-      throw new Error(withUsage('The `showMoreLimit` option must be greater than `limit`.'));
-    } // we need to provide a hierarchicalFacet name for the search state
-    // so that we can always map $hierarchicalFacetName => real attributes
-    // we use the first attribute name
+    if (!source) {
+      if (!this._provided) {
+        this._provided = {};
+      }
 
+      this._provided[provideKey] = undefined;
+    }
+  },
+  methods: {
+    bem: function bem(element, modifier, outputElement) {
+      if (!this.blockClassName) {
+        throw new Error("You need to provide 'blockClassName' in your data.");
+      }
 
-    var _attributes = _slicedToArray(attributes, 1),
-        hierarchicalFacetName = _attributes[0];
+      var blockClassName = this.blockClassName;
+      if (!element && !modifier) {
+        return this.customClassName(blockClassName);
+      }
+
+      if (!element) {
+        var blockModifierClassName = blockClassName + "--" + modifier;
+
+        return this.customClassName(blockModifierClassName);
+      }
+
+      var elementClassName = blockClassName + "__" + element;
+      if (!modifier) {
+        return this.customClassName(elementClassName);
+      }
+
+      var elementModifierClassName = elementClassName + "--" + modifier;
+
+      if (outputElement !== undefined && outputElement === false) {
+        return this.customClassName(elementModifierClassName);
+      }
+      return ((this.customClassName(elementClassName)) + " " + (this.customClassName(
+        elementModifierClassName
+      )));
+    },
+    customClassName: function customClassName(className) {
+      return !this.classNames[className]
+        ? className
+        : this.classNames[className];
+    },
+  },
+};
+
+var Index = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.bem()},[_vm._t("default")],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    searchStore: {
+      type: Object,
+      default: function default$1$$1() {
+        return this._searchStore;
+      },
+    },
+    searchClient: {
+      type: Object,
+    },
+    apiKey: {
+      type: String,
+      default: function default$2$$1() {
+        if (this._searchStore) {
+          return this._searchStore.algoliaApiKey;
+        }
+
+        return undefined;
+      },
+    },
+    appId: {
+      type: String,
+      default: function default$3() {
+        if (this._searchStore) {
+          return this._searchStore.algoliaAppId;
+        }
+
+        return undefined;
+      },
+    },
+    indexName: {
+      type: String,
+      default: function default$4() {
+        if (this._searchStore) {
+          return this._searchStore.indexName;
+        }
+
+        return undefined;
+      },
+    },
+    query: {
+      type: String,
+      default: '',
+    },
+    queryParameters: {
+      type: Object,
+    },
+    cache: {
+      type: Boolean,
+      default: true,
+    },
+    autoSearch: {
+      type: Boolean,
+      default: true,
+    },
+    stalledSearchDelay: {
+      type: Number,
+      default: 200,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-index',
+    };
+  },
+  provide: function provide() {
+    if (this.searchClient) {
+      if (!this.indexName) {
+        throw new Error(
+          'vue-instantsearch: `indexName` is required with `searchClient`'
+        );
+      }
+
+      if (this.searchStore) {
+        throw new Error('`searchStore` cannot be used with `searchClient`');
+      }
+
+      if (this.appId) {
+        throw new Error(
+          'vue-instantsearch: `appId` cannot be used with `searchClient`'
+        );
+      }
+
+      if (this.apiKey) {
+        throw new Error(
+          'vue-instantsearch: `apiKey` cannot be used with `searchClient`'
+        );
+      }
+
+      if (typeof this.searchClient.search !== 'function') {
+        throw new Error(
+          'vue-instantsearch: `searchClient` must implement a method `search(requests)`'
+        );
+      }
+
+      this._localSearchStore = createFromAlgoliaClient(this.searchClient);
+    } else if (!this.searchStore) {
+      this._localSearchStore = createFromAlgoliaCredentials(
+        this.appId,
+        this.apiKey,
+        { stalledSearchDelay: this.stalledSearchDelay }
+      );
+    } else {
+      this._localSearchStore = this.searchStore;
+    }
+
+    if (this.indexName) {
+      this._localSearchStore.indexName = this.indexName;
+    }
+
+    if (this.query) {
+      this._localSearchStore.query = this.query;
+    }
+
+    if (this.queryParameters) {
+      this._localSearchStore.queryParameters = this.queryParameters;
+    }
+
+    if (this.cache) {
+      this._localSearchStore.enableCache();
+    } else {
+      this._localSearchStore.disableCache();
+    }
 
     return {
-      isShowingMore: false,
-      // Provide the same function to the `renderFn` so that way the user
-      // has to only bind it once when `isFirstRendering` for instance
-      toggleShowMore: function toggleShowMore() {},
-      cachedToggleShowMore: function cachedToggleShowMore() {
-        this.toggleShowMore();
-      },
-      createToggleShowMore: function createToggleShowMore(renderOptions) {
-        var _this = this;
-
-        return function () {
-          _this.isShowingMore = !_this.isShowingMore;
-
-          _this.render(renderOptions);
-        };
-      },
-      getLimit: function getLimit() {
-        return this.isShowingMore ? showMoreLimit : limit;
-      },
-      getConfiguration: function getConfiguration(currentConfiguration) {
-        if (currentConfiguration.hierarchicalFacets) {
-          var isFacetSet = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(currentConfiguration.hierarchicalFacets, function (_ref) {
-            var name = _ref.name;
-            return name === hierarchicalFacetName;
-          });
-          var isAttributesEqual = isFacetSet && Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["n" /* isEqual */])(isFacetSet.attributes, attributes);
-          var isSeparatorEqual = isFacetSet && isFacetSet.separator === separator;
-          var isRootPathEqual = isFacetSet && isFacetSet.rootPath === rootPath;
-          var isHierarchicalOptionsEqual = isAttributesEqual && isSeparatorEqual && isRootPathEqual;
-
-          if (isFacetSet && !isHierarchicalOptionsEqual) {
-            Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(false, 'Using Breadcrumb and HierarchicalMenu on the same facet with different options overrides the configuration of the HierarchicalMenu.');
-            return {};
-          }
-        }
-
-        var widgetConfiguration = {
-          hierarchicalFacets: [{
-            name: hierarchicalFacetName,
-            attributes: attributes,
-            separator: separator,
-            rootPath: rootPath,
-            showParentLevel: showParentLevel
-          }]
-        };
-        var currentMaxValuesPerFacet = currentConfiguration.maxValuesPerFacet || 0;
-        widgetConfiguration.maxValuesPerFacet = Math.max(currentMaxValuesPerFacet, showMore ? showMoreLimit : limit);
-        return widgetConfiguration;
-      },
-      init: function init(_ref2) {
-        var helper = _ref2.helper,
-            createURL = _ref2.createURL,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        this.cachedToggleShowMore = this.cachedToggleShowMore.bind(this);
-
-        this._refine = function (facetValue) {
-          helper.toggleRefinement(hierarchicalFacetName, facetValue).search();
-        }; // Bind createURL to this specific attribute
-
-
-        function _createURL(facetValue) {
-          return createURL(helper.state.toggleRefinement(hierarchicalFacetName, facetValue));
-        }
-
-        renderFn({
-          items: [],
-          createURL: _createURL,
-          refine: this._refine,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams,
-          isShowingMore: false,
-          toggleShowMore: this.cachedToggleShowMore,
-          canToggleShowMore: false
-        }, true);
-      },
-      _prepareFacetValues: function _prepareFacetValues(facetValues, state) {
-        var _this2 = this;
-
-        return facetValues.slice(0, this.getLimit()).map(function (_ref3) {
-          var label = _ref3.name,
-              value = _ref3.path,
-              subValue = _objectWithoutProperties(_ref3, ["name", "path"]);
-
-          if (Array.isArray(subValue.data)) {
-            subValue.data = _this2._prepareFacetValues(subValue.data, state);
-          }
-
-          return _objectSpread({}, subValue, {
-            label: label,
-            value: value
-          });
-        });
-      },
-      render: function render(renderOptions) {
-        var results = renderOptions.results,
-            state = renderOptions.state,
-            createURL = renderOptions.createURL,
-            instantSearchInstance = renderOptions.instantSearchInstance;
-        var facetValues = results.getFacetValues(hierarchicalFacetName, {
-          sortBy: sortBy
-        }).data || [];
-        var items = transformItems(this._prepareFacetValues(facetValues), state); // Bind createURL to this specific attribute
-
-        function _createURL(facetValue) {
-          return createURL(state.toggleRefinement(hierarchicalFacetName, facetValue));
-        }
-
-        var maxValuesPerFacetConfig = state.getQueryParameter('maxValuesPerFacet');
-        var currentLimit = this.getLimit(); // If the limit is the max number of facet retrieved it is impossible to know
-        // if the facets are exhaustive. The only moment we are sure it is exhaustive
-        // is when it is strictly under the number requested unless we know that another
-        // widget has requested more values (maxValuesPerFacet > getLimit()).
-        // Because this is used for making the search of facets unable or not, it is important
-        // to be conservative here.
-
-        var hasExhaustiveItems = maxValuesPerFacetConfig > currentLimit ? facetValues.length <= currentLimit : facetValues.length < currentLimit;
-        this.toggleShowMore = this.createToggleShowMore(renderOptions);
-        renderFn({
-          items: items,
-          refine: this._refine,
-          createURL: _createURL,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams,
-          isShowingMore: this.isShowingMore,
-          toggleShowMore: this.cachedToggleShowMore,
-          canToggleShowMore: showMore && (this.isShowingMore || !hasExhaustiveItems)
-        }, false);
-      },
-      dispose: function dispose(_ref4) {
-        var state = _ref4.state;
-        // unmount widget from DOM
-        unmountFn(); // compute nextState for the search
-
-        var nextState = state;
-
-        if (state.isHierarchicalFacetRefined(hierarchicalFacetName)) {
-          nextState = state.removeHierarchicalFacetRefinement(hierarchicalFacetName);
-        }
-
-        nextState = nextState.removeHierarchicalFacet(hierarchicalFacetName);
-
-        if (nextState.maxValuesPerFacet === limit) {
-          nextState.setQueryParameters('maxValuesPerFacet', undefined);
-        }
-
-        return nextState;
-      },
-      getWidgetState: function getWidgetState(uiState, _ref5) {
-        var searchParameters = _ref5.searchParameters;
-        var path = searchParameters.getHierarchicalFacetBreadcrumb(hierarchicalFacetName);
-        if (!path || path.length === 0) return uiState;
-
-        if (uiState.hierarchicalMenu && Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["n" /* isEqual */])(path, uiState.hierarchicalMenu[hierarchicalFacetName])) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          hierarchicalMenu: _objectSpread({}, uiState.hierarchicalMenu, _defineProperty({}, hierarchicalFacetName, path))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref6) {
-        var uiState = _ref6.uiState;
-
-        if (uiState.hierarchicalMenu && uiState.hierarchicalMenu[hierarchicalFacetName]) {
-          return searchParameters.clearRefinements(hierarchicalFacetName).toggleRefinement(hierarchicalFacetName, uiState.hierarchicalMenu[hierarchicalFacetName].join(separator));
-        } else {
-          return searchParameters;
-        }
-      }
+      _searchStore: this._localSearchStore,
     };
-  };
+  },
+  mounted: function mounted() {
+    this._localSearchStore.start();
+    if (this.autoSearch) {
+      this._localSearchStore.refresh();
+    }
+  },
+  watch: {
+    indexName: function indexName() {
+      this._localSearchStore.indexName = this.indexName;
+    },
+    query: function query() {
+      this._localSearchStore.query = this.query;
+    },
+    queryParameters: function queryParameters() {
+      this._localSearchStore.queryParameters = this.queryParameters;
+    },
+  },
+};
+
+var getPropertyByPath = function(object, path) {
+  var parts = path.split('.');
+
+  return parts.reduce(function (current, key) { return current && current[key]; }, object);
+};
+
+var cache = new Set();
+
+function warn(message) {
+  if (cache.has(message)) { return; }
+  cache.add(message);
+  // eslint-disable-next-line no-console
+  console.warn(message);
 }
 
-/***/ }),
-/* 417 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+var Highlight = {
+  functional: true,
+  props: {
+    result: {
+      type: Object,
+      required: true,
+    },
+    attributeName: {
+      type: String,
+      required: true,
+    },
+  },
+  render: function render(h, ctx) {
+    var result = ctx.props.result;
+    var attributeName = ctx.props.attributeName;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_insights__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__connectHits__ = __webpack_require__(310);
+    var attributePath = "_highlightResult." + attributeName + ".value";
+    var attributeValue = getPropertyByPath(result, attributePath);
 
-
-var connectHitsWithInsights = Object(__WEBPACK_IMPORTED_MODULE_0__lib_insights__["a" /* withInsights */])(__WEBPACK_IMPORTED_MODULE_1__connectHits__["a" /* default */]);
-/* harmony default export */ __webpack_exports__["a"] = (connectHitsWithInsights);
-
-/***/ }),
-/* 418 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export inferPayload */
-/* harmony export (immutable) */ __webpack_exports__["a"] = withInsights;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var getSelectedHits = function getSelectedHits(hits, selectedObjectIDs) {
-  return selectedObjectIDs.map(function (objectID) {
-    var hit = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["i" /* find */])(hits, function (h) {
-      return h.objectID === objectID;
-    });
-
-    if (typeof hit === 'undefined') {
-      throw new Error("Could not find objectID \"".concat(objectID, "\" passed to `clickedObjectIDsAfterSearch` in the returned hits. This is necessary to infer the absolute position and the query ID."));
+    if ("development" !== 'production' && attributeValue === undefined) {
+      warn(
+        ("The \"" + attributeName + "\" attribute might currently not be configured to be highlighted in Algolia.\n        See https://www.algolia.com/doc/api-reference/api-parameters/attributesToHighlight/.")
+      );
     }
 
-    return hit;
-  });
+    return h('span', {
+      class: {
+        'ais-highlight': true,
+      },
+      domProps: {
+        innerHTML: attributeValue,
+      },
+    });
+  },
 };
 
-var getQueryID = function getQueryID(selectedHits) {
-  var queryIDs = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* uniq */])(selectedHits.map(function (hit) {
-    return hit.__queryID;
-  }));
+var Snippet = {
+  functional: true,
+  props: {
+    result: {
+      type: Object,
+      required: true,
+    },
+    attributeName: {
+      type: String,
+      required: true,
+    },
+  },
+  render: function render(h, ctx) {
+    var result = ctx.props.result;
+    var attributeName = ctx.props.attributeName;
 
-  if (queryIDs.length > 1) {
-    throw new Error('Insights currently allows a single `queryID`. The `objectIDs` provided map to multiple `queryID`s.');
-  }
+    var attributePath = "_snippetResult." + attributeName + ".value";
+    var attributeValue = getPropertyByPath(result, attributePath);
 
-  var queryID = queryIDs[0];
+    if ("development" !== 'production' && attributeValue === undefined) {
+      throw new Error(
+        ("The \"" + attributeName + "\" attribute is currently not configured to be snippeted in Algolia.\n        See https://www.algolia.com/doc/api-reference/api-parameters/attributesToSnippet/.")
+      );
+    }
 
-  if (typeof queryID !== 'string') {
-    throw new Error('Could not infer `queryID`. Ensure InstantSearch is configured with `clickAnalytics: true`');
-  }
-
-  return queryID;
+    return h('span', {
+      class: {
+        'ais-snippet': true,
+      },
+      domProps: {
+        innerHTML: attributeValue,
+      },
+    });
+  },
 };
 
-var getPositions = function getPositions(selectedHits) {
-  return selectedHits.map(function (hit) {
-    return hit.__position;
-  });
+var AisInput = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.query),expression:"query"}],class:_vm.bem(),attrs:{"type":"search","autocorrect":"off","autocapitalize":"off","autocomplete":"off","spellcheck":"false"},domProps:{"value":(_vm.query)},on:{"input":function($event){if($event.target.composing){ return; }_vm.query=$event.target.value;}}})},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  data: function data() {
+    return {
+      blockClassName: 'ais-input',
+    };
+  },
+  computed: {
+    query: {
+      get: function get() {
+        return this.searchStore.query;
+      },
+      set: function set(value) {
+        this.searchStore.stop();
+        this.searchStore.query = value;
+        this.$emit('query', value);
+
+        // We here ensure we give the time to listeners to alter the store's state
+        // without triggering in between ghost queries.
+        this.$nextTick(function() {
+          this.searchStore.start();
+          this.searchStore.refresh();
+        });
+      },
+    },
+  },
 };
 
-var inferPayload = function inferPayload(_ref) {
-  var method = _ref.method,
-      results = _ref.results,
-      hits = _ref.hits,
-      objectIDs = _ref.objectIDs;
-  var index = results.index;
-  var selectedHits = getSelectedHits(hits, objectIDs);
-  var queryID = getQueryID(selectedHits);
-
-  switch (method) {
-    case 'clickedObjectIDsAfterSearch':
-      {
-        var positions = getPositions(selectedHits);
-        return {
-          index: index,
-          queryID: queryID,
-          objectIDs: objectIDs,
-          positions: positions
-        };
+var Results = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{class:_vm.bem()},[_vm._t("header"),_vm._v(" "),_vm._l((_vm.results),function(result,index){return _vm._t("default",[_vm._v(" Result 'objectID': "+_vm._s(result.objectID)+" ")],{result:result,index:index})}),_vm._v(" "),_vm._t("footer")],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    stack: {
+      type: Boolean,
+      default: false,
+    },
+    resultsPerPage: {
+      type: Number,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-results',
+    };
+  },
+  created: function created() {
+    this.updateResultsPerPage();
+  },
+  watch: {
+    resultsPerPage: function resultsPerPage() {
+      this.updateResultsPerPage();
+    },
+  },
+  methods: {
+    updateResultsPerPage: function updateResultsPerPage() {
+      if (typeof this.resultsPerPage === 'number' && this.resultsPerPage > 0) {
+        this.searchStore.resultsPerPage = this.resultsPerPage;
+      }
+    },
+  },
+  computed: {
+    results: function results() {
+      if (this.stack === false) {
+        return this.searchStore.results;
       }
 
-    case 'convertedObjectIDsAfterSearch':
-      return {
-        index: index,
-        queryID: queryID,
-        objectIDs: objectIDs
-      };
+      if (typeof this.stackedResults === 'undefined') {
+        this.stackedResults = [];
+      }
 
-    default:
-      throw new Error("Unsupported method passed to insights: \"".concat(method, "\"."));
-  }
-};
+      if (this.searchStore.page === 1) {
+        this.stackedResults = [];
+      }
 
-var wrapInsightsClient = function wrapInsightsClient(aa, results, hits) {
-  return function (method, payload) {
-    if (!Array.isArray(payload.objectIDs)) {
-      throw new TypeError('Expected `objectIDs` to be an array.');
-    }
-
-    var inferredPayload = inferPayload({
-      method: method,
-      results: results,
-      hits: hits,
-      objectIDs: payload.objectIDs
-    });
-    aa(method, _objectSpread({}, inferredPayload, {}, payload));
-  };
-};
-
-function withInsights(connector) {
-  var wrapRenderFn = function wrapRenderFn(renderFn) {
-    return function (renderOptions, isFirstRender) {
-      var results = renderOptions.results,
-          hits = renderOptions.hits,
-          instantSearchInstance = renderOptions.instantSearchInstance;
-
-      if (results && hits && instantSearchInstance && instantSearchInstance.insightsClient
-      /* providing the insightsClient is optional */
+      if (
+        this.stackedResults.length === 0 ||
+        this.searchStore.results.length === 0
       ) {
-          var insights = wrapInsightsClient(instantSearchInstance.insightsClient, results, hits);
-          return renderFn(_objectSpread({}, renderOptions, {
-            insights: insights
-          }), isFirstRender);
+        (ref = this.stackedResults).push.apply(ref, this.searchStore.results);
+      } else {
+        var lastStacked = this.stackedResults[this.stackedResults.length - 1];
+        var lastResult = this.searchStore.results[
+          this.searchStore.results.length - 1
+        ];
+
+        if (lastStacked.objectID !== lastResult.objectID) {
+          (ref$1 = this.stackedResults).push.apply(ref$1, this.searchStore.results);
         }
+      }
 
-      return renderFn(renderOptions, isFirstRender);
+      return this.stackedResults;
+      var ref;
+      var ref$1;
+    },
+    show: function show() {
+      return this.results.length > 0;
+    },
+  },
+};
+
+var Stats = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.totalResults > 0)?_c('div',{class:_vm.bem()},[_vm._t("default",[_vm._v(" "+_vm._s(_vm.totalResults.toLocaleString())+" results found in "+_vm._s(_vm.processingTime.toLocaleString())+"ms ")],{totalResults:_vm.totalResults,processingTime:_vm.processingTime,query:_vm.query,resultStart:_vm.resultStart,resultEnd:_vm.resultEnd})],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  data: function data() {
+    return {
+      blockClassName: 'ais-stats',
     };
-  };
+  },
+  computed: {
+    query: function query() {
+      return this.searchStore.query;
+    },
+    totalResults: function totalResults() {
+      return this.searchStore.totalResults;
+    },
+    processingTime: function processingTime() {
+      return this.searchStore.processingTimeMS;
+    },
+    resultStart: function resultStart() {
+      return (this.searchStore.page - 1) * this.searchStore.resultsPerPage + 1;
+    },
+    resultEnd: function resultEnd() {
+      return this.resultStart + this.searchStore.results.length - 1;
+    },
+  },
+};
 
-  return function (renderFn, unmountFn) {
-    return connector(wrapRenderFn(renderFn), unmountFn);
-  };
-}
+var Pagination = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.totalResults > 0),expression:"totalResults > 0"}],class:_vm.bem()},[_c('li',{class:[_vm.bem('item', 'first'), _vm.page === 1 ? _vm.bem('item', 'disabled', false) : '']},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.goToFirstPage($event);}}},[_vm._t("first",[_vm._v("<<")])],2)]),_vm._v(" "),_c('li',{class:[_vm.bem('item', 'previous'), _vm.page === 1 ? _vm.bem('item', 'disabled', false) : '']},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.goToPreviousPage($event);}}},[_vm._t("previous",[_vm._v("<")])],2)]),_vm._v(" "),_vm._l((_vm.pages),function(item){return _c('li',{key:item,class:[_vm.bem('item'), _vm.page === item ? _vm.bem('item', 'active', false) : '']},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.goToPage(item);}}},[_vm._t("default",[_vm._v(" "+_vm._s(item)+" ")],{value:item,active:item === _vm.page})],2)])}),_vm._v(" "),_c('li',{class:[_vm.bem('item', 'next'), _vm.page >= _vm.totalPages ? _vm.bem('item', 'disabled', false) : '']},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.goToNextPage($event);}}},[_vm._t("next",[_vm._v(">")])],2)]),_vm._v(" "),_c('li',{class:[_vm.bem('item', 'last'), _vm.page >= _vm.totalPages ? _vm.bem('item', 'disabled', false) : '']},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.goToLastPage($event);}}},[_vm._t("last",[_vm._v(">>")])],2)])],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    padding: {
+      type: Number,
+      default: 3,
+      validator: function validator(value) {
+        return value > 0;
+      },
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-pagination',
+    };
+  },
+  computed: {
+    page: function page() {
+      return this.searchStore.page;
+    },
+    totalPages: function totalPages() {
+      return this.searchStore.totalPages;
+    },
+    pages: function pages() {
+      var this$1 = this;
 
-/***/ }),
-/* 419 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+      var maxPages = this.padding * 2;
+      if (this.totalPages - 1 < maxPages) {
+        maxPages = this.totalPages - 1;
+      }
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact_compat__ = __webpack_require__(420);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers_insights__ = __webpack_require__(316);
+      var pages = [this.page];
+      var even = false;
+      var lastPage = this.page;
+      var firstPage = this.page;
+      while (pages.length <= maxPages) {
+        even = !even;
+        if (even) {
+          if (firstPage <= 1) {
+            continue; // eslint-disable-line no-continue
+          }
+          firstPage--;
+          pages.unshift(firstPage);
+        } else {
+          if (lastPage >= this$1.totalPages) {
+            continue; // eslint-disable-line no-continue
+          }
+          lastPage++;
+          pages.push(lastPage);
+        }
+      }
 
-
-/* unused harmony default export */ var _unused_webpack_default_export = (function (BaseComponent) {
-  function WithInsightsListener(props) {
-    var handleClick = function handleClick(event) {
-      if (!Object(__WEBPACK_IMPORTED_MODULE_1__helpers_insights__["a" /* hasDataAttributes */])(event.target)) {
+      return pages;
+    },
+    totalResults: function totalResults() {
+      return this.searchStore.totalResults;
+    },
+  },
+  methods: {
+    goToPage: function goToPage(page) {
+      var p = Math.max(1, page);
+      p = Math.min(this.totalPages, p);
+      if (this.searchStore.page === p) {
         return;
       }
+      this.searchStore.page = p;
+      this.$emit('page-change', p);
+    },
+    goToFirstPage: function goToFirstPage() {
+      this.goToPage(1);
+    },
+    goToPreviousPage: function goToPreviousPage() {
+      this.goToPage(this.page - 1);
+    },
+    goToNextPage: function goToNextPage() {
+      this.goToPage(this.page + 1);
+    },
+    goToLastPage: function goToLastPage() {
+      this.goToPage(this.totalPages);
+    },
+  },
+};
 
-      if (!props.insights) {
-        throw new Error('The `insightsClient` option has not been provided to `instantsearch`.');
-      }
-
-      var _readDataAttributes = Object(__WEBPACK_IMPORTED_MODULE_1__helpers_insights__["b" /* readDataAttributes */])(event.target),
-          method = _readDataAttributes.method,
-          payload = _readDataAttributes.payload;
-
-      props.insights(method, payload);
+var ResultsPerPageSelector = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.resultsPerPage),expression:"resultsPerPage"}],class:_vm.bem(),on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.resultsPerPage=$event.target.multiple ? $$selectedVal : $$selectedVal[0];}}},[_vm._l((_vm.options),function(option){return [_c('option',{key:option,domProps:{"value":option}},[_vm._t("default",[_vm._v(_vm._s(option))],{option:option})],2)]})],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    options: {
+      type: Array,
+      default: function default$1$$1() {
+        return [6, 12, 24];
+      },
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-results-per-page-selector',
     };
-
-    return __WEBPACK_IMPORTED_MODULE_0_preact_compat__["a" /* default */].createElement("div", {
-      onClick: handleClick
-    }, __WEBPACK_IMPORTED_MODULE_0_preact_compat__["a" /* default */].createElement(BaseComponent, props));
-  }
-
-  return WithInsightsListener;
-});
-
-/***/ }),
-/* 420 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export version */
-/* unused harmony export DOM */
-/* unused harmony export Children */
-/* unused harmony export render */
-/* unused harmony export hydrate */
-/* unused harmony export createClass */
-/* unused harmony export createPortal */
-/* unused harmony export createFactory */
-/* unused harmony export createElement */
-/* unused harmony export cloneElement */
-/* unused harmony export isValidElement */
-/* unused harmony export findDOMNode */
-/* unused harmony export unmountComponentAtNode */
-/* unused harmony export Component */
-/* unused harmony export PureComponent */
-/* unused harmony export unstable_renderSubtreeIntoContainer */
-/* unused harmony export unstable_batchedUpdates */
-/* unused harmony export __spread */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* unused harmony reexport PropTypes */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_preact__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_preact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_preact__);
-/* unused harmony reexport createRef */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_preact_context__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_preact_context___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_preact_context__);
-/* unused harmony reexport createContext */
-
-
-
-
-
-
-
-var version = '15.1.0'; // trick libraries to think we are react
-
-var ELEMENTS = 'a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hgroup hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr circle clipPath defs ellipse g image line linearGradient mask path pattern polygon polyline radialGradient rect stop svg text tspan'.split(
-	' '
-);
-
-var REACT_ELEMENT_TYPE = (typeof Symbol !== 'undefined' && Symbol.for && Symbol.for('react.element')) || 0xeac7;
-
-var COMPONENT_WRAPPER_KEY =
-	typeof Symbol !== 'undefined' && Symbol.for ? Symbol.for('__preactCompatWrapper') : '__preactCompatWrapper';
-
-// don't autobind these methods since they already have guaranteed context.
-var AUTOBIND_BLACKLIST = {
-	constructor: 1,
-	render: 1,
-	shouldComponentUpdate: 1,
-	componentWillReceiveProps: 1,
-	componentWillUpdate: 1,
-	componentDidUpdate: 1,
-	componentWillMount: 1,
-	componentDidMount: 1,
-	componentWillUnmount: 1,
-	componentDidUnmount: 1
+  },
+  computed: {
+    resultsPerPage: {
+      get: function get() {
+        return this.searchStore.resultsPerPage;
+      },
+      set: function set(value) {
+        this.searchStore.resultsPerPage = Number(value);
+      },
+    },
+  },
+  created: function created() {
+    if (this.options.indexOf(this.searchStore.resultsPerPage) === -1) {
+      this.searchStore.resultsPerPage = this.options[0];
+    }
+  },
 };
 
-var CAMEL_PROPS = /^(?:accent|alignment|arabic|baseline|cap|clip|color|fill|flood|font|glyph|horiz|marker|overline|paint|stop|strikethrough|stroke|text|underline|unicode|units|v|vector|vert|word|writing|x)[A-Z]/;
-
-var BYPASS_HOOK = {};
-
-/*global process*/
-var DEV = false;
-try {
-	DEV = "development" !== 'production';
-}
-catch (e) { }
-
-// a component that renders nothing. Used to replace components for unmountComponentAtNode.
-function EmptyComponent() {
-	return null;
-}
-
-// make react think we're react.
-var VNode = Object(__WEBPACK_IMPORTED_MODULE_1_preact__["h"])('a', null).constructor;
-VNode.prototype.$$typeof = REACT_ELEMENT_TYPE;
-VNode.prototype.preactCompatUpgraded = false;
-VNode.prototype.preactCompatNormalized = false;
-
-Object.defineProperty(VNode.prototype, 'type', {
-	get: function() {
-		return this.nodeName;
-	},
-	set: function(v) {
-		this.nodeName = v;
-	},
-	configurable: true
-});
-
-Object.defineProperty(VNode.prototype, 'props', {
-	get: function() {
-		return this.attributes;
-	},
-	set: function(v) {
-		this.attributes = v;
-	},
-	configurable: true
-});
-
-var oldEventHook = __WEBPACK_IMPORTED_MODULE_1_preact__["options"].event;
-__WEBPACK_IMPORTED_MODULE_1_preact__["options"].event = function (e) {
-	if (oldEventHook) { e = oldEventHook(e); }
-	e.persist = Object;
-	e.nativeEvent = e;
-	return e;
-};
-
-var oldVnodeHook = __WEBPACK_IMPORTED_MODULE_1_preact__["options"].vnode;
-__WEBPACK_IMPORTED_MODULE_1_preact__["options"].vnode = function (vnode) {
-	if (!vnode.preactCompatUpgraded) {
-		vnode.preactCompatUpgraded = true;
-
-		var tag = vnode.nodeName,
-			attrs = (vnode.attributes = vnode.attributes == null ? {} : extend({}, vnode.attributes));
-
-		if (typeof tag === 'function') {
-			if (tag[COMPONENT_WRAPPER_KEY] === true || (tag.prototype && 'isReactComponent' in tag.prototype)) {
-				if (vnode.children && String(vnode.children) === '') { vnode.children = undefined; }
-				if (vnode.children) { attrs.children = vnode.children; }
-
-				if (!vnode.preactCompatNormalized) {
-					normalizeVNode(vnode);
-				}
-				handleComponentVNode(vnode);
-			}
-		}
-		else {
-			if (vnode.children && String(vnode.children) === '') { vnode.children = undefined; }
-			if (vnode.children) { attrs.children = vnode.children; }
-
-			if (attrs.defaultValue) {
-				if (!attrs.value && attrs.value !== 0) {
-					attrs.value = attrs.defaultValue;
-				}
-				delete attrs.defaultValue;
-			}
-
-			handleElementVNode(vnode, attrs);
-		}
-	}
-
-	if (oldVnodeHook) { oldVnodeHook(vnode); }
-};
-
-function handleComponentVNode(vnode) {
-	var tag = vnode.nodeName,
-		a = vnode.attributes;
-
-	vnode.attributes = {};
-	if (tag.defaultProps) { extend(vnode.attributes, tag.defaultProps); }
-	if (a) { extend(vnode.attributes, a); }
-}
-
-function handleElementVNode(vnode, a) {
-	var shouldSanitize, attrs, i;
-	if (a) {
-		for (i in a) { if ((shouldSanitize = CAMEL_PROPS.test(i))) { break; } }
-		if (shouldSanitize) {
-			attrs = vnode.attributes = {};
-			for (i in a) {
-				if (a.hasOwnProperty(i)) {
-					attrs[CAMEL_PROPS.test(i) ? i.replace(/([A-Z0-9])/, '-$1').toLowerCase() : i] = a[i];
-				}
-			}
-		}
-	}
-}
-
-// proxy render() since React returns a Component reference.
-function render$1(vnode, parent, callback) {
-	var prev = parent && parent._preactCompatRendered && parent._preactCompatRendered.base;
-
-	// ignore impossible previous renders
-	if (prev && prev.parentNode !== parent) { prev = null; }
-
-	// default to first Element child
-	if (!prev && parent) { prev = parent.firstElementChild; }
-
-	// remove unaffected siblings
-	for (var i = parent.childNodes.length; i--;) {
-		if (parent.childNodes[i] !== prev) {
-			parent.removeChild(parent.childNodes[i]);
-		}
-	}
-
-	var out = Object(__WEBPACK_IMPORTED_MODULE_1_preact__["render"])(vnode, parent, prev);
-	if (parent) { parent._preactCompatRendered = out && (out._component || { base: out }); }
-	if (typeof callback === 'function') { callback(); }
-	return (out && out._component) || out;
-}
-
-var ContextProvider = function () {};
-
-ContextProvider.prototype.getChildContext = function () {
-	return this.props.context;
-};
-ContextProvider.prototype.render = function (props) {
-	return props.children[0];
-};
-
-function renderSubtreeIntoContainer(parentComponent, vnode, container, callback) {
-	var wrap = Object(__WEBPACK_IMPORTED_MODULE_1_preact__["h"])(ContextProvider, { context: parentComponent.context }, vnode);
-	var renderContainer = render$1(wrap, container);
-	var component = renderContainer._component || renderContainer.base;
-	if (callback) { callback.call(component, renderContainer); }
-	return component;
-}
-
-function Portal(props) {
-	renderSubtreeIntoContainer(this, props.vnode, props.container);
-}
-
-function createPortal(vnode, container) {
-	return Object(__WEBPACK_IMPORTED_MODULE_1_preact__["h"])(Portal, { vnode: vnode, container: container });
-}
-
-function unmountComponentAtNode(container) {
-	var existing = container._preactCompatRendered && container._preactCompatRendered.base;
-	if (existing && existing.parentNode === container) {
-		Object(__WEBPACK_IMPORTED_MODULE_1_preact__["render"])(Object(__WEBPACK_IMPORTED_MODULE_1_preact__["h"])(EmptyComponent), container, existing);
-		return true;
-	}
-	return false;
-}
-
-var ARR = [];
-
-// This API is completely unnecessary for Preact, so it's basically passthrough.
-var Children = {
-	map: function(children, fn, ctx) {
-		if (children == null) { return null; }
-		children = Children.toArray(children);
-		if (ctx && ctx !== children) { fn = fn.bind(ctx); }
-		return children.map(fn);
-	},
-	forEach: function(children, fn, ctx) {
-		if (children == null) { return null; }
-		children = Children.toArray(children);
-		if (ctx && ctx !== children) { fn = fn.bind(ctx); }
-		children.forEach(fn);
-	},
-	count: function(children) {
-		return (children && children.length) || 0;
-	},
-	only: function(children) {
-		children = Children.toArray(children);
-		if (children.length !== 1) { throw new Error('Children.only() expects only one child.'); }
-		return children[0];
-	},
-	toArray: function(children) {
-		if (children == null) { return []; }
-		return ARR.concat(children);
-	}
-};
-
-/** Track current render() component for ref assignment */
-var currentComponent;
-
-function createFactory(type) {
-	return createElement.bind(null, type);
-}
-
-var DOM = {};
-for (var i = ELEMENTS.length; i--;) {
-	DOM[ELEMENTS[i]] = createFactory(ELEMENTS[i]);
-}
-
-function upgradeToVNodes(arr, offset) {
-	for (var i = offset || 0; i < arr.length; i++) {
-		var obj = arr[i];
-		if (Array.isArray(obj)) {
-			upgradeToVNodes(obj);
-		}
-		else if (
-			obj &&
-			typeof obj === 'object' &&
-			!isValidElement(obj) &&
-			((obj.props && obj.type) || (obj.attributes && obj.nodeName) || obj.children)
-		) {
-			arr[i] = createElement(obj.type || obj.nodeName, obj.props || obj.attributes, obj.children);
-		}
-	}
-}
-
-function isStatelessComponent(c) {
-	return typeof c === 'function' && !(c.prototype && c.prototype.render);
-}
-
-// wraps stateless functional components in a PropTypes validator
-function wrapStatelessComponent(WrappedComponent) {
-	return createClass({
-		displayName: WrappedComponent.displayName || WrappedComponent.name,
-		render: function() {
-			return WrappedComponent(this.props, this.context);
-		}
-	});
-}
-
-function statelessComponentHook(Ctor) {
-	var Wrapped = Ctor[COMPONENT_WRAPPER_KEY];
-	if (Wrapped) { return Wrapped === true ? Ctor : Wrapped; }
-
-	Wrapped = wrapStatelessComponent(Ctor);
-
-	Object.defineProperty(Wrapped, COMPONENT_WRAPPER_KEY, { configurable: true, value: true });
-	Wrapped.displayName = Ctor.displayName;
-	Wrapped.propTypes = Ctor.propTypes;
-	Wrapped.defaultProps = Ctor.defaultProps;
-
-	Object.defineProperty(Ctor, COMPONENT_WRAPPER_KEY, { configurable: true, value: Wrapped });
-
-	return Wrapped;
-}
-
-function createElement() {
-	var args = [], len = arguments.length;
-	while ( len-- ) args[ len ] = arguments[ len ];
-
-	upgradeToVNodes(args, 2);
-	return normalizeVNode(__WEBPACK_IMPORTED_MODULE_1_preact__["h"].apply(void 0, args));
-}
-
-function normalizeVNode(vnode) {
-	vnode.preactCompatNormalized = true;
-
-	applyClassName(vnode);
-
-	if (isStatelessComponent(vnode.nodeName)) {
-		vnode.nodeName = statelessComponentHook(vnode.nodeName);
-	}
-
-	var ref = vnode.attributes.ref,
-		type = ref && typeof ref;
-	if (currentComponent && (type === 'string' || type === 'number')) {
-		vnode.attributes.ref = createStringRefProxy(ref, currentComponent);
-	}
-
-	applyEventNormalization(vnode);
-
-	return vnode;
-}
-
-function cloneElement$1(element, props) {
-	var children = [], len = arguments.length - 2;
-	while ( len-- > 0 ) children[ len ] = arguments[ len + 2 ];
-
-	if (!isValidElement(element)) { return element; }
-	var elementProps = element.attributes || element.props;
-	var node = Object(__WEBPACK_IMPORTED_MODULE_1_preact__["h"])(
-		element.nodeName || element.type,
-		extend({}, elementProps),
-		element.children || (elementProps && elementProps.children)
-	);
-	// Only provide the 3rd argument if needed.
-	// Arguments 3+ overwrite element.children in preactCloneElement
-	var cloneArgs = [node, props];
-	if (children && children.length) {
-		cloneArgs.push(children);
-	}
-	else if (props && props.children) {
-		cloneArgs.push(props.children);
-	}
-	return normalizeVNode(__WEBPACK_IMPORTED_MODULE_1_preact__["cloneElement"].apply(void 0, cloneArgs));
-}
-
-function isValidElement(element) {
-	return element && (element instanceof VNode || element.$$typeof === REACT_ELEMENT_TYPE);
-}
-
-function createStringRefProxy(name, component) {
-	return (
-		component._refProxies[name] ||
-		(component._refProxies[name] = function (resolved) {
-			if (component && component.refs) {
-				component.refs[name] = resolved;
-				if (resolved === null) {
-					delete component._refProxies[name];
-					component = null;
-				}
-			}
-		})
-	);
-}
-
-function applyEventNormalization(ref) {
-	var nodeName = ref.nodeName;
-	var attributes = ref.attributes;
-
-	if (!attributes || typeof nodeName !== 'string') { return; }
-	var props = {};
-	for (var i in attributes) {
-		props[i.toLowerCase()] = i;
-	}
-	if (props.ondoubleclick) {
-		attributes.ondblclick = attributes[props.ondoubleclick];
-		delete attributes[props.ondoubleclick];
-	}
-	// for *textual inputs* (incl textarea), normalize `onChange` -> `onInput`:
-	if (
-		props.onchange &&
-		(nodeName === 'textarea' || (nodeName.toLowerCase() === 'input' && !/^fil|che|rad/i.test(attributes.type)))
-	) {
-		var normalized = props.oninput || 'oninput';
-		if (!attributes[normalized]) {
-			attributes[normalized] = multihook([attributes[normalized], attributes[props.onchange]]);
-			delete attributes[props.onchange];
-		}
-	}
-}
-
-function applyClassName(vnode) {
-	var a = vnode.attributes || (vnode.attributes = {});
-	classNameDescriptor.enumerable = 'className' in a;
-	if (a.className) { a.class = a.className; }
-	Object.defineProperty(a, 'className', classNameDescriptor);
-}
-
-var classNameDescriptor = {
-	configurable: true,
-	get: function() {
-		return this.class;
-	},
-	set: function(v) {
-		this.class = v;
-	}
-};
-
-function extend(base, props) {
-	var arguments$1 = arguments;
-
-	for (var i = 1, obj = (void 0); i < arguments.length; i++) {
-		if ((obj = arguments$1[i])) {
-			for (var key in obj) {
-				if (obj.hasOwnProperty(key)) {
-					base[key] = obj[key];
-				}
-			}
-		}
-	}
-	return base;
-}
-
-function shallowDiffers(a, b) {
-	for (var i in a) { if (!(i in b)) { return true; } }
-	for (var i$1 in b) { if (a[i$1] !== b[i$1]) { return true; } }
-	return false;
-}
-
-function findDOMNode(component) {
-	return (component && (component.base || (component.nodeType === 1 && component))) || null;
-}
-
-function F() { }
-
-function createClass(obj) {
-	function cl(props, context) {
-		bindAll(this);
-		Component$1.call(this, props, context, BYPASS_HOOK);
-		newComponentHook.call(this, props, context);
-	}
-
-	obj = extend({ constructor: cl }, obj);
-
-	// We need to apply mixins here so that getDefaultProps is correctly mixed
-	if (obj.mixins) {
-		applyMixins(obj, collateMixins(obj.mixins));
-	}
-	if (obj.statics) {
-		extend(cl, obj.statics);
-	}
-	if (obj.propTypes) {
-		cl.propTypes = obj.propTypes;
-	}
-	if (obj.defaultProps) {
-		cl.defaultProps = obj.defaultProps;
-	}
-	if (obj.getDefaultProps) {
-		cl.defaultProps = obj.getDefaultProps.call(cl);
-	}
-
-	F.prototype = Component$1.prototype;
-	cl.prototype = extend(new F(), obj);
-
-	cl.displayName = obj.displayName || 'Component';
-
-	return cl;
-}
-
-// Flatten an Array of mixins to a map of method name to mixin implementations
-function collateMixins(mixins) {
-	var keyed = {};
-	for (var i = 0; i < mixins.length; i++) {
-		var mixin = mixins[i];
-		for (var key in mixin) {
-			if (mixin.hasOwnProperty(key) && typeof mixin[key] === 'function') {
-				(keyed[key] || (keyed[key] = [])).push(mixin[key]);
-			}
-		}
-	}
-	return keyed;
-}
-
-// apply a mapping of Arrays of mixin methods to a component prototype
-function applyMixins(proto, mixins) {
-	for (var key in mixins)
-		{ if (mixins.hasOwnProperty(key)) {
-			proto[key] = multihook(
-				mixins[key].concat(proto[key] || ARR),
-				key === 'getDefaultProps' || key === 'getInitialState' || key === 'getChildContext'
-			);
-		} }
-}
-
-function bindAll(ctx) {
-	for (var i in ctx) {
-		var v = ctx[i];
-		if (typeof v === 'function' && !v.__bound && !AUTOBIND_BLACKLIST.hasOwnProperty(i)) {
-			(ctx[i] = v.bind(ctx)).__bound = true;
-		}
-	}
-}
-
-function callMethod(ctx, m, args) {
-	if (typeof m === 'string') {
-		m = ctx.constructor.prototype[m];
-	}
-	if (typeof m === 'function') {
-		return m.apply(ctx, args);
-	}
-}
-
-function multihook(hooks, skipDuplicates) {
-	return function () {
-		var arguments$1 = arguments;
-		var this$1 = this;
-
-		var ret;
-		for (var i = 0; i < hooks.length; i++) {
-			var r = callMethod(this$1, hooks[i], arguments$1);
-
-			if (skipDuplicates && r != null) {
-				if (!ret) { ret = {}; }
-				for (var key in r)
-					{ if (r.hasOwnProperty(key)) {
-						ret[key] = r[key];
-					} }
-			}
-			else if (typeof r !== 'undefined') { ret = r; }
-		}
-		return ret;
-	};
-}
-
-function newComponentHook(props, context) {
-	propsHook.call(this, props, context);
-	this.componentWillReceiveProps = multihook([
-		propsHook,
-		this.componentWillReceiveProps || 'componentWillReceiveProps'
-	]);
-	this.render = multihook([propsHook, beforeRender, this.render || 'render', afterRender]);
-}
-
-function propsHook(props, context) {
-	if (!props) { return; }
-
-	// React annoyingly special-cases single children, and some react components are ridiculously strict about this.
-	var c = props.children;
-	if (
-		c &&
-		Array.isArray(c) &&
-		c.length === 1 &&
-		(typeof c[0] === 'string' || typeof c[0] === 'function' || c[0] instanceof VNode)
-	) {
-		props.children = c[0];
-
-		// but its totally still going to be an Array.
-		if (props.children && typeof props.children === 'object') {
-			props.children.length = 1;
-			props.children[0] = props.children;
-		}
-	}
-
-	// add proptype checking
-	if (DEV) {
-		var ctor = typeof this === 'function' ? this : this.constructor,
-			propTypes = this.propTypes || ctor.propTypes;
-		var displayName = this.displayName || ctor.name;
-
-		if (propTypes) {
-			__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.checkPropTypes(propTypes, props, 'prop', displayName);
-		}
-	}
-}
-
-function beforeRender(props) {
-	currentComponent = this;
-}
-
-function afterRender() {
-	if (currentComponent === this) {
-		currentComponent = null;
-	}
-}
-
-function Component$1(props, context, opts) {
-	__WEBPACK_IMPORTED_MODULE_1_preact__["Component"].call(this, props, context);
-	this.state = this.getInitialState ? this.getInitialState() : {};
-	this.refs = {};
-	this._refProxies = {};
-	if (opts !== BYPASS_HOOK) {
-		newComponentHook.call(this, props, context);
-	}
-}
-extend((Component$1.prototype = new __WEBPACK_IMPORTED_MODULE_1_preact__["Component"]()), {
-	constructor: Component$1,
-
-	isReactComponent: {},
-
-	replaceState: function(state, callback) {
-		var this$1 = this;
-
-		this.setState(state, callback);
-		for (var i in this$1.state) {
-			if (!(i in state)) {
-				delete this$1.state[i];
-			}
-		}
-	},
-
-	getDOMNode: function() {
-		return this.base;
-	},
-
-	isMounted: function() {
-		return !!this.base;
-	}
-});
-
-function PureComponent(props, context) {
-	Component$1.call(this, props, context);
-}
-F.prototype = Component$1.prototype;
-PureComponent.prototype = new F();
-PureComponent.prototype.isPureReactComponent = true;
-PureComponent.prototype.shouldComponentUpdate = function (props, state) {
-	return shallowDiffers(this.props, props) || shallowDiffers(this.state, state);
-};
-
-function unstable_batchedUpdates(callback) {
-	callback();
-}
-
-var index = {
-	version: version,
-	DOM: DOM,
-	PropTypes: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a,
-	Children: Children,
-	render: render$1,
-	hydrate: render$1,
-	createClass: createClass,
-	createContext: __WEBPACK_IMPORTED_MODULE_2_preact_context__["createContext"],
-	createPortal: createPortal,
-	createFactory: createFactory,
-	createElement: createElement,
-	cloneElement: cloneElement$1,
-	createRef: __WEBPACK_IMPORTED_MODULE_1_preact__["createRef"],
-	isValidElement: isValidElement,
-	findDOMNode: findDOMNode,
-	unmountComponentAtNode: unmountComponentAtNode,
-	Component: Component$1,
-	PureComponent: PureComponent,
-	unstable_renderSubtreeIntoContainer: renderSubtreeIntoContainer,
-	unstable_batchedUpdates: unstable_batchedUpdates,
-	__spread: extend
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (index);
-
-//# sourceMappingURL=preact-compat.es.js.map
-
-
-/***/ }),
-/* 421 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.9.0
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
-// TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' ||
-  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE);
-}
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var lowPriorityWarning = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarning = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarning$1 = lowPriorityWarning;
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-              default:
-                return $$typeof;
-            }
-        }
-      case REACT_LAZY_TYPE:
-      case REACT_MEMO_TYPE:
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-}
-
-// AsyncMode is deprecated along with isAsyncMode
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-
-// AsyncMode should be deprecated
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.typeOf = typeOf;
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-  })();
-}
-
-
-/***/ }),
-/* 422 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactIs = __webpack_require__(313);
-var assign = __webpack_require__(423);
-
-var ReactPropTypesSecret = __webpack_require__(314);
-var checkPropTypes = __webpack_require__(424);
-
-var has = Function.call.bind(Object.prototype.hasOwnProperty);
-var printWarning = function() {};
-
-if (true) {
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-
-module.exports = function(isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker,
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (true) {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error(
-            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-            'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
-          );
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ("development" !== 'production' && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (
-            !manualPropTypeCallCache[cacheKey] &&
-            // Avoid spamming the console because they are often not actionable except for lib authors
-            manualPropTypeWarningCount < 3
-          ) {
-            printWarning(
-              'You are manually calling a React.PropTypes validation ' +
-              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
-              'and will throw in the standalone `prop-types` package. ' +
-              'You may be seeing this warning due to a third-party PropTypes ' +
-              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
-            );
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      if (true) {
-        if (arguments.length > 1) {
-          printWarning(
-            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
-            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
+var TreeMenu = {
+  mixins: [algoliaComponent],
+  props: {
+    attribute: {
+      type: String,
+      default: 'tree-menu',
+    },
+    attributes: {
+      type: Array,
+      required: true,
+    },
+    separator: {
+      type: String,
+      default: ' > ',
+    },
+    limit: {
+      type: Number,
+      default: 10,
+    },
+    sortBy: {
+      default: function default$1$$1() {
+        return ['name:asc'];
+      },
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-tree-menu',
+    };
+  },
+  created: function created() {
+    this.searchStore.addFacet(
+      {
+        name: this.attribute,
+        attributes: this.attributes,
+        separator: this.separator,
+      },
+      FACET_TREE
+    );
+  },
+  destroyed: function destroyed() {
+    this.searchStore.stop();
+    this.searchStore.removeFacet(this.attribute);
+    this.searchStore.start();
+  },
+  computed: {
+    facetValues: function facetValues() {
+      var values = this.searchStore.getFacetValues(
+        this.attribute,
+        this.sortBy
+      );
+
+      return values.data || [];
+    },
+    show: function show() {
+      return this.facetValues.length > 0;
+    },
+  },
+  methods: {
+    toggleRefinement: function toggleRefinement(value) {
+      return this.searchStore.toggleFacetRefinement(this.attribute, value.path);
+    },
+    _renderList: function _renderList(h, facetValues, isRoot) {
+      var this$1 = this;
+      if ( isRoot === void 0 ) isRoot = true;
+
+      var listItems = [];
+      var loop = function () {
+        var facet = list[i];
+
+        var listItemLabel = [];
+
+        if (this$1.$scopedSlots.default) {
+          listItemLabel.push(
+            this$1.$scopedSlots.default({
+              value: facet.name,
+              count: facet.count,
+              active: facet.isRefined,
+            })
           );
         } else {
-          printWarning('Invalid argument supplied to oneOf, expected an array.');
-        }
-      }
-      return emptyFunctionThatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-        var type = getPreciseType(value);
-        if (type === 'symbol') {
-          return String(value);
-        }
-        return value;
-      });
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (has(propValue, key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
-      return emptyFunctionThatReturnsNull;
-    }
-
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        printWarning(
-          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
-          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
-        );
-        return emptyFunctionThatReturnsNull;
-      }
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createStrictShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      // We need to check all keys in case some are required but missing from
-      // props.
-      var allKeys = assign({}, props[propName], shapeTypes);
-      for (var key in allKeys) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          return new PropTypeError(
-            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
-            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
-            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          listItemLabel.push(
+            h(
+              'span',
+              {
+                class: this$1.bem('value'),
+              },
+              facet.name
+            ),
+            h(
+              'span',
+              {
+                class: this$1.bem('count'),
+              },
+              facet.count
+            )
           );
         }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
+
+        var listItemChildren = [
+          h(
+            'a',
+            {
+              domProps: {
+                href: '#',
+              },
+              on: {
+                click: function (event) {
+                  event.preventDefault();
+                  this$1.toggleRefinement(facet);
+                },
+              },
+            },
+            listItemLabel
+          ) ];
+
+        if (facet.isRefined && facet.data && facet.data.length > 0) {
+          listItemChildren.push(this$1._renderList(h, facet.data, false));
         }
-      }
-      return null;
+
+        listItems.push(
+          h(
+            'li',
+            {
+              class: [
+                this$1.bem('item'),
+                facet.isRefined ? this$1.bem('item', 'active') : '' ],
+            },
+            listItemChildren
+          )
+        );
+      };
+
+      for (var i = 0, list = facetValues; i < list.length; i += 1) loop();
+
+      return h(
+        'ul',
+        {
+          class: isRoot ? this.bem('list') : '',
+        },
+        listItems
+      );
+    },
+  },
+  render: function render(h) {
+    if (this.show === false) {
+      return undefined;
     }
 
-    return createChainableTypeChecker(validate);
-  }
+    var children = [];
 
-  function isNode(propValue) {
-    switch (typeof propValue) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
+    if (this.$slots.header) {
+      children.push(this.$slots.header);
+    }
+
+    children.push(this._renderList(h, this.facetValues));
+
+    if (this.$slots.footer) {
+      children.push(this.$slots.footer);
+    }
+
+    return h(
+      'div',
+      {
+        class: this.bem(),
+      },
+      children
+    );
+  },
+};
+
+var Menu = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{class:_vm.bem()},[_vm._t("header"),_vm._v(" "),_vm._l((_vm.facetValues),function(facet){return _c('div',{key:facet.name,class:facet.isRefined ? _vm.bem('item', 'active') : _vm.bem('item')},[_c('a',{class:_vm.bem('link'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.handleClick(facet.path);}}},[_vm._v(" "+_vm._s(facet.name)+" "),_c('span',{class:_vm.bem('count')},[_vm._v(_vm._s(facet.count))])])])}),_vm._v(" "),_vm._t("footer")],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+
+  props: {
+    attribute: {
+      type: String,
+      required: true,
+    },
+    limit: {
+      type: Number,
+      default: 10,
+    },
+    sortBy: {
+      default: function default$1$$1() {
+        return ['isRefined:desc', 'count:desc', 'name:asc'];
+      },
+    },
+  },
+
+  computed: {
+    facetValues: function facetValues() {
+      var ref = this.searchStore.getFacetValues(
+        this.attribute,
+        this.sortBy
+      );
+      var data = ref.data;
+
+      if (Array.isArray(data)) {
+        return data;
+      }
+
+      return [];
+    },
+    show: function show() {
+      return this.facetValues.length > 0;
+    },
+  },
+
+  methods: {
+    handleClick: function handleClick(path) {
+      this.searchStore.toggleFacetRefinement(this.attribute, path);
+    },
+  },
+
+  data: function data() {
+    return {
+      blockClassName: 'ais-menu',
+    };
+  },
+
+  created: function created() {
+    this.searchStore.stop();
+    this.searchStore.maxValuesPerFacet = this.limit;
+    this.searchStore.addFacet(
+      {
+        name: this.attribute,
+        attributes: [this.attribute],
+      },
+      FACET_TREE
+    );
+    this.searchStore.start();
+    this.searchStore.refresh();
+  },
+
+  destroyed: function destroyed() {
+    this.searchStore.stop();
+    this.searchStore.removeFacet(this.attribute);
+    this.searchStore.start();
+  },
+};
+
+var SortBySelector = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.indexName),expression:"indexName"}],class:_vm.bem(),on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.indexName=$event.target.multiple ? $$selectedVal : $$selectedVal[0];}}},[_vm._l((_vm.indices),function(index){return _vm._t("default",[_c('option',{key:index.name,domProps:{"value":index.name}},[_vm._v(" "+_vm._s(index.label)+" ")])],{indexName:index.name,label:index.label})})],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    indices: {
+      type: Array,
+      required: true,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-sort-by-selector',
+    };
+  },
+  computed: {
+    indexName: {
+      get: function get() {
+        return this.searchStore.indexName;
+      },
+      set: function set(value) {
+        this.searchStore.indexName = value;
+      },
+    },
+  },
+  created: function created() {
+    var this$1 = this;
+
+    var match = false;
+    for (var index in this$1.indices) {
+      if (this$1.indices[index].name === this$1.indexName) {
+        match = true;
+      }
+    }
+
+    if (!match) {
+      this.indexName = this.indices[0].name;
+    }
+  },
+};
+
+var AisClear = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{class:[_vm.bem(), _vm.disabled ? _vm.bem(null, 'disabled') : ''],attrs:{"type":"reset","disabled":_vm.disabled},on:{"click":function($event){$event.preventDefault();_vm.clear($event);}}},[_vm._t("default",[_c('span',{class:_vm.bem('label')},[_vm._v("Clear")])])],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    clearsQuery: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+    clearsFacets: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-clear',
+    };
+  },
+  computed: {
+    disabled: function disabled() {
+      if (this.clearsQuery && this.searchStore.query.length > 0) {
+        return false;
+      }
+
+      if (this.clearsFacets && this.searchStore.activeRefinements.length > 0) {
+        return false;
+      }
+
+      return true;
+    },
+  },
+  methods: {
+    clear: function clear() {
+      this.searchStore.stop();
+      if (this.clearsQuery && this.searchStore.query.length > 0) {
+        this.searchStore.query = '';
+      }
+
+      if (this.clearsFacets && this.searchStore.activeRefinements.length > 0) {
+        this.searchStore.clearRefinements();
+      }
+      this.searchStore.start();
+      this.searchStore.refresh();
+    },
+  },
+};
+
+var SearchBox = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{class:_vm.bem('form'),attrs:{"role":"search","action":""},on:{"submit":function($event){$event.preventDefault();_vm.onFormSubmit($event);}}},[_vm._t("default",[_c('ais-input',{attrs:{"search-store":_vm.searchStore,"placeholder":_vm.placeholder,"autofocus":_vm.autofocus,"class-names":_vm.classNames}}),_vm._v(" "),(_vm.showLoadingIndicator)?_c('div',{class:_vm.bem('loading-indicator'),attrs:{"hidden":!_vm.searchStore.isSearchStalled}},[_vm._t("loading-indicator",[_c('svg',{attrs:{"width":"1em","height":"1em","viewBox":"0 0 38 38","xmlns":"http://www.w3.org/2000/svg","stroke":"#000"}},[_c('g',{attrs:{"fill":"none","fill-rule":"evenodd"}},[_c('g',{attrs:{"transform":"translate(1 1)","stroke-width":"2"}},[_c('circle',{attrs:{"stroke-opacity":".5","cx":"18","cy":"18","r":"18"}}),_vm._v(" "),_c('path',{attrs:{"d":"M36 18c0-9.94-8.06-18-18-18"}},[_c('animateTransform',{attrs:{"attributeName":"transform","type":"rotate","from":"0 18 18","to":"360 18 18","dur":"1s","repeatCount":"indefinite"}})],1)])])])])],2):_vm._e(),_vm._v(" "),_c('button',{class:_vm.bem('submit'),attrs:{"type":"submit","hidden":_vm.showLoadingIndicator && _vm.searchStore.isSearchStalled}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 40 40"}},[_c('title',[_vm._v(_vm._s(_vm.submitTitle))]),_vm._v(" "),_c('path',{attrs:{"d":"M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z","fillRule":"evenodd"}})])]),_vm._v(" "),_c('ais-clear',{attrs:{"search-store":_vm.searchStore,"class-names":_vm.classNames}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","width":"1em","height":"1em","viewBox":"0 0 20 20"}},[_c('title',[_vm._v(_vm._s(_vm.clearTitle))]),_vm._v(" "),_c('path',{attrs:{"d":"M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z","fillRule":"evenodd"}})])])])],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    placeholder: {
+      type: String,
+      default: '',
+    },
+    submitTitle: {
+      type: String,
+      default: 'search',
+    },
+    clearTitle: {
+      type: String,
+      default: 'clear',
+    },
+    autofocus: {
+      type: Boolean,
+      default: false,
+    },
+    showLoadingIndicator: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-search-box',
+    };
+  },
+  methods: {
+    onFormSubmit: function onFormSubmit() {
+      var input = this.$el.querySelector('input[type=search]');
+      input.blur();
+    },
+  },
+  components: {
+    AisInput: AisInput,
+    AisClear: AisClear,
+  },
+};
+
+var Rating = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{class:_vm.bem()},[_vm._t("header"),_vm._v(" "),(_vm.currentValue)?_c('a',{class:_vm.bem('clear'),attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.clear($event);}}},[_vm._t("clear",[_vm._v("Clear")])],2):_vm._e(),_vm._v(" "),_vm._l((_vm.facetValues),function(facet,key){return _c('div',{key:key,class:[_vm.bem('item'), facet.isRefined ? _vm.bem('item', 'active') : '']},[_c('a',{attrs:{"href":"#"},on:{"click":function($event){$event.preventDefault();_vm.toggleRefinement(facet);}}},[_vm._t("default",[_vm._l((_vm.max),function(n){return [(n <= facet.value)?_c('span',{key:n,class:_vm.bem('star')},[_vm._v("★")]):_c('span',{key:n,class:_vm.bem('star', 'empty')},[_vm._v("☆")])]}),_vm._v("  & up "),_c('span',{class:_vm.bem('count')},[_vm._v(_vm._s(facet.count))])],{value:facet.value,min:_vm.min,max:_vm.max,count:facet.count})],2)])}),_vm._v(" "),_vm._t("footer")],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    attributeName: {
+      type: String,
+      required: true,
+    },
+    min: {
+      type: Number,
+      default: 1,
+    },
+    max: {
+      type: Number,
+      default: 5,
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-rating',
+    };
+  },
+  created: function created() {
+    this.searchStore.addFacet(this.attributeName, FACET_OR);
+  },
+  destroyed: function destroyed() {
+    this.searchStore.stop();
+    this.searchStore.removeFacet(this.attributeName);
+    this.searchStore.start();
+  },
+  computed: {
+    show: function show() {
+      var this$1 = this;
+
+      for (var value in this$1.facetValues) {
+        if (this$1.facetValues[value].count > 0) {
           return true;
         }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // falsy value can't be a Symbol
-    if (!propValue) {
+      }
       return false;
-    }
+    },
+    facetValues: function facetValues() {
+      var values = this.searchStore.getFacetValues(
+        this.attributeName,
+        ['name:asc'],
+        this.max + 1
+      );
 
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
+      var stars = [];
+      var isRefined = false;
 
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
+      var loop = function ( i ) {
+        var name = i.toString();
+        var star = {
+          count: 0,
+          isRefined: false,
+          name: name,
+          value: i,
+        };
 
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-/* 423 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-
-/***/ }),
-/* 424 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(314);
-  var loggedTypeFailures = {};
-  var has = Function.call.bind(Object.prototype.hasOwnProperty);
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
+        // eslint-disable-next-line no-loop-func
+        values.forEach(function (facetValue) {
+          if (facetValue.name === name) {
+            if (!isRefined && facetValue.isRefined) {
+              isRefined = true;
+              star.isRefined = true;
+            }
           }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          );
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
+        });
 
-          var stack = getStack ? getStack() : '';
+        stars.push(star);
+      };
 
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
+      for (var i = 0; i <= this.max; i++) loop( i );
+
+      stars = stars.reverse();
+
+      var count = 0;
+
+      stars = stars.map(function (star) {
+        var newStar = Object.assign({}, star, { count: count });
+        values.forEach(function (facetValue) {
+          if (facetValue.name === star.name) {
+            count += facetValue.count;
+            newStar.count = count;
+          }
+        });
+        return newStar;
+      });
+
+      return stars.slice(this.min, this.max);
+    },
+    currentValue: function currentValue() {
+      var this$1 = this;
+
+      for (var value in this$1.facetValues) {
+        if (this$1.facetValues[value].isRefined) {
+          return this$1.facetValues[value].value;
         }
       }
-    }
-  }
-}
 
-/**
- * Resets warning cache when testing.
- *
- * @private
- */
-checkPropTypes.resetWarningCache = function() {
-  if (true) {
-    loggedTypeFailures = {};
-  }
-}
+      return undefined;
+    },
+  },
+  methods: {
+    toggleRefinement: function toggleRefinement(facet) {
+      var this$1 = this;
 
-module.exports = checkPropTypes;
+      if (facet.isRefined) {
+        return this.searchStore.clearRefinements(this.attributeName);
+      }
 
+      if (facet.count === 0) {
+        return undefined;
+      }
 
-/***/ }),
-/* 425 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+      this.searchStore.stop();
+      this.searchStore.clearRefinements(this.attributeName);
+      for (var val = Number(facet.name); val <= this.max; ++val) {
+        this$1.searchStore.addFacetRefinement(this$1.attributeName, val);
+      }
+      this.searchStore.start();
+      this.searchStore.refresh();
+      return undefined;
+    },
+    clear: function clear() {
+      this.searchStore.clearRefinements(this.attributeName);
+    },
+  },
+};
 
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectHitsPerPage;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+var RangeInput = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.bem()},[_vm._t("header"),_vm._v(" "),_c('form',{on:{"submit":function($event){$event.preventDefault();_vm.onSubmit(_vm.refinement);}}},[_c('input',{class:_vm.bem('input', 'from'),attrs:{"type":"number","min":_vm.range.min,"max":_vm.range.max,"step":_vm.step,"placeholder":_vm.rangeForRendering.min},domProps:{"value":_vm.refinementForRendering.min},on:{"input":function($event){_vm.refinement.min = $event.target.value;}}}),_vm._v(" "),_vm._t("separator",[_c('span',{class:_vm.bem('separator')},[_vm._v(" to ")])]),_vm._v(" "),_c('input',{class:_vm.bem('input', 'to'),attrs:{"type":"number","min":_vm.range.min,"max":_vm.range.max,"step":_vm.step,"placeholder":_vm.rangeForRendering.max},domProps:{"value":_vm.refinementForRendering.max},on:{"input":function($event){_vm.refinement.max = $event.target.value;}}}),_vm._v(" "),_vm._t("submit",[_c('button',{class:_vm.bem('submit')},[_vm._v("Ok")])])],2),_vm._v(" "),_vm._t("footer")],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    attributeName: {
+      type: String,
+      required: true,
+    },
+    min: {
+      type: Number,
+    },
+    max: {
+      type: Number,
+    },
+    defaultRefinement: {
+      type: Object,
+      default: function default$1$$1() {
+        return {};
+      },
+    },
+    precision: {
+      type: Number,
+      default: 0,
+      validator: function validator(value) {
+        return value >= 0;
+      },
+    },
+  },
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'hits-per-page',
-  connector: true
-});
-/**
- * @typedef {Object} HitsPerPageRenderingOptionsItem
- * @property {number} value Number of hits to display per page.
- * @property {string} label Label to display in the option.
- * @property {boolean} isRefined Indicates if it's the current refined value.
- */
-
-/**
- * @typedef {Object} HitsPerPageWidgetOptionsItem
- * @property {number} value Number of hits to display per page.
- * @property {string} label Label to display in the option.
- * @property {boolean} default The default hits per page on first search.
- */
-
-/**
- * @typedef {Object} HitsPerPageRenderingOptions
- * @property {HitsPerPageRenderingOptionsItem[]} items Array of objects defining the different values and labels.
- * @property {function(item.value)} createURL Creates the URL for a single item name in the list.
- * @property {function(number)} refine Sets the number of hits per page and trigger a search.
- * @property {boolean} hasNoResults `true` if the last search contains no result.
- * @property {Object} widgetParams Original `HitsPerPageWidgetOptions` forwarded to `renderFn`.
- */
-
-/**
- * @typedef {Object} HitsPerPageWidgetOptions
- * @property {HitsPerPageWidgetOptionsItem[]} items Array of objects defining the different values and labels.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * **HitsPerPage** connector provides the logic to create custom widget that will
- * allow a user to choose to display more or less results from Algolia.
- *
- * This connector provides a `refine()` function to change the hits per page configuration and trigger a new search.
- * @type {Connector}
- * @param {function(HitsPerPageRenderingOptions, boolean)} renderFn Rendering function for the custom **HitsPerPage** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(HitsPerPageWidgetOptions)} Re-usable widget factory for a custom **HitsPerPage** widget.
- * @example
- * // custom `renderFn` to render the custom HitsPerPage widget
- * function renderFn(HitsPerPageRenderingOptions, isFirstRendering) {
- *   var containerNode = HitsPerPageRenderingOptions.widgetParams.containerNode
- *   var items = HitsPerPageRenderingOptions.items
- *   var refine = HitsPerPageRenderingOptions.refine
- *
- *   if (isFirstRendering) {
- *     var markup = '<select></select>';
- *     containerNode.append(markup);
- *   }
- *
- *   const itemsHTML = items.map(({value, label, isRefined}) => `
- *     <option
- *       value="${value}"
- *       ${isRefined ? 'selected' : ''}
- *     >
- *       ${label}
- *     </option>
- *   `);
- *
- *   containerNode
- *     .find('select')
- *     .html(itemsHTML);
- *
- *   containerNode
- *     .find('select')
- *     .off('change')
- *     .on('change', e => { refine(e.target.value); });
- * }
- *
- * // connect `renderFn` to HitsPerPage logic
- * var customHitsPerPage = instantsearch.connectors.connectHitsPerPage(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customHitsPerPage({
- *     containerNode: $('#custom-hits-per-page-container'),
- *     items: [
- *       {value: 6, label: '6 per page', default: true},
- *       {value: 12, label: '12 per page'},
- *       {value: 24, label: '24 per page'},
- *     ],
- *   })
- * );
- */
-
-function connectHitsPerPage(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var userItems = widgetParams.items,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-    var items = userItems;
-
-    if (!Array.isArray(items)) {
-      throw new Error(withUsage('The `items` option expects an array of objects.'));
-    }
-
-    var defaultValues = items.filter(function (item) {
-      return item.default;
-    });
-
-    if (defaultValues.length > 1) {
-      throw new Error(withUsage('More than one default value is specified in `items`.'));
-    }
-
-    var defaultValue = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(userItems, function (item) {
-      return item.default === true;
-    });
+  data: function data() {
     return {
-      getConfiguration: function getConfiguration() {
-        return defaultValues.length > 0 ? {
-          hitsPerPage: defaultValues[0].value
-        } : {};
-      },
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            createURL = _ref.createURL,
-            state = _ref.state,
-            instantSearchInstance = _ref.instantSearchInstance;
-        var isCurrentInOptions = items.some(function (item) {
-          return Number(state.hitsPerPage) === Number(item.value);
-        });
-
-        if (!isCurrentInOptions) {
-          Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(state.hitsPerPage !== undefined, "\n`hitsPerPage` is not defined.\nThe option `hitsPerPage` needs to be set using the `configure` widget.\n\nLearn more: https://community.algolia.com/instantsearch.js/v2/widgets/configure.html\n            ");
-          Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(false, "\nThe `items` option of `hitsPerPage` does not contain the \"hits per page\" value coming from the state: ".concat(state.hitsPerPage, ".\n\nYou may want to add another entry to the `items` option with this value."));
-          items = [{
-            value: '',
-            label: ''
-          }].concat(_toConsumableArray(items));
-        }
-
-        this.setHitsPerPage = function (value) {
-          return !value && value !== 0 ? helper.setQueryParameter('hitsPerPage', undefined).search() : helper.setQueryParameter('hitsPerPage', value).search();
-        };
-
-        this.createURL = function (helperState) {
-          return function (value) {
-            return createURL(helperState.setQueryParameter('hitsPerPage', !value && value !== 0 ? undefined : value));
-          };
-        };
-
-        renderFn({
-          items: transformItems(this._normalizeItems(state)),
-          refine: this.setHitsPerPage,
-          createURL: this.createURL(helper.state),
-          hasNoResults: true,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, true);
-      },
-      render: function render(_ref2) {
-        var state = _ref2.state,
-            results = _ref2.results,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        var hasNoResults = results.nbHits === 0;
-        renderFn({
-          items: transformItems(this._normalizeItems(state)),
-          refine: this.setHitsPerPage,
-          createURL: this.createURL(state),
-          hasNoResults: hasNoResults,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, false);
-      },
-      _normalizeItems: function _normalizeItems(_ref3) {
-        var hitsPerPage = _ref3.hitsPerPage;
-        return items.map(function (item) {
-          return _objectSpread({}, item, {
-            isRefined: Number(item.value) === Number(hitsPerPage)
-          });
-        });
-      },
-      dispose: function dispose() {
-        unmountFn();
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-        var hitsPerPage = searchParameters.hitsPerPage;
-
-        if (defaultValue && hitsPerPage === defaultValue.value || hitsPerPage === undefined || uiState.hitsPerPage === hitsPerPage) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          hitsPerPage: hitsPerPage
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-        var hitsPerPage = uiState.hitsPerPage;
-        if (hitsPerPage) return searchParameters.setQueryParameter('hitsPerPage', uiState.hitsPerPage);
-
-        if (defaultValue) {
-          return searchParameters.setQueryParameter('hitsPerPage', defaultValue.value);
-        }
-
-        return searchParameters.setQueryParameter('hitsPerPage', undefined);
-      }
+      blockClassName: 'ais-range-input',
     };
-  };
-}
+  },
 
-/***/ }),
-/* 426 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  created: function created() {
+    var ref = this.defaultRefinement;
+    var minValue = ref.min;
+    var maxValue = ref.max;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_insights__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__connectInfiniteHits__ = __webpack_require__(317);
-
-
-var connectInfiniteHitsWithInsights = Object(__WEBPACK_IMPORTED_MODULE_0__lib_insights__["a" /* withInsights */])(__WEBPACK_IMPORTED_MODULE_1__connectInfiniteHits__["a" /* default */]);
-/* harmony default export */ __webpack_exports__["a"] = (connectInfiniteHitsWithInsights);
-
-/***/ }),
-/* 427 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'menu',
-  connector: true
-});
-/**
- * @typedef {Object} MenuItem
- * @property {string} value The value of the menu item.
- * @property {string} label Human-readable value of the menu item.
- * @property {number} count Number of results matched after refinement is applied.
- * @property {boolean} isRefined Indicates if the refinement is applied.
- */
-
-/**
- * @typedef {Object} CustomMenuWidgetOptions
- * @property {string} attribute Name of the attribute for faceting (eg. "free_shipping").
- * @property {number} [limit = 10] How many facets values to retrieve.
- * @property {boolean} [showMore = false] Whether to display a button that expands the number of items.
- * @property {number} [showMoreLimit = 20] How many facets values to retrieve when `toggleShowMore` is called, this value is meant to be greater than `limit` option.
- * @property {string[]|function} [sortBy = ['isRefined', 'name:asc']] How to sort refinements. Possible values: `count|isRefined|name:asc|name:desc`.
- *
- * You can also use a sort function that behaves like the standard Javascript [compareFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Syntax).
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} MenuRenderingOptions
- * @property {MenuItem[]} items The elements that can be refined for the current search results.
- * @property {function(item.value): string} createURL Creates the URL for a single item name in the list.
- * @property {function(item.value)} refine Filter the search to item value.
- * @property {boolean} canRefine True if refinement can be applied.
- * @property {Object} widgetParams All original `CustomMenuWidgetOptions` forwarded to the `renderFn`.
- * @property {boolean} isShowingMore True if the menu is displaying all the menu items.
- * @property {function} toggleShowMore Toggles the number of values displayed between `limit` and `showMore.limit`.
- * @property {boolean} canToggleShowMore `true` if the toggleShowMore button can be activated (enough items to display more or
- * already displaying more than `limit` items)
- */
-
-/**
- * **Menu** connector provides the logic to build a widget that will give the user the ability to choose a single value for a specific facet. The typical usage of menu is for navigation in categories.
- *
- * This connector provides a `toggleShowMore()` function to display more or less items and a `refine()`
- * function to select an item. While selecting a new element, the `refine` will also unselect the
- * one that is currently selected.
- *
- * **Requirement:** the attribute passed as `attribute` must be present in "attributes for faceting" on the Algolia dashboard or configured as attributesForFaceting via a set settings call to the Algolia API.
- * @type {Connector}
- * @param {function(MenuRenderingOptions, boolean)} renderFn Rendering function for the custom **Menu** widget. widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomMenuWidgetOptions)} Re-usable widget factory for a custom **Menu** widget.
- * @example
- * // custom `renderFn` to render the custom Menu widget
- * function renderFn(MenuRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     MenuRenderingOptions.widgetParams.containerNode
- *       .html('<select></select');
- *
- *     MenuRenderingOptions.widgetParams.containerNode
- *       .find('select')
- *       .on('change', function(event) {
- *         MenuRenderingOptions.refine(event.target.value);
- *       });
- *   }
- *
- *   var options = MenuRenderingOptions.items.map(function(item) {
- *     return item.isRefined
- *       ? '<option value="' + item.value + '" selected>' + item.label + '</option>'
- *       : '<option value="' + item.value + '">' + item.label + '</option>';
- *   });
- *
- *   MenuRenderingOptions.widgetParams.containerNode
- *     .find('select')
- *     .html(options);
- * }
- *
- * // connect `renderFn` to Menu logic
- * var customMenu = instantsearch.connectors.connectMenu(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customMenu({
- *     containerNode: $('#custom-menu-container'),
- *     attribute: 'categories',
- *     limit: 10,
- *   })
- * );
- */
-
-function connectMenu(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        _widgetParams$limit = widgetParams.limit,
-        limit = _widgetParams$limit === void 0 ? 10 : _widgetParams$limit,
-        _widgetParams$showMor = widgetParams.showMore,
-        showMore = _widgetParams$showMor === void 0 ? false : _widgetParams$showMor,
-        _widgetParams$showMor2 = widgetParams.showMoreLimit,
-        showMoreLimit = _widgetParams$showMor2 === void 0 ? 20 : _widgetParams$showMor2,
-        _widgetParams$sortBy = widgetParams.sortBy,
-        sortBy = _widgetParams$sortBy === void 0 ? ['isRefined', 'name:asc'] : _widgetParams$sortBy,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
+    var min;
+    if (minValue !== undefined) {
+      min = minValue;
+    } else if (this.min !== undefined) {
+      min = this.min;
     }
 
-    if (showMore === true && showMoreLimit <= limit) {
-      throw new Error(withUsage('The `showMoreLimit` option must be greater than `limit`.'));
+    var max;
+    if (maxValue !== undefined) {
+      max = maxValue;
+    } else if (this.max !== undefined) {
+      max = this.max;
     }
 
-    return {
-      isShowingMore: false,
-      // Provide the same function to the `renderFn` so that way the user
-      // has to only bind it once when `isFirstRendering` for instance
-      toggleShowMore: function toggleShowMore() {},
-      cachedToggleShowMore: function cachedToggleShowMore() {
-        this.toggleShowMore();
-      },
-      createToggleShowMore: function createToggleShowMore(_ref) {
-        var _this = this;
+    this.searchStore.stop();
 
-        var results = _ref.results,
-            instantSearchInstance = _ref.instantSearchInstance;
-        return function () {
-          _this.isShowingMore = !_this.isShowingMore;
+    this.searchStore.addFacet(this.attributeName, FACET_OR);
 
-          _this.render({
-            results: results,
-            instantSearchInstance: instantSearchInstance
-          });
-        };
-      },
-      getLimit: function getLimit() {
-        return this.isShowingMore ? showMoreLimit : limit;
-      },
-      refine: function refine(helper) {
-        return function (facetValue) {
-          var _helper$getHierarchic = helper.getHierarchicalFacetBreadcrumb(attribute),
-              _helper$getHierarchic2 = _slicedToArray(_helper$getHierarchic, 1),
-              refinedItem = _helper$getHierarchic2[0];
+    if (min !== undefined) {
+      this.searchStore.addNumericRefinement(this.attributeName, '>=', min);
+    }
 
-          helper.toggleRefinement(attribute, facetValue ? facetValue : refinedItem).search();
-        };
-      },
-      getConfiguration: function getConfiguration(configuration) {
-        var widgetConfiguration = {
-          hierarchicalFacets: [{
-            name: attribute,
-            attributes: [attribute]
-          }]
-        };
-        var currentMaxValuesPerFacet = configuration.maxValuesPerFacet || 0;
-        widgetConfiguration.maxValuesPerFacet = Math.max(currentMaxValuesPerFacet, showMore ? showMoreLimit : limit);
-        return widgetConfiguration;
-      },
-      init: function init(_ref2) {
-        var helper = _ref2.helper,
-            createURL = _ref2.createURL,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        this.cachedToggleShowMore = this.cachedToggleShowMore.bind(this);
+    if (max !== undefined) {
+      this.searchStore.addNumericRefinement(this.attributeName, '<=', max);
+    }
 
-        this._createURL = function (facetValue) {
-          return createURL(helper.state.toggleRefinement(attribute, facetValue));
-        };
+    this.searchStore.start();
+    this.searchStore.refresh();
+  },
 
-        this._refine = this.refine(helper);
-        renderFn({
-          items: [],
-          createURL: this._createURL,
-          refine: this._refine,
-          instantSearchInstance: instantSearchInstance,
-          canRefine: false,
-          widgetParams: widgetParams,
-          isShowingMore: this.isShowingMore,
-          toggleShowMore: this.cachedToggleShowMore,
-          canToggleShowMore: false
-        }, true);
-      },
-      render: function render(_ref3) {
-        var results = _ref3.results,
-            instantSearchInstance = _ref3.instantSearchInstance;
-        var facetItems = results.getFacetValues(attribute, {
-          sortBy: sortBy
-        }).data || [];
-        var items = transformItems(facetItems.slice(0, this.getLimit()).map(function (_ref4) {
-          var label = _ref4.name,
-              value = _ref4.path,
-              item = _objectWithoutProperties(_ref4, ["name", "path"]);
+  destroyed: function destroyed() {
+    this.searchStore.stop();
+    this.searchStore.removeFacet(this.attributeName);
+    this.searchStore.start();
+  },
 
-          return _objectSpread({}, item, {
-            label: label,
-            value: value
-          });
-        }));
-        this.toggleShowMore = this.createToggleShowMore({
-          results: results,
-          instantSearchInstance: instantSearchInstance
-        });
-        renderFn({
-          items: items,
-          createURL: this._createURL,
-          refine: this._refine,
-          instantSearchInstance: instantSearchInstance,
-          canRefine: items.length > 0,
-          widgetParams: widgetParams,
-          isShowingMore: this.isShowingMore,
-          toggleShowMore: this.cachedToggleShowMore,
-          canToggleShowMore: showMore && (this.isShowingMore || facetItems.length > this.getLimit())
-        }, false);
-      },
-      dispose: function dispose(_ref5) {
-        var state = _ref5.state;
-        unmountFn();
-        var nextState = state;
+  computed: {
+    step: function step() {
+      return 1 / Math.pow(10, this.precision);
+    },
 
-        if (state.isHierarchicalFacetRefined(attribute)) {
-          nextState = state.removeHierarchicalFacetRefinement(attribute);
-        }
+    refinement: function refinement() {
+      var this$1 = this;
 
-        nextState = nextState.removeHierarchicalFacet(attribute);
+      var ref =
+        this.searchStore.activeRefinements.find(
+          function (ref) {
+              var attributeName = ref.attributeName;
+              var type = ref.type;
+              var operator = ref.operator;
 
-        if (nextState.maxValuesPerFacet === limit || showMoreLimit && nextState.maxValuesPerFacet === showMoreLimit) {
-          nextState.setQueryParameters('maxValuesPerFacet', undefined);
-        }
-
-        return nextState;
-      },
-      getWidgetState: function getWidgetState(uiState, _ref6) {
-        var searchParameters = _ref6.searchParameters;
-
-        var _searchParameters$get = searchParameters.getHierarchicalFacetBreadcrumb(attribute),
-            _searchParameters$get2 = _slicedToArray(_searchParameters$get, 1),
-            refinedItem = _searchParameters$get2[0];
-
-        if (!refinedItem || uiState.menu && uiState.menu[attribute] === refinedItem) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          menu: _objectSpread({}, uiState.menu, _defineProperty({}, attribute, refinedItem))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref7) {
-        var uiState = _ref7.uiState;
-
-        if (uiState.menu && uiState.menu[attribute]) {
-          var uiStateRefinedItem = uiState.menu[attribute];
-          var isAlreadyRefined = searchParameters.isHierarchicalFacetRefined(attribute, uiStateRefinedItem);
-          if (isAlreadyRefined) return searchParameters;
-          return searchParameters.toggleRefinement(attribute, uiStateRefinedItem);
-        }
-
-        if (searchParameters.isHierarchicalFacetRefined(attribute)) {
-          var _searchParameters$get3 = searchParameters.getHierarchicalFacetBreadcrumb(attribute),
-              _searchParameters$get4 = _slicedToArray(_searchParameters$get3, 1),
-              refinedItem = _searchParameters$get4[0];
-
-          return searchParameters.toggleRefinement(attribute, refinedItem);
-        }
-
-        return searchParameters;
+              return attributeName === this$1.attributeName &&
+            type === 'numeric' &&
+            operator === '>=';
       }
-    };
-  };
-}
+        ) || {};
+      var min = ref.numericValue;
 
-/***/ }),
-/* 428 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+      var ref$1 =
+        this.searchStore.activeRefinements.find(
+          function (ref) {
+              var attributeName = ref.attributeName;
+              var type = ref.type;
+              var operator = ref.operator;
 
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectNumericMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'numeric-menu',
-  connector: true
-});
-/**
- * @typedef {Object} NumericMenuOption
- * @property {string} name Name of the option.
- * @property {number} start Lower bound of the option (>=).
- * @property {number} end Higher bound of the option (<=).
- */
-
-/**
- * @typedef {Object} NumericMenuItem
- * @property {string} label Name of the option.
- * @property {string} value URL encoded of the bounds object with the form `{start, end}`. This value can be used verbatim in the webpage and can be read by `refine` directly. If you want to inspect the value, you can do `JSON.parse(window.decodeURI(value))` to get the object.
- * @property {boolean} isRefined True if the value is selected.
- */
-
-/**
- * @typedef {Object} CustomNumericMenuWidgetOptions
- * @property {string} attribute Name of the attribute for filtering.
- * @property {NumericMenuOption[]} items List of all the items.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} NumericMenuRenderingOptions
- * @property {function(item.value): string} createURL Creates URLs for the next state, the string is the name of the selected option.
- * @property {NumericMenuItem[]} items The list of available choices.
- * @property {boolean} hasNoResults `true` if the last search contains no result.
- * @property {function(item.value)} refine Sets the selected value and trigger a new search.
- * @property {Object} widgetParams All original `CustomNumericMenuWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **NumericMenu** connector provides the logic to build a custom widget that will give the user the ability to choose a range on to refine the search results.
- *
- * It provides a `refine(item)` function to refine on the selected range.
- *
- * **Requirement:** the attribute passed as `attribute` must be present in "attributes for faceting" on the Algolia dashboard or configured as attributesForFaceting via a set settings call to the Algolia API.
- * @function connectNumericMenu
- * @type {Connector}
- * @param {function(NumericMenuRenderingOptions, boolean)} renderFn Rendering function for the custom **NumericMenu** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomNumericMenuWidgetOptions)} Re-usable widget factory for a custom **NumericMenu** widget.
- * @example
- * // custom `renderFn` to render the custom NumericMenu widget
- * function renderFn(NumericMenuRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     NumericMenuRenderingOptions.widgetParams.containerNode.html('<ul></ul>');
- *   }
- *
- *   NumericMenuRenderingOptions.widgetParams.containerNode
- *     .find('li[data-refine-value]')
- *     .each(function() { $(this).off('click'); });
- *
- *   var list = NumericMenuRenderingOptions.items.map(function(item) {
- *     return '<li data-refine-value="' + item.value + '">' +
- *       '<input type="radio"' + (item.isRefined ? ' checked' : '') + '/> ' +
- *       item.label + '</li>';
- *   });
- *
- *   NumericMenuRenderingOptions.widgetParams.containerNode.find('ul').html(list);
- *   NumericMenuRenderingOptions.widgetParams.containerNode
- *     .find('li[data-refine-value]')
- *     .each(function() {
- *       $(this).on('click', function(event) {
- *         event.preventDefault();
- *         event.stopPropagation();
- *         NumericMenuRenderingOptions.refine($(this).data('refine-value'));
- *       });
- *     });
- * }
- *
- * // connect `renderFn` to NumericMenu logic
- * var customNumericMenu = instantsearch.connectors.connectNumericMenu(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customNumericMenu({
- *     containerNode: $('#custom-numeric-menu-container'),
- *     attribute: 'price',
- *     items: [
- *       {name: 'All'},
- *       {end: 4, name: 'less than 4'},
- *       {start: 4, end: 4, name: '4'},
- *       {start: 5, end: 10, name: 'between 5 and 10'},
- *       {start: 10, name: 'more than 10'},
- *     ],
- *   })
- * );
- */
-
-function connectNumericMenu(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        items = widgetParams.items,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (x) {
-      return x;
-    } : _widgetParams$transfo;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
-    }
-
-    if (!items) {
-      throw new Error(withUsage('The `items` option expects an array of objects.'));
-    }
-
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            createURL = _ref.createURL,
-            instantSearchInstance = _ref.instantSearchInstance;
-
-        this._refine = function (facetValue) {
-          var refinedState = refine(helper.state, attribute, items, facetValue);
-          helper.setState(refinedState).search();
-        };
-
-        this._createURL = function (state) {
-          return function (facetValue) {
-            return createURL(refine(state, attribute, items, facetValue));
-          };
-        };
-
-        this._prepareItems = function (state) {
-          return items.map(function (_ref2) {
-            var start = _ref2.start,
-                end = _ref2.end,
-                label = _ref2.label;
-            return {
-              label: label,
-              value: window.encodeURI(JSON.stringify({
-                start: start,
-                end: end
-              })),
-              isRefined: isRefined(state, attribute, {
-                start: start,
-                end: end
-              })
-            };
-          });
-        };
-
-        renderFn({
-          createURL: this._createURL(helper.state),
-          items: transformItems(this._prepareItems(helper.state)),
-          hasNoResults: true,
-          refine: this._refine,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref3) {
-        var results = _ref3.results,
-            state = _ref3.state,
-            instantSearchInstance = _ref3.instantSearchInstance;
-        renderFn({
-          createURL: this._createURL(state),
-          items: transformItems(this._prepareItems(state)),
-          hasNoResults: results.nbHits === 0,
-          refine: this._refine,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose(_ref4) {
-        var state = _ref4.state;
-        unmountFn();
-        return state.clearRefinements(attribute);
-      },
-      getWidgetState: function getWidgetState(uiState, _ref5) {
-        var searchParameters = _ref5.searchParameters;
-        var currentRefinements = searchParameters.getNumericRefinements(attribute);
-        var equal = currentRefinements['='] && currentRefinements['='][0];
-
-        if (equal || equal === 0) {
-          return _objectSpread({}, uiState, {
-            numericMenu: _objectSpread({}, uiState.numericMenu, _defineProperty({}, attribute, "".concat(currentRefinements['='])))
-          });
-        }
-
-        var lowerBound = currentRefinements['>='] && currentRefinements['>='][0] || '';
-        var upperBound = currentRefinements['<='] && currentRefinements['<='][0] || '';
-
-        if (lowerBound !== '' || upperBound !== '') {
-          if (uiState.numericMenu && uiState.numericMenu[attribute] === "".concat(lowerBound, ":").concat(upperBound)) return uiState;
-          return _objectSpread({}, uiState, {
-            numericMenu: _objectSpread({}, uiState.numericMenu, _defineProperty({}, attribute, "".concat(lowerBound, ":").concat(upperBound)))
-          });
-        }
-
-        return uiState;
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref6) {
-        var uiState = _ref6.uiState;
-        var clearedParams = searchParameters.clearRefinements(attribute);
-        var value = uiState.numericMenu && uiState.numericMenu[attribute];
-
-        if (!value) {
-          return clearedParams;
-        }
-
-        var valueAsEqual = value.indexOf(':') === -1 && value;
-
-        if (valueAsEqual) {
-          return clearedParams.addNumericRefinement(attribute, '=', valueAsEqual);
-        }
-
-        var _value$split$map = value.split(':').map(parseFloat),
-            _value$split$map2 = _slicedToArray(_value$split$map, 2),
-            lowerBound = _value$split$map2[0],
-            upperBound = _value$split$map2[1];
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(lowerBound)) {
-          clearedParams = clearedParams.addNumericRefinement(attribute, '>=', lowerBound);
-        }
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(upperBound)) {
-          clearedParams = clearedParams.addNumericRefinement(attribute, '<=', upperBound);
-        }
-
-        return clearedParams;
+              return attributeName === this$1.attributeName &&
+            type === 'numeric' &&
+            operator === '<=';
       }
-    };
-  };
-}
+        ) || {};
+      var max = ref$1.numericValue;
 
-function isRefined(state, attribute, option) {
-  var currentRefinements = state.getNumericRefinements(attribute);
+      return {
+        min: min,
+        max: max,
+      };
+    },
 
-  if (option.start !== undefined && option.end !== undefined) {
-    if (option.start === option.end) {
-      return hasNumericRefinement(currentRefinements, '=', option.start);
-    }
-  }
+    range: function range() {
+      var ref = this;
+      var minRange = ref.min;
+      var maxRange = ref.max;
+      var ref$1 = this.searchStore.getFacetStats(
+        this.attributeName
+      );
+      var minStat = ref$1.min;
+      var maxStat = ref$1.max;
 
-  if (option.start !== undefined) {
-    return hasNumericRefinement(currentRefinements, '>=', option.start);
-  }
+      var pow = Math.pow(10, this.precision);
 
-  if (option.end !== undefined) {
-    return hasNumericRefinement(currentRefinements, '<=', option.end);
-  }
-
-  if (option.start === undefined && option.end === undefined) {
-    return Object.keys(currentRefinements).length === 0;
-  }
-
-  return undefined;
-}
-
-function refine(state, attribute, items, facetValue) {
-  var resolvedState = state;
-  var refinedOption = JSON.parse(window.decodeURI(facetValue));
-  var currentRefinements = resolvedState.getNumericRefinements(attribute);
-
-  if (refinedOption.start === undefined && refinedOption.end === undefined) {
-    return resolvedState.clearRefinements(attribute);
-  }
-
-  if (!isRefined(resolvedState, attribute, refinedOption)) {
-    resolvedState = resolvedState.clearRefinements(attribute);
-  }
-
-  if (refinedOption.start !== undefined && refinedOption.end !== undefined) {
-    if (refinedOption.start > refinedOption.end) {
-      throw new Error('option.start should be > to option.end');
-    }
-
-    if (refinedOption.start === refinedOption.end) {
-      if (hasNumericRefinement(currentRefinements, '=', refinedOption.start)) {
-        resolvedState = resolvedState.removeNumericRefinement(attribute, '=', refinedOption.start);
+      var min;
+      if (minRange !== undefined) {
+        min = minRange;
+      } else if (minStat !== undefined) {
+        min = minStat;
       } else {
-        resolvedState = resolvedState.addNumericRefinement(attribute, '=', refinedOption.start);
+        min = -Infinity;
       }
 
-      return resolvedState;
-    }
-  }
-
-  if (refinedOption.start !== undefined) {
-    if (hasNumericRefinement(currentRefinements, '>=', refinedOption.start)) {
-      resolvedState = resolvedState.removeNumericRefinement(attribute, '>=', refinedOption.start);
-    } else {
-      resolvedState = resolvedState.addNumericRefinement(attribute, '>=', refinedOption.start);
-    }
-  }
-
-  if (refinedOption.end !== undefined) {
-    if (hasNumericRefinement(currentRefinements, '<=', refinedOption.end)) {
-      resolvedState = resolvedState.removeNumericRefinement(attribute, '<=', refinedOption.end);
-    } else {
-      resolvedState = resolvedState.addNumericRefinement(attribute, '<=', refinedOption.end);
-    }
-  }
-
-  resolvedState.page = 0;
-  return resolvedState;
-}
-
-function hasNumericRefinement(currentRefinements, operator, value) {
-  var hasOperatorRefinements = currentRefinements[operator] !== undefined;
-  return hasOperatorRefinements && currentRefinements[operator].includes(value);
-}
-
-/***/ }),
-/* 429 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectPagination;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Paginator__ = __webpack_require__(430);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'pagination',
-  connector: true
-});
-/**
- * @typedef {Object} CustomPaginationWidgetOptions
- * @property {number} [totalPages] The total number of pages to browse.
- * @property {number} [padding = 3] The padding of pages to show around the current page
- */
-
-/**
- * @typedef {Object} PaginationRenderingOptions
- * @property {function(page): string} createURL Creates URLs for the next state, the number is the page to generate the URL for.
- * @property {number} currentRefinement The number of the page currently displayed.
- * @property {number} nbHits The number of hits computed for the last query (can be approximated).
- * @property {number} nbPages The number of pages for the result set.
- * @property {number[]} pages The actual pages relevant to the current situation and padding
- * @property {boolean} isFirstPage true if the current page is also the first page
- * @property {boolean} isLastPage true if the current page is also the last page
- * @property {function(page)} refine Sets the current page and trigger a search.
- * @property {Object} widgetParams All original `CustomPaginationWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **Pagination** connector provides the logic to build a widget that will let the user
- * choose the current page of the results.
- *
- * When using the pagination with Algolia, you should be aware that the engine won't provide you pages
- * beyond the 1000th hits by default. You can find more information on the [Algolia documentation](https://www.algolia.com/doc/guides/searching/pagination/#pagination-limitations).
- *
- * @type {Connector}
- * @param {function(PaginationRenderingOptions, boolean)} renderFn Rendering function for the custom **Pagination** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomPaginationWidgetOptions)} Re-usable widget factory for a custom **Pagination** widget.
- * @example
- * // custom `renderFn` to render the custom Pagination widget
- * function renderFn(PaginationRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     PaginationRenderingOptions.widgetParams.containerNode.html('<ul></ul>');
- *   }
- *
- *   // remove event listeners before replacing markup
- *   PaginationRenderingOptions.widgetParams.containerNode
- *     .find('a[data-page]')
- *     .each(function() { $(this).off('click'); });
- *
- *   var pages = PaginationRenderingOptions.pages
- *     .map(function(page) {
- *       return '<li style="display: inline-block; margin-right: 10px;">' +
- *         '<a href="' + PaginationRenderingOptions.createURL(page) + '" data-page="' + page + '">' +
- *         (parseInt(page) + 1) + '</a></li>';
- *     });
- *
- *   PaginationRenderingOptions.widgetParams.containerNode
- *     .find('ul')
- *     .html(pages);
- *
- *   PaginationRenderingOptions.widgetParams.containerNode
- *     .find('a[data-page]')
- *     .each(function() {
- *       $(this).on('click', function(event) {
- *         event.preventDefault();
- *         PaginationRenderingOptions.refine($(this).data('page'));
- *       });
- *     });
- * }
- *
- * // connect `renderFn` to Pagination logic
- * var customPagination = instantsearch.connectors.connectPagination(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customPagination({
- *     containerNode: $('#custom-pagination-container'),
- *     totalPages: 20,
- *     padding: 4,
- *   })
- * );
- */
-
-function connectPagination(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var totalPages = widgetParams.totalPages,
-        _widgetParams$padding = widgetParams.padding,
-        padding = _widgetParams$padding === void 0 ? 3 : _widgetParams$padding;
-    var pager = new __WEBPACK_IMPORTED_MODULE_1__Paginator__["a" /* default */]({
-      currentPage: 0,
-      total: 0,
-      padding: padding
-    });
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            createURL = _ref.createURL,
-            instantSearchInstance = _ref.instantSearchInstance;
-
-        this.refine = function (page) {
-          helper.setPage(page);
-          helper.search();
-        };
-
-        this.createURL = function (state) {
-          return function (page) {
-            return createURL(state.setPage(page));
-          };
-        };
-
-        renderFn({
-          createURL: this.createURL(helper.state),
-          currentRefinement: helper.getPage() || 0,
-          nbHits: 0,
-          nbPages: 0,
-          pages: [],
-          isFirstPage: true,
-          isLastPage: true,
-          refine: this.refine,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, true);
-      },
-      getMaxPage: function getMaxPage(_ref2) {
-        var nbPages = _ref2.nbPages;
-        return totalPages !== undefined ? Math.min(totalPages, nbPages) : nbPages;
-      },
-      render: function render(_ref3) {
-        var results = _ref3.results,
-            state = _ref3.state,
-            instantSearchInstance = _ref3.instantSearchInstance;
-        var nbPages = this.getMaxPage(results);
-        pager.currentPage = state.page;
-        pager.total = nbPages;
-        renderFn({
-          createURL: this.createURL(state),
-          currentRefinement: state.page,
-          refine: this.refine,
-          nbHits: results.nbHits,
-          nbPages: nbPages,
-          pages: pager.pages(),
-          isFirstPage: pager.isFirstPage(),
-          isLastPage: pager.isLastPage(),
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-        var page = searchParameters.page;
-        if (page === 0 || page + 1 === uiState.page) return uiState;
-        return _objectSpread({}, uiState, {
-          page: page + 1
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-        var uiPage = uiState.page;
-        if (uiPage) return searchParameters.setQueryParameter('page', uiState.page - 1);
-        return searchParameters.setQueryParameter('page', 0);
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 430 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
-
-var Paginator =
-/*#__PURE__*/
-function () {
-  function Paginator(params) {
-    _classCallCheck(this, Paginator);
-
-    this.currentPage = params.currentPage;
-    this.total = params.total;
-    this.padding = params.padding;
-  }
-
-  _createClass(Paginator, [{
-    key: "pages",
-    value: function pages() {
-      var total = this.total,
-          currentPage = this.currentPage,
-          padding = this.padding;
-      if (total === 0) return [0];
-      var totalDisplayedPages = this.nbPagesDisplayed(padding, total);
-
-      if (totalDisplayedPages === total) {
-        return Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["s" /* range */])({
-          end: total
-        });
+      var max;
+      if (maxRange !== undefined) {
+        max = maxRange;
+      } else if (maxStat !== undefined) {
+        max = maxStat;
+      } else {
+        max = Infinity;
       }
 
-      var paddingLeft = this.calculatePaddingLeft(currentPage, padding, total, totalDisplayedPages);
-      var paddingRight = totalDisplayedPages - paddingLeft;
-      var first = currentPage - paddingLeft;
-      var last = currentPage + paddingRight;
-      return Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["s" /* range */])({
-        start: first,
-        end: last
-      });
-    }
-  }, {
-    key: "nbPagesDisplayed",
-    value: function nbPagesDisplayed(padding, total) {
-      return Math.min(2 * padding + 1, total);
-    }
-  }, {
-    key: "calculatePaddingLeft",
-    value: function calculatePaddingLeft(current, padding, total, totalDisplayedPages) {
-      if (current <= padding) {
-        return current;
-      }
-
-      if (current >= total - padding) {
-        return totalDisplayedPages - (total - current);
-      }
-
-      return padding;
-    }
-  }, {
-    key: "isLastPage",
-    value: function isLastPage() {
-      return this.currentPage === this.total - 1;
-    }
-  }, {
-    key: "isFirstPage",
-    value: function isFirstPage() {
-      return this.currentPage === 0;
-    }
-  }]);
-
-  return Paginator;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (Paginator);
-
-/***/ }),
-/* 431 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectRange;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'range-input',
-  connector: true
-}, {
-  name: 'range-slider',
-  connector: true
-});
-/**
- * @typedef {Object} CustomRangeWidgetOptions
- * @property {string} attribute Name of the attribute for faceting.
- * @property {number} [min = undefined] Minimal range value, default to automatically computed from the result set.
- * @property {number} [max = undefined] Maximal range value, default to automatically computed from the result set.
- * @property {number} [precision = 2] Number of digits after decimal point to use.
- */
-
-/**
- * @typedef {Object} RangeRenderingOptions
- * @property {function(Array<number, number>)} refine Sets a range to filter the results on. Both values
- * are optional, and will default to the higher and lower bounds. You can use `undefined` to remove a
- * previously set bound or to set an infinite bound.
- * @property {{min: number, max: number}} range Results bounds without the current range filter.
- * @property {Array<number, number>} start Current numeric bounds of the search.
- * @property {{from: function, to: function}} formatter Transform for the rendering `from` and/or `to` values.
- * Both functions take a `number` as input and should output a `string`.
- * @property {Object} widgetParams All original `CustomRangeWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **Range** connector provides the logic to create custom widget that will let
- * the user refine results using a numeric range.
- *
- * This connectors provides a `refine()` function that accepts bounds. It will also provide
- * information about the min and max bounds for the current result set.
- * @type {Connector}
- * @param {function(RangeRenderingOptions, boolean)} renderFn Rendering function for the custom **Range** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomRangeWidgetOptions)} Re-usable widget factory for a custom **Range** widget.
- */
-
-function connectRange(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        minBound = widgetParams.min,
-        maxBound = widgetParams.max,
-        _widgetParams$precisi = widgetParams.precision,
-        precision = _widgetParams$precisi === void 0 ? 2 : _widgetParams$precisi;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
-    }
-
-    var hasMinBound = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(minBound);
-    var hasMaxBound = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(maxBound);
-
-    var formatToNumber = function formatToNumber(v) {
-      return Number(Number(v).toFixed(precision));
-    };
-
-    var rangeFormatter = {
-      from: function from(v) {
-        return v;
-      },
-      to: function to(v) {
-        return formatToNumber(v).toLocaleString();
-      }
-    };
-    return {
-      _getCurrentRange: function _getCurrentRange(stats) {
-        var pow = Math.pow(10, precision);
-        var min;
-
-        if (hasMinBound) {
-          min = minBound;
-        } else if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(stats.min)) {
-          min = stats.min;
-        } else {
-          min = 0;
-        }
-
-        var max;
-
-        if (hasMaxBound) {
-          max = maxBound;
-        } else if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(stats.max)) {
-          max = stats.max;
-        } else {
-          max = 0;
-        }
-
-        return {
-          min: Math.floor(min * pow) / pow,
-          max: Math.ceil(max * pow) / pow
-        };
-      },
-      _getCurrentRefinement: function _getCurrentRefinement(helper) {
-        var _ref = helper.getNumericRefinement(attribute, '>=') || [],
-            _ref2 = _slicedToArray(_ref, 1),
-            minValue = _ref2[0];
-
-        var _ref3 = helper.getNumericRefinement(attribute, '<=') || [],
-            _ref4 = _slicedToArray(_ref3, 1),
-            maxValue = _ref4[0];
-
-        var min = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(minValue) ? minValue : -Infinity;
-        var max = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(maxValue) ? maxValue : Infinity;
-        return [min, max];
-      },
-      _refine: function _refine(helper, currentRange) {
-        // eslint-disable-next-line complexity
-        return function () {
-          var _ref5 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [],
-              _ref6 = _slicedToArray(_ref5, 2),
-              nextMin = _ref6[0],
-              nextMax = _ref6[1];
-
-          var currentRangeMin = currentRange.min,
-              currentRangeMax = currentRange.max;
-
-          var _ref7 = helper.getNumericRefinement(attribute, '>=') || [],
-              _ref8 = _slicedToArray(_ref7, 1),
-              min = _ref8[0];
-
-          var _ref9 = helper.getNumericRefinement(attribute, '<=') || [],
-              _ref10 = _slicedToArray(_ref9, 1),
-              max = _ref10[0];
-
-          var isResetMin = nextMin === undefined || nextMin === '';
-          var isResetMax = nextMax === undefined || nextMax === '';
-          var nextMinAsNumber = !isResetMin ? parseFloat(nextMin) : undefined;
-          var nextMaxAsNumber = !isResetMax ? parseFloat(nextMax) : undefined;
-          var newNextMin;
-
-          if (!hasMinBound && currentRangeMin === nextMinAsNumber) {
-            newNextMin = undefined;
-          } else if (hasMinBound && isResetMin) {
-            newNextMin = minBound;
-          } else {
-            newNextMin = nextMinAsNumber;
-          }
-
-          var newNextMax;
-
-          if (!hasMaxBound && currentRangeMax === nextMaxAsNumber) {
-            newNextMax = undefined;
-          } else if (hasMaxBound && isResetMax) {
-            newNextMax = maxBound;
-          } else {
-            newNextMax = nextMaxAsNumber;
-          }
-
-          var isResetNewNextMin = newNextMin === undefined;
-          var isValidNewNextMin = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(newNextMin);
-          var isValidMinCurrentRange = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(currentRangeMin);
-          var isGreaterThanCurrentRange = isValidMinCurrentRange && currentRangeMin <= newNextMin;
-          var isMinValid = isResetNewNextMin || isValidNewNextMin && (!isValidMinCurrentRange || isGreaterThanCurrentRange);
-          var isResetNewNextMax = newNextMax === undefined;
-          var isValidNewNextMax = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(newNextMax);
-          var isValidMaxCurrentRange = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(currentRangeMax);
-          var isLowerThanRange = isValidMaxCurrentRange && currentRangeMax >= newNextMax;
-          var isMaxValid = isResetNewNextMax || isValidNewNextMax && (!isValidMaxCurrentRange || isLowerThanRange);
-          var hasMinChange = min !== newNextMin;
-          var hasMaxChange = max !== newNextMax;
-
-          if ((hasMinChange || hasMaxChange) && isMinValid && isMaxValid) {
-            helper.clearRefinements(attribute);
-
-            if (isValidNewNextMin) {
-              helper.addNumericRefinement(attribute, '>=', formatToNumber(newNextMin));
-            }
-
-            if (isValidNewNextMax) {
-              helper.addNumericRefinement(attribute, '<=', formatToNumber(newNextMax));
-            }
-
-            helper.search();
-          }
-        };
-      },
-      getConfiguration: function getConfiguration(currentConfiguration) {
-        var configuration = {
-          disjunctiveFacets: [attribute]
-        };
-        var isBoundsDefined = hasMinBound || hasMaxBound;
-        var boundsAlreadyDefined = currentConfiguration && currentConfiguration.numericRefinements && currentConfiguration.numericRefinements[attribute] !== undefined;
-        var isMinBoundValid = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(minBound);
-        var isMaxBoundValid = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(maxBound);
-        var isAbleToRefine = isMinBoundValid && isMaxBoundValid ? minBound < maxBound : isMinBoundValid || isMaxBoundValid;
-
-        if (isBoundsDefined && !boundsAlreadyDefined && isAbleToRefine) {
-          configuration.numericRefinements = _defineProperty({}, attribute, {});
-
-          if (hasMinBound) {
-            configuration.numericRefinements[attribute]['>='] = [minBound];
-          }
-
-          if (hasMaxBound) {
-            configuration.numericRefinements[attribute]['<='] = [maxBound];
-          }
-        }
-
-        return configuration;
-      },
-      init: function init(_ref11) {
-        var helper = _ref11.helper,
-            instantSearchInstance = _ref11.instantSearchInstance;
-        var stats = {};
-
-        var currentRange = this._getCurrentRange(stats);
-
-        var start = this._getCurrentRefinement(helper);
-
-        renderFn({
-          // On first render pass an empty range
-          // to be able to bypass the validation
-          // related to it
-          refine: this._refine(helper, {}),
-          format: rangeFormatter,
-          range: currentRange,
-          widgetParams: _objectSpread({}, widgetParams, {
-            precision: precision
-          }),
-          start: start,
-          instantSearchInstance: instantSearchInstance
-        }, true);
-      },
-      render: function render(_ref12) {
-        var results = _ref12.results,
-            helper = _ref12.helper,
-            instantSearchInstance = _ref12.instantSearchInstance;
-        var facetsFromResults = results.disjunctiveFacets || [];
-        var facet = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(facetsFromResults, function (facetResult) {
-          return facetResult.name === attribute;
-        });
-        var stats = facet && facet.stats || {};
-
-        var currentRange = this._getCurrentRange(stats);
-
-        var start = this._getCurrentRefinement(helper);
-
-        renderFn({
-          refine: this._refine(helper, currentRange),
-          format: rangeFormatter,
-          range: currentRange,
-          widgetParams: _objectSpread({}, widgetParams, {
-            precision: precision
-          }),
-          start: start,
-          instantSearchInstance: instantSearchInstance
-        }, false);
-      },
-      dispose: function dispose(_ref13) {
-        var state = _ref13.state;
-        unmountFn();
-        var nextState = state.removeNumericRefinement(attribute).removeDisjunctiveFacet(attribute);
-        return nextState;
-      },
-      getWidgetState: function getWidgetState(uiState, _ref14) {
-        var searchParameters = _ref14.searchParameters;
-
-        var _searchParameters$get = searchParameters.getNumericRefinements(attribute),
-            _searchParameters$get2 = _searchParameters$get['>='],
-            min = _searchParameters$get2 === void 0 ? '' : _searchParameters$get2,
-            _searchParameters$get3 = _searchParameters$get['<='],
-            max = _searchParameters$get3 === void 0 ? '' : _searchParameters$get3;
-
-        if (min === '' && max === '' || uiState && uiState.range && uiState.range[attribute] === "".concat(min, ":").concat(max)) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          range: _objectSpread({}, uiState.range, _defineProperty({}, attribute, "".concat(min, ":").concat(max)))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref15) {
-        var uiState = _ref15.uiState;
-        var value = uiState && uiState.range && uiState.range[attribute];
-
-        if (!value || value.indexOf(':') === -1) {
-          return searchParameters;
-        }
-
-        var _searchParameters$get4 = searchParameters.getNumericRefinements(attribute),
-            _searchParameters$get5 = _searchParameters$get4['>='],
-            previousMin = _searchParameters$get5 === void 0 ? [NaN] : _searchParameters$get5,
-            _searchParameters$get6 = _searchParameters$get4['<='],
-            previousMax = _searchParameters$get6 === void 0 ? [NaN] : _searchParameters$get6;
-
-        var clearedParams = searchParameters.clearRefinements(attribute);
-
-        var _value$split$map = value.split(':').map(parseFloat),
-            _value$split$map2 = _slicedToArray(_value$split$map, 2),
-            lowerBound = _value$split$map2[0],
-            upperBound = _value$split$map2[1];
-
-        if (previousMin.includes(lowerBound) && previousMax.includes(upperBound)) {
-          return searchParameters;
-        }
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(lowerBound)) {
-          clearedParams = clearedParams.addNumericRefinement(attribute, '>=', lowerBound);
-        }
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["o" /* isFiniteNumber */])(upperBound)) {
-          clearedParams = clearedParams.addNumericRefinement(attribute, '<=', upperBound);
-        }
-
-        return clearedParams;
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 432 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectRefinementList;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__ = __webpack_require__(236);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'refinement-list',
-  connector: true
-});
-/**
- * @typedef {Object} RefinementListItem
- * @property {string} value The value of the refinement list item.
- * @property {string} label Human-readable value of the refinement list item.
- * @property {number} count Number of matched results after refinement is applied.
- * @property {boolean} isRefined Indicates if the list item is refined.
- */
-
-/**
- * @typedef {Object} CustomRefinementListWidgetOptions
- * @property {string} attribute The name of the attribute in the records.
- * @property {"and"|"or"} [operator = 'or'] How the filters are combined together.
- * @property {number} [limit = 10] The max number of items to display when
- * `showMoreLimit` is not set or if the widget is showing less value.
- * @property {boolean} [showMore = false] Whether to display a button that expands the number of items.
- * @property {number} [showMoreLimit = 20] The max number of items to display if the widget
- * is showing more items.
- * @property {string[]|function} [sortBy = ['isRefined', 'count:desc', 'name:asc']] How to sort refinements. Possible values: `count|isRefined|name:asc|name:desc`.
- * @property {boolean} [escapeFacetValues = true] Escapes the content of the facet values.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} RefinementListRenderingOptions
- * @property {RefinementListItem[]} items The list of filtering values returned from Algolia API.
- * @property {function(item.value): string} createURL Creates the next state url for a selected refinement.
- * @property {function(item.value)} refine Action to apply selected refinements.
- * @property {function} searchForItems Searches for values inside the list.
- * @property {boolean} isFromSearch `true` if the values are from an index search.
- * @property {boolean} canRefine `true` if a refinement can be applied.
- * @property {boolean} canToggleShowMore `true` if the toggleShowMore button can be activated (enough items to display more or
- * already displaying more than `limit` items)
- * @property {Object} widgetParams All original `CustomRefinementListWidgetOptions` forwarded to the `renderFn`.
- * @property {boolean} isShowingMore True if the menu is displaying all the menu items.
- * @property {function} toggleShowMore Toggles the number of values displayed between `limit` and `showMoreLimit`.
- */
-
-/**
- * **RefinementList** connector provides the logic to build a custom widget that will let the
- * user filter the results based on the values of a specific facet.
- *
- * This connector provides a `toggleShowMore()` function to display more or less items and a `refine()`
- * function to select an item.
- * @type {Connector}
- * @param {function(RefinementListRenderingOptions, boolean)} renderFn Rendering function for the custom **RefinementList** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomRefinementListWidgetOptions)} Re-usable widget factory for a custom **RefinementList** widget.
- * @example
- * // custom `renderFn` to render the custom RefinementList widget
- * function renderFn(RefinementListRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     RefinementListRenderingOptions.widgetParams.containerNode
- *       .html('<ul></ul>')
- *   }
- *
- *     RefinementListRenderingOptions.widgetParams.containerNode
- *       .find('li[data-refine-value]')
- *       .each(function() { $(this).off('click'); });
- *
- *   if (RefinementListRenderingOptions.canRefine) {
- *     var list = RefinementListRenderingOptions.items.map(function(item) {
- *       return `
- *         <li data-refine-value="${item.value}">
- *           <input type="checkbox" value="${item.value}" ${item.isRefined ? 'checked' : ''} />
- *           <a href="${RefinementListRenderingOptions.createURL(item.value)}">
- *             ${item.label} (${item.count})
- *           </a>
- *         </li>
- *       `;
- *     });
- *
- *     RefinementListRenderingOptions.widgetParams.containerNode.find('ul').html(list);
- *     RefinementListRenderingOptions.widgetParams.containerNode
- *       .find('li[data-refine-value]')
- *       .each(function() {
- *         $(this).on('click', function(event) {
- *           event.stopPropagation();
- *           event.preventDefault();
- *
- *           RefinementListRenderingOptions.refine($(this).data('refine-value'));
- *         });
- *       });
- *   } else {
- *     RefinementListRenderingOptions.widgetParams.containerNode.find('ul').html('');
- *   }
- * }
- *
- * // connect `renderFn` to RefinementList logic
- * var customRefinementList = instantsearch.connectors.connectRefinementList(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customRefinementList({
- *     containerNode: $('#custom-refinement-list-container'),
- *     attribute: 'categories',
- *     limit: 10,
- *   })
- * );
- */
-
-function connectRefinementList(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        _widgetParams$operato = widgetParams.operator,
-        operator = _widgetParams$operato === void 0 ? 'or' : _widgetParams$operato,
-        _widgetParams$limit = widgetParams.limit,
-        limit = _widgetParams$limit === void 0 ? 10 : _widgetParams$limit,
-        _widgetParams$showMor = widgetParams.showMore,
-        showMore = _widgetParams$showMor === void 0 ? false : _widgetParams$showMor,
-        _widgetParams$showMor2 = widgetParams.showMoreLimit,
-        showMoreLimit = _widgetParams$showMor2 === void 0 ? 20 : _widgetParams$showMor2,
-        _widgetParams$sortBy = widgetParams.sortBy,
-        sortBy = _widgetParams$sortBy === void 0 ? ['isRefined', 'count:desc', 'name:asc'] : _widgetParams$sortBy,
-        _widgetParams$escapeF = widgetParams.escapeFacetValues,
-        escapeFacetValues = _widgetParams$escapeF === void 0 ? true : _widgetParams$escapeF,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
-    }
-
-    if (!/^(and|or)$/.test(operator)) {
-      throw new Error(withUsage("The `operator` must one of: `\"and\"`, `\"or\"` (got \"".concat(operator, "\").")));
-    }
-
-    if (showMore === true && showMoreLimit <= limit) {
-      throw new Error(withUsage('`showMoreLimit` should be greater than `limit`.'));
-    }
-
-    var formatItems = function formatItems(_ref) {
-      var label = _ref.name,
-          item = _objectWithoutProperties(_ref, ["name"]);
-
-      return _objectSpread({}, item, {
-        label: label,
-        value: label,
-        highlighted: label
-      });
-    };
-
-    var _getLimit = function getLimit(isShowingMore) {
-      return isShowingMore ? showMoreLimit : limit;
-    };
-
-    var lastResultsFromMainSearch = [];
-    var hasExhaustiveItems = true;
-    var searchForFacetValues;
-    var triggerRefine;
-
-    var _render = function render(_ref2) {
-      var items = _ref2.items,
-          state = _ref2.state,
-          createURL = _ref2.createURL,
-          helperSpecializedSearchFacetValues = _ref2.helperSpecializedSearchFacetValues,
-          refine = _ref2.refine,
-          isFromSearch = _ref2.isFromSearch,
-          isFirstSearch = _ref2.isFirstSearch,
-          isShowingMore = _ref2.isShowingMore,
-          toggleShowMore = _ref2.toggleShowMore,
-          instantSearchInstance = _ref2.instantSearchInstance;
-
-      // Compute a specific createURL method able to link to any facet value state change
-      var _createURL = function _createURL(facetValue) {
-        return createURL(state.toggleRefinement(attribute, facetValue));
-      }; // Do not mistake searchForFacetValues and searchFacetValues which is the actual search
-      // function
-
-
-      var searchFacetValues = helperSpecializedSearchFacetValues && helperSpecializedSearchFacetValues(state, createURL, helperSpecializedSearchFacetValues, refine, instantSearchInstance, isShowingMore);
-      var canShowLess = isShowingMore && lastResultsFromMainSearch.length > limit;
-      var canShowMore = showMore && !isFromSearch && !hasExhaustiveItems;
-      var canToggleShowMore = canShowLess || canShowMore;
-      renderFn({
-        createURL: _createURL,
-        items: items,
-        refine: refine,
-        searchForItems: searchFacetValues,
-        instantSearchInstance: instantSearchInstance,
-        isFromSearch: isFromSearch,
-        canRefine: isFromSearch || items.length > 0,
-        widgetParams: widgetParams,
-        isShowingMore: isShowingMore,
-        canToggleShowMore: canToggleShowMore,
-        toggleShowMore: toggleShowMore,
-        hasExhaustiveItems: hasExhaustiveItems
-      }, isFirstSearch);
-    };
-    /* eslint-disable max-params */
-
-
-    var createSearchForFacetValues = function createSearchForFacetValues(helper, toggleShowMore) {
-      return function (state, createURL, helperSpecializedSearchFacetValues, toggleRefinement, instantSearchInstance, isShowingMore) {
-        return function (query) {
-          if (query === '' && lastResultsFromMainSearch) {
-            // render with previous data from the helper.
-            _render({
-              items: lastResultsFromMainSearch,
-              state: state,
-              createURL: createURL,
-              helperSpecializedSearchFacetValues: helperSpecializedSearchFacetValues,
-              refine: toggleRefinement,
-              isFromSearch: false,
-              isFirstSearch: false,
-              instantSearchInstance: instantSearchInstance,
-              toggleShowMore: toggleShowMore,
-              // and yet it will be
-              isShowingMore: isShowingMore // so we need to restore in the state of show more as well
-
-            });
-          } else {
-            var tags = {
-              highlightPreTag: escapeFacetValues ? __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["a" /* TAG_PLACEHOLDER */].highlightPreTag : __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPreTag,
-              highlightPostTag: escapeFacetValues ? __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["a" /* TAG_PLACEHOLDER */].highlightPostTag : __WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["b" /* TAG_REPLACEMENT */].highlightPostTag
-            };
-            helper.searchForFacetValues(attribute, query, _getLimit(isShowingMore), tags).then(function (results) {
-              var facetValues = escapeFacetValues ? Object(__WEBPACK_IMPORTED_MODULE_1__lib_escape_highlight__["d" /* escapeFacets */])(results.facetHits) : results.facetHits;
-              var normalizedFacetValues = transformItems(facetValues.map(function (_ref3) {
-                var value = _ref3.value,
-                    item = _objectWithoutProperties(_ref3, ["value"]);
-
-                return _objectSpread({}, item, {
-                  value: value,
-                  label: value
-                });
-              }));
-
-              _render({
-                items: normalizedFacetValues,
-                state: state,
-                createURL: createURL,
-                helperSpecializedSearchFacetValues: helperSpecializedSearchFacetValues,
-                refine: toggleRefinement,
-                isFromSearch: true,
-                isFirstSearch: false,
-                instantSearchInstance: instantSearchInstance,
-                isShowingMore: isShowingMore
-              });
-            });
-          }
-        };
+      return {
+        min: min !== -Infinity ? Math.floor(min * pow) / pow : min,
+        max: max !== Infinity ? Math.ceil(max * pow) / pow : max,
       };
-    };
-    /* eslint-enable max-params */
+    },
 
+    rangeForRendering: function rangeForRendering() {
+      var ref = this.range;
+      var min = ref.min;
+      var max = ref.max;
 
-    return {
-      isShowingMore: false,
-      // Provide the same function to the `renderFn` so that way the user
-      // has to only bind it once when `isFirstRendering` for instance
-      toggleShowMore: function toggleShowMore() {},
-      cachedToggleShowMore: function cachedToggleShowMore() {
-        this.toggleShowMore();
-      },
-      createToggleShowMore: function createToggleShowMore(renderOptions) {
-        var _this = this;
+      var isMinInfinity = min === -Infinity;
+      var isMaxInfinity = max === Infinity;
 
-        return function () {
-          _this.isShowingMore = !_this.isShowingMore;
-
-          _this.render(renderOptions);
-        };
-      },
-      getLimit: function getLimit() {
-        return _getLimit(this.isShowingMore);
-      },
-      getConfiguration: function getConfiguration() {
-        var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-        var widgetConfiguration = _defineProperty({}, operator === 'and' ? 'facets' : 'disjunctiveFacets', [attribute]);
-
-        var currentMaxValuesPerFacet = configuration.maxValuesPerFacet || 0;
-        widgetConfiguration.maxValuesPerFacet = Math.max(currentMaxValuesPerFacet, showMore ? showMoreLimit : limit);
-        return widgetConfiguration;
-      },
-      init: function init(_ref4) {
-        var helper = _ref4.helper,
-            createURL = _ref4.createURL,
-            instantSearchInstance = _ref4.instantSearchInstance;
-        this.cachedToggleShowMore = this.cachedToggleShowMore.bind(this);
-
-        triggerRefine = function triggerRefine(facetValue) {
-          return helper.toggleRefinement(attribute, facetValue).search();
-        };
-
-        searchForFacetValues = createSearchForFacetValues(helper, this.cachedToggleShowMore);
-
-        _render({
-          items: [],
-          state: helper.state,
-          createURL: createURL,
-          helperSpecializedSearchFacetValues: searchForFacetValues,
-          refine: triggerRefine,
-          isFromSearch: false,
-          isFirstSearch: true,
-          instantSearchInstance: instantSearchInstance,
-          isShowingMore: this.isShowingMore,
-          toggleShowMore: this.cachedToggleShowMore
-        });
-      },
-      render: function render(renderOptions) {
-        var results = renderOptions.results,
-            state = renderOptions.state,
-            createURL = renderOptions.createURL,
-            instantSearchInstance = renderOptions.instantSearchInstance;
-        var facetValues = results.getFacetValues(attribute, {
-          sortBy: sortBy
-        });
-        var items = transformItems(facetValues.slice(0, this.getLimit()).map(formatItems));
-        var maxValuesPerFacetConfig = state.getQueryParameter('maxValuesPerFacet');
-        var currentLimit = this.getLimit(); // If the limit is the max number of facet retrieved it is impossible to know
-        // if the facets are exhaustive. The only moment we are sure it is exhaustive
-        // is when it is strictly under the number requested unless we know that another
-        // widget has requested more values (maxValuesPerFacet > getLimit()).
-        // Because this is used for making the search of facets unable or not, it is important
-        // to be conservative here.
-
-        hasExhaustiveItems = maxValuesPerFacetConfig > currentLimit ? facetValues.length <= currentLimit : facetValues.length < currentLimit;
-        lastResultsFromMainSearch = items;
-        this.toggleShowMore = this.createToggleShowMore(renderOptions);
-
-        _render({
-          items: items,
-          state: state,
-          createURL: createURL,
-          helperSpecializedSearchFacetValues: searchForFacetValues,
-          refine: triggerRefine,
-          isFromSearch: false,
-          isFirstSearch: false,
-          instantSearchInstance: instantSearchInstance,
-          isShowingMore: this.isShowingMore,
-          toggleShowMore: this.cachedToggleShowMore
-        });
-      },
-      dispose: function dispose(_ref5) {
-        var state = _ref5.state;
-        unmountFn();
-
-        if (operator === 'and') {
-          return state.removeFacetRefinement(attribute).removeFacet(attribute);
-        } else {
-          return state.removeDisjunctiveFacetRefinement(attribute).removeDisjunctiveFacet(attribute);
-        }
-      },
-      getWidgetState: function getWidgetState(uiState, _ref6) {
-        var searchParameters = _ref6.searchParameters;
-        var values = operator === 'or' ? searchParameters.getDisjunctiveRefinements(attribute) : searchParameters.getConjunctiveRefinements(attribute);
-
-        if (values.length === 0 || uiState.refinementList && Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["n" /* isEqual */])(values, uiState.refinementList[attribute])) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          refinementList: _objectSpread({}, uiState.refinementList, _defineProperty({}, attribute, values))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref7) {
-        var uiState = _ref7.uiState;
-        var values = uiState.refinementList && uiState.refinementList[attribute];
-        if (values === undefined) return searchParameters;
-        return values.reduce(function (sp, v) {
-          return operator === 'or' ? sp.addDisjunctiveFacetRefinement(attribute, v) : sp.addFacetRefinement(attribute, v);
-        }, searchParameters.clearRefinements(attribute));
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 433 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectSearchBox;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'search-box',
-  connector: true
-});
-/**
- * @typedef {Object} CustomSearchBoxWidgetOptions
- * @property {function(string, function(string))} [queryHook = undefined] A function that will be called every time
- * a new value for the query is set. The first parameter is the query and the second is a
- * function to actually trigger the search. The function takes the query as the parameter.
- *
- * This queryHook can be used to debounce the number of searches done from the searchBox.
- */
-
-/**
- * @typedef {Object} SearchBoxRenderingOptions
- * @property {string} query The query from the last search.
- * @property {function(string)} refine Sets a new query and searches.
- * @property {function()} clear Remove the query and perform search.
- * @property {Object} widgetParams All original `CustomSearchBoxWidgetOptions` forwarded to the `renderFn`.
- * @property {boolean} isSearchStalled `true` if the search results takes more than a certain time to come back
- * from Algolia servers. This can be configured on the InstantSearch constructor with the attribute
- * `stalledSearchDelay` which is 200ms, by default.
- */
-
-/**
- * **SearchBox** connector provides the logic to build a widget that will let the user search for a query.
- *
- * The connector provides to the rendering: `refine()` to set the query. The behaviour of this function
- * may be impacted by the `queryHook` widget parameter.
- * @type {Connector}
- * @param {function(SearchBoxRenderingOptions, boolean)} renderFn Rendering function for the custom **SearchBox** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomSearchBoxWidgetOptions)} Re-usable widget factory for a custom **SearchBox** widget.
- * @example
- * // custom `renderFn` to render the custom SearchBox widget
- * function renderFn(SearchBoxRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     SearchBoxRenderingOptions.widgetParams.containerNode.html('<input type="text" />');
- *     SearchBoxRenderingOptions.widgetParams.containerNode
- *       .find('input')
- *       .on('keyup', function() {
- *         SearchBoxRenderingOptions.refine($(this).val());
- *       });
- *     SearchBoxRenderingOptions.widgetParams.containerNode
- *       .find('input')
- *       .val(SearchBoxRenderingOptions.query);
- *   }
- * }
- *
- * // connect `renderFn` to SearchBox logic
- * var customSearchBox = instantsearch.connectors.connectSearchBox(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customSearchBox({
- *     containerNode: $('#custom-searchbox'),
- *   })
- * );
- */
-
-function connectSearchBox(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var queryHook = widgetParams.queryHook;
-
-    function clear(helper) {
-      return function () {
-        helper.setQuery('');
-        helper.search();
+      return {
+        min: !isMinInfinity && !isMaxInfinity ? min : '',
+        max: !isMinInfinity && !isMaxInfinity ? max : '',
       };
-    }
-
-    return {
-      _clear: function _clear() {},
-      _cachedClear: function _cachedClear() {
-        this._clear();
-      },
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            instantSearchInstance = _ref.instantSearchInstance;
-        this._cachedClear = this._cachedClear.bind(this);
-        this._clear = clear(helper);
-
-        this._refine = function () {
-          var previousQuery;
-
-          var setQueryAndSearch = function setQueryAndSearch(q) {
-            var doSearch = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-            if (q !== helper.state.query) {
-              previousQuery = helper.state.query;
-              helper.setQuery(q);
-            }
-
-            if (doSearch && previousQuery !== undefined && previousQuery !== q) helper.search();
-          };
-
-          return queryHook ? function (q) {
-            return queryHook(q, setQueryAndSearch);
-          } : setQueryAndSearch;
-        }();
-
-        renderFn({
-          query: helper.state.query,
-          refine: this._refine,
-          clear: this._cachedClear,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, true);
-      },
-      render: function render(_ref2) {
-        var helper = _ref2.helper,
-            instantSearchInstance = _ref2.instantSearchInstance,
-            searchMetadata = _ref2.searchMetadata;
-        this._clear = clear(helper);
-        renderFn({
-          query: helper.state.query,
-          refine: this._refine,
-          clear: this._cachedClear,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance,
-          isSearchStalled: searchMetadata.isSearchStalled
-        }, false);
-      },
-      dispose: function dispose(_ref3) {
-        var state = _ref3.state;
-        unmountFn();
-        return state.setQuery('');
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-        var query = searchParameters.query;
-
-        if (query === '' || uiState && uiState.query === query) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          query: query
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-        return searchParameters.setQuery(uiState.query || '');
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 434 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectSortBy;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'sort-by',
-  connector: true
-});
-/**
- * @typedef {Object} SortByItem
- * @property {string} value The name of the index to target.
- * @property {string} label The label of the index to display.
- */
-
-/**
- * @typedef {Object} CustomSortByWidgetOptions
- * @property {SortByItem[]} items Array of objects defining the different indices to choose from.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} SortByRenderingOptions
- * @property {string} currentRefinement The currently selected index.
- * @property {SortByItem[]} options All the available indices
- * @property {function(string)} refine Switches indices and triggers a new search.
- * @property {boolean} hasNoResults `true` if the last search contains no result.
- * @property {Object} widgetParams All original `CustomSortByWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * The **SortBy** connector provides the logic to build a custom widget that will display a
- * list of indices. With Algolia, this is most commonly used for changing ranking strategy. This allows
- * a user to change how the hits are being sorted.
- *
- * This connector provides the `refine` function that allows to switch indices.
- * The connector provides to the rendering: `refine()` to switch the current index and
- * `options` that are the values that can be selected. `refine` should be used
- * with `options.value`.
- * @type {Connector}
- * @param {function(SortByRenderingOptions, boolean)} renderFn Rendering function for the custom **SortBy** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomSortByWidgetOptions)} Re-usable widget factory for a custom **SortBy** widget.
- * @example
- * // custom `renderFn` to render the custom SortBy widget
- * function renderFn(SortByRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     SortByRenderingOptions.widgetParams.containerNode.html('<select></select>');
- *     SortByRenderingOptions.widgetParams.containerNode
- *       .find('select')
- *       .on('change', function(event) {
- *         SortByRenderingOptions.refine(event.target.value);
- *       });
- *   }
- *
- *   var optionsHTML = SortByRenderingOptions.options.map(function(option) {
- *     return `
- *       <option
- *         value="${option.value}"
- *         ${SortByRenderingOptions.currentRefinement === option.value ? 'selected' : ''}
- *       >
- *         ${option.label}
- *       </option>
- *     `;
- *   });
- *
- *   SortByRenderingOptions.widgetParams.containerNode
- *     .find('select')
- *     .html(optionsHTML);
- * }
- *
- * // connect `renderFn` to SortBy logic
- * var customSortBy = instantsearch.connectors.connectSortBy(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customSortBy({
- *     containerNode: $('#custom-sort-by-container'),
- *     items: [
- *       { value: 'instant_search', label: 'Most relevant' },
- *       { value: 'instant_search_price_asc', label: 'Lowest price' },
- *       { value: 'instant_search_price_desc', label: 'Highest price' },
- *     ],
- *   })
- * );
- */
-
-function connectSortBy(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var items = widgetParams.items,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (x) {
-      return x;
-    } : _widgetParams$transfo;
-
-    if (!Array.isArray(items)) {
-      throw new Error(withUsage('The `items` option expects an array of objects.'));
-    }
-
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            instantSearchInstance = _ref.instantSearchInstance;
-        var initialIndex = helper.state.index;
-        var isInitialIndexInItems = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(items, function (item) {
-          return item.value === initialIndex;
-        });
-        this.initialIndex = initialIndex;
-
-        this.setIndex = function (indexName) {
-          helper.setIndex(indexName).search();
-        };
-
-        Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(isInitialIndexInItems, "The index named \"".concat(initialIndex, "\" is not listed in the `items` of `sortBy`."));
-        renderFn({
-          currentRefinement: initialIndex,
-          options: transformItems(items),
-          refine: this.setIndex,
-          hasNoResults: true,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, true);
-      },
-      render: function render(_ref2) {
-        var helper = _ref2.helper,
-            results = _ref2.results,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        renderFn({
-          currentRefinement: helper.state.index,
-          options: transformItems(items),
-          refine: this.setIndex,
-          hasNoResults: results.nbHits === 0,
-          widgetParams: widgetParams,
-          instantSearchInstance: instantSearchInstance
-        }, false);
-      },
-      dispose: function dispose(_ref3) {
-        var state = _ref3.state;
-        unmountFn();
-        return state.setIndex(this.initialIndex);
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-        var currentIndex = searchParameters.getQueryParameter('index');
-        var isInitialIndex = currentIndex === this.initialIndex;
-
-        if (isInitialIndex || uiState && uiState.sortBy === currentIndex) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          sortBy: searchParameters.getQueryParameter('index')
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-        return searchParameters.setQueryParameter('index', uiState.sortBy || this.initialIndex);
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 435 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectRatingMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'rating-menu',
-  connector: true
-});
-/**
- * @typedef {Object} StarRatingItems
- * @property {string} name Name corresponding to the number of stars.
- * @property {string} value Number of stars as string.
- * @property {number} count Count of matched results corresponding to the number of stars.
- * @property {boolean[]} stars Array of length of maximum rating value with stars to display or not.
- * @property {boolean} isRefined Indicates if star rating refinement is applied.
- */
-
-/**
- * @typedef {Object} CustomStarRatingWidgetOptions
- * @property {string} attribute Name of the attribute for faceting (eg. "free_shipping").
- * @property {number} [max = 5] The maximum rating value.
- */
-
-/**
- * @typedef {Object} StarRatingRenderingOptions
- * @property {StarRatingItems[]} items Possible star ratings the user can apply.
- * @property {function(string): string} createURL Creates an URL for the next
- * state (takes the item value as parameter). Takes the value of an item as parameter.
- * @property {function(string)} refine Selects a rating to filter the results
- * (takes the filter value as parameter). Takes the value of an item as parameter.
- * @property {boolean} hasNoResults `true` if the last search contains no result.
- * @property {Object} widgetParams All original `CustomStarRatingWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **StarRating** connector provides the logic to build a custom widget that will let
- * the user refine search results based on ratings.
- *
- * The connector provides to the rendering: `refine()` to select a value and
- * `items` that are the values that can be selected. `refine` should be used
- * with `items.value`.
- * @type {Connector}
- * @param {function(StarRatingRenderingOptions, boolean)} renderFn Rendering function for the custom **StarRating** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomStarRatingWidgetOptions)} Re-usable widget factory for a custom **StarRating** widget.
- * @example
- * // custom `renderFn` to render the custom StarRating widget
- * function renderFn(StarRatingRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) {
- *     StarRatingRenderingOptions.widgetParams.containerNode.html('<ul></ul>');
- *   }
- *
- *   StarRatingRenderingOptions.widgetParams.containerNode
- *     .find('li[data-refine-value]')
- *     .each(function() { $(this).off('click'); });
- *
- *   var listHTML = StarRatingRenderingOptions.items.map(function(item) {
- *     return '<li data-refine-value="' + item.value + '">' +
- *       '<a href="' + StarRatingRenderingOptions.createURL(item.value) + '">' +
- *       item.stars.map(function(star) { return star === false ? '☆' : '★'; }).join(' ') +
- *       '& up (' + item.count + ')' +
- *       '</a></li>';
- *   });
- *
- *   StarRatingRenderingOptions.widgetParams.containerNode
- *     .find('ul')
- *     .html(listHTML);
- *
- *   StarRatingRenderingOptions.widgetParams.containerNode
- *     .find('li[data-refine-value]')
- *     .each(function() {
- *       $(this).on('click', function(event) {
- *         event.preventDefault();
- *         event.stopPropagation();
- *
- *         StarRatingRenderingOptions.refine($(this).data('refine-value'));
- *       });
- *     });
- * }
- *
- * // connect `renderFn` to StarRating logic
- * var customStarRating = instantsearch.connectors.connectRatingMenu(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customStarRating({
- *     containerNode: $('#custom-rating-menu-container'),
- *     attribute: 'rating',
- *     max: 5,
- *   })
- * );
- */
-
-function connectRatingMenu(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        _widgetParams$max = widgetParams.max,
-        max = _widgetParams$max === void 0 ? 5 : _widgetParams$max;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
-    }
-
-    return {
-      getConfiguration: function getConfiguration() {
-        return {
-          disjunctiveFacets: [attribute]
-        };
-      },
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            createURL = _ref.createURL,
-            instantSearchInstance = _ref.instantSearchInstance;
-        this._toggleRefinement = this._toggleRefinement.bind(this, helper);
-
-        this._createURL = function (state) {
-          return function (facetValue) {
-            return createURL(state.toggleRefinement(attribute, facetValue));
-          };
-        };
-
-        renderFn({
-          instantSearchInstance: instantSearchInstance,
-          items: [],
-          hasNoResults: true,
-          refine: this._toggleRefinement,
-          createURL: this._createURL(helper.state),
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref2) {
-        var helper = _ref2.helper,
-            results = _ref2.results,
-            state = _ref2.state,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        var facetValues = [];
-        var allValues = {};
-
-        for (var v = max; v >= 0; --v) {
-          allValues[v] = 0;
-        }
-
-        results.getFacetValues(attribute).forEach(function (facet) {
-          var val = Math.round(facet.name);
-
-          if (!val || val > max) {
-            return;
-          }
-
-          for (var _v = val; _v >= 1; --_v) {
-            allValues[_v] += facet.count;
-          }
-        });
-
-        var refinedStar = this._getRefinedStar(helper.state);
-
-        for (var star = max - 1; star >= 1; --star) {
-          var count = allValues[star];
-
-          if (refinedStar && star !== refinedStar && count === 0) {
-            // skip count==0 when at least 1 refinement is enabled
-            // eslint-disable-next-line no-continue
-            continue;
-          }
-
-          var stars = [];
-
-          for (var i = 1; i <= max; ++i) {
-            stars.push(i <= star);
-          }
-
-          facetValues.push({
-            stars: stars,
-            name: String(star),
-            value: String(star),
-            count: count,
-            isRefined: refinedStar === star
-          });
-        }
-
-        renderFn({
-          instantSearchInstance: instantSearchInstance,
-          items: facetValues,
-          hasNoResults: results.nbHits === 0,
-          refine: this._toggleRefinement,
-          createURL: this._createURL(state),
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose(_ref3) {
-        var state = _ref3.state;
-        unmountFn();
-        var nextState = state.removeDisjunctiveFacetRefinement(attribute).removeDisjunctiveFacet(attribute);
-        return nextState;
-      },
-      getWidgetState: function getWidgetState(uiState, _ref4) {
-        var searchParameters = _ref4.searchParameters;
-
-        var refinedStar = this._getRefinedStar(searchParameters);
-
-        if (refinedStar === undefined || uiState && uiState.ratingMenu && uiState.ratingMenu[attribute] === refinedStar) return uiState;
-        return _objectSpread({}, uiState, {
-          ratingMenu: _objectSpread({}, uiState.ratingMenu, _defineProperty({}, attribute, refinedStar))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref5) {
-        var uiState = _ref5.uiState;
-        var starRatingFromURL = uiState.ratingMenu && uiState.ratingMenu[attribute];
-
-        var refinedStar = this._getRefinedStar(searchParameters);
-
-        if (starRatingFromURL === refinedStar) return searchParameters;
-        var clearedSearchParam = searchParameters.clearRefinements(attribute);
-
-        if (starRatingFromURL !== undefined) {
-          for (var val = Number(starRatingFromURL); val <= max; ++val) {
-            clearedSearchParam = clearedSearchParam.addDisjunctiveFacetRefinement(attribute, val);
-          }
-        }
-
-        return clearedSearchParam;
-      },
-      _toggleRefinement: function _toggleRefinement(helper, facetValue) {
-        var isRefined = this._getRefinedStar(helper.state) === Number(facetValue);
-        helper.clearRefinements(attribute);
-
-        if (!isRefined) {
-          for (var val = Number(facetValue); val <= max; ++val) {
-            helper.addDisjunctiveFacetRefinement(attribute, val);
-          }
-        }
-
-        helper.search();
-      },
-      _getRefinedStar: function _getRefinedStar(searchParameters) {
-        var refinedStar = undefined;
-        var refinements = searchParameters.getDisjunctiveRefinements(attribute);
-        refinements.forEach(function (r) {
-          if (!refinedStar || Number(r) < refinedStar) {
-            refinedStar = Number(r);
-          }
-        });
-        return refinedStar;
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 436 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectStats;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'stats',
-  connector: true
-});
-/**
- * @typedef {Object} StatsRenderingOptions
- * @property {number} hitsPerPage The maximum number of hits per page returned by Algolia.
- * @property {number} nbHits The number of hits in the result set.
- * @property {number} nbPages The number of pages computed for the result set.
- * @property {number} page The current page.
- * @property {number} processingTimeMS The time taken to compute the results inside the Algolia engine.
- * @property {string} query The query used for the current search.
- * @property {object} widgetParams All original `CustomStatsWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **Stats** connector provides the logic to build a custom widget that will displays
- * search statistics (hits number and processing time).
- *
- * @type {Connector}
- * @param {function(StatsRenderingOptions, boolean)} renderFn Rendering function for the custom **Stats** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function} Re-usable widget factory for a custom **Stats** widget.
- * @example
- * // custom `renderFn` to render the custom Stats widget
- * function renderFn(StatsRenderingOptions, isFirstRendering) {
- *   if (isFirstRendering) return;
- *
- *   StatsRenderingOptions.widgetParams.containerNode
- *     .html(StatsRenderingOptions.nbHits + ' results found in ' + StatsRenderingOptions.processingTimeMS);
- * }
- *
- * // connect `renderFn` to Stats logic
- * var customStatsWidget = instantsearch.connectors.connectStats(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customStatsWidget({
- *     containerNode: $('#custom-stats-container'),
- *   })
- * );
- */
-
-function connectStats(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    return {
-      init: function init(_ref) {
-        var helper = _ref.helper,
-            instantSearchInstance = _ref.instantSearchInstance;
-        renderFn({
-          instantSearchInstance: instantSearchInstance,
-          hitsPerPage: helper.state.hitsPerPage,
-          nbHits: 0,
-          nbPages: 0,
-          page: helper.state.page,
-          processingTimeMS: -1,
-          query: helper.state.query,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref2) {
-        var results = _ref2.results,
-            instantSearchInstance = _ref2.instantSearchInstance;
-        renderFn({
-          instantSearchInstance: instantSearchInstance,
-          hitsPerPage: results.hitsPerPage,
-          nbHits: results.nbHits,
-          nbPages: results.nbPages,
-          page: results.page,
-          processingTimeMS: results.processingTimeMS,
-          query: results.query,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 437 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectToggleRefinement;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'toggle-refinement',
-  connector: true
-});
-/**
- * @typedef {Object} ToggleValue
- * @property {boolean} isRefined `true` if the toggle is on.
- * @property {number} count Number of results matched after applying the toggle refinement.
- * @property {Object} onFacetValue Value of the toggle when it's on.
- * @property {Object} offFacetValue Value of the toggle when it's off.
- */
-
-/**
- * @typedef {Object} CustomToggleWidgetOptions
- * @property {string} attribute Name of the attribute for faceting (eg. "free_shipping").
- * @property {Object} [on = true] Value to filter on when toggled.
- * @property {Object} [off] Value to filter on when not toggled.
- */
-
-/**
- * @typedef {Object} ToggleRenderingOptions
- * @property {ToggleValue} value The current toggle value.
- * @property {function():string} createURL Creates an URL for the next state.
- * @property {function(value)} refine Updates to the next state by applying the toggle refinement.
- * @property {Object} widgetParams All original `CustomToggleWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **Toggle** connector provides the logic to build a custom widget that will provide
- * an on/off filtering feature based on an attribute value or values.
- *
- * Two modes are implemented in the custom widget:
- *  - with or without the value filtered
- *  - switch between two values.
- *
- * @type {Connector}
- * @param {function(ToggleRenderingOptions, boolean)} renderFn Rendering function for the custom **Toggle** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomToggleWidgetOptions)} Re-usable widget factory for a custom **Toggle** widget.
- * @example
- * // custom `renderFn` to render the custom ClearAll widget
- * function renderFn(ToggleRenderingOptions, isFirstRendering) {
- *   ToggleRenderingOptions.widgetParams.containerNode
- *     .find('a')
- *     .off('click');
- *
- *   var buttonHTML = `
- *     <a href="${ToggleRenderingOptions.createURL()}">
- *       <input
- *         type="checkbox"
- *         value="${ToggleRenderingOptions.value.name}"
- *         ${ToggleRenderingOptions.value.isRefined ? 'checked' : ''}
- *       />
- *       ${ToggleRenderingOptions.value.name} (${ToggleRenderingOptions.value.count})
- *     </a>
- *   `;
- *
- *   ToggleRenderingOptions.widgetParams.containerNode.html(buttonHTML);
- *   ToggleRenderingOptions.widgetParams.containerNode
- *     .find('a')
- *     .on('click', function(event) {
- *       event.preventDefault();
- *       event.stopPropagation();
- *
- *       ToggleRenderingOptions.refine(ToggleRenderingOptions.value);
- *     });
- * }
- *
- * // connect `renderFn` to Toggle logic
- * var customToggle = instantsearch.connectors.connectToggleRefinement(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customToggle({
- *     containerNode: $('#custom-toggle-container'),
- *     attribute: 'free_shipping',
- *   })
- * );
- */
-
-function connectToggleRefinement(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attribute = widgetParams.attribute,
-        _widgetParams$on = widgetParams.on,
-        userOn = _widgetParams$on === void 0 ? true : _widgetParams$on,
-        userOff = widgetParams.off;
-
-    if (!attribute) {
-      throw new Error(withUsage('The `attribute` option is required.'));
-    }
-
-    var hasAnOffValue = userOff !== undefined;
-    var hasAnOnValue = userOn !== undefined;
-    var on = hasAnOnValue ? Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["h" /* escapeRefinement */])(userOn) : undefined;
-    var off = hasAnOffValue ? Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["h" /* escapeRefinement */])(userOff) : undefined;
-    return {
-      getConfiguration: function getConfiguration() {
-        return {
-          disjunctiveFacets: [attribute]
-        };
-      },
-      _toggleRefinement: function _toggleRefinement(helper) {
-        var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-            isRefined = _ref.isRefined;
-
-        // Checking
-        if (!isRefined) {
-          if (hasAnOffValue) {
-            helper.removeDisjunctiveFacetRefinement(attribute, off);
-          }
-
-          helper.addDisjunctiveFacetRefinement(attribute, on);
-        } else {
-          // Unchecking
-          helper.removeDisjunctiveFacetRefinement(attribute, on);
-
-          if (hasAnOffValue) {
-            helper.addDisjunctiveFacetRefinement(attribute, off);
-          }
-        }
-
-        helper.search();
-      },
-      init: function init(_ref2) {
-        var _this = this;
-
-        var state = _ref2.state,
-            helper = _ref2.helper,
-            createURL = _ref2.createURL,
-            instantSearchInstance = _ref2.instantSearchInstance;
-
-        this._createURL = function (isCurrentlyRefined) {
-          return function () {
-            return createURL(state.removeDisjunctiveFacetRefinement(attribute, isCurrentlyRefined ? on : off).addDisjunctiveFacetRefinement(attribute, isCurrentlyRefined ? off : on));
-          };
-        };
-
-        this.toggleRefinement = function (opts) {
-          _this._toggleRefinement(helper, opts);
-        };
-
-        var isRefined = state.isDisjunctiveFacetRefined(attribute, on); // no need to refine anything at init if no custom off values
-
-        if (hasAnOffValue) {
-          // Add filtering on the 'off' value if set
-          if (!isRefined) {
-            var currentPage = helper.getPage();
-            helper.addDisjunctiveFacetRefinement(attribute, off).setPage(currentPage);
-          }
-        }
-
-        var onFacetValue = {
-          isRefined: isRefined,
-          count: 0
-        };
-        var offFacetValue = {
-          isRefined: hasAnOffValue && !isRefined,
-          count: 0
-        };
-        var value = {
-          name: attribute,
-          isRefined: isRefined,
-          count: null,
-          onFacetValue: onFacetValue,
-          offFacetValue: offFacetValue
-        };
-        renderFn({
-          value: value,
-          createURL: this._createURL(value.isRefined),
-          refine: this.toggleRefinement,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref3) {
-        var helper = _ref3.helper,
-            results = _ref3.results,
-            state = _ref3.state,
-            instantSearchInstance = _ref3.instantSearchInstance;
-        var isRefined = helper.state.isDisjunctiveFacetRefined(attribute, on);
-        var offValue = off === undefined ? false : off;
-        var allFacetValues = results.getFacetValues(attribute);
-        var onData = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(allFacetValues, function (_ref4) {
-          var name = _ref4.name;
-          return name === Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["t" /* unescapeRefinement */])(on);
-        });
-        var onFacetValue = {
-          isRefined: onData !== undefined ? onData.isRefined : false,
-          count: onData === undefined ? null : onData.count
-        };
-        var offData = hasAnOffValue ? Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(allFacetValues, function (_ref5) {
-          var name = _ref5.name;
-          return name === Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["t" /* unescapeRefinement */])(offValue);
-        }) : undefined;
-        var offFacetValue = {
-          isRefined: offData !== undefined ? offData.isRefined : false,
-          count: offData === undefined ? allFacetValues.reduce(function (total, _ref6) {
-            var count = _ref6.count;
-            return total + count;
-          }, 0) : offData.count
-        }; // what will we show by default,
-        // if checkbox is not checked, show: [ ] free shipping (countWhenChecked)
-        // if checkbox is checked, show: [x] free shipping (countWhenNotChecked)
-
-        var nextRefinement = isRefined ? offFacetValue : onFacetValue;
-        var value = {
-          name: attribute,
-          isRefined: isRefined,
-          count: nextRefinement === undefined ? null : nextRefinement.count,
-          onFacetValue: onFacetValue,
-          offFacetValue: offFacetValue
-        };
-        renderFn({
-          value: value,
-          state: state,
-          createURL: this._createURL(value.isRefined),
-          refine: this.toggleRefinement,
-          helper: helper,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose(_ref7) {
-        var state = _ref7.state;
-        unmountFn();
-        var nextState = state.removeDisjunctiveFacetRefinement(attribute).removeDisjunctiveFacet(attribute);
-        return nextState;
-      },
-      getWidgetState: function getWidgetState(uiState, _ref8) {
-        var searchParameters = _ref8.searchParameters;
-        var isRefined = searchParameters.isDisjunctiveFacetRefined(attribute, on);
-
-        if (!isRefined || uiState && uiState.toggle && uiState.toggle[attribute] === isRefined) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          toggle: _objectSpread({}, uiState.toggle, _defineProperty({}, attribute, isRefined))
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref9) {
-        var uiState = _ref9.uiState;
-        var isRefined = Boolean(uiState.toggle && uiState.toggle[attribute]);
-
-        if (isRefined) {
-          if (hasAnOffValue) return searchParameters.removeDisjunctiveFacetRefinement(attribute, off).addDisjunctiveFacetRefinement(attribute, on);
-          return searchParameters.addDisjunctiveFacetRefinement(attribute, on);
-        }
-
-        if (hasAnOffValue) return searchParameters.removeDisjunctiveFacetRefinement(attribute, on).addDisjunctiveFacetRefinement(attribute, off);
-        return searchParameters.removeDisjunctiveFacetRefinement(attribute, on);
-      }
-    };
-  };
-}
-
-/***/ }),
-/* 438 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectBreadcrumb;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'breadcrumb',
-  connector: true
-});
-/**
- * @typedef {Object} BreadcrumbItem
- * @property {string} label Label of the category or subcategory.
- * @property {string} value Value of breadcrumb item.
- */
-
-/**
- * @typedef {Object} CustomBreadcrumbWidgetOptions
- * @property {string[]} attributes Attributes to use to generate the hierarchy of the breadcrumb.
- * @property {string} [rootPath = null] Prefix path to use if the first level is not the root level.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- *
- * You can also use a sort function that behaves like the standard Javascript [compareFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Syntax).
- */
-
-/**
- * @typedef {Object} BreadcrumbRenderingOptions
- * @property {function(item.value): string} createURL Creates an url for the next state for a clicked item. The special value `null` is used for the `Home` (or root) item of the breadcrumb and will return an empty array.
- * @property {BreadcrumbItem[]} items Values to be rendered.
- * @property {function(item.value)} refine Sets the path of the hierarchical filter and triggers a new search.
- * @property {Object} widgetParams All original `CustomBreadcrumbWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **Breadcrumb** connector provides the logic to build a custom widget
- * that will give the user the ability to see the current path in a hierarchical facet.
- *
- * This is commonly used in websites that have a large amount of content organized in a hierarchical manner (usually e-commerce websites).
- * @type {Connector}
- * @param {function(BreadcrumbRenderingOptions, boolean)} renderFn Rendering function for the custom **Breadcrumb* widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomBreadcrumbWidgetOptions)} Re-usable widget factory for a custom **Breadcrumb** widget.
- */
-
-function connectBreadcrumb(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var attributes = widgetParams.attributes,
-        _widgetParams$separat = widgetParams.separator,
-        separator = _widgetParams$separat === void 0 ? ' > ' : _widgetParams$separat,
-        _widgetParams$rootPat = widgetParams.rootPath,
-        rootPath = _widgetParams$rootPat === void 0 ? null : _widgetParams$rootPat,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo;
-
-    if (!attributes || !Array.isArray(attributes) || attributes.length === 0) {
-      throw new Error(withUsage('The `attributes` option expects an array of strings.'));
-    }
-
-    var _attributes = _slicedToArray(attributes, 1),
-        hierarchicalFacetName = _attributes[0];
-
-    return {
-      getConfiguration: function getConfiguration(currentConfiguration) {
-        if (currentConfiguration.hierarchicalFacets) {
-          var isFacetSet = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["i" /* find */])(currentConfiguration.hierarchicalFacets, function (_ref) {
-            var name = _ref.name;
-            return name === hierarchicalFacetName;
-          });
-
-          if (isFacetSet) {
-            Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["n" /* isEqual */])(isFacetSet.attributes, attributes) && isFacetSet.separator === separator && isFacetSet.rootPath === rootPath, 'Using Breadcrumb and HierarchicalMenu on the same facet with different options overrides the configuration of the HierarchicalMenu.');
-            return {};
-          }
-        }
-
-        return {
-          hierarchicalFacets: [{
-            attributes: attributes,
-            name: hierarchicalFacetName,
-            separator: separator,
-            rootPath: rootPath
-          }]
-        };
-      },
-      init: function init(_ref2) {
-        var createURL = _ref2.createURL,
-            helper = _ref2.helper,
-            instantSearchInstance = _ref2.instantSearchInstance;
-
-        this._createURL = function (facetValue) {
-          if (!facetValue) {
-            var breadcrumb = helper.getHierarchicalFacetBreadcrumb(hierarchicalFacetName);
-
-            if (breadcrumb.length > 0) {
-              return createURL(helper.state.toggleRefinement(hierarchicalFacetName, breadcrumb[0]));
-            }
-          }
-
-          return createURL(helper.state.toggleRefinement(hierarchicalFacetName, facetValue));
-        };
-
-        this._refine = function (facetValue) {
-          if (!facetValue) {
-            var breadcrumb = helper.getHierarchicalFacetBreadcrumb(hierarchicalFacetName);
-
-            if (breadcrumb.length > 0) {
-              helper.toggleRefinement(hierarchicalFacetName, breadcrumb[0]).search();
-            }
-          } else {
-            helper.toggleRefinement(hierarchicalFacetName, facetValue).search();
-          }
-        };
-
-        renderFn({
-          createURL: this._createURL,
-          canRefine: false,
-          instantSearchInstance: instantSearchInstance,
-          items: [],
-          refine: this._refine,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render(_ref3) {
-        var instantSearchInstance = _ref3.instantSearchInstance,
-            results = _ref3.results,
-            state = _ref3.state;
-
-        var _state$hierarchicalFa = _slicedToArray(state.hierarchicalFacets, 1),
-            facetName = _state$hierarchicalFa[0].name;
-
-        var facetValues = results.getFacetValues(facetName);
-        var data = Array.isArray(facetValues.data) ? facetValues.data : [];
-        var items = transformItems(shiftItemsValues(prepareItems(data)));
-        renderFn({
-          canRefine: items.length > 0,
-          createURL: this._createURL,
-          instantSearchInstance: instantSearchInstance,
-          items: items,
-          refine: this._refine,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
-    };
-  };
-}
-
-function prepareItems(data) {
-  return data.reduce(function (result, currentItem) {
-    if (currentItem.isRefined) {
-      result.push({
-        label: currentItem.name,
-        value: currentItem.path
-      });
-
-      if (Array.isArray(currentItem.data)) {
-        result = result.concat(prepareItems(currentItem.data));
-      }
-    }
-
-    return result;
-  }, []);
-}
-
-function shiftItemsValues(array) {
-  return array.map(function (x, idx) {
-    return {
-      label: x.label,
-      value: idx + 1 === array.length ? null : array[idx + 1].value
-    };
-  });
-}
-
-/***/ }),
-/* 439 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'geo-search',
-  connector: true
-});
-/**
- * @typedef {Object} LatLng
- * @property {number} lat The latitude in degrees.
- * @property {number} lng The longitude in degrees.
- */
-
-/**
- * @typedef {Object} Bounds
- * @property {LatLng} northEast The top right corner of the map view.
- * @property {LatLng} southWest The bottom left corner of the map view.
- */
-
-/**
- * @typedef {Object} CustomGeoSearchWidgetOptions
- * @property {boolean} [enableRefineOnMapMove=true] If true, refine will be triggered as you move the map.
- * @property {function(object[]):object[]} [transformItems] Function to transform the items passed to the templates.
- */
-
-/**
- * @typedef {Object} GeoSearchRenderingOptions
- * @property {Object[]} items The matched hits from Algolia API.
- * @property {LatLng} position The current position of the search.
- * @property {Bounds} currentRefinement The current bounding box of the search.
- * @property {function(Bounds)} refine Sets a bounding box to filter the results from the given map bounds.
- * @property {function()} clearMapRefinement Reset the current bounding box refinement.
- * @property {function(): boolean} isRefinedWithMap Return true if the current refinement is set with the map bounds.
- * @property {function()} toggleRefineOnMapMove Toggle the fact that the user is able to refine on map move.
- * @property {function(): boolean} isRefineOnMapMove Return true if the user is able to refine on map move.
- * @property {function()} setMapMoveSinceLastRefine Set the fact that the map has moved since the last refinement, should be call on each map move. The call to the function triggers a new rendering only when the value change.
- * @property {function(): boolean} hasMapMoveSinceLastRefine Return true if the map has move since the last refinement.
- * @property {Object} widgetParams All original `CustomGeoSearchWidgetOptions` forwarded to the `renderFn`.
- * @property {LatLng} [position] The current position of the search.
- */
-
-/**
- * The **GeoSearch** connector provides the logic to build a widget that will display the results on a map. It also provides a way to search for results based on their position. The connector provides functions to manage the search experience (search on map interaction or control the interaction for example).
- *
- * @requirements
- *
- * Note that the GeoSearch connector uses the [geosearch](https://www.algolia.com/doc/guides/searching/geo-search) capabilities of Algolia. Your hits **must** have a `_geoloc` attribute in order to be passed to the rendering function.
- *
- * Currently, the feature is not compatible with multiple values in the _geoloc attribute.
- *
- * @type {Connector}
- * @param {function(GeoSearchRenderingOptions, boolean)} renderFn Rendering function for the custom **GeoSearch** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomGeoSearchWidgetOptions)} Re-usable widget factory for a custom **GeoSearch** widget.
- * @staticExample
- * // This example use Leaflet for the rendering, be sure to have the library correctly setup
- * // before trying the demo. You can find more details in their documentation (link below).
- * // We choose Leaflet for the example but you can use any libraries that you want.
- * // See: http://leafletjs.com/examples/quick-start
- *
- * let map = null;
- * let markers = [];
- *
- * // custom `renderFn` to render the custom GeoSearch widget
- * function renderFn(GeoSearchRenderingOptions, isFirstRendering) {
- *   const { items, widgetParams } = GeoSearchRenderingOptions;
- *
- *   if (isFirstRendering) {
- *     map = L.map(widgetParams.container);
- *
- *     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
- *       attribution:
- *         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
- *     }).addTo(map);
- *   }
- *
- *   markers.forEach(marker => marker.remove());
- *
- *   markers = items.map(({ _geoloc }) =>
- *     L.marker([_geoloc.lat, _geoloc.lng]).addTo(map)
- *   );
- *
- *   if (markers.length) {
- *     map.fitBounds(L.featureGroup(markers).getBounds());
- *   }
- * }
- *
- * // connect `renderFn` to GeoSearch logic
- * const customGeoSearch = instantsearch.connectors.connectGeoSearch(renderFn);
- *
- * // mount widget on the page
- * search.addWidget(
- *   customGeoSearch({
- *     container: document.getElementById('custom-geo-search'),
- *   })
- * );
- */
-
-var connectGeoSearch = function connectGeoSearch(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var _widgetParams$enableR = widgetParams.enableRefineOnMapMove,
-        enableRefineOnMapMove = _widgetParams$enableR === void 0 ? true : _widgetParams$enableR,
-        _widgetParams$transfo = widgetParams.transformItems,
-        transformItems = _widgetParams$transfo === void 0 ? function (items) {
-      return items;
-    } : _widgetParams$transfo; // Always trigger this message because the default value was `true`. We can't
-    // display the message only when the parameter is defined otherwise a user that was
-    // relying on the default value won't have any information about the changes.
-
-    Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(false, "\nThe option `enableGeolocationWithIP` has been removed from the GeoSearch widget.\nPlease consider using the `Configure` widget instead:\n\nsearch.addWidget(\n  configure({\n    aroundLatLngViaIP: ".concat(widgetParams.enableGeolocationWithIP || 'true', ",\n  })\n);\n\nYou can find more information inside the migration guide:\nhttp://community.algolia.com/instantsearch.js/migration-guide\n        "));
-    Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(typeof widgetParams.position === 'undefined', "\nThe option `position` has been removed from the GeoSearch widget.\nPlease consider using the `Configure` widget instead:\n\nsearch.addWidget(\n  configure({\n    aroundLatLng: '".concat(widgetParams.position && widgetParams.position.lat, ", ").concat(widgetParams.position && widgetParams.position.lng, "',\n  })\n);\n\nYou can find more information inside the migration guide:\nhttp://community.algolia.com/instantsearch.js/migration-guide\n      "));
-    Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(typeof widgetParams.radius === 'undefined', "\nThe option `radius` has been removed from the GeoSearch widget.\nPlease consider using the `Configure` widget instead:\n\nsearch.addWidget(\n  configure({\n    aroundRadius: ".concat(widgetParams.radius, ",\n  })\n);\n\nYou can find more information inside the migration guide:\n\nhttp://community.algolia.com/instantsearch.js/migration-guide\n      "));
-    Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(typeof widgetParams.precision === 'undefined', "\nThe option `precision` has been removed from the GeoSearch widget.\nPlease consider using the `Configure` widget instead:\n\nsearch.addWidget(\n  configure({\n    aroundPrecision: ".concat(widgetParams.precision, ",\n  })\n);\n\nYou can find more information inside the migration guide:\n\nhttp://community.algolia.com/instantsearch.js/migration-guide\n      "));
-    var widgetState = {
-      isRefineOnMapMove: enableRefineOnMapMove,
-      hasMapMoveSinceLastRefine: false,
-      lastRefinePosition: '',
-      lastRefineBoundingBox: '',
-      internalToggleRefineOnMapMove: __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */],
-      internalSetMapMoveSinceLastRefine: __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */]
-    };
-
-    var getPositionFromState = function getPositionFromState(state) {
-      return state.aroundLatLng && Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["c" /* aroundLatLngToPosition */])(state.aroundLatLng);
-    };
-
-    var getCurrentRefinementFromState = function getCurrentRefinementFromState(state) {
-      return state.insideBoundingBox && Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["m" /* insideBoundingBoxToBoundingBox */])(state.insideBoundingBox);
-    };
-
-    var refine = function refine(helper) {
-      return function (_ref) {
-        var ne = _ref.northEast,
-            sw = _ref.southWest;
-        var boundingBox = [ne.lat, ne.lng, sw.lat, sw.lng].join();
-        helper.setQueryParameter('insideBoundingBox', boundingBox).search();
-        widgetState.hasMapMoveSinceLastRefine = false;
-        widgetState.lastRefineBoundingBox = boundingBox;
+    },
+
+    refinementForRendering: function refinementForRendering() {
+      var ref = this.refinement;
+      var minValue = ref.min;
+      var maxValue = ref.max;
+      var ref$1 = this.range;
+      var minRange = ref$1.min;
+      var maxRange = ref$1.max;
+
+      return {
+        min: minValue !== undefined && minValue !== minRange ? minValue : '',
+        max: maxValue !== undefined && maxValue !== maxRange ? maxValue : '',
       };
-    };
+    },
+  },
 
-    var clearMapRefinement = function clearMapRefinement(helper) {
-      return function () {
-        helper.setQueryParameter('insideBoundingBox').search();
-      };
-    };
-
-    var isRefinedWithMap = function isRefinedWithMap(state) {
-      return function () {
-        return Boolean(state.insideBoundingBox);
-      };
-    };
-
-    var toggleRefineOnMapMove = function toggleRefineOnMapMove() {
-      return widgetState.internalToggleRefineOnMapMove();
-    };
-
-    var createInternalToggleRefinementOnMapMove = function createInternalToggleRefinementOnMapMove(render, args) {
-      return function () {
-        widgetState.isRefineOnMapMove = !widgetState.isRefineOnMapMove;
-        render(args);
-      };
-    };
-
-    var isRefineOnMapMove = function isRefineOnMapMove() {
-      return widgetState.isRefineOnMapMove;
-    };
-
-    var setMapMoveSinceLastRefine = function setMapMoveSinceLastRefine() {
-      return widgetState.internalSetMapMoveSinceLastRefine();
-    };
-
-    var createInternalSetMapMoveSinceLastRefine = function createInternalSetMapMoveSinceLastRefine(render, args) {
-      return function () {
-        var shouldTriggerRender = widgetState.hasMapMoveSinceLastRefine !== true;
-        widgetState.hasMapMoveSinceLastRefine = true;
-
-        if (shouldTriggerRender) {
-          render(args);
-        }
-      };
-    };
-
-    var hasMapMoveSinceLastRefine = function hasMapMoveSinceLastRefine() {
-      return widgetState.hasMapMoveSinceLastRefine;
-    };
-
-    var init = function init(initArgs) {
-      var state = initArgs.state,
-          helper = initArgs.helper,
-          instantSearchInstance = initArgs.instantSearchInstance;
-      var isFirstRendering = true;
-      widgetState.internalToggleRefineOnMapMove = createInternalToggleRefinementOnMapMove(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */], initArgs);
-      widgetState.internalSetMapMoveSinceLastRefine = createInternalSetMapMoveSinceLastRefine(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */], initArgs);
-      renderFn({
-        items: [],
-        position: getPositionFromState(state),
-        currentRefinement: getCurrentRefinementFromState(state),
-        refine: refine(helper),
-        clearMapRefinement: clearMapRefinement(helper),
-        isRefinedWithMap: isRefinedWithMap(state),
-        toggleRefineOnMapMove: toggleRefineOnMapMove,
-        isRefineOnMapMove: isRefineOnMapMove,
-        setMapMoveSinceLastRefine: setMapMoveSinceLastRefine,
-        hasMapMoveSinceLastRefine: hasMapMoveSinceLastRefine,
-        widgetParams: widgetParams,
-        instantSearchInstance: instantSearchInstance
-      }, isFirstRendering);
-    };
-
-    var render = function render(renderArgs) {
-      var results = renderArgs.results,
-          helper = renderArgs.helper,
-          instantSearchInstance = renderArgs.instantSearchInstance;
-      var isFirstRendering = false; // We don't use the state provided by the render function because we need
-      // to be sure that the state is the latest one for the following condition
-
-      var state = helper.state;
-      var positionChangedSinceLastRefine = Boolean(state.aroundLatLng) && Boolean(widgetState.lastRefinePosition) && state.aroundLatLng !== widgetState.lastRefinePosition;
-      var boundingBoxChangedSinceLastRefine = !state.insideBoundingBox && Boolean(widgetState.lastRefineBoundingBox) && state.insideBoundingBox !== widgetState.lastRefineBoundingBox;
-
-      if (positionChangedSinceLastRefine || boundingBoxChangedSinceLastRefine) {
-        widgetState.hasMapMoveSinceLastRefine = false;
+  methods: {
+    nextValueForRefinment: function nextValueForRefinment(hasBound, isReset, range, value) {
+      var next;
+      if (!hasBound && range === value) {
+        next = undefined;
+      } else if (hasBound && isReset) {
+        next = range;
+      } else {
+        next = value;
       }
 
-      widgetState.lastRefinePosition = state.aroundLatLng || '';
-      widgetState.lastRefineBoundingBox = state.insideBoundingBox || '';
-      widgetState.internalToggleRefineOnMapMove = createInternalToggleRefinementOnMapMove(render, renderArgs);
-      widgetState.internalSetMapMoveSinceLastRefine = createInternalSetMapMoveSinceLastRefine(render, renderArgs);
-      var items = transformItems(results.hits.filter(function (hit) {
-        return hit._geoloc;
-      }));
-      renderFn({
-        items: items,
-        position: getPositionFromState(state),
-        currentRefinement: getCurrentRefinementFromState(state),
-        refine: refine(helper),
-        clearMapRefinement: clearMapRefinement(helper),
-        isRefinedWithMap: isRefinedWithMap(state),
-        toggleRefineOnMapMove: toggleRefineOnMapMove,
-        isRefineOnMapMove: isRefineOnMapMove,
-        setMapMoveSinceLastRefine: setMapMoveSinceLastRefine,
-        hasMapMoveSinceLastRefine: hasMapMoveSinceLastRefine,
-        widgetParams: widgetParams,
-        instantSearchInstance: instantSearchInstance
-      }, isFirstRendering);
-    };
+      return next;
+    },
 
-    return {
-      init: init,
-      render: render,
-      dispose: function dispose(_ref2) {
-        var state = _ref2.state;
-        unmountFn();
-        return state.setQueryParameter('insideBoundingBox');
-      },
-      getWidgetState: function getWidgetState(uiState, _ref3) {
-        var searchParameters = _ref3.searchParameters;
-        var boundingBox = searchParameters.insideBoundingBox;
+    onSubmit: function onSubmit(ref) {
+      var minNext = ref.min; if ( minNext === void 0 ) minNext = '';
+      var maxNext = ref.max; if ( maxNext === void 0 ) maxNext = '';
 
-        if (!boundingBox || uiState && uiState.geoSearch && uiState.geoSearch.boundingBox === boundingBox) {
-          return uiState;
-        }
+      var ref$1 = this.range;
+      var minRange = ref$1.min;
+      var maxRange = ref$1.max;
 
-        return _objectSpread({}, uiState, {
-          geoSearch: {
-            boundingBox: boundingBox
-          }
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref4) {
-        var uiState = _ref4.uiState;
+      var hasMinBound = this.min !== undefined;
+      var hasMaxBound = this.max !== undefined;
 
-        if (!uiState || !uiState.geoSearch) {
-          return searchParameters.setQueryParameter('insideBoundingBox');
-        }
+      var isMinReset = minNext === '';
+      var isMaxReset = maxNext === '';
 
-        return searchParameters.setQueryParameter('insideBoundingBox', uiState.geoSearch.boundingBox);
+      var minNextAsNumber = !isMinReset ? parseFloat(minNext) : undefined;
+      var maxNextAsNumber = !isMaxReset ? parseFloat(maxNext) : undefined;
+
+      var newMinNext = this.nextValueForRefinment(
+        hasMinBound,
+        isMinReset,
+        minRange,
+        minNextAsNumber
+      );
+
+      var newMaxNext = this.nextValueForRefinment(
+        hasMaxBound,
+        isMaxReset,
+        maxRange,
+        maxNextAsNumber
+      );
+
+      this.searchStore.stop();
+
+      this.searchStore.removeNumericRefinement(this.attributeName, '>=');
+      if (newMinNext !== undefined) {
+        this.searchStore.addNumericRefinement(
+          this.attributeName,
+          '>=',
+          newMinNext
+        );
       }
-    };
-  };
+
+      this.searchStore.removeNumericRefinement(this.attributeName, '<=');
+      if (newMaxNext !== undefined) {
+        this.searchStore.addNumericRefinement(
+          this.attributeName,
+          '<=',
+          newMaxNext
+        );
+      }
+
+      this.searchStore.start();
+      this.searchStore.refresh();
+    },
+  },
 };
 
-/* unused harmony default export */ var _unused_webpack_default_export = (connectGeoSearch);
-
-/***/ }),
-/* 440 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'powered-by',
-  connector: true
-});
-/**
- * @typedef {Object} PoweredByWidgetOptions
- * @property {string} [theme] The theme of the logo ("light" or "dark").
- * @property {string} [url] The URL to redirect to.
- */
-
-/**
- * @typedef {Object} PoweredByRenderingOptions
- * @property {Object} widgetParams All original `PoweredByWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * **PoweredBy** connector provides the logic to build a custom widget that will displays
- * the logo to redirect to Algolia.
- *
- * @type {Connector}
- * @param {function(PoweredByRenderingOptions, boolean)} renderFn Rendering function for the custom **PoweredBy** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function} Re-usable widget factory for a custom **PoweredBy** widget.
- */
-
-function connectPoweredBy(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  var defaultUrl = 'https://www.algolia.com/?' + 'utm_source=instantsearch.js&' + 'utm_medium=website&' + "utm_content=".concat(typeof window !== 'undefined' && window.location ? window.location.hostname : '', "&") + 'utm_campaign=poweredby';
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var _widgetParams$url = widgetParams.url,
-        url = _widgetParams$url === void 0 ? defaultUrl : _widgetParams$url;
+var NoResults = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.totalResults <= 0 && _vm.processingTime > 0)?_c('div',{class:_vm.bem()},[_vm._t("default",[_vm._v(" No results matched your query "),_c('strong',{class:_vm.bem('query')},[_vm._v(_vm._s(_vm.query))])],{query:_vm.query})],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  data: function data() {
     return {
-      init: function init() {
-        renderFn({
-          url: url,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function render() {
-        renderFn({
-          url: url,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose() {
-        unmountFn();
-      }
+      blockClassName: 'ais-no-results',
     };
-  };
-}
+  },
+  computed: {
+    totalResults: function totalResults() {
+      return this.searchStore.totalResults;
+    },
+    processingTime: function processingTime() {
+      return this.searchStore.processingTimeMS;
+    },
+    query: function query() {
+      return this.searchStore.query;
+    },
+  },
+};
 
-/***/ }),
-/* 441 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+var RefinementList = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{class:_vm.bem()},[_vm._t("header"),_vm._v(" "),_vm._l((_vm.facetValues),function(facet){return _c('div',{key:facet.name,class:facet.isRefined ? _vm.bem('item', 'active') : _vm.bem('item')},[_c('label',{class:_vm.bem('label')},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(facet.isRefined),expression:"facet.isRefined"}],class:_vm.bem('checkbox'),attrs:{"type":"checkbox"},domProps:{"value":facet.name,"checked":Array.isArray(facet.isRefined)?_vm._i(facet.isRefined,facet.name)>-1:(facet.isRefined)},on:{"change":[function($event){var $$a=facet.isRefined,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=facet.name,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(facet.isRefined=$$a.concat([$$v]));}else{$$i>-1&&(facet.isRefined=$$a.slice(0,$$i).concat($$a.slice($$i+1)));}}else{_vm.$set(facet, "isRefined", $$c);}},function($event){_vm.toggleRefinement(facet);}]}}),_vm._t("default",[_c('span',{class:_vm.bem('value')},[_vm._v(_vm._s(facet.name))]),_vm._v(" "),_c('span',{class:_vm.bem('count')},[_vm._v(_vm._s(facet.count))])],{count:facet.count,active:facet.isRefined,value:facet.name})],2)])}),_vm._v(" "),_vm._t("footer")],2):_vm._e()},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    attributeName: {
+      type: String,
+      required: true,
+    },
+    operator: {
+      type: String,
+      default: FACET_OR,
+      validator: function validator(rawValue) {
+        var value = rawValue.toLowerCase();
 
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectConfigure;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_InstantSearch__ = __webpack_require__(318);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'configure',
-  connector: true
-});
-/**
- * @typedef {Object} CustomConfigureWidgetOptions
- * @property {Object} searchParameters The Configure widget options are search parameters
- */
-
-/**
- * @typedef {Object} ConfigureRenderingOptions
- * @property {function(searchParameters: Object)} refine Sets new `searchParameters` and trigger a search.
- * @property {Object} widgetParams All original `CustomConfigureWidgetOptions` forwarded to the `renderFn`.
- */
-
-/**
- * The **Configure** connector provides the logic to build a custom widget
- * that will give you ability to override or force some search parameters sent to Algolia API.
- *
- * @type {Connector}
- * @param {function(ConfigureRenderingOptions)} renderFn Rendering function for the custom **Configure** Widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomConfigureWidgetOptions)} Re-usable widget factory for a custom **Configure** widget.
- */
-
-function connectConfigure() {
-  var renderFn = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-    if (!Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["p" /* isPlainObject */])(widgetParams.searchParameters)) {
-      throw new Error(withUsage('The `searchParameters` option expects an object.'));
-    }
-
+        return value === FACET_OR || value === FACET_AND;
+      },
+    },
+    limit: {
+      type: Number,
+      default: 10,
+    },
+    sortBy: {
+      default: function default$1$$1() {
+        return ['isRefined:desc', 'count:desc', 'name:asc'];
+      },
+    },
+  },
+  data: function data() {
     return {
-      getConfiguration: function getConfiguration() {
-        return widgetParams.searchParameters;
-      },
-      init: function init(_ref) {
-        var helper = _ref.helper;
-        this._refine = this.refine(helper);
-        renderFn({
-          refine: this._refine,
-          widgetParams: widgetParams
-        }, true);
-      },
-      refine: function refine(helper) {
-        var _this = this;
-
-        return function (searchParameters) {
-          // merge new `searchParameters` with the ones set from other widgets
-          var actualState = _this.removeSearchParameters(helper.state);
-
-          var nextSearchParameters = Object(__WEBPACK_IMPORTED_MODULE_1__lib_InstantSearch__["b" /* enhanceConfiguration */])(_objectSpread({}, actualState), {
-            getConfiguration: function getConfiguration() {
-              return searchParameters;
-            }
-          }); // trigger a search with the new merged searchParameters
-
-          helper.setState(nextSearchParameters).search(); // update original `widgetParams.searchParameters` to the new refined one
-
-          widgetParams.searchParameters = searchParameters;
-        };
-      },
-      render: function render() {
-        renderFn({
-          refine: this._refine,
-          widgetParams: widgetParams
-        }, false);
-      },
-      dispose: function dispose(_ref2) {
-        var state = _ref2.state;
-        unmountFn();
-        return this.removeSearchParameters(state);
-      },
-      removeSearchParameters: function removeSearchParameters(state) {
-        // widgetParams are assumed 'controlled',
-        // so they override whatever other widgets give the state
-        return state.mutateMe(function (mutableState) {
-          Object.keys(widgetParams.searchParameters).forEach(function (key) {
-            delete mutableState[key];
-          });
-        });
-      }
+      blockClassName: 'ais-refinement-list',
     };
-  };
-}
+  },
+  created: function created() {
+    this.searchStore.addFacet(this.attributeName, this.operator);
+  },
+  destroyed: function destroyed() {
+    this.searchStore.stop();
+    this.searchStore.removeFacet(this.attributeName);
+    this.searchStore.start();
+  },
+  computed: {
+    facetValues: function facetValues() {
+      return this.searchStore.getFacetValues(
+        this.attributeName,
+        this.sortBy,
+        this.limit
+      );
+    },
+    show: function show() {
+      return this.facetValues.length > 0;
+    },
+  },
+  methods: {
+    toggleRefinement: function toggleRefinement(value) {
+      return this.searchStore.toggleFacetRefinement(
+        this.attributeName,
+        value.name
+      );
+    },
+  },
+  watch: {
+    operator: function operator() {
+      this.searchStore.addFacet(this.attributeName, this.operator);
+    },
+  },
+};
+
+var PriceRange = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.show),expression:"show"}],class:_vm.bem()},[_vm._t("header"),_vm._v(" "),(_vm.currencyPlacement === 'left')?_c('span',{class:_vm.bem('currency', 'left')},[_vm._v(" "+_vm._s(_vm.currency)+" ")]):_vm._e(),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.from),expression:"from"}],class:_vm.bem('input', 'from'),attrs:{"type":"number","placeholder":_vm.fromPlaceholder},domProps:{"value":(_vm.from)},on:{"input":function($event){if($event.target.composing){ return; }_vm.from=$event.target.value;}}}),_vm._v(" "),(_vm.currencyPlacement === 'right')?_c('span',{class:_vm.bem('currency', 'right')},[_vm._v(" "+_vm._s(_vm.currency)+" ")]):_vm._e(),_vm._v(" "),_vm._t("default",[_c('span',[_vm._v("to ")])]),_vm._v(" "),(_vm.currencyPlacement === 'left')?_c('span',{class:_vm.bem('currency', 'left')},[_vm._v(" "+_vm._s(_vm.currency)+" ")]):_vm._e(),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.to),expression:"to"}],class:_vm.bem('input', 'to'),attrs:{"type":"number","placeholder":_vm.toPlaceholder},domProps:{"value":(_vm.to)},on:{"input":function($event){if($event.target.composing){ return; }_vm.to=$event.target.value;}}}),_vm._v(" "),(_vm.currencyPlacement === 'right')?_c('span',{class:_vm.bem('currency', 'right')},[_vm._v(" "+_vm._s(_vm.currency)+" ")]):_vm._e(),_vm._v(" "),_vm._t("footer")],2)},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    fromPlaceholder: {
+      type: String,
+      default: 'min',
+    },
+    toPlaceholder: {
+      type: String,
+      default: 'max',
+    },
+    attributeName: {
+      type: String,
+      required: true,
+    },
+    currency: {
+      type: String,
+      required: false,
+      default: '$',
+    },
+    currencyPlacement: {
+      type: String,
+      required: false,
+      default: 'left',
+      validator: function validator(value) {
+        return value === 'left' || value === 'right';
+      },
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-price-range',
+    };
+  },
+  computed: {
+    show: function show() {
+      return this.from || this.to || this.searchStore.totalResults > 0;
+    },
+    from: {
+      get: function get() {
+        var this$1 = this;
+
+        for (var refinement in this$1.searchStore.activeRefinements) {
+          if (
+            this$1.searchStore.activeRefinements[refinement].attributeName ===
+              this$1.attributeName &&
+            this$1.searchStore.activeRefinements[refinement].type === 'numeric' &&
+            this$1.searchStore.activeRefinements[refinement].operator === '>'
+          ) {
+            return this$1.searchStore.activeRefinements[refinement].numericValue;
+          }
+        }
+        return undefined;
+      },
+      set: function set(rawValue) {
+        var value = Number(rawValue);
+
+        this.searchStore.stop();
+        this.searchStore.removeNumericRefinement(this.attributeName, '>');
+        if (value > 0) {
+          this.searchStore.addNumericRefinement(this.attributeName, '>', value);
+        }
+
+        // Remove the max value if lower than the min value.
+        if (value > Number(this.to)) {
+          this.searchStore.removeNumericRefinement(this.attributeName, '<');
+        }
+
+        this.searchStore.start();
+        this.searchStore.refresh();
+      },
+    },
+    to: {
+      get: function get() {
+        var this$1 = this;
+
+        for (var refinement in this$1.searchStore.activeRefinements) {
+          if (
+            this$1.searchStore.activeRefinements[refinement].attributeName ===
+              this$1.attributeName &&
+            this$1.searchStore.activeRefinements[refinement].type === 'numeric' &&
+            this$1.searchStore.activeRefinements[refinement].operator === '<'
+          ) {
+            return this$1.searchStore.activeRefinements[refinement].numericValue;
+          }
+        }
+        return undefined;
+      },
+      set: function set(rawValue) {
+        var value = Number(rawValue);
+
+        // Only update when `to` has reached the `from` value.
+        if (value < Number(this.from)) {
+          return;
+        }
+
+        this.searchStore.stop();
+        this.searchStore.removeNumericRefinement(this.attributeName, '<');
+        if (value > 0) {
+          this.searchStore.addNumericRefinement(this.attributeName, '<', value);
+        }
+        this.searchStore.start();
+        this.searchStore.refresh();
+      },
+    },
+  },
+};
+
+var PoweredBy = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.bem()},[_c('a',{attrs:{"href":_vm.algoliaUrl}},[_c('svg',{attrs:{"width":"130","viewBox":"0 0 130 18","xmlns":"http://www.w3.org/2000/svg"}},[_c('title',[_vm._v("Search by Algolia")]),_vm._v(" "),_c('defs',[_c('linearGradient',{attrs:{"x1":"-36.868%","y1":"134.936%","x2":"129.432%","y2":"-27.7%","id":"a"}},[_c('stop',{attrs:{"stop-color":"#00AEFF","offset":"0%"}}),_vm._v(" "),_c('stop',{attrs:{"stop-color":"#3369E7","offset":"100%"}})],1)],1),_vm._v(" "),_c('g',{attrs:{"fill":"none","fill-rule":"evenodd"}},[_c('path',{attrs:{"d":"M59.399.022h13.299a2.372 2.372 0 0 1 2.377 2.364V15.62a2.372 2.372 0 0 1-2.377 2.364H59.399a2.372 2.372 0 0 1-2.377-2.364V2.381A2.368 2.368 0 0 1 59.399.022z","fill":"url(#a)"}}),_vm._v(" "),_c('path',{attrs:{"d":"M66.257 4.56c-2.815 0-5.1 2.272-5.1 5.078 0 2.806 2.284 5.072 5.1 5.072 2.815 0 5.1-2.272 5.1-5.078 0-2.806-2.279-5.072-5.1-5.072zm0 8.652c-1.983 0-3.593-1.602-3.593-3.574 0-1.972 1.61-3.574 3.593-3.574 1.983 0 3.593 1.602 3.593 3.574a3.582 3.582 0 0 1-3.593 3.574zm0-6.418v2.664c0 .076.082.131.153.093l2.377-1.226c.055-.027.071-.093.044-.147a2.96 2.96 0 0 0-2.465-1.487c-.055 0-.11.044-.11.104l.001-.001zm-3.33-1.956l-.312-.311a.783.783 0 0 0-1.106 0l-.372.37a.773.773 0 0 0 0 1.101l.307.305c.049.049.121.038.164-.011.181-.245.378-.479.597-.697.225-.223.455-.42.707-.599.055-.033.06-.109.016-.158h-.001zm5.001-.806v-.616a.781.781 0 0 0-.783-.779h-1.824a.78.78 0 0 0-.783.779v.632c0 .071.066.12.137.104a5.736 5.736 0 0 1 1.588-.223c.52 0 1.035.071 1.534.207a.106.106 0 0 0 .131-.104z","fill":"#FFF"}}),_vm._v(" "),_c('path',{attrs:{"d":"M102.162 13.762c0 1.455-.372 2.517-1.123 3.193-.75.676-1.895 1.013-3.44 1.013-.564 0-1.736-.109-2.673-.316l.345-1.689c.783.163 1.819.207 2.361.207.86 0 1.473-.174 1.84-.523.367-.349.548-.866.548-1.553v-.349a6.374 6.374 0 0 1-.838.316 4.151 4.151 0 0 1-1.194.158 4.515 4.515 0 0 1-1.616-.278 3.385 3.385 0 0 1-1.254-.817 3.744 3.744 0 0 1-.811-1.351c-.192-.539-.29-1.504-.29-2.212 0-.665.104-1.498.307-2.054a3.925 3.925 0 0 1 .904-1.433 4.124 4.124 0 0 1 1.441-.926 5.31 5.31 0 0 1 1.945-.365c.696 0 1.337.087 1.961.191a15.86 15.86 0 0 1 1.588.332v8.456h-.001zm-5.954-4.206c0 .893.197 1.885.592 2.299.394.414.904.621 1.528.621.34 0 .663-.049.964-.142a2.75 2.75 0 0 0 .734-.332v-5.29a8.531 8.531 0 0 0-1.413-.18c-.778-.022-1.369.294-1.786.801-.411.507-.619 1.395-.619 2.223zm16.12 0c0 .719-.104 1.264-.318 1.858a4.389 4.389 0 0 1-.904 1.52c-.389.42-.854.746-1.402.975-.548.229-1.391.36-1.813.36-.422-.005-1.26-.125-1.802-.36a4.088 4.088 0 0 1-1.397-.975 4.486 4.486 0 0 1-.909-1.52 5.037 5.037 0 0 1-.329-1.858c0-.719.099-1.411.318-1.999.219-.588.526-1.09.92-1.509.394-.42.865-.741 1.402-.97a4.547 4.547 0 0 1 1.786-.338 4.69 4.69 0 0 1 1.791.338c.548.229 1.019.55 1.402.97.389.42.69.921.909 1.509.23.588.345 1.28.345 1.999h.001zm-2.191.005c0-.921-.203-1.689-.597-2.223-.394-.539-.948-.806-1.654-.806-.707 0-1.26.267-1.654.806-.394.539-.586 1.302-.586 2.223 0 .932.197 1.558.592 2.098.394.545.948.812 1.654.812.707 0 1.26-.272 1.654-.812.394-.545.592-1.166.592-2.098h-.001zm6.962 4.707c-3.511.016-3.511-2.822-3.511-3.274L113.583.926l2.142-.338v10.003c0 .256 0 1.88 1.375 1.885v1.792h-.001zm3.774 0h-2.153V5.072l2.153-.338v9.534zm-1.079-10.542c.718 0 1.304-.578 1.304-1.291 0-.714-.581-1.291-1.304-1.291-.723 0-1.304.578-1.304 1.291 0 .714.586 1.291 1.304 1.291zm6.431 1.013c.707 0 1.304.087 1.786.262.482.174.871.42 1.156.73.285.311.488.735.608 1.182.126.447.186.937.186 1.476v5.481a25.24 25.24 0 0 1-1.495.251c-.668.098-1.419.147-2.251.147a6.829 6.829 0 0 1-1.517-.158 3.213 3.213 0 0 1-1.178-.507 2.455 2.455 0 0 1-.761-.904c-.181-.37-.274-.893-.274-1.438 0-.523.104-.855.307-1.215.208-.36.487-.654.838-.883a3.609 3.609 0 0 1 1.227-.49 7.073 7.073 0 0 1 2.202-.103c.263.027.537.076.833.147v-.349c0-.245-.027-.479-.088-.697a1.486 1.486 0 0 0-.307-.583c-.148-.169-.34-.3-.581-.392a2.536 2.536 0 0 0-.915-.163c-.493 0-.942.06-1.353.131-.411.071-.75.153-1.008.245l-.257-1.749c.268-.093.668-.185 1.183-.278a9.335 9.335 0 0 1 1.66-.142l-.001-.001zm.181 7.731c.657 0 1.145-.038 1.484-.104v-2.168a5.097 5.097 0 0 0-1.978-.104c-.241.033-.46.098-.652.191a1.167 1.167 0 0 0-.466.392c-.121.169-.175.267-.175.523 0 .501.175.79.493.981.323.196.75.289 1.293.289h.001zM84.109 4.794c.707 0 1.304.087 1.786.262.482.174.871.42 1.156.73.29.316.487.735.608 1.182.126.447.186.937.186 1.476v5.481a25.24 25.24 0 0 1-1.495.251c-.668.098-1.419.147-2.251.147a6.829 6.829 0 0 1-1.517-.158 3.213 3.213 0 0 1-1.178-.507 2.455 2.455 0 0 1-.761-.904c-.181-.37-.274-.893-.274-1.438 0-.523.104-.855.307-1.215.208-.36.487-.654.838-.883a3.609 3.609 0 0 1 1.227-.49 7.073 7.073 0 0 1 2.202-.103c.257.027.537.076.833.147v-.349c0-.245-.027-.479-.088-.697a1.486 1.486 0 0 0-.307-.583c-.148-.169-.34-.3-.581-.392a2.536 2.536 0 0 0-.915-.163c-.493 0-.942.06-1.353.131-.411.071-.75.153-1.008.245l-.257-1.749c.268-.093.668-.185 1.183-.278a8.89 8.89 0 0 1 1.66-.142l-.001-.001zm.186 7.736c.657 0 1.145-.038 1.484-.104v-2.168a5.097 5.097 0 0 0-1.978-.104c-.241.033-.46.098-.652.191a1.167 1.167 0 0 0-.466.392c-.121.169-.175.267-.175.523 0 .501.175.79.493.981.318.191.75.289 1.293.289h.001zm8.682 1.738c-3.511.016-3.511-2.822-3.511-3.274L89.461.926l2.142-.338v10.003c0 .256 0 1.88 1.375 1.885v1.792h-.001z","fill":"#182359"}}),_vm._v(" "),_c('path',{attrs:{"d":"M5.027 11.025c0 .698-.252 1.246-.757 1.644-.505.397-1.201.596-2.089.596-.888 0-1.615-.138-2.181-.414v-1.214c.358.168.739.301 1.141.397.403.097.778.145 1.125.145.508 0 .884-.097 1.125-.29a.945.945 0 0 0 .363-.779.978.978 0 0 0-.333-.747c-.222-.204-.68-.446-1.375-.725-.716-.29-1.221-.621-1.515-.994-.294-.372-.44-.82-.44-1.343 0-.655.233-1.171.698-1.547.466-.376 1.09-.564 1.875-.564.752 0 1.5.165 2.245.494l-.408 1.047c-.698-.294-1.321-.44-1.869-.44-.415 0-.73.09-.945.271a.89.89 0 0 0-.322.717c0 .204.043.379.129.524.086.145.227.282.424.411.197.129.551.299 1.063.51.577.24.999.464 1.268.671.269.208.466.442.591.704.125.261.188.569.188.924l-.001.002zm3.98 2.24c-.924 0-1.646-.269-2.167-.808-.521-.539-.782-1.281-.782-2.226 0-.97.242-1.733.725-2.288.483-.555 1.148-.833 1.993-.833.784 0 1.404.238 1.858.714.455.476.682 1.132.682 1.966v.682H7.357c.018.577.174 1.02.467 1.329.294.31.707.465 1.241.465.351 0 .678-.033.98-.099a5.1 5.1 0 0 0 .975-.33v1.026a3.865 3.865 0 0 1-.935.312 5.723 5.723 0 0 1-1.08.091l.002-.001zm-.231-5.199c-.401 0-.722.127-.964.381s-.386.625-.432 1.112h2.696c-.007-.491-.125-.862-.354-1.115-.229-.252-.544-.379-.945-.379l-.001.001zm7.692 5.092l-.252-.827h-.043c-.286.362-.575.608-.865.739-.29.131-.662.196-1.117.196-.584 0-1.039-.158-1.367-.473-.328-.315-.491-.761-.491-1.337 0-.612.227-1.074.682-1.386.455-.312 1.148-.482 2.079-.51l1.026-.032v-.317c0-.38-.089-.663-.266-.851-.177-.188-.452-.282-.824-.282-.304 0-.596.045-.876.134a6.68 6.68 0 0 0-.806.317l-.408-.902a4.414 4.414 0 0 1 1.058-.384 4.856 4.856 0 0 1 1.085-.132c.756 0 1.326.165 1.711.494.385.329.577.847.577 1.552v4.002h-.902l-.001-.001zm-1.88-.859c.458 0 .826-.128 1.104-.384.278-.256.416-.615.416-1.077v-.516l-.763.032c-.594.021-1.027.121-1.297.298s-.406.448-.406.814c0 .265.079.47.236.615.158.145.394.218.709.218h.001zm7.557-5.189c.254 0 .464.018.628.054l-.124 1.176a2.383 2.383 0 0 0-.559-.064c-.505 0-.914.165-1.227.494-.313.329-.47.757-.47 1.284v3.105h-1.262V7.218h.988l.167 1.047h.064c.197-.354.454-.636.771-.843a1.83 1.83 0 0 1 1.023-.312h.001zm4.125 6.155c-.899 0-1.582-.262-2.049-.787-.467-.525-.701-1.277-.701-2.259 0-.999.244-1.767.733-2.304.489-.537 1.195-.806 2.119-.806.627 0 1.191.116 1.692.349l-.381 1.015c-.534-.208-.974-.312-1.321-.312-1.028 0-1.542.682-1.542 2.046 0 .666.128 1.166.384 1.501.256.335.631.502 1.125.502a3.23 3.23 0 0 0 1.595-.419v1.101a2.53 2.53 0 0 1-.722.285 4.356 4.356 0 0 1-.932.086v.002zm8.277-.107h-1.268V9.506c0-.458-.092-.8-.277-1.026-.184-.226-.477-.338-.878-.338-.53 0-.919.158-1.168.475-.249.317-.373.848-.373 1.593v2.949h-1.262V4.801h1.262v2.122c0 .34-.021.704-.064 1.09h.081a1.76 1.76 0 0 1 .717-.666c.306-.158.663-.236 1.072-.236 1.439 0 2.159.725 2.159 2.175v3.873l-.001-.001zm7.649-6.048c.741 0 1.319.269 1.732.806.414.537.62 1.291.62 2.261 0 .974-.209 1.732-.628 2.275-.419.542-1.001.814-1.746.814-.752 0-1.336-.27-1.751-.811h-.086l-.231.704h-.945V4.801h1.262v1.987l-.021.655-.032.553h.054c.401-.591.992-.886 1.772-.886zm-.328 1.031c-.508 0-.875.149-1.098.448-.224.299-.339.799-.346 1.501v.086c0 .723.115 1.247.344 1.571.229.324.603.486 1.123.486.448 0 .787-.177 1.018-.532.231-.354.346-.867.346-1.536 0-1.35-.462-2.025-1.386-2.025l-.001.001zm3.244-.924h1.375l1.209 3.368c.183.48.304.931.365 1.354h.043c.032-.197.091-.436.177-.717.086-.281.541-1.616 1.364-4.004h1.364l-2.541 6.73c-.462 1.235-1.232 1.853-2.31 1.853-.279 0-.551-.03-.816-.091v-.999c.19.043.406.064.65.064.609 0 1.037-.353 1.284-1.058l.22-.559-2.385-5.941h.001z","fill":"#1D3657"}})])])])])},staticRenderFns: [],
+  mixins: [algoliaComponent],
+  props: {
+    searchStore: {
+      type: Object,
+      default: function default$1$$1() {
+        return this._searchStore;
+      },
+    },
+  },
+  data: function data() {
+    return {
+      blockClassName: 'ais-powered-by',
+    };
+  },
+  computed: {
+    algoliaUrl: function algoliaUrl() {
+      return (
+        'https://www.algolia.com/?' +
+        'utm_source=vue-instantsearch&' +
+        'utm_medium=website&' +
+        "utm_content=" + (location ? location.hostname : '') + "&" +
+        'utm_campaign=poweredby'
+      );
+    },
+  },
+};
+
+var InstantSearch = {
+  Index: Index,
+  Highlight: Highlight,
+  Snippet: Snippet,
+  Input: AisInput,
+  Results: Results,
+  Stats: Stats,
+  Pagination: Pagination,
+  ResultsPerPageSelector: ResultsPerPageSelector,
+  TreeMenu: TreeMenu,
+  Menu: Menu,
+  SortBySelector: SortBySelector,
+  SearchBox: SearchBox,
+  Clear: AisClear,
+  Rating: Rating,
+  RangeInput: RangeInput,
+  NoResults: NoResults,
+  RefinementList: RefinementList,
+  PriceRange: PriceRange,
+  PoweredBy: PoweredBy,
+
+  install: function install(Vue) {
+    Vue.component('ais-index', Index);
+    Vue.component('ais-highlight', Highlight);
+    Vue.component('ais-snippet', Snippet);
+    Vue.component('ais-input', AisInput);
+    Vue.component('ais-results', Results);
+    Vue.component('ais-stats', Stats);
+    Vue.component('ais-pagination', Pagination);
+    Vue.component('ais-results-per-page-selector', ResultsPerPageSelector);
+    Vue.component('ais-tree-menu', TreeMenu);
+    Vue.component('ais-menu', Menu);
+    Vue.component('ais-sort-by-selector', SortBySelector);
+    Vue.component('ais-search-box', SearchBox);
+    Vue.component('ais-clear', AisClear);
+    Vue.component('ais-rating', Rating);
+    Vue.component('ais-range-input', RangeInput);
+    Vue.component('ais-no-results', NoResults);
+    Vue.component('ais-refinement-list', RefinementList);
+    Vue.component('ais-price-range', PriceRange);
+    Vue.component('ais-powered-by', PoweredBy);
+  },
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (InstantSearch);
+
 
 /***/ }),
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
 /* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -91567,1188 +83869,4526 @@ module.exports = mapValues;
 
 
 /***/ }),
-/* 596 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */
+/***/ (function(module, exports) {
 
 
+var hasOwn = Object.prototype.hasOwnProperty;
+var toString = Object.prototype.toString;
 
-
-var RoutingManager =
-/*#__PURE__*/
-function () {
-  function RoutingManager(_ref) {
-    var router = _ref.router,
-        stateMapping = _ref.stateMapping,
-        instantSearchInstance = _ref.instantSearchInstance;
-
-    _classCallCheck(this, RoutingManager);
-
-    _defineProperty(this, "instantSearchInstance", void 0);
-
-    _defineProperty(this, "router", void 0);
-
-    _defineProperty(this, "stateMapping", void 0);
-
-    _defineProperty(this, "isFirstRender", true);
-
-    _defineProperty(this, "currentUiState", void 0);
-
-    _defineProperty(this, "initState", void 0);
-
-    _defineProperty(this, "renderURLFromState", void 0);
-
-    this.router = router;
-    this.stateMapping = stateMapping;
-    this.instantSearchInstance = instantSearchInstance;
-    this.currentUiState = this.stateMapping.routeToState(this.router.read());
-  }
-
-  _createClass(RoutingManager, [{
-    key: "getAllSearchParameters",
-    value: function getAllSearchParameters(_ref2) {
-      var currentSearchParameters = _ref2.currentSearchParameters,
-          uiState = _ref2.uiState;
-      var widgets = this.instantSearchInstance.widgets;
-      return widgets.reduce(function (parameters, widget) {
-        if (!widget.getWidgetSearchParameters) {
-          return parameters;
+module.exports = function forEach (obj, fn, ctx) {
+    if (toString.call(fn) !== '[object Function]') {
+        throw new TypeError('iterator must be a function');
+    }
+    var l = obj.length;
+    if (l === +l) {
+        for (var i = 0; i < l; i++) {
+            fn.call(ctx, obj[i], i, obj);
         }
-
-        return widget.getWidgetSearchParameters(parameters, {
-          uiState: uiState
-        });
-      }, currentSearchParameters);
-    }
-  }, {
-    key: "getAllUiStates",
-    value: function getAllUiStates(_ref3) {
-      var searchParameters = _ref3.searchParameters;
-      var widgets = this.instantSearchInstance.widgets;
-      var helper = this.instantSearchInstance.helper;
-      return widgets.reduce(function (state, widget) {
-        if (!widget.getWidgetState) {
-          return state;
+    } else {
+        for (var k in obj) {
+            if (hasOwn.call(obj, k)) {
+                fn.call(ctx, obj[k], k, obj);
+            }
         }
-
-        return widget.getWidgetState(state, {
-          helper: helper,
-          searchParameters: searchParameters
-        });
-      }, {});
     }
-  }, {
-    key: "setupRouting",
-    value: function setupRouting(state) {
-      var _this = this;
-
-      var helper = this.instantSearchInstance.helper;
-      this.router.onUpdate(function (route) {
-        var nextUiState = _this.stateMapping.routeToState(route);
-
-        var widgetsUiState = _this.getAllUiStates({
-          searchParameters: helper.state
-        });
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_1__utils__["n" /* isEqual */])(nextUiState, widgetsUiState)) {
-          return;
-        }
-
-        _this.currentUiState = nextUiState;
-
-        var searchParameters = _this.getAllSearchParameters({
-          currentSearchParameters: state,
-          uiState: _this.currentUiState
-        });
-
-        helper.overrideStateWithoutTriggeringChangeEvent(searchParameters).search();
-      });
-
-      this.renderURLFromState = function (searchParameters) {
-        _this.currentUiState = _this.getAllUiStates({
-          searchParameters: searchParameters
-        });
-
-        var route = _this.stateMapping.stateToRoute(_this.currentUiState);
-
-        _this.router.write(route);
-      };
-
-      helper.on('change', this.renderURLFromState); // Compare initial state and first render state to see if the query has been
-      // changed by the `searchFunction`. It's required because the helper of the
-      // `searchFunction` does not trigger change event (not the same instance).
-
-      var firstRenderState = this.getAllUiStates({
-        searchParameters: state
-      });
-
-      if (!Object(__WEBPACK_IMPORTED_MODULE_1__utils__["n" /* isEqual */])(this.initState, firstRenderState)) {
-        // Force update the URL, if the state has changed since the initial read.
-        // We do this in order to make the URL update when there is `searchFunction`
-        // that prevents the search of the initial rendering.
-        // See: https://github.com/algolia/instantsearch.js/issues/2523#issuecomment-339356157
-        this.currentUiState = firstRenderState;
-        var route = this.stateMapping.stateToRoute(this.currentUiState);
-        this.router.write(route);
-      }
-    }
-  }, {
-    key: "getConfiguration",
-    value: function getConfiguration(currentConfiguration) {
-      // We have to create a `SearchParameters` because `getAllSearchParameters`
-      // expects an instance of `SearchParameters` and not a plain object.
-      var currentSearchParameters = __WEBPACK_IMPORTED_MODULE_0_algoliasearch_helper___default.a.SearchParameters.make(currentConfiguration);
-      return _objectSpread({}, this.getAllSearchParameters({
-        uiState: this.currentUiState,
-        currentSearchParameters: currentSearchParameters
-      }));
-    }
-  }, {
-    key: "init",
-    value: function init(_ref4) {
-      var state = _ref4.state;
-      // Store the initial state from the storage to compare it with the state on next renders
-      // in case the `searchFunction` has modified it.
-      this.initState = this.getAllUiStates({
-        searchParameters: state
-      });
-    }
-  }, {
-    key: "render",
-    value: function render(_ref5) {
-      var state = _ref5.state;
-
-      if (this.isFirstRender) {
-        this.isFirstRender = false;
-        this.setupRouting(state);
-      }
-    }
-  }, {
-    key: "dispose",
-    value: function dispose(_ref6) {
-      var helper = _ref6.helper,
-          state = _ref6.state;
-
-      if (this.renderURLFromState) {
-        this.instantSearchInstance.helper.removeListener('change', this.renderURLFromState);
-      }
-
-      if (this.router.dispose) {
-        this.router.dispose({
-          helper: helper,
-          state: state
-        });
-      }
-    }
-  }, {
-    key: "createURL",
-    value: function createURL(state) {
-      var uiState = this.getAllUiStates({
-        searchParameters: state
-      });
-      var route = this.stateMapping.stateToRoute(uiState);
-      return this.router.createURL(route);
-    }
-  }, {
-    key: "onHistoryChange",
-    value: function onHistoryChange(callback) {
-      var _this2 = this;
-
-      var helper = this.instantSearchInstance.helper;
-      this.router.onUpdate(function (route) {
-        var nextUiState = _this2.stateMapping.routeToState(route);
-
-        var widgetsUiState = _this2.getAllUiStates({
-          searchParameters: helper.state
-        });
-
-        if (Object(__WEBPACK_IMPORTED_MODULE_1__utils__["n" /* isEqual */])(nextUiState, widgetsUiState)) {
-          return;
-        }
-
-        _this2.currentUiState = nextUiState;
-
-        var searchParameters = _this2.getAllSearchParameters({
-          currentSearchParameters: helper.state,
-          uiState: _this2.currentUiState
-        });
-
-        callback(_objectSpread({}, searchParameters));
-      });
-    }
-  }]);
-
-  return RoutingManager;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (RoutingManager);
-
-/***/ }),
-/* 597 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var SimpleUIStateMapping =
-/*#__PURE__*/
-function () {
-  function SimpleUIStateMapping() {
-    _classCallCheck(this, SimpleUIStateMapping);
-  }
-
-  _createClass(SimpleUIStateMapping, [{
-    key: "stateToRoute",
-    value: function stateToRoute(uiState) {
-      return uiState;
-    }
-  }, {
-    key: "routeToState",
-    value: function routeToState(routeState) {
-      return routeState;
-    }
-  }]);
-
-  return SimpleUIStateMapping;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (function () {
-  return new SimpleUIStateMapping();
-});
-
-/***/ }),
-/* 598 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_qs__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_qs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_qs__);
-function isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _construct(Parent, args, Class) { if (isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var defaultCreateURL = function defaultCreateURL(_ref) {
-  var qsModule = _ref.qsModule,
-      routeState = _ref.routeState,
-      location = _ref.location;
-  var protocol = location.protocol,
-      hostname = location.hostname,
-      _location$port = location.port,
-      port = _location$port === void 0 ? '' : _location$port,
-      pathname = location.pathname,
-      hash = location.hash;
-  var queryString = qsModule.stringify(routeState);
-  var portWithPrefix = port === '' ? '' : ":".concat(port); // IE <= 11 has no proper `location.origin` so we cannot rely on it.
-
-  if (!routeState || Object.keys(routeState).length === 0) {
-    return "".concat(protocol, "//").concat(hostname).concat(portWithPrefix).concat(pathname).concat(hash);
-  }
-
-  return "".concat(protocol, "//").concat(hostname).concat(portWithPrefix).concat(pathname, "?").concat(queryString).concat(hash);
 };
 
-var defaultParseURL = function defaultParseURL(_ref2) {
-  var qsModule = _ref2.qsModule,
-      location = _ref2.location;
-  // `qs` by default converts arrays with more than 20 items to an object.
-  // We want to avoid this because the data structure manipulated can therefore vary.
-  // Setting the limit to `100` seems a good number because the engine's default is 100
-  // (it can go up to 1000 but it is very unlikely to select more than 100 items in the UI).
-  //
-  // Using an `arrayLimit` of `n` allows `n + 1` items.
-  //
-  // See:
-  //   - https://github.com/ljharb/qs#parsing-arrays
-  //   - https://www.algolia.com/doc/api-reference/api-parameters/maxValuesPerFacet/
-  return qsModule.parse(location.search.slice(1), {
-    arrayLimit: 99
-  });
-};
 
-var setWindowTitle = function setWindowTitle(title) {
-  if (title) {
-    window.document.title = title;
-  }
-};
-
-var BrowserHistory =
-/*#__PURE__*/
-function () {
-  /**
-   * Initializes a new storage provider that syncs the search state to the URL
-   * using web APIs (`window.location.pushState` and `onpopstate` event).
-   */
-  function BrowserHistory() {
-    var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-        windowTitle = _ref3.windowTitle,
-        _ref3$writeDelay = _ref3.writeDelay,
-        writeDelay = _ref3$writeDelay === void 0 ? 400 : _ref3$writeDelay,
-        _ref3$createURL = _ref3.createURL,
-        createURL = _ref3$createURL === void 0 ? defaultCreateURL : _ref3$createURL,
-        _ref3$parseURL = _ref3.parseURL,
-        parseURL = _ref3$parseURL === void 0 ? defaultParseURL : _ref3$parseURL;
-
-    _classCallCheck(this, BrowserHistory);
-
-    _defineProperty(this, "windowTitle", void 0);
-
-    _defineProperty(this, "writeDelay", void 0);
-
-    _defineProperty(this, "_createURL", void 0);
-
-    _defineProperty(this, "parseURL", void 0);
-
-    _defineProperty(this, "writeTimer", void 0);
-
-    this.windowTitle = windowTitle;
-    this.writeTimer = undefined;
-    this.writeDelay = writeDelay;
-    this._createURL = createURL;
-    this.parseURL = parseURL;
-    var title = this.windowTitle && this.windowTitle(this.read());
-    setWindowTitle(title);
-  }
-  /**
-   * Reads the URL and returns a syncable UI search state.
-   */
-
-
-  _createClass(BrowserHistory, [{
-    key: "read",
-    value: function read() {
-      return this.parseURL({
-        qsModule: __WEBPACK_IMPORTED_MODULE_0_qs___default.a,
-        location: window.location
-      });
-    }
-    /**
-     * Pushes a search state into the URL.
-     */
-
-  }, {
-    key: "write",
-    value: function write(routeState) {
-      var _this = this;
-
-      var url = this.createURL(routeState);
-      var title = this.windowTitle && this.windowTitle(routeState);
-
-      if (this.writeTimer) {
-        window.clearTimeout(this.writeTimer);
-      }
-
-      this.writeTimer = window.setTimeout(function () {
-        setWindowTitle(title);
-        window.history.pushState(routeState, title || '', url);
-        _this.writeTimer = undefined;
-      }, this.writeDelay);
-    }
-    /**
-     * Sets a callback on the `onpopstate` event of the history API of the current page.
-     * It enables the URL sync to keep track of the changes.
-     */
-
-  }, {
-    key: "onUpdate",
-    value: function onUpdate(callback) {
-      var _this2 = this;
-
-      this._onPopState = function (event) {
-        if (_this2.writeTimer) {
-          window.clearTimeout(_this2.writeTimer);
-          _this2.writeTimer = undefined;
-        }
-
-        var routeState = event.state; // At initial load, the state is read from the URL without update.
-        // Therefore the state object is not available.
-        // In this case, we fallback and read the URL.
-
-        if (!routeState) {
-          callback(_this2.read());
-        } else {
-          callback(routeState);
-        }
-      };
-
-      window.addEventListener('popstate', this._onPopState);
-    }
-    /**
-     * Creates a complete URL from a given syncable UI state.
-     *
-     * It always generates the full URL, not a relative one.
-     * This allows to handle cases like using a <base href>.
-     * See: https://github.com/algolia/instantsearch.js/issues/790
-     */
-
-  }, {
-    key: "createURL",
-    value: function createURL(routeState) {
-      return this._createURL({
-        qsModule: __WEBPACK_IMPORTED_MODULE_0_qs___default.a,
-        routeState: routeState,
-        location: window.location
-      });
-    }
-    /**
-     * Removes the event listener and cleans up the URL.
-     */
-
-  }, {
-    key: "dispose",
-    value: function dispose() {
-      if (this._onPopState) {
-        window.removeEventListener('popstate', this._onPopState);
-      }
-
-      if (this.writeTimer) {
-        window.clearTimeout(this.writeTimer);
-      }
-
-      this.write({});
-    }
-  }]);
-
-  return BrowserHistory;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (function () {
-  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-    args[_key] = arguments[_key];
-  }
-
-  return _construct(BrowserHistory, args);
-});
 
 /***/ }),
-/* 599 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 606 */
+/***/ (function(module, exports) {
+
+module.exports = function clone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+};
+
+
+/***/ }),
+/* 607 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = hoganHelpers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__helpers__ = __webpack_require__(384);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-function hoganHelpers(_ref) {
-  var numberLocale = _ref.numberLocale;
-  return {
-    formatNumber: function formatNumber(value, render) {
-      return Number(render(value)).toLocaleString(numberLocale);
-    },
-    highlight: function highlight(options, render) {
-      try {
-        var highlightOptions = JSON.parse(options);
-        return render(Object(__WEBPACK_IMPORTED_MODULE_0__helpers__["a" /* highlight */])(_objectSpread({}, highlightOptions, {
-          hit: this
-        })));
-      } catch (error) {
-        throw new Error("\nThe highlight helper expects a JSON object of the format:\n{ \"attribute\": \"name\", \"highlightedTagName\": \"mark\" }");
-      }
-    },
-    snippet: function snippet(options, render) {
-      try {
-        var snippetOptions = JSON.parse(options);
-        return render(Object(__WEBPACK_IMPORTED_MODULE_0__helpers__["b" /* snippet */])(_objectSpread({}, snippetOptions, {
-          hit: this
-        })));
-      } catch (error) {
-        throw new Error("\nThe snippet helper expects a JSON object of the format:\n{ \"attribute\": \"name\", \"highlightedTagName\": \"mark\" }");
-      }
-    }
-  };
+// This file hosts our error definitions
+// We use custom error "types" so that we can act on them when we need it
+// e.g.: if error instanceof errors.UnparsableJSON then..
+
+var inherits = __webpack_require__(611);
+
+function AlgoliaSearchError(message, extraProperties) {
+  var forEach = __webpack_require__(605);
+
+  var error = this;
+
+  // try to get a stacktrace
+  if (typeof Error.captureStackTrace === 'function') {
+    Error.captureStackTrace(this, this.constructor);
+  } else {
+    error.stack = (new Error()).stack || 'Cannot get a stacktrace, browser is too old';
+  }
+
+  this.name = 'AlgoliaSearchError';
+  this.message = message || 'Unknown error';
+
+  if (extraProperties) {
+    forEach(extraProperties, function addToErrorObject(value, key) {
+      error[key] = value;
+    });
+  }
 }
 
+inherits(AlgoliaSearchError, Error);
+
+function createCustomError(name, message) {
+  function AlgoliaSearchCustomError() {
+    var args = Array.prototype.slice.call(arguments, 0);
+
+    // custom message not set, use default
+    if (typeof args[0] !== 'string') {
+      args.unshift(message);
+    }
+
+    AlgoliaSearchError.apply(this, args);
+    this.name = 'AlgoliaSearch' + name + 'Error';
+  }
+
+  inherits(AlgoliaSearchCustomError, AlgoliaSearchError);
+
+  return AlgoliaSearchCustomError;
+}
+
+// late exports to let various fn defs and inherits take place
+module.exports = {
+  AlgoliaSearchError: AlgoliaSearchError,
+  UnparsableJSON: createCustomError(
+    'UnparsableJSON',
+    'Could not parse the incoming response as JSON, see err.more for details'
+  ),
+  RequestTimeout: createCustomError(
+    'RequestTimeout',
+    'Request timed out before getting a response'
+  ),
+  Network: createCustomError(
+    'Network',
+    'Network issue, see err.more for details'
+  ),
+  JSONPScriptFail: createCustomError(
+    'JSONPScriptFail',
+    '<script> was loaded but did not call our provided callback'
+  ),
+  JSONPScriptError: createCustomError(
+    'JSONPScriptError',
+    '<script> unable to load due to an `error` event on it'
+  ),
+  Unknown: createCustomError(
+    'Unknown',
+    'Unknown error occured'
+  )
+};
+
+
 /***/ }),
-/* 600 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 608 */
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectAutocomplete;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_utils__ = __webpack_require__(223);
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
 
 
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'autocomplete',
-  connector: true
-});
-/**
- * @typedef {Object} Index
- * @property {string} index Name of the index.
- * @property {string} label Label of the index (for display purpose).
- * @property {Object[]} hits The hits resolved from the index matching the query.
- * @property {Object} results The full results object from Algolia API.
- */
+/***/ }),
+/* 609 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/**
- * @typedef {Object} AutocompleteRenderingOptions
- * @property {Index[]} indices The indices you provided with their hits and results and the main index as first position.
- * @property {function(string)} refine Search into the indices with the query provided.
- * @property {string} currentRefinement The actual value of the query.
- * @property {Object} widgetParams All original widget options forwarded to the `renderFn`.
- */
+var foreach = __webpack_require__(605);
 
-/**
- * @typedef {Object} CustomAutocompleteWidgetOptions
- * @property {{value: string, label: string}[]} [indices = []] Name of the others indices to search into.
- * @property {boolean} [escapeHTML = true] If true, escape HTML tags from `hits[i]._highlightResult`.
- */
+module.exports = function map(arr, fn) {
+  var newArr = [];
+  foreach(arr, function(item, itemIndex) {
+    newArr.push(fn(item, itemIndex, arr));
+  });
+  return newArr;
+};
 
-/**
- * **Autocomplete** connector provides the logic to build a widget that will give the user the ability to search into multiple indices.
+
+/***/ }),
+/* 610 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * This is the web browser implementation of `debug()`.
  *
- * This connector provides a `refine()` function to search for a query and a `currentRefinement` as the current query used to search.
- * @type {Connector}
- * @param {function(AutocompleteRenderingOptions, boolean)} renderFn Rendering function for the custom **Autocomplete** widget.
- * @param {function} unmountFn Unmount function called when the widget is disposed.
- * @return {function(CustomAutocompleteWidgetOptions)} Re-usable widget factory for a custom **Autocomplete** widget.
+ * Expose `debug()` as the module.
  */
 
-function connectAutocomplete(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_1__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function () {
-    var widgetParams = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var _widgetParams$escapeH = widgetParams.escapeHTML,
-        escapeHTML = _widgetParams$escapeH === void 0 ? true : _widgetParams$escapeH,
-        _widgetParams$indices = widgetParams.indices,
-        indices = _widgetParams$indices === void 0 ? [] : _widgetParams$indices; // user passed a wrong `indices` option type
+exports = module.exports = __webpack_require__(626);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
 
-    if (!Array.isArray(indices)) {
-      throw new Error(withUsage('The `indices` option expects an array of objects.'));
-    }
+/**
+ * Colors.
+ */
 
-    return {
-      getConfiguration: function getConfiguration() {
-        return escapeHTML ? __WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["a" /* TAG_PLACEHOLDER */] : undefined;
-      },
-      init: function init(_ref) {
-        var _this = this;
+exports.colors = [
+  'lightseagreen',
+  'forestgreen',
+  'goldenrod',
+  'dodgerblue',
+  'darkorchid',
+  'crimson'
+];
 
-        var instantSearchInstance = _ref.instantSearchInstance,
-            helper = _ref.helper;
-        this._refine = this.refine(helper);
-        this.indices = [{
-          helper: helper,
-          label: 'primary',
-          index: helper.getIndex(),
-          results: undefined,
-          hits: []
-        }]; // add additionnal indices into `this.indices`
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
 
-        indices.forEach(function (_ref2) {
-          var label = _ref2.label,
-              value = _ref2.value;
-          var derivedHelper = helper.derive(function (searchParameters) {
-            return searchParameters.setIndex(value);
-          });
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
 
-          _this.indices.push({
-            label: label,
-            index: value,
-            helper: derivedHelper,
-            results: undefined,
-            hits: []
-          }); // update results then trigger render after a search from any helper
-
-
-          derivedHelper.on('result', function (results) {
-            return _this.saveResults({
-              results: results,
-              label: label
-            });
-          });
-        });
-        this.instantSearchInstance = instantSearchInstance;
-        this.renderWithAllIndices({
-          isFirstRendering: true
-        });
-      },
-      saveResults: function saveResults(_ref3) {
-        var results = _ref3.results,
-            label = _ref3.label;
-        var derivedIndex = Object(__WEBPACK_IMPORTED_MODULE_1__lib_utils__["i" /* find */])(this.indices, function (i) {
-          return i.label === label;
-        });
-
-        if (escapeHTML && results && results.hits && results.hits.length > 0) {
-          results.hits = Object(__WEBPACK_IMPORTED_MODULE_0__lib_escape_highlight__["c" /* default */])(results.hits);
-        }
-
-        derivedIndex.results = results;
-        derivedIndex.hits = results && results.hits && Array.isArray(results.hits) ? results.hits : [];
-        this.renderWithAllIndices();
-      },
-      refine: function refine(helper) {
-        return function (query) {
-          return helper.setQuery(query).search();
-        };
-      },
-      render: function render(_ref4) {
-        var results = _ref4.results;
-        this.saveResults({
-          results: results,
-          label: this.indices[0].label
-        });
-      },
-      renderWithAllIndices: function renderWithAllIndices() {
-        var _ref5 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-            _ref5$isFirstRenderin = _ref5.isFirstRendering,
-            isFirstRendering = _ref5$isFirstRenderin === void 0 ? false : _ref5$isFirstRenderin;
-
-        var currentRefinement = this.indices[0].helper.state.query;
-        renderFn({
-          widgetParams: widgetParams,
-          currentRefinement: currentRefinement,
-          // we do not want to provide the `helper` to the end-user
-          indices: this.indices.map(function (_ref6) {
-            var index = _ref6.index,
-                label = _ref6.label,
-                hits = _ref6.hits,
-                results = _ref6.results;
-            return {
-              index: index,
-              label: label,
-              hits: hits,
-              results: results
-            };
-          }),
-          instantSearchInstance: this.instantSearchInstance,
-          refine: this._refine
-        }, isFirstRendering);
-      },
-      dispose: function dispose() {
-        // detach every derived indices from the main helper instance
-        this.indices.slice(1).forEach(function (_ref7) {
-          var helper = _ref7.helper;
-          return helper.detach();
-        });
-        unmountFn();
-      }
-    };
-  };
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
 }
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = Object({"NODE_ENV":"development"}).DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 601 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 611 */
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'query-rules',
-  connector: true
-});
-
-function hasStateRefinements(state) {
-  return [state.disjunctiveFacetsRefinements, state.facetsRefinements, state.hierarchicalFacetsRefinements, state.numericRefinements].some(function (refinement) {
-    return Boolean(refinement && Object.keys(refinement).length > 0);
-  });
-} // A context rule must consist only of alphanumeric characters, hyphens, and underscores.
-// See https://www.algolia.com/doc/guides/managing-results/refine-results/merchandising-and-promoting/in-depth/implementing-query-rules/#context
-
-
-function escapeRuleContext(ruleName) {
-  return ruleName.replace(/[^a-z0-9-_]+/gi, '_');
-}
-
-function getRuleContextsFromTrackedFilters(_ref) {
-  var helper = _ref.helper,
-      sharedHelperState = _ref.sharedHelperState,
-      trackedFilters = _ref.trackedFilters;
-  var ruleContexts = Object.keys(trackedFilters).reduce(function (facets, facetName) {
-    var facetRefinements = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["l" /* getRefinements */])(helper.lastResults || {}, sharedHelperState).filter(function (refinement) {
-      return refinement.attributeName === facetName;
-    }).map(function (refinement) {
-      return refinement.numericValue || refinement.name;
-    });
-    var getTrackedFacetValues = trackedFilters[facetName];
-    var trackedFacetValues = getTrackedFacetValues(facetRefinements);
-    return [].concat(_toConsumableArray(facets), _toConsumableArray(facetRefinements.filter(function (facetRefinement) {
-      return trackedFacetValues.includes(facetRefinement);
-    }).map(function (facetValue) {
-      return escapeRuleContext("ais-".concat(facetName, "-").concat(facetValue));
-    })));
-  }, []);
-  return ruleContexts;
-}
-
-function applyRuleContexts(sharedHelperState) {
-  var helper = this.helper,
-      initialRuleContexts = this.initialRuleContexts,
-      trackedFilters = this.trackedFilters,
-      transformRuleContexts = this.transformRuleContexts;
-  var previousRuleContexts = sharedHelperState.ruleContexts || [];
-  var newRuleContexts = getRuleContextsFromTrackedFilters({
-    helper: helper,
-    sharedHelperState: sharedHelperState,
-    trackedFilters: trackedFilters
-  });
-  var nextRuleContexts = [].concat(_toConsumableArray(initialRuleContexts), _toConsumableArray(newRuleContexts));
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["v" /* warning */])(nextRuleContexts.length <= 10, "\nThe maximum number of `ruleContexts` is 10. They have been sliced to that limit.\nConsider using `transformRuleContexts` to minimize the number of rules sent to Algolia.\n");
-  var ruleContexts = transformRuleContexts(nextRuleContexts).slice(0, 10);
-
-  if (!Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["n" /* isEqual */])(previousRuleContexts, ruleContexts)) {
-    helper.overrideStateWithoutTriggeringChangeEvent(_objectSpread({}, sharedHelperState, {
-      ruleContexts: ruleContexts
-    }));
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    if (superCtor) {
+      ctor.super_ = superCtor
+      ctor.prototype = Object.create(superCtor.prototype, {
+        constructor: {
+          value: ctor,
+          enumerable: false,
+          writable: true,
+          configurable: true
+        }
+      })
+    }
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    if (superCtor) {
+      ctor.super_ = superCtor
+      var TempCtor = function () {}
+      TempCtor.prototype = superCtor.prototype
+      ctor.prototype = new TempCtor()
+      ctor.prototype.constructor = ctor
+    }
   }
 }
 
-var connectQueryRules = function connectQueryRules(render) {
-  var unmount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(render, withUsage());
-  return function (widgetParams) {
-    var _ref2 = widgetParams || {},
-        _ref2$trackedFilters = _ref2.trackedFilters,
-        trackedFilters = _ref2$trackedFilters === void 0 ? {} : _ref2$trackedFilters,
-        _ref2$transformRuleCo = _ref2.transformRuleContexts,
-        transformRuleContexts = _ref2$transformRuleCo === void 0 ? function (rules) {
-      return rules;
-    } : _ref2$transformRuleCo,
-        _ref2$transformItems = _ref2.transformItems,
-        transformItems = _ref2$transformItems === void 0 ? function (items) {
-      return items;
-    } : _ref2$transformItems;
 
-    Object.keys(trackedFilters).forEach(function (facetName) {
-      if (typeof trackedFilters[facetName] !== 'function') {
-        throw new Error(withUsage("'The \"".concat(facetName, "\" filter value in the `trackedFilters` option expects a function.")));
+/***/ }),
+/* 612 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = buildSearchMethod;
+
+var errors = __webpack_require__(607);
+
+/**
+ * Creates a search method to be used in clients
+ * @param {string} queryParam the name of the attribute used for the query
+ * @param {string} url the url
+ * @return {function} the search method
+ */
+function buildSearchMethod(queryParam, url) {
+  /**
+   * The search method. Prepares the data and send the query to Algolia.
+   * @param {string} query the string used for query search
+   * @param {object} args additional parameters to send with the search
+   * @param {function} [callback] the callback to be called with the client gets the answer
+   * @return {undefined|Promise} If the callback is not provided then this methods returns a Promise
+   */
+  return function search(query, args, callback) {
+    // warn V2 users on how to search
+    if (typeof query === 'function' && typeof args === 'object' ||
+      typeof callback === 'object') {
+      // .search(query, params, cb)
+      // .search(cb, params)
+      throw new errors.AlgoliaSearchError('index.search usage is index.search(query, params, cb)');
+    }
+
+    // Normalizing the function signature
+    if (arguments.length === 0 || typeof query === 'function') {
+      // Usage : .search(), .search(cb)
+      callback = query;
+      query = '';
+    } else if (arguments.length === 1 || typeof args === 'function') {
+      // Usage : .search(query/args), .search(query, cb)
+      callback = args;
+      args = undefined;
+    }
+    // At this point we have 3 arguments with values
+
+    // Usage : .search(args) // careful: typeof null === 'object'
+    if (typeof query === 'object' && query !== null) {
+      args = query;
+      query = undefined;
+    } else if (query === undefined || query === null) { // .search(undefined/null)
+      query = '';
+    }
+
+    var params = '';
+
+    if (query !== undefined) {
+      params += queryParam + '=' + encodeURIComponent(query);
+    }
+
+    var additionalUA;
+    if (args !== undefined) {
+      if (args.additionalUA) {
+        additionalUA = args.additionalUA;
+        delete args.additionalUA;
       }
+      // `_getSearchParams` will augment params, do not be fooled by the = versus += from previous if
+      params = this.as._getSearchParams(args, params);
+    }
+
+
+    return this._search(params, url, callback, additionalUA);
+  };
+}
+
+
+/***/ }),
+/* 613 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function omit(obj, test) {
+  var keys = __webpack_require__(623);
+  var foreach = __webpack_require__(605);
+
+  var filtered = {};
+
+  foreach(keys(obj), function doFilter(keyName) {
+    if (test(keyName) !== true) {
+      filtered[keyName] = obj[keyName];
+    }
+  });
+
+  return filtered;
+};
+
+
+/***/ }),
+/* 614 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var toStr = Object.prototype.toString;
+
+module.exports = function isArguments(value) {
+	var str = toStr.call(value);
+	var isArgs = str === '[object Arguments]';
+	if (!isArgs) {
+		isArgs = str !== '[object Array]' &&
+			value !== null &&
+			typeof value === 'object' &&
+			typeof value.length === 'number' &&
+			value.length >= 0 &&
+			toStr.call(value.callee) === '[object Function]';
+	}
+	return isArgs;
+};
+
+
+/***/ }),
+/* 615 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+var stringifyPrimitive = function(v) {
+  switch (typeof v) {
+    case 'string':
+      return v;
+
+    case 'boolean':
+      return v ? 'true' : 'false';
+
+    case 'number':
+      return isFinite(v) ? v : '';
+
+    default:
+      return '';
+  }
+};
+
+module.exports = function(obj, sep, eq, name) {
+  sep = sep || '&';
+  eq = eq || '=';
+  if (obj === null) {
+    obj = undefined;
+  }
+
+  if (typeof obj === 'object') {
+    return map(objectKeys(obj), function(k) {
+      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
+      if (isArray(obj[k])) {
+        return map(obj[k], function(v) {
+          return ks + encodeURIComponent(stringifyPrimitive(v));
+        }).join(sep);
+      } else {
+        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
+      }
+    }).join(sep);
+
+  }
+
+  if (!name) return '';
+  return encodeURIComponent(stringifyPrimitive(name)) + eq +
+         encodeURIComponent(stringifyPrimitive(obj));
+};
+
+var isArray = Array.isArray || function (xs) {
+  return Object.prototype.toString.call(xs) === '[object Array]';
+};
+
+function map (xs, f) {
+  if (xs.map) return xs.map(f);
+  var res = [];
+  for (var i = 0; i < xs.length; i++) {
+    res.push(f(xs[i], i));
+  }
+  return res;
+}
+
+var objectKeys = Object.keys || function (obj) {
+  var res = [];
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) res.push(key);
+  }
+  return res;
+};
+
+
+/***/ }),
+/* 616 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var AlgoliaSearchCore = __webpack_require__(617);
+var createAlgoliasearch = __webpack_require__(628);
+
+module.exports = createAlgoliasearch(AlgoliaSearchCore, 'Browser (lite)');
+
+
+/***/ }),
+/* 617 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = AlgoliaSearchCore;
+
+var errors = __webpack_require__(607);
+var exitPromise = __webpack_require__(618);
+var IndexCore = __webpack_require__(619);
+var store = __webpack_require__(625);
+
+// We will always put the API KEY in the JSON body in case of too long API KEY,
+// to avoid query string being too long and failing in various conditions (our server limit, browser limit,
+// proxies limit)
+var MAX_API_KEY_LENGTH = 500;
+var RESET_APP_DATA_TIMER =
+  Object({"NODE_ENV":"development"}).RESET_APP_DATA_TIMER && parseInt(Object({"NODE_ENV":"development"}).RESET_APP_DATA_TIMER, 10) ||
+  60 * 2 * 1000; // after 2 minutes reset to first host
+
+/*
+ * Algolia Search library initialization
+ * https://www.algolia.com/
+ *
+ * @param {string} applicationID - Your applicationID, found in your dashboard
+ * @param {string} apiKey - Your API key, found in your dashboard
+ * @param {Object} [opts]
+ * @param {number} [opts.timeout=2000] - The request timeout set in milliseconds,
+ * another request will be issued after this timeout
+ * @param {string} [opts.protocol='https:'] - The protocol used to query Algolia Search API.
+ *                                        Set to 'http:' to force using http.
+ * @param {Object|Array} [opts.hosts={
+ *           read: [this.applicationID + '-dsn.algolia.net'].concat([
+ *             this.applicationID + '-1.algolianet.com',
+ *             this.applicationID + '-2.algolianet.com',
+ *             this.applicationID + '-3.algolianet.com']
+ *           ]),
+ *           write: [this.applicationID + '.algolia.net'].concat([
+ *             this.applicationID + '-1.algolianet.com',
+ *             this.applicationID + '-2.algolianet.com',
+ *             this.applicationID + '-3.algolianet.com']
+ *           ]) - The hosts to use for Algolia Search API.
+ *           If you provide them, you will less benefit from our HA implementation
+ */
+function AlgoliaSearchCore(applicationID, apiKey, opts) {
+  var debug = __webpack_require__(610)('algoliasearch');
+
+  var clone = __webpack_require__(606);
+  var isArray = __webpack_require__(608);
+  var map = __webpack_require__(609);
+
+  var usage = 'Usage: algoliasearch(applicationID, apiKey, opts)';
+
+  if (opts._allowEmptyCredentials !== true && !applicationID) {
+    throw new errors.AlgoliaSearchError('Please provide an application ID. ' + usage);
+  }
+
+  if (opts._allowEmptyCredentials !== true && !apiKey) {
+    throw new errors.AlgoliaSearchError('Please provide an API key. ' + usage);
+  }
+
+  this.applicationID = applicationID;
+  this.apiKey = apiKey;
+
+  this.hosts = {
+    read: [],
+    write: []
+  };
+
+  opts = opts || {};
+
+  this._timeouts = opts.timeouts || {
+    connect: 1 * 1000, // 500ms connect is GPRS latency
+    read: 2 * 1000,
+    write: 30 * 1000
+  };
+
+  // backward compat, if opts.timeout is passed, we use it to configure all timeouts like before
+  if (opts.timeout) {
+    this._timeouts.connect = this._timeouts.read = this._timeouts.write = opts.timeout;
+  }
+
+  var protocol = opts.protocol || 'https:';
+  // while we advocate for colon-at-the-end values: 'http:' for `opts.protocol`
+  // we also accept `http` and `https`. It's a common error.
+  if (!/:$/.test(protocol)) {
+    protocol = protocol + ':';
+  }
+
+  if (protocol !== 'http:' && protocol !== 'https:') {
+    throw new errors.AlgoliaSearchError('protocol must be `http:` or `https:` (was `' + opts.protocol + '`)');
+  }
+
+  this._checkAppIdData();
+
+  if (!opts.hosts) {
+    var defaultHosts = map(this._shuffleResult, function(hostNumber) {
+      return applicationID + '-' + hostNumber + '.algolianet.com';
     });
-    var hasTrackedFilters = Object.keys(trackedFilters).length > 0; // We store the initial rule contexts applied before creating the widget
-    // so that we do not override them with the rules created from `trackedFilters`.
 
-    var initialRuleContexts = [];
-    var onHelperChange;
-    return {
-      init: function init(_ref3) {
-        var helper = _ref3.helper,
-            state = _ref3.state,
-            instantSearchInstance = _ref3.instantSearchInstance;
-        initialRuleContexts = state.ruleContexts || [];
-        onHelperChange = applyRuleContexts.bind({
-          helper: helper,
-          initialRuleContexts: initialRuleContexts,
-          trackedFilters: trackedFilters,
-          transformRuleContexts: transformRuleContexts
-        });
+    // no hosts given, compute defaults
+    var mainSuffix = (opts.dsn === false ? '' : '-dsn') + '.algolia.net';
+    this.hosts.read = [this.applicationID + mainSuffix].concat(defaultHosts);
+    this.hosts.write = [this.applicationID + '.algolia.net'].concat(defaultHosts);
+  } else if (isArray(opts.hosts)) {
+    // when passing custom hosts, we need to have a different host index if the number
+    // of write/read hosts are different.
+    this.hosts.read = clone(opts.hosts);
+    this.hosts.write = clone(opts.hosts);
+  } else {
+    this.hosts.read = clone(opts.hosts.read);
+    this.hosts.write = clone(opts.hosts.write);
+  }
 
-        if (hasTrackedFilters) {
-          // We need to apply the `ruleContexts` based on the `trackedFilters`
-          // before the helper changes state in some cases:
-          //   - Some filters are applied on the first load (e.g. using `configure`)
-          //   - The `transformRuleContexts` option sets initial `ruleContexts`.
-          if (hasStateRefinements(state) || Boolean(widgetParams.transformRuleContexts)) {
-            onHelperChange(state);
-          } // We track every change in the helper to override its state and add
-          // any `ruleContexts` needed based on the `trackedFilters`.
+  // add protocol and lowercase hosts
+  this.hosts.read = map(this.hosts.read, prepareHost(protocol));
+  this.hosts.write = map(this.hosts.write, prepareHost(protocol));
+
+  this.extraHeaders = {};
+
+  // In some situations you might want to warm the cache
+  this.cache = opts._cache || {};
+
+  this._ua = opts._ua;
+  this._useCache = opts._useCache === undefined || opts._cache ? true : opts._useCache;
+  this._useRequestCache = this._useCache && opts._useRequestCache;
+  this._useFallback = opts.useFallback === undefined ? true : opts.useFallback;
+
+  this._setTimeout = opts._setTimeout;
+
+  debug('init done, %j', this);
+}
+
+/*
+ * Get the index object initialized
+ *
+ * @param indexName the name of index
+ * @param callback the result callback with one argument (the Index instance)
+ */
+AlgoliaSearchCore.prototype.initIndex = function(indexName) {
+  return new IndexCore(this, indexName);
+};
+
+/**
+* Add an extra field to the HTTP request
+*
+* @param name the header field name
+* @param value the header field value
+*/
+AlgoliaSearchCore.prototype.setExtraHeader = function(name, value) {
+  this.extraHeaders[name.toLowerCase()] = value;
+};
+
+/**
+* Get the value of an extra HTTP header
+*
+* @param name the header field name
+*/
+AlgoliaSearchCore.prototype.getExtraHeader = function(name) {
+  return this.extraHeaders[name.toLowerCase()];
+};
+
+/**
+* Remove an extra field from the HTTP request
+*
+* @param name the header field name
+*/
+AlgoliaSearchCore.prototype.unsetExtraHeader = function(name) {
+  delete this.extraHeaders[name.toLowerCase()];
+};
+
+/**
+* Augment sent x-algolia-agent with more data, each agent part
+* is automatically separated from the others by a semicolon;
+*
+* @param algoliaAgent the agent to add
+*/
+AlgoliaSearchCore.prototype.addAlgoliaAgent = function(algoliaAgent) {
+  var algoliaAgentWithDelimiter = '; ' + algoliaAgent;
+
+  if (this._ua.indexOf(algoliaAgentWithDelimiter) === -1) {
+    this._ua += algoliaAgentWithDelimiter;
+  }
+};
+
+/*
+ * Wrapper that try all hosts to maximize the quality of service
+ */
+AlgoliaSearchCore.prototype._jsonRequest = function(initialOpts) {
+  this._checkAppIdData();
+
+  var requestDebug = __webpack_require__(610)('algoliasearch:' + initialOpts.url);
 
 
-          helper.on('change', onHelperChange);
-        }
+  var body;
+  var cacheID;
+  var additionalUA = initialOpts.additionalUA || '';
+  var cache = initialOpts.cache;
+  var client = this;
+  var tries = 0;
+  var usingFallback = false;
+  var hasFallback = client._useFallback && client._request.fallback && initialOpts.fallback;
+  var headers;
 
-        render({
-          items: [],
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, true);
-      },
-      render: function (_render) {
-        function render(_x) {
-          return _render.apply(this, arguments);
-        }
+  if (
+    this.apiKey.length > MAX_API_KEY_LENGTH &&
+    initialOpts.body !== undefined &&
+    (initialOpts.body.params !== undefined || // index.search()
+    initialOpts.body.requests !== undefined) // client.search()
+  ) {
+    initialOpts.body.apiKey = this.apiKey;
+    headers = this._computeRequestHeaders({
+      additionalUA: additionalUA,
+      withApiKey: false,
+      headers: initialOpts.headers
+    });
+  } else {
+    headers = this._computeRequestHeaders({
+      additionalUA: additionalUA,
+      headers: initialOpts.headers
+    });
+  }
 
-        render.toString = function () {
-          return _render.toString();
-        };
+  if (initialOpts.body !== undefined) {
+    body = safeJSONStringify(initialOpts.body);
+  }
 
-        return render;
-      }(function (_ref4) {
-        var results = _ref4.results,
-            instantSearchInstance = _ref4.instantSearchInstance;
-        var _results$userData = results.userData,
-            userData = _results$userData === void 0 ? [] : _results$userData;
-        var items = transformItems(userData);
-        render({
-          items: items,
-          instantSearchInstance: instantSearchInstance,
-          widgetParams: widgetParams
-        }, false);
-      }),
-      dispose: function dispose(_ref5) {
-        var helper = _ref5.helper,
-            state = _ref5.state;
-        unmount();
+  requestDebug('request start');
+  var debugData = [];
 
-        if (hasTrackedFilters) {
-          helper.removeListener('change', onHelperChange);
-          return state.setQueryParameter('ruleContexts', initialRuleContexts);
-        }
 
-        return state;
+  function doRequest(requester, reqOpts) {
+    client._checkAppIdData();
+
+    var startTime = new Date();
+
+    if (client._useCache && !client._useRequestCache) {
+      cacheID = initialOpts.url;
+    }
+
+    // as we sometime use POST requests to pass parameters (like query='aa'),
+    // the cacheID must also include the body to be different between calls
+    if (client._useCache && !client._useRequestCache && body) {
+      cacheID += '_body_' + reqOpts.body;
+    }
+
+    // handle cache existence
+    if (isCacheValidWithCurrentID(!client._useRequestCache, cache, cacheID)) {
+      requestDebug('serving response from cache');
+
+      var responseText = cache[cacheID];
+
+      // Cache response must match the type of the original one
+      return client._promise.resolve({
+        body: JSON.parse(responseText),
+        responseText: responseText
+      });
+    }
+
+    // if we reached max tries
+    if (tries >= client.hosts[initialOpts.hostType].length) {
+      if (!hasFallback || usingFallback) {
+        requestDebug('could not get any response');
+        // then stop
+        return client._promise.reject(new errors.AlgoliaSearchError(
+          'Cannot connect to the AlgoliaSearch API.' +
+          ' Send an email to support@algolia.com to report and resolve the issue.' +
+          ' Application id was: ' + client.applicationID, {debugData: debugData}
+        ));
       }
+
+      requestDebug('switching to fallback');
+
+      // let's try the fallback starting from here
+      tries = 0;
+
+      // method, url and body are fallback dependent
+      reqOpts.method = initialOpts.fallback.method;
+      reqOpts.url = initialOpts.fallback.url;
+      reqOpts.jsonBody = initialOpts.fallback.body;
+      if (reqOpts.jsonBody) {
+        reqOpts.body = safeJSONStringify(reqOpts.jsonBody);
+      }
+      // re-compute headers, they could be omitting the API KEY
+      headers = client._computeRequestHeaders({
+        additionalUA: additionalUA,
+        headers: initialOpts.headers
+      });
+
+      reqOpts.timeouts = client._getTimeoutsForRequest(initialOpts.hostType);
+      client._setHostIndexByType(0, initialOpts.hostType);
+      usingFallback = true; // the current request is now using fallback
+      return doRequest(client._request.fallback, reqOpts);
+    }
+
+    var currentHost = client._getHostByType(initialOpts.hostType);
+
+    var url = currentHost + reqOpts.url;
+    var options = {
+      body: reqOpts.body,
+      jsonBody: reqOpts.jsonBody,
+      method: reqOpts.method,
+      headers: headers,
+      timeouts: reqOpts.timeouts,
+      debug: requestDebug,
+      forceAuthHeaders: reqOpts.forceAuthHeaders
     };
+
+    requestDebug('method: %s, url: %s, headers: %j, timeouts: %d',
+      options.method, url, options.headers, options.timeouts);
+
+    if (requester === client._request.fallback) {
+      requestDebug('using fallback');
+    }
+
+    // `requester` is any of this._request or this._request.fallback
+    // thus it needs to be called using the client as context
+    return requester.call(client, url, options).then(success, tryFallback);
+
+    function success(httpResponse) {
+      // compute the status of the response,
+      //
+      // When in browser mode, using XDR or JSONP, we have no statusCode available
+      // So we rely on our API response `status` property.
+      // But `waitTask` can set a `status` property which is not the statusCode (it's the task status)
+      // So we check if there's a `message` along `status` and it means it's an error
+      //
+      // That's the only case where we have a response.status that's not the http statusCode
+      var status = httpResponse && httpResponse.body && httpResponse.body.message && httpResponse.body.status ||
+
+        // this is important to check the request statusCode AFTER the body eventual
+        // statusCode because some implementations (jQuery XDomainRequest transport) may
+        // send statusCode 200 while we had an error
+        httpResponse.statusCode ||
+
+        // When in browser mode, using XDR or JSONP
+        // we default to success when no error (no response.status && response.message)
+        // If there was a JSON.parse() error then body is null and it fails
+        httpResponse && httpResponse.body && 200;
+
+      requestDebug('received response: statusCode: %s, computed statusCode: %d, headers: %j',
+        httpResponse.statusCode, status, httpResponse.headers);
+
+      var httpResponseOk = Math.floor(status / 100) === 2;
+
+      var endTime = new Date();
+      debugData.push({
+        currentHost: currentHost,
+        headers: removeCredentials(headers),
+        content: body || null,
+        contentLength: body !== undefined ? body.length : null,
+        method: reqOpts.method,
+        timeouts: reqOpts.timeouts,
+        url: reqOpts.url,
+        startTime: startTime,
+        endTime: endTime,
+        duration: endTime - startTime,
+        statusCode: status
+      });
+
+      if (httpResponseOk) {
+        if (client._useCache && !client._useRequestCache && cache) {
+          cache[cacheID] = httpResponse.responseText;
+        }
+
+        return {
+          responseText: httpResponse.responseText,
+          body: httpResponse.body
+        };
+      }
+
+      var shouldRetry = Math.floor(status / 100) !== 4;
+
+      if (shouldRetry) {
+        tries += 1;
+        return retryRequest();
+      }
+
+      requestDebug('unrecoverable error');
+
+      // no success and no retry => fail
+      var unrecoverableError = new errors.AlgoliaSearchError(
+        httpResponse.body && httpResponse.body.message, {debugData: debugData, statusCode: status}
+      );
+
+      return client._promise.reject(unrecoverableError);
+    }
+
+    function tryFallback(err) {
+      // error cases:
+      //  While not in fallback mode:
+      //    - CORS not supported
+      //    - network error
+      //  While in fallback mode:
+      //    - timeout
+      //    - network error
+      //    - badly formatted JSONP (script loaded, did not call our callback)
+      //  In both cases:
+      //    - uncaught exception occurs (TypeError)
+      requestDebug('error: %s, stack: %s', err.message, err.stack);
+
+      var endTime = new Date();
+      debugData.push({
+        currentHost: currentHost,
+        headers: removeCredentials(headers),
+        content: body || null,
+        contentLength: body !== undefined ? body.length : null,
+        method: reqOpts.method,
+        timeouts: reqOpts.timeouts,
+        url: reqOpts.url,
+        startTime: startTime,
+        endTime: endTime,
+        duration: endTime - startTime
+      });
+
+      if (!(err instanceof errors.AlgoliaSearchError)) {
+        err = new errors.Unknown(err && err.message, err);
+      }
+
+      tries += 1;
+
+      // stop the request implementation when:
+      if (
+        // we did not generate this error,
+        // it comes from a throw in some other piece of code
+        err instanceof errors.Unknown ||
+
+        // server sent unparsable JSON
+        err instanceof errors.UnparsableJSON ||
+
+        // max tries and already using fallback or no fallback
+        tries >= client.hosts[initialOpts.hostType].length &&
+        (usingFallback || !hasFallback)) {
+        // stop request implementation for this command
+        err.debugData = debugData;
+        return client._promise.reject(err);
+      }
+
+      // When a timeout occurred, retry by raising timeout
+      if (err instanceof errors.RequestTimeout) {
+        return retryRequestWithHigherTimeout();
+      }
+
+      return retryRequest();
+    }
+
+    function retryRequest() {
+      requestDebug('retrying request');
+      client._incrementHostIndex(initialOpts.hostType);
+      return doRequest(requester, reqOpts);
+    }
+
+    function retryRequestWithHigherTimeout() {
+      requestDebug('retrying request with higher timeout');
+      client._incrementHostIndex(initialOpts.hostType);
+      client._incrementTimeoutMultipler();
+      reqOpts.timeouts = client._getTimeoutsForRequest(initialOpts.hostType);
+      return doRequest(requester, reqOpts);
+    }
+  }
+
+  function isCacheValidWithCurrentID(
+    useRequestCache,
+    currentCache,
+    currentCacheID
+  ) {
+    return (
+      client._useCache &&
+      useRequestCache &&
+      currentCache &&
+      currentCache[currentCacheID] !== undefined
+    );
+  }
+
+
+  function interopCallbackReturn(request, callback) {
+    if (isCacheValidWithCurrentID(client._useRequestCache, cache, cacheID)) {
+      request.catch(function() {
+        // Release the cache on error
+        delete cache[cacheID];
+      });
+    }
+
+    if (typeof initialOpts.callback === 'function') {
+      // either we have a callback
+      request.then(function okCb(content) {
+        exitPromise(function() {
+          initialOpts.callback(null, callback(content));
+        }, client._setTimeout || setTimeout);
+      }, function nookCb(err) {
+        exitPromise(function() {
+          initialOpts.callback(err);
+        }, client._setTimeout || setTimeout);
+      });
+    } else {
+      // either we are using promises
+      return request.then(callback);
+    }
+  }
+
+  if (client._useCache && client._useRequestCache) {
+    cacheID = initialOpts.url;
+  }
+
+  // as we sometime use POST requests to pass parameters (like query='aa'),
+  // the cacheID must also include the body to be different between calls
+  if (client._useCache && client._useRequestCache && body) {
+    cacheID += '_body_' + body;
+  }
+
+  if (isCacheValidWithCurrentID(client._useRequestCache, cache, cacheID)) {
+    requestDebug('serving request from cache');
+
+    var maybePromiseForCache = cache[cacheID];
+
+    // In case the cache is warmup with value that is not a promise
+    var promiseForCache = typeof maybePromiseForCache.then !== 'function'
+      ? client._promise.resolve({responseText: maybePromiseForCache})
+      : maybePromiseForCache;
+
+    return interopCallbackReturn(promiseForCache, function(content) {
+      // In case of the cache request, return the original value
+      return JSON.parse(content.responseText);
+    });
+  }
+
+  var request = doRequest(
+    client._request, {
+      url: initialOpts.url,
+      method: initialOpts.method,
+      body: body,
+      jsonBody: initialOpts.body,
+      timeouts: client._getTimeoutsForRequest(initialOpts.hostType),
+      forceAuthHeaders: initialOpts.forceAuthHeaders
+    }
+  );
+
+  if (client._useCache && client._useRequestCache && cache) {
+    cache[cacheID] = request;
+  }
+
+  return interopCallbackReturn(request, function(content) {
+    // In case of the first request, return the JSON value
+    return content.body;
+  });
+};
+
+/*
+* Transform search param object in query string
+* @param {object} args arguments to add to the current query string
+* @param {string} params current query string
+* @return {string} the final query string
+*/
+AlgoliaSearchCore.prototype._getSearchParams = function(args, params) {
+  if (args === undefined || args === null) {
+    return params;
+  }
+  for (var key in args) {
+    if (key !== null && args[key] !== undefined && args.hasOwnProperty(key)) {
+      params += params === '' ? '' : '&';
+      params += key + '=' + encodeURIComponent(Object.prototype.toString.call(args[key]) === '[object Array]' ? safeJSONStringify(args[key]) : args[key]);
+    }
+  }
+  return params;
+};
+
+/**
+ * Compute the headers for a request
+ *
+ * @param [string] options.additionalUA semi-colon separated string with other user agents to add
+ * @param [boolean=true] options.withApiKey Send the api key as a header
+ * @param [Object] options.headers Extra headers to send
+ */
+AlgoliaSearchCore.prototype._computeRequestHeaders = function(options) {
+  var forEach = __webpack_require__(605);
+
+  var ua = options.additionalUA ?
+    this._ua + '; ' + options.additionalUA :
+    this._ua;
+
+  var requestHeaders = {
+    'x-algolia-agent': ua,
+    'x-algolia-application-id': this.applicationID
+  };
+
+  // browser will inline headers in the url, node.js will use http headers
+  // but in some situations, the API KEY will be too long (big secured API keys)
+  // so if the request is a POST and the KEY is very long, we will be asked to not put
+  // it into headers but in the JSON body
+  if (options.withApiKey !== false) {
+    requestHeaders['x-algolia-api-key'] = this.apiKey;
+  }
+
+  if (this.userToken) {
+    requestHeaders['x-algolia-usertoken'] = this.userToken;
+  }
+
+  if (this.securityTags) {
+    requestHeaders['x-algolia-tagfilters'] = this.securityTags;
+  }
+
+  forEach(this.extraHeaders, function addToRequestHeaders(value, key) {
+    requestHeaders[key] = value;
+  });
+
+  if (options.headers) {
+    forEach(options.headers, function addToRequestHeaders(value, key) {
+      requestHeaders[key] = value;
+    });
+  }
+
+  return requestHeaders;
+};
+
+/**
+ * Search through multiple indices at the same time
+ * @param  {Object[]}   queries  An array of queries you want to run.
+ * @param {string} queries[].indexName The index name you want to target
+ * @param {string} [queries[].query] The query to issue on this index. Can also be passed into `params`
+ * @param {Object} queries[].params Any search param like hitsPerPage, ..
+ * @param  {Function} callback Callback to be called
+ * @return {Promise|undefined} Returns a promise if no callback given
+ */
+AlgoliaSearchCore.prototype.search = function(queries, opts, callback) {
+  var isArray = __webpack_require__(608);
+  var map = __webpack_require__(609);
+
+  var usage = 'Usage: client.search(arrayOfQueries[, callback])';
+
+  if (!isArray(queries)) {
+    throw new Error(usage);
+  }
+
+  if (typeof opts === 'function') {
+    callback = opts;
+    opts = {};
+  } else if (opts === undefined) {
+    opts = {};
+  }
+
+  var client = this;
+
+  var postObj = {
+    requests: map(queries, function prepareRequest(query) {
+      var params = '';
+
+      // allow query.query
+      // so we are mimicing the index.search(query, params) method
+      // {indexName:, query:, params:}
+      if (query.query !== undefined) {
+        params += 'query=' + encodeURIComponent(query.query);
+      }
+
+      return {
+        indexName: query.indexName,
+        params: client._getSearchParams(query.params, params)
+      };
+    })
+  };
+
+  var JSONPParams = map(postObj.requests, function prepareJSONPParams(request, requestId) {
+    return requestId + '=' +
+      encodeURIComponent(
+        '/1/indexes/' + encodeURIComponent(request.indexName) + '?' +
+        request.params
+      );
+  }).join('&');
+
+  var url = '/1/indexes/*/queries';
+
+  if (opts.strategy !== undefined) {
+    postObj.strategy = opts.strategy;
+  }
+
+  return this._jsonRequest({
+    cache: this.cache,
+    method: 'POST',
+    url: url,
+    body: postObj,
+    hostType: 'read',
+    fallback: {
+      method: 'GET',
+      url: '/1/indexes/*',
+      body: {
+        params: JSONPParams
+      }
+    },
+    callback: callback
+  });
+};
+
+/**
+* Search for facet values
+* https://www.algolia.com/doc/rest-api/search#search-for-facet-values
+* This is the top-level API for SFFV.
+*
+* @param {object[]} queries An array of queries to run.
+* @param {string} queries[].indexName Index name, name of the index to search.
+* @param {object} queries[].params Query parameters.
+* @param {string} queries[].params.facetName Facet name, name of the attribute to search for values in.
+* Must be declared as a facet
+* @param {string} queries[].params.facetQuery Query for the facet search
+* @param {string} [queries[].params.*] Any search parameter of Algolia,
+* see https://www.algolia.com/doc/api-client/javascript/search#search-parameters
+* Pagination is not supported. The page and hitsPerPage parameters will be ignored.
+*/
+AlgoliaSearchCore.prototype.searchForFacetValues = function(queries) {
+  var isArray = __webpack_require__(608);
+  var map = __webpack_require__(609);
+
+  var usage = 'Usage: client.searchForFacetValues([{indexName, params: {facetName, facetQuery, ...params}}, ...queries])'; // eslint-disable-line max-len
+
+  if (!isArray(queries)) {
+    throw new Error(usage);
+  }
+
+  var client = this;
+
+  return client._promise.all(map(queries, function performQuery(query) {
+    if (
+      !query ||
+      query.indexName === undefined ||
+      query.params.facetName === undefined ||
+      query.params.facetQuery === undefined
+    ) {
+      throw new Error(usage);
+    }
+
+    var clone = __webpack_require__(606);
+    var omit = __webpack_require__(613);
+
+    var indexName = query.indexName;
+    var params = query.params;
+
+    var facetName = params.facetName;
+    var filteredParams = omit(clone(params), function(keyName) {
+      return keyName === 'facetName';
+    });
+    var searchParameters = client._getSearchParams(filteredParams, '');
+
+    return client._jsonRequest({
+      cache: client.cache,
+      method: 'POST',
+      url:
+        '/1/indexes/' +
+        encodeURIComponent(indexName) +
+        '/facets/' +
+        encodeURIComponent(facetName) +
+        '/query',
+      hostType: 'read',
+      body: {params: searchParameters}
+    });
+  }));
+};
+
+/**
+ * Set the extra security tagFilters header
+ * @param {string|array} tags The list of tags defining the current security filters
+ */
+AlgoliaSearchCore.prototype.setSecurityTags = function(tags) {
+  if (Object.prototype.toString.call(tags) === '[object Array]') {
+    var strTags = [];
+    for (var i = 0; i < tags.length; ++i) {
+      if (Object.prototype.toString.call(tags[i]) === '[object Array]') {
+        var oredTags = [];
+        for (var j = 0; j < tags[i].length; ++j) {
+          oredTags.push(tags[i][j]);
+        }
+        strTags.push('(' + oredTags.join(',') + ')');
+      } else {
+        strTags.push(tags[i]);
+      }
+    }
+    tags = strTags.join(',');
+  }
+
+  this.securityTags = tags;
+};
+
+/**
+ * Set the extra user token header
+ * @param {string} userToken The token identifying a uniq user (used to apply rate limits)
+ */
+AlgoliaSearchCore.prototype.setUserToken = function(userToken) {
+  this.userToken = userToken;
+};
+
+/**
+ * Clear all queries in client's cache
+ * @return undefined
+ */
+AlgoliaSearchCore.prototype.clearCache = function() {
+  this.cache = {};
+};
+
+/**
+* Set the number of milliseconds a request can take before automatically being terminated.
+* @deprecated
+* @param {Number} milliseconds
+*/
+AlgoliaSearchCore.prototype.setRequestTimeout = function(milliseconds) {
+  if (milliseconds) {
+    this._timeouts.connect = this._timeouts.read = this._timeouts.write = milliseconds;
+  }
+};
+
+/**
+* Set the three different (connect, read, write) timeouts to be used when requesting
+* @param {Object} timeouts
+*/
+AlgoliaSearchCore.prototype.setTimeouts = function(timeouts) {
+  this._timeouts = timeouts;
+};
+
+/**
+* Get the three different (connect, read, write) timeouts to be used when requesting
+* @param {Object} timeouts
+*/
+AlgoliaSearchCore.prototype.getTimeouts = function() {
+  return this._timeouts;
+};
+
+AlgoliaSearchCore.prototype._getAppIdData = function() {
+  var data = store.get(this.applicationID);
+  if (data !== null) this._cacheAppIdData(data);
+  return data;
+};
+
+AlgoliaSearchCore.prototype._setAppIdData = function(data) {
+  data.lastChange = (new Date()).getTime();
+  this._cacheAppIdData(data);
+  return store.set(this.applicationID, data);
+};
+
+AlgoliaSearchCore.prototype._checkAppIdData = function() {
+  var data = this._getAppIdData();
+  var now = (new Date()).getTime();
+  if (data === null || now - data.lastChange > RESET_APP_DATA_TIMER) {
+    return this._resetInitialAppIdData(data);
+  }
+
+  return data;
+};
+
+AlgoliaSearchCore.prototype._resetInitialAppIdData = function(data) {
+  var newData = data || {};
+  newData.hostIndexes = {read: 0, write: 0};
+  newData.timeoutMultiplier = 1;
+  newData.shuffleResult = newData.shuffleResult || shuffle([1, 2, 3]);
+  return this._setAppIdData(newData);
+};
+
+AlgoliaSearchCore.prototype._cacheAppIdData = function(data) {
+  this._hostIndexes = data.hostIndexes;
+  this._timeoutMultiplier = data.timeoutMultiplier;
+  this._shuffleResult = data.shuffleResult;
+};
+
+AlgoliaSearchCore.prototype._partialAppIdDataUpdate = function(newData) {
+  var foreach = __webpack_require__(605);
+  var currentData = this._getAppIdData();
+  foreach(newData, function(value, key) {
+    currentData[key] = value;
+  });
+
+  return this._setAppIdData(currentData);
+};
+
+AlgoliaSearchCore.prototype._getHostByType = function(hostType) {
+  return this.hosts[hostType][this._getHostIndexByType(hostType)];
+};
+
+AlgoliaSearchCore.prototype._getTimeoutMultiplier = function() {
+  return this._timeoutMultiplier;
+};
+
+AlgoliaSearchCore.prototype._getHostIndexByType = function(hostType) {
+  return this._hostIndexes[hostType];
+};
+
+AlgoliaSearchCore.prototype._setHostIndexByType = function(hostIndex, hostType) {
+  var clone = __webpack_require__(606);
+  var newHostIndexes = clone(this._hostIndexes);
+  newHostIndexes[hostType] = hostIndex;
+  this._partialAppIdDataUpdate({hostIndexes: newHostIndexes});
+  return hostIndex;
+};
+
+AlgoliaSearchCore.prototype._incrementHostIndex = function(hostType) {
+  return this._setHostIndexByType(
+    (this._getHostIndexByType(hostType) + 1) % this.hosts[hostType].length, hostType
+  );
+};
+
+AlgoliaSearchCore.prototype._incrementTimeoutMultipler = function() {
+  var timeoutMultiplier = Math.max(this._timeoutMultiplier + 1, 4);
+  return this._partialAppIdDataUpdate({timeoutMultiplier: timeoutMultiplier});
+};
+
+AlgoliaSearchCore.prototype._getTimeoutsForRequest = function(hostType) {
+  return {
+    connect: this._timeouts.connect * this._timeoutMultiplier,
+    complete: this._timeouts[hostType] * this._timeoutMultiplier
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (connectQueryRules);
+function prepareHost(protocol) {
+  return function prepare(host) {
+    return protocol + '//' + host.toLowerCase();
+  };
+}
+
+// Prototype.js < 1.7, a widely used library, defines a weird
+// Array.prototype.toJSON function that will fail to stringify our content
+// appropriately
+// refs:
+//   - https://groups.google.com/forum/#!topic/prototype-core/E-SAVvV_V9Q
+//   - https://github.com/sstephenson/prototype/commit/038a2985a70593c1a86c230fadbdfe2e4898a48c
+//   - http://stackoverflow.com/a/3148441/147079
+function safeJSONStringify(obj) {
+  /* eslint no-extend-native:0 */
+
+  if (Array.prototype.toJSON === undefined) {
+    return JSON.stringify(obj);
+  }
+
+  var toJSON = Array.prototype.toJSON;
+  delete Array.prototype.toJSON;
+  var out = JSON.stringify(obj);
+  Array.prototype.toJSON = toJSON;
+
+  return out;
+}
+
+function shuffle(array) {
+  var currentIndex = array.length;
+  var temporaryValue;
+  var randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function removeCredentials(headers) {
+  var newHeaders = {};
+
+  for (var headerName in headers) {
+    if (Object.prototype.hasOwnProperty.call(headers, headerName)) {
+      var value;
+
+      if (headerName === 'x-algolia-api-key' || headerName === 'x-algolia-application-id') {
+        value = '**hidden for security purposes**';
+      } else {
+        value = headers[headerName];
+      }
+
+      newHeaders[headerName] = value;
+    }
+  }
+
+  return newHeaders;
+}
+
 
 /***/ }),
-/* 602 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 618 */
+/***/ (function(module, exports) {
+
+// Parse cloud does not supports setTimeout
+// We do not store a setTimeout reference in the client everytime
+// We only fallback to a fake setTimeout when not available
+// setTimeout cannot be override globally sadly
+module.exports = function exitPromise(fn, _setTimeout) {
+  _setTimeout(fn, 0);
+};
+
+
+/***/ }),
+/* 619 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var buildSearchMethod = __webpack_require__(612);
+var deprecate = __webpack_require__(620);
+var deprecatedMessage = __webpack_require__(621);
+
+module.exports = IndexCore;
+
+/*
+* Index class constructor.
+* You should not use this method directly but use initIndex() function
+*/
+function IndexCore(algoliasearch, indexName) {
+  this.indexName = indexName;
+  this.as = algoliasearch;
+  this.typeAheadArgs = null;
+  this.typeAheadValueOption = null;
+
+  // make sure every index instance has it's own cache
+  this.cache = {};
+}
+
+/*
+* Clear all queries in cache
+*/
+IndexCore.prototype.clearCache = function() {
+  this.cache = {};
+};
+
+/*
+* Search inside the index using XMLHttpRequest request (Using a POST query to
+* minimize number of OPTIONS queries: Cross-Origin Resource Sharing).
+*
+* @param {string} [query] the full text query
+* @param {object} [args] (optional) if set, contains an object with query parameters:
+* - page: (integer) Pagination parameter used to select the page to retrieve.
+*                   Page is zero-based and defaults to 0. Thus,
+*                   to retrieve the 10th page you need to set page=9
+* - hitsPerPage: (integer) Pagination parameter used to select the number of hits per page. Defaults to 20.
+* - attributesToRetrieve: a string that contains the list of object attributes
+* you want to retrieve (let you minimize the answer size).
+*   Attributes are separated with a comma (for example "name,address").
+*   You can also use an array (for example ["name","address"]).
+*   By default, all attributes are retrieved. You can also use '*' to retrieve all
+*   values when an attributesToRetrieve setting is specified for your index.
+* - attributesToHighlight: a string that contains the list of attributes you
+*   want to highlight according to the query.
+*   Attributes are separated by a comma. You can also use an array (for example ["name","address"]).
+*   If an attribute has no match for the query, the raw value is returned.
+*   By default all indexed text attributes are highlighted.
+*   You can use `*` if you want to highlight all textual attributes.
+*   Numerical attributes are not highlighted.
+*   A matchLevel is returned for each highlighted attribute and can contain:
+*      - full: if all the query terms were found in the attribute,
+*      - partial: if only some of the query terms were found,
+*      - none: if none of the query terms were found.
+* - attributesToSnippet: a string that contains the list of attributes to snippet alongside
+* the number of words to return (syntax is `attributeName:nbWords`).
+*    Attributes are separated by a comma (Example: attributesToSnippet=name:10,content:10).
+*    You can also use an array (Example: attributesToSnippet: ['name:10','content:10']).
+*    By default no snippet is computed.
+* - minWordSizefor1Typo: the minimum number of characters in a query word to accept one typo in this word.
+* Defaults to 3.
+* - minWordSizefor2Typos: the minimum number of characters in a query word
+* to accept two typos in this word. Defaults to 7.
+* - getRankingInfo: if set to 1, the result hits will contain ranking
+* information in _rankingInfo attribute.
+* - aroundLatLng: search for entries around a given
+* latitude/longitude (specified as two floats separated by a comma).
+*   For example aroundLatLng=47.316669,5.016670).
+*   You can specify the maximum distance in meters with the aroundRadius parameter (in meters)
+*   and the precision for ranking with aroundPrecision
+*   (for example if you set aroundPrecision=100, two objects that are distant of
+*   less than 100m will be considered as identical for "geo" ranking parameter).
+*   At indexing, you should specify geoloc of an object with the _geoloc attribute
+*   (in the form {"_geoloc":{"lat":48.853409, "lng":2.348800}})
+* - insideBoundingBox: search entries inside a given area defined by the two extreme points
+* of a rectangle (defined by 4 floats: p1Lat,p1Lng,p2Lat,p2Lng).
+*   For example insideBoundingBox=47.3165,4.9665,47.3424,5.0201).
+*   At indexing, you should specify geoloc of an object with the _geoloc attribute
+*   (in the form {"_geoloc":{"lat":48.853409, "lng":2.348800}})
+* - numericFilters: a string that contains the list of numeric filters you want to
+* apply separated by a comma.
+*   The syntax of one filter is `attributeName` followed by `operand` followed by `value`.
+*   Supported operands are `<`, `<=`, `=`, `>` and `>=`.
+*   You can have multiple conditions on one attribute like for example numericFilters=price>100,price<1000.
+*   You can also use an array (for example numericFilters: ["price>100","price<1000"]).
+* - tagFilters: filter the query by a set of tags. You can AND tags by separating them by commas.
+*   To OR tags, you must add parentheses. For example, tags=tag1,(tag2,tag3) means tag1 AND (tag2 OR tag3).
+*   You can also use an array, for example tagFilters: ["tag1",["tag2","tag3"]]
+*   means tag1 AND (tag2 OR tag3).
+*   At indexing, tags should be added in the _tags** attribute
+*   of objects (for example {"_tags":["tag1","tag2"]}).
+* - facetFilters: filter the query by a list of facets.
+*   Facets are separated by commas and each facet is encoded as `attributeName:value`.
+*   For example: `facetFilters=category:Book,author:John%20Doe`.
+*   You can also use an array (for example `["category:Book","author:John%20Doe"]`).
+* - facets: List of object attributes that you want to use for faceting.
+*   Comma separated list: `"category,author"` or array `['category','author']`
+*   Only attributes that have been added in **attributesForFaceting** index setting
+*   can be used in this parameter.
+*   You can also use `*` to perform faceting on all attributes specified in **attributesForFaceting**.
+* - queryType: select how the query words are interpreted, it can be one of the following value:
+*    - prefixAll: all query words are interpreted as prefixes,
+*    - prefixLast: only the last word is interpreted as a prefix (default behavior),
+*    - prefixNone: no query word is interpreted as a prefix. This option is not recommended.
+* - optionalWords: a string that contains the list of words that should
+* be considered as optional when found in the query.
+*   Comma separated and array are accepted.
+* - distinct: If set to 1, enable the distinct feature (disabled by default)
+* if the attributeForDistinct index setting is set.
+*   This feature is similar to the SQL "distinct" keyword: when enabled
+*   in a query with the distinct=1 parameter,
+*   all hits containing a duplicate value for the attributeForDistinct attribute are removed from results.
+*   For example, if the chosen attribute is show_name and several hits have
+*   the same value for show_name, then only the best
+*   one is kept and others are removed.
+* - restrictSearchableAttributes: List of attributes you want to use for
+* textual search (must be a subset of the attributesToIndex index setting)
+* either comma separated or as an array
+* @param {function} [callback] the result callback called with two arguments:
+*  error: null or Error('message'). If false, the content contains the error.
+*  content: the server answer that contains the list of results.
+*/
+IndexCore.prototype.search = buildSearchMethod('query');
+
+/*
+* -- BETA --
+* Search a record similar to the query inside the index using XMLHttpRequest request (Using a POST query to
+* minimize number of OPTIONS queries: Cross-Origin Resource Sharing).
+*
+* @param {string} [query] the similar query
+* @param {object} [args] (optional) if set, contains an object with query parameters.
+*   All search parameters are supported (see search function), restrictSearchableAttributes and facetFilters
+*   are the two most useful to restrict the similar results and get more relevant content
+*/
+IndexCore.prototype.similarSearch = deprecate(
+  buildSearchMethod('similarQuery'),
+  deprecatedMessage(
+    'index.similarSearch(query[, callback])',
+    'index.search({ similarQuery: query }[, callback])'
+  )
+);
+
+/*
+* Browse index content. The response content will have a `cursor` property that you can use
+* to browse subsequent pages for this query. Use `index.browseFrom(cursor)` when you want.
+*
+* @param {string} query - The full text query
+* @param {Object} [queryParameters] - Any search query parameter
+* @param {Function} [callback] - The result callback called with two arguments
+*   error: null or Error('message')
+*   content: the server answer with the browse result
+* @return {Promise|undefined} Returns a promise if no callback given
+* @example
+* index.browse('cool songs', {
+*   tagFilters: 'public,comments',
+*   hitsPerPage: 500
+* }, callback);
+* @see {@link https://www.algolia.com/doc/rest_api#Browse|Algolia REST API Documentation}
+*/
+IndexCore.prototype.browse = function(query, queryParameters, callback) {
+  var merge = __webpack_require__(622);
+
+  var indexObj = this;
+
+  var page;
+  var hitsPerPage;
+
+  // we check variadic calls that are not the one defined
+  // .browse()/.browse(fn)
+  // => page = 0
+  if (arguments.length === 0 || arguments.length === 1 && typeof arguments[0] === 'function') {
+    page = 0;
+    callback = arguments[0];
+    query = undefined;
+  } else if (typeof arguments[0] === 'number') {
+    // .browse(2)/.browse(2, 10)/.browse(2, fn)/.browse(2, 10, fn)
+    page = arguments[0];
+    if (typeof arguments[1] === 'number') {
+      hitsPerPage = arguments[1];
+    } else if (typeof arguments[1] === 'function') {
+      callback = arguments[1];
+      hitsPerPage = undefined;
+    }
+    query = undefined;
+    queryParameters = undefined;
+  } else if (typeof arguments[0] === 'object') {
+    // .browse(queryParameters)/.browse(queryParameters, cb)
+    if (typeof arguments[1] === 'function') {
+      callback = arguments[1];
+    }
+    queryParameters = arguments[0];
+    query = undefined;
+  } else if (typeof arguments[0] === 'string' && typeof arguments[1] === 'function') {
+    // .browse(query, cb)
+    callback = arguments[1];
+    queryParameters = undefined;
+  }
+
+  // otherwise it's a .browse(query)/.browse(query, queryParameters)/.browse(query, queryParameters, cb)
+
+  // get search query parameters combining various possible calls
+  // to .browse();
+  queryParameters = merge({}, queryParameters || {}, {
+    page: page,
+    hitsPerPage: hitsPerPage,
+    query: query
+  });
+
+  var params = this.as._getSearchParams(queryParameters, '');
+
+  return this.as._jsonRequest({
+    method: 'POST',
+    url: '/1/indexes/' + encodeURIComponent(indexObj.indexName) + '/browse',
+    body: {params: params},
+    hostType: 'read',
+    callback: callback
+  });
+};
+
+/*
+* Continue browsing from a previous position (cursor), obtained via a call to `.browse()`.
+*
+* @param {string} query - The full text query
+* @param {Object} [queryParameters] - Any search query parameter
+* @param {Function} [callback] - The result callback called with two arguments
+*   error: null or Error('message')
+*   content: the server answer with the browse result
+* @return {Promise|undefined} Returns a promise if no callback given
+* @example
+* index.browseFrom('14lkfsakl32', callback);
+* @see {@link https://www.algolia.com/doc/rest_api#Browse|Algolia REST API Documentation}
+*/
+IndexCore.prototype.browseFrom = function(cursor, callback) {
+  return this.as._jsonRequest({
+    method: 'POST',
+    url: '/1/indexes/' + encodeURIComponent(this.indexName) + '/browse',
+    body: {cursor: cursor},
+    hostType: 'read',
+    callback: callback
+  });
+};
+
+/*
+* Search for facet values
+* https://www.algolia.com/doc/rest-api/search#search-for-facet-values
+*
+* @param {string} params.facetName Facet name, name of the attribute to search for values in.
+* Must be declared as a facet
+* @param {string} params.facetQuery Query for the facet search
+* @param {string} [params.*] Any search parameter of Algolia,
+* see https://www.algolia.com/doc/api-client/javascript/search#search-parameters
+* Pagination is not supported. The page and hitsPerPage parameters will be ignored.
+* @param callback (optional)
+*/
+IndexCore.prototype.searchForFacetValues = function(params, callback) {
+  var clone = __webpack_require__(606);
+  var omit = __webpack_require__(613);
+  var usage = 'Usage: index.searchForFacetValues({facetName, facetQuery, ...params}[, callback])';
+
+  if (params.facetName === undefined || params.facetQuery === undefined) {
+    throw new Error(usage);
+  }
+
+  var facetName = params.facetName;
+  var filteredParams = omit(clone(params), function(keyName) {
+    return keyName === 'facetName';
+  });
+  var searchParameters = this.as._getSearchParams(filteredParams, '');
+
+  return this.as._jsonRequest({
+    method: 'POST',
+    url: '/1/indexes/' +
+      encodeURIComponent(this.indexName) + '/facets/' + encodeURIComponent(facetName) + '/query',
+    hostType: 'read',
+    body: {params: searchParameters},
+    callback: callback
+  });
+};
+
+IndexCore.prototype.searchFacet = deprecate(function(params, callback) {
+  return this.searchForFacetValues(params, callback);
+}, deprecatedMessage(
+  'index.searchFacet(params[, callback])',
+  'index.searchForFacetValues(params[, callback])'
+));
+
+IndexCore.prototype._search = function(params, url, callback, additionalUA) {
+  return this.as._jsonRequest({
+    cache: this.cache,
+    method: 'POST',
+    url: url || '/1/indexes/' + encodeURIComponent(this.indexName) + '/query',
+    body: {params: params},
+    hostType: 'read',
+    fallback: {
+      method: 'GET',
+      url: '/1/indexes/' + encodeURIComponent(this.indexName),
+      body: {params: params}
+    },
+    callback: callback,
+    additionalUA: additionalUA
+  });
+};
+
+/*
+* Get an object from this index
+*
+* @param objectID the unique identifier of the object to retrieve
+* @param attrs (optional) if set, contains the array of attribute names to retrieve
+* @param callback (optional) the result callback called with two arguments
+*  error: null or Error('message')
+*  content: the object to retrieve or the error message if a failure occurred
+*/
+IndexCore.prototype.getObject = function(objectID, attrs, callback) {
+  var indexObj = this;
+
+  if (arguments.length === 1 || typeof attrs === 'function') {
+    callback = attrs;
+    attrs = undefined;
+  }
+
+  var params = '';
+  if (attrs !== undefined) {
+    params = '?attributes=';
+    for (var i = 0; i < attrs.length; ++i) {
+      if (i !== 0) {
+        params += ',';
+      }
+      params += attrs[i];
+    }
+  }
+
+  return this.as._jsonRequest({
+    method: 'GET',
+    url: '/1/indexes/' + encodeURIComponent(indexObj.indexName) + '/' + encodeURIComponent(objectID) + params,
+    hostType: 'read',
+    callback: callback
+  });
+};
+
+/*
+* Get several objects from this index
+*
+* @param objectIDs the array of unique identifier of objects to retrieve
+*/
+IndexCore.prototype.getObjects = function(objectIDs, attributesToRetrieve, callback) {
+  var isArray = __webpack_require__(608);
+  var map = __webpack_require__(609);
+
+  var usage = 'Usage: index.getObjects(arrayOfObjectIDs[, callback])';
+
+  if (!isArray(objectIDs)) {
+    throw new Error(usage);
+  }
+
+  var indexObj = this;
+
+  if (arguments.length === 1 || typeof attributesToRetrieve === 'function') {
+    callback = attributesToRetrieve;
+    attributesToRetrieve = undefined;
+  }
+
+  var body = {
+    requests: map(objectIDs, function prepareRequest(objectID) {
+      var request = {
+        indexName: indexObj.indexName,
+        objectID: objectID
+      };
+
+      if (attributesToRetrieve) {
+        request.attributesToRetrieve = attributesToRetrieve.join(',');
+      }
+
+      return request;
+    })
+  };
+
+  return this.as._jsonRequest({
+    method: 'POST',
+    url: '/1/indexes/*/objects',
+    hostType: 'read',
+    body: body,
+    callback: callback
+  });
+};
+
+IndexCore.prototype.as = null;
+IndexCore.prototype.indexName = null;
+IndexCore.prototype.typeAheadArgs = null;
+IndexCore.prototype.typeAheadValueOption = null;
+
+
+/***/ }),
+/* 620 */
+/***/ (function(module, exports) {
+
+module.exports = function deprecate(fn, message) {
+  var warned = false;
+
+  function deprecated() {
+    if (!warned) {
+      /* eslint no-console:0 */
+      console.warn(message);
+      warned = true;
+    }
+
+    return fn.apply(this, arguments);
+  }
+
+  return deprecated;
+};
+
+
+/***/ }),
+/* 621 */
+/***/ (function(module, exports) {
+
+module.exports = function deprecatedMessage(previousUsage, newUsage) {
+  var githubAnchorLink = previousUsage.toLowerCase()
+    .replace(/[\.\(\)]/g, '');
+
+  return 'algoliasearch: `' + previousUsage + '` was replaced by `' + newUsage +
+    '`. Please see https://github.com/algolia/algoliasearch-client-javascript/wiki/Deprecated#' + githubAnchorLink;
+};
+
+
+/***/ }),
+/* 622 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var foreach = __webpack_require__(605);
+
+module.exports = function merge(destination/* , sources */) {
+  var sources = Array.prototype.slice.call(arguments);
+
+  foreach(sources, function(source) {
+    for (var keyName in source) {
+      if (source.hasOwnProperty(keyName)) {
+        if (typeof destination[keyName] === 'object' && typeof source[keyName] === 'object') {
+          destination[keyName] = merge({}, destination[keyName], source[keyName]);
+        } else if (source[keyName] !== undefined) {
+          destination[keyName] = source[keyName];
+        }
+      }
+    }
+  });
+
+  return destination;
+};
+
+
+/***/ }),
+/* 623 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_utils__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_voiceSearchHelper__ = __webpack_require__(603);
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
+var slice = Array.prototype.slice;
+var isArgs = __webpack_require__(614);
 
-var withUsage = Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["f" /* createDocumentationMessageGenerator */])({
-  name: 'voice-search',
-  connector: true
-});
+var origKeys = Object.keys;
+var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(624);
 
-var connectVoiceSearch = function connectVoiceSearch(renderFn) {
-  var unmountFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : __WEBPACK_IMPORTED_MODULE_0__lib_utils__["r" /* noop */];
-  Object(__WEBPACK_IMPORTED_MODULE_0__lib_utils__["d" /* checkRendering */])(renderFn, withUsage());
-  return function (widgetParams) {
-    var _render = function render(_ref) {
-      var isFirstRendering = _ref.isFirstRendering,
-          instantSearchInstance = _ref.instantSearchInstance,
-          _ref$voiceSearchHelpe = _ref.voiceSearchHelper,
-          isBrowserSupported = _ref$voiceSearchHelpe.isBrowserSupported,
-          isListening = _ref$voiceSearchHelpe.isListening,
-          toggleListening = _ref$voiceSearchHelpe.toggleListening,
-          getState = _ref$voiceSearchHelpe.getState;
-      renderFn({
-        isBrowserSupported: isBrowserSupported(),
-        isListening: isListening(),
-        toggleListening: toggleListening,
-        voiceListeningState: getState(),
-        widgetParams: widgetParams,
-        instantSearchInstance: instantSearchInstance
-      }, isFirstRendering);
-    };
+var originalKeys = Object.keys;
 
-    var _widgetParams$searchA = widgetParams.searchAsYouSpeak,
-        searchAsYouSpeak = _widgetParams$searchA === void 0 ? false : _widgetParams$searchA;
-    return {
-      init: function init(_ref2) {
-        var _this = this;
+keysShim.shim = function shimObjectKeys() {
+	if (Object.keys) {
+		var keysWorksWithArguments = (function () {
+			// Safari 5.0 bug
+			var args = Object.keys(arguments);
+			return args && args.length === arguments.length;
+		}(1, 2));
+		if (!keysWorksWithArguments) {
+			Object.keys = function keys(object) { // eslint-disable-line func-name-matching
+				if (isArgs(object)) {
+					return originalKeys(slice.call(object));
+				}
+				return originalKeys(object);
+			};
+		}
+	} else {
+		Object.keys = keysShim;
+	}
+	return Object.keys || keysShim;
+};
 
-        var helper = _ref2.helper,
-            instantSearchInstance = _ref2.instantSearchInstance;
+module.exports = keysShim;
 
-        this._refine = function () {
-          var previousQuery;
 
-          var setQueryAndSearch = function setQueryAndSearch(query) {
-            if (query !== helper.state.query) {
-              previousQuery = helper.state.query;
-              helper.setQuery(query);
-            }
+/***/ }),
+/* 624 */
+/***/ (function(module, exports, __webpack_require__) {
 
-            if (typeof previousQuery !== 'undefined' && previousQuery !== query) {
-              helper.search();
-            }
+"use strict";
+
+
+var keysShim;
+if (!Object.keys) {
+	// modified from https://github.com/es-shims/es5-shim
+	var has = Object.prototype.hasOwnProperty;
+	var toStr = Object.prototype.toString;
+	var isArgs = __webpack_require__(614); // eslint-disable-line global-require
+	var isEnumerable = Object.prototype.propertyIsEnumerable;
+	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
+	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
+	var dontEnums = [
+		'toString',
+		'toLocaleString',
+		'valueOf',
+		'hasOwnProperty',
+		'isPrototypeOf',
+		'propertyIsEnumerable',
+		'constructor'
+	];
+	var equalsConstructorPrototype = function (o) {
+		var ctor = o.constructor;
+		return ctor && ctor.prototype === o;
+	};
+	var excludedKeys = {
+		$applicationCache: true,
+		$console: true,
+		$external: true,
+		$frame: true,
+		$frameElement: true,
+		$frames: true,
+		$innerHeight: true,
+		$innerWidth: true,
+		$onmozfullscreenchange: true,
+		$onmozfullscreenerror: true,
+		$outerHeight: true,
+		$outerWidth: true,
+		$pageXOffset: true,
+		$pageYOffset: true,
+		$parent: true,
+		$scrollLeft: true,
+		$scrollTop: true,
+		$scrollX: true,
+		$scrollY: true,
+		$self: true,
+		$webkitIndexedDB: true,
+		$webkitStorageInfo: true,
+		$window: true
+	};
+	var hasAutomationEqualityBug = (function () {
+		/* global window */
+		if (typeof window === 'undefined') { return false; }
+		for (var k in window) {
+			try {
+				if (!excludedKeys['$' + k] && has.call(window, k) && window[k] !== null && typeof window[k] === 'object') {
+					try {
+						equalsConstructorPrototype(window[k]);
+					} catch (e) {
+						return true;
+					}
+				}
+			} catch (e) {
+				return true;
+			}
+		}
+		return false;
+	}());
+	var equalsConstructorPrototypeIfNotBuggy = function (o) {
+		/* global window */
+		if (typeof window === 'undefined' || !hasAutomationEqualityBug) {
+			return equalsConstructorPrototype(o);
+		}
+		try {
+			return equalsConstructorPrototype(o);
+		} catch (e) {
+			return false;
+		}
+	};
+
+	keysShim = function keys(object) {
+		var isObject = object !== null && typeof object === 'object';
+		var isFunction = toStr.call(object) === '[object Function]';
+		var isArguments = isArgs(object);
+		var isString = isObject && toStr.call(object) === '[object String]';
+		var theKeys = [];
+
+		if (!isObject && !isFunction && !isArguments) {
+			throw new TypeError('Object.keys called on a non-object');
+		}
+
+		var skipProto = hasProtoEnumBug && isFunction;
+		if (isString && object.length > 0 && !has.call(object, 0)) {
+			for (var i = 0; i < object.length; ++i) {
+				theKeys.push(String(i));
+			}
+		}
+
+		if (isArguments && object.length > 0) {
+			for (var j = 0; j < object.length; ++j) {
+				theKeys.push(String(j));
+			}
+		} else {
+			for (var name in object) {
+				if (!(skipProto && name === 'prototype') && has.call(object, name)) {
+					theKeys.push(String(name));
+				}
+			}
+		}
+
+		if (hasDontEnumBug) {
+			var skipConstructor = equalsConstructorPrototypeIfNotBuggy(object);
+
+			for (var k = 0; k < dontEnums.length; ++k) {
+				if (!(skipConstructor && dontEnums[k] === 'constructor') && has.call(object, dontEnums[k])) {
+					theKeys.push(dontEnums[k]);
+				}
+			}
+		}
+		return theKeys;
+	};
+}
+module.exports = keysShim;
+
+
+/***/ }),
+/* 625 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var debug = __webpack_require__(610)('algoliasearch:src/hostIndexState.js');
+var localStorageNamespace = 'algoliasearch-client-js';
+
+var store;
+var moduleStore = {
+  state: {},
+  set: function(key, data) {
+    this.state[key] = data;
+    return this.state[key];
+  },
+  get: function(key) {
+    return this.state[key] || null;
+  }
+};
+
+var localStorageStore = {
+  set: function(key, data) {
+    moduleStore.set(key, data); // always replicate localStorageStore to moduleStore in case of failure
+
+    try {
+      var namespace = JSON.parse(global.localStorage[localStorageNamespace]);
+      namespace[key] = data;
+      global.localStorage[localStorageNamespace] = JSON.stringify(namespace);
+      return namespace[key];
+    } catch (e) {
+      return localStorageFailure(key, e);
+    }
+  },
+  get: function(key) {
+    try {
+      return JSON.parse(global.localStorage[localStorageNamespace])[key] || null;
+    } catch (e) {
+      return localStorageFailure(key, e);
+    }
+  }
+};
+
+function localStorageFailure(key, e) {
+  debug('localStorage failed with', e);
+  cleanup();
+  store = moduleStore;
+  return store.get(key);
+}
+
+store = supportsLocalStorage() ? localStorageStore : moduleStore;
+
+module.exports = {
+  get: getOrSet,
+  set: getOrSet,
+  supportsLocalStorage: supportsLocalStorage
+};
+
+function getOrSet(key, data) {
+  if (arguments.length === 1) {
+    return store.get(key);
+  }
+
+  return store.set(key, data);
+}
+
+function supportsLocalStorage() {
+  try {
+    if ('localStorage' in global &&
+      global.localStorage !== null) {
+      if (!global.localStorage[localStorageNamespace]) {
+        // actual creation of the namespace
+        global.localStorage.setItem(localStorageNamespace, JSON.stringify({}));
+      }
+      return true;
+    }
+
+    return false;
+  } catch (_) {
+    return false;
+  }
+}
+
+// In case of any error on localStorage, we clean our own namespace, this should handle
+// quota errors when a lot of keys + data are used
+function cleanup() {
+  try {
+    global.localStorage.removeItem(localStorageNamespace);
+  } catch (_) {
+    // nothing to do
+  }
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 626 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(627);
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Previous log timestamp.
+ */
+
+var prevTime;
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  return debug;
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (var i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+/* 627 */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
+
+/***/ }),
+/* 628 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var global = __webpack_require__(629);
+var Promise = global.Promise || __webpack_require__(630).Promise;
+
+// This is the standalone browser build entry point
+// Browser implementation of the Algolia Search JavaScript client,
+// using XMLHttpRequest, XDomainRequest and JSONP as fallback
+module.exports = function createAlgoliasearch(AlgoliaSearch, uaSuffix) {
+  var inherits = __webpack_require__(611);
+  var errors = __webpack_require__(607);
+  var inlineHeaders = __webpack_require__(631);
+  var jsonpRequest = __webpack_require__(632);
+  var places = __webpack_require__(633);
+  uaSuffix = uaSuffix || '';
+
+  if (false) {
+    require('debug').enable('algoliasearch*');
+  }
+
+  function algoliasearch(applicationID, apiKey, opts) {
+    var cloneDeep = __webpack_require__(606);
+
+    opts = cloneDeep(opts || {});
+
+    opts._ua = opts._ua || algoliasearch.ua;
+
+    return new AlgoliaSearchBrowser(applicationID, apiKey, opts);
+  }
+
+  algoliasearch.version = __webpack_require__(636);
+
+  algoliasearch.ua =
+    'Algolia for JavaScript (' + algoliasearch.version + '); ' + uaSuffix;
+
+  algoliasearch.initPlaces = places(algoliasearch);
+
+  // we expose into window no matter how we are used, this will allow
+  // us to easily debug any website running algolia
+  global.__algolia = {
+    debug: __webpack_require__(610),
+    algoliasearch: algoliasearch
+  };
+
+  var support = {
+    hasXMLHttpRequest: 'XMLHttpRequest' in global,
+    hasXDomainRequest: 'XDomainRequest' in global
+  };
+
+  if (support.hasXMLHttpRequest) {
+    support.cors = 'withCredentials' in new XMLHttpRequest();
+  }
+
+  function AlgoliaSearchBrowser() {
+    // call AlgoliaSearch constructor
+    AlgoliaSearch.apply(this, arguments);
+  }
+
+  inherits(AlgoliaSearchBrowser, AlgoliaSearch);
+
+  AlgoliaSearchBrowser.prototype._request = function request(url, opts) {
+    return new Promise(function wrapRequest(resolve, reject) {
+      // no cors or XDomainRequest, no request
+      if (!support.cors && !support.hasXDomainRequest) {
+        // very old browser, not supported
+        reject(new errors.Network('CORS not supported'));
+        return;
+      }
+
+      url = inlineHeaders(url, opts.headers);
+
+      var body = opts.body;
+      var req = support.cors ? new XMLHttpRequest() : new XDomainRequest();
+      var reqTimeout;
+      var timedOut;
+      var connected = false;
+
+      reqTimeout = setTimeout(onTimeout, opts.timeouts.connect);
+      // we set an empty onprogress listener
+      // so that XDomainRequest on IE9 is not aborted
+      // refs:
+      //  - https://github.com/algolia/algoliasearch-client-js/issues/76
+      //  - https://social.msdn.microsoft.com/Forums/ie/en-US/30ef3add-767c-4436-b8a9-f1ca19b4812e/ie9-rtm-xdomainrequest-issued-requests-may-abort-if-all-event-handlers-not-specified?forum=iewebdevelopment
+      req.onprogress = onProgress;
+      if ('onreadystatechange' in req) req.onreadystatechange = onReadyStateChange;
+      req.onload = onLoad;
+      req.onerror = onError;
+
+      // do not rely on default XHR async flag, as some analytics code like hotjar
+      // breaks it and set it to false by default
+      if (req instanceof XMLHttpRequest) {
+        req.open(opts.method, url, true);
+
+        // The Analytics API never accepts Auth headers as query string
+        // this option exists specifically for them.
+        if (opts.forceAuthHeaders) {
+          req.setRequestHeader(
+            'x-algolia-application-id',
+            opts.headers['x-algolia-application-id']
+          );
+          req.setRequestHeader(
+            'x-algolia-api-key',
+            opts.headers['x-algolia-api-key']
+          );
+        }
+      } else {
+        req.open(opts.method, url);
+      }
+
+      // headers are meant to be sent after open
+      if (support.cors) {
+        if (body) {
+          if (opts.method === 'POST') {
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Simple_requests
+            req.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+          } else {
+            req.setRequestHeader('content-type', 'application/json');
+          }
+        }
+        req.setRequestHeader('accept', 'application/json');
+      }
+
+      if (body) {
+        req.send(body);
+      } else {
+        req.send();
+      }
+
+      // event object not received in IE8, at least
+      // but we do not use it, still important to note
+      function onLoad(/* event */) {
+        // When browser does not supports req.timeout, we can
+        // have both a load and timeout event, since handled by a dumb setTimeout
+        if (timedOut) {
+          return;
+        }
+
+        clearTimeout(reqTimeout);
+
+        var out;
+
+        try {
+          out = {
+            body: JSON.parse(req.responseText),
+            responseText: req.responseText,
+            statusCode: req.status,
+            // XDomainRequest does not have any response headers
+            headers: req.getAllResponseHeaders && req.getAllResponseHeaders() || {}
           };
+        } catch (e) {
+          out = new errors.UnparsableJSON({
+            more: req.responseText
+          });
+        }
 
-          return setQueryAndSearch;
-        }();
+        if (out instanceof errors.UnparsableJSON) {
+          reject(out);
+        } else {
+          resolve(out);
+        }
+      }
 
-        this._voiceSearchHelper = Object(__WEBPACK_IMPORTED_MODULE_1__lib_voiceSearchHelper__["a" /* default */])({
-          searchAsYouSpeak: searchAsYouSpeak,
-          onQueryChange: function onQueryChange(query) {
-            return _this._refine(query);
-          },
-          onStateChange: function onStateChange() {
-            _render({
-              isFirstRendering: false,
-              instantSearchInstance: instantSearchInstance,
-              voiceSearchHelper: _this._voiceSearchHelper
-            });
+      function onError(event) {
+        if (timedOut) {
+          return;
+        }
+
+        clearTimeout(reqTimeout);
+
+        // error event is trigerred both with XDR/XHR on:
+        //   - DNS error
+        //   - unallowed cross domain request
+        reject(
+          new errors.Network({
+            more: event
+          })
+        );
+      }
+
+      function onTimeout() {
+        timedOut = true;
+        req.abort();
+
+        reject(new errors.RequestTimeout());
+      }
+
+      function onConnect() {
+        connected = true;
+        clearTimeout(reqTimeout);
+        reqTimeout = setTimeout(onTimeout, opts.timeouts.complete);
+      }
+
+      function onProgress() {
+        if (!connected) onConnect();
+      }
+
+      function onReadyStateChange() {
+        if (!connected && req.readyState > 1) onConnect();
+      }
+    });
+  };
+
+  AlgoliaSearchBrowser.prototype._request.fallback = function requestFallback(url, opts) {
+    url = inlineHeaders(url, opts.headers);
+
+    return new Promise(function wrapJsonpRequest(resolve, reject) {
+      jsonpRequest(url, opts, function jsonpRequestDone(err, content) {
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        resolve(content);
+      });
+    });
+  };
+
+  AlgoliaSearchBrowser.prototype._promise = {
+    reject: function rejectPromise(val) {
+      return Promise.reject(val);
+    },
+    resolve: function resolvePromise(val) {
+      return Promise.resolve(val);
+    },
+    delay: function delayPromise(ms) {
+      return new Promise(function resolveOnTimeout(resolve/* , reject*/) {
+        setTimeout(resolve, ms);
+      });
+    },
+    all: function all(promises) {
+      return Promise.all(promises);
+    }
+  };
+
+  return algoliasearch;
+};
+
+
+/***/ }),
+/* 629 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var win;
+
+if (typeof window !== "undefined") {
+    win = window;
+} else if (typeof global !== "undefined") {
+    win = global;
+} else if (typeof self !== "undefined"){
+    win = self;
+} else {
+    win = {};
+}
+
+module.exports = win;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 630 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process, global) {/*!
+ * @overview es6-promise - a tiny implementation of Promises/A+.
+ * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
+ * @license   Licensed under MIT license
+ *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
+ * @version   v4.2.8+1e68dce6
+ */
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.ES6Promise = factory());
+}(this, (function () { 'use strict';
+
+function objectOrFunction(x) {
+  var type = typeof x;
+  return x !== null && (type === 'object' || type === 'function');
+}
+
+function isFunction(x) {
+  return typeof x === 'function';
+}
+
+
+
+var _isArray = void 0;
+if (Array.isArray) {
+  _isArray = Array.isArray;
+} else {
+  _isArray = function (x) {
+    return Object.prototype.toString.call(x) === '[object Array]';
+  };
+}
+
+var isArray = _isArray;
+
+var len = 0;
+var vertxNext = void 0;
+var customSchedulerFn = void 0;
+
+var asap = function asap(callback, arg) {
+  queue[len] = callback;
+  queue[len + 1] = arg;
+  len += 2;
+  if (len === 2) {
+    // If len is 2, that means that we need to schedule an async flush.
+    // If additional callbacks are queued before the queue is flushed, they
+    // will be processed by this flush that we are scheduling.
+    if (customSchedulerFn) {
+      customSchedulerFn(flush);
+    } else {
+      scheduleFlush();
+    }
+  }
+};
+
+function setScheduler(scheduleFn) {
+  customSchedulerFn = scheduleFn;
+}
+
+function setAsap(asapFn) {
+  asap = asapFn;
+}
+
+var browserWindow = typeof window !== 'undefined' ? window : undefined;
+var browserGlobal = browserWindow || {};
+var BrowserMutationObserver = browserGlobal.MutationObserver || browserGlobal.WebKitMutationObserver;
+var isNode = typeof self === 'undefined' && typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
+
+// test for web worker but not in IE10
+var isWorker = typeof Uint8ClampedArray !== 'undefined' && typeof importScripts !== 'undefined' && typeof MessageChannel !== 'undefined';
+
+// node
+function useNextTick() {
+  // node version 0.10.x displays a deprecation warning when nextTick is used recursively
+  // see https://github.com/cujojs/when/issues/410 for details
+  return function () {
+    return process.nextTick(flush);
+  };
+}
+
+// vertx
+function useVertxTimer() {
+  if (typeof vertxNext !== 'undefined') {
+    return function () {
+      vertxNext(flush);
+    };
+  }
+
+  return useSetTimeout();
+}
+
+function useMutationObserver() {
+  var iterations = 0;
+  var observer = new BrowserMutationObserver(flush);
+  var node = document.createTextNode('');
+  observer.observe(node, { characterData: true });
+
+  return function () {
+    node.data = iterations = ++iterations % 2;
+  };
+}
+
+// web worker
+function useMessageChannel() {
+  var channel = new MessageChannel();
+  channel.port1.onmessage = flush;
+  return function () {
+    return channel.port2.postMessage(0);
+  };
+}
+
+function useSetTimeout() {
+  // Store setTimeout reference so es6-promise will be unaffected by
+  // other code modifying setTimeout (like sinon.useFakeTimers())
+  var globalSetTimeout = setTimeout;
+  return function () {
+    return globalSetTimeout(flush, 1);
+  };
+}
+
+var queue = new Array(1000);
+function flush() {
+  for (var i = 0; i < len; i += 2) {
+    var callback = queue[i];
+    var arg = queue[i + 1];
+
+    callback(arg);
+
+    queue[i] = undefined;
+    queue[i + 1] = undefined;
+  }
+
+  len = 0;
+}
+
+function attemptVertx() {
+  try {
+    var vertx = Function('return this')().require('vertx');
+    vertxNext = vertx.runOnLoop || vertx.runOnContext;
+    return useVertxTimer();
+  } catch (e) {
+    return useSetTimeout();
+  }
+}
+
+var scheduleFlush = void 0;
+// Decide what async method to use to triggering processing of queued callbacks:
+if (isNode) {
+  scheduleFlush = useNextTick();
+} else if (BrowserMutationObserver) {
+  scheduleFlush = useMutationObserver();
+} else if (isWorker) {
+  scheduleFlush = useMessageChannel();
+} else if (browserWindow === undefined && "function" === 'function') {
+  scheduleFlush = attemptVertx();
+} else {
+  scheduleFlush = useSetTimeout();
+}
+
+function then(onFulfillment, onRejection) {
+  var parent = this;
+
+  var child = new this.constructor(noop);
+
+  if (child[PROMISE_ID] === undefined) {
+    makePromise(child);
+  }
+
+  var _state = parent._state;
+
+
+  if (_state) {
+    var callback = arguments[_state - 1];
+    asap(function () {
+      return invokeCallback(_state, child, callback, parent._result);
+    });
+  } else {
+    subscribe(parent, child, onFulfillment, onRejection);
+  }
+
+  return child;
+}
+
+/**
+  `Promise.resolve` returns a promise that will become resolved with the
+  passed `value`. It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    resolve(1);
+  });
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.resolve(1);
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  @method resolve
+  @static
+  @param {Any} value value that the returned promise will be resolved with
+  Useful for tooling.
+  @return {Promise} a promise that will become fulfilled with the given
+  `value`
+*/
+function resolve$1(object) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (object && typeof object === 'object' && object.constructor === Constructor) {
+    return object;
+  }
+
+  var promise = new Constructor(noop);
+  resolve(promise, object);
+  return promise;
+}
+
+var PROMISE_ID = Math.random().toString(36).substring(2);
+
+function noop() {}
+
+var PENDING = void 0;
+var FULFILLED = 1;
+var REJECTED = 2;
+
+function selfFulfillment() {
+  return new TypeError("You cannot resolve a promise with itself");
+}
+
+function cannotReturnOwn() {
+  return new TypeError('A promises callback cannot return that same promise.');
+}
+
+function tryThen(then$$1, value, fulfillmentHandler, rejectionHandler) {
+  try {
+    then$$1.call(value, fulfillmentHandler, rejectionHandler);
+  } catch (e) {
+    return e;
+  }
+}
+
+function handleForeignThenable(promise, thenable, then$$1) {
+  asap(function (promise) {
+    var sealed = false;
+    var error = tryThen(then$$1, thenable, function (value) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+      if (thenable !== value) {
+        resolve(promise, value);
+      } else {
+        fulfill(promise, value);
+      }
+    }, function (reason) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+
+      reject(promise, reason);
+    }, 'Settle: ' + (promise._label || ' unknown promise'));
+
+    if (!sealed && error) {
+      sealed = true;
+      reject(promise, error);
+    }
+  }, promise);
+}
+
+function handleOwnThenable(promise, thenable) {
+  if (thenable._state === FULFILLED) {
+    fulfill(promise, thenable._result);
+  } else if (thenable._state === REJECTED) {
+    reject(promise, thenable._result);
+  } else {
+    subscribe(thenable, undefined, function (value) {
+      return resolve(promise, value);
+    }, function (reason) {
+      return reject(promise, reason);
+    });
+  }
+}
+
+function handleMaybeThenable(promise, maybeThenable, then$$1) {
+  if (maybeThenable.constructor === promise.constructor && then$$1 === then && maybeThenable.constructor.resolve === resolve$1) {
+    handleOwnThenable(promise, maybeThenable);
+  } else {
+    if (then$$1 === undefined) {
+      fulfill(promise, maybeThenable);
+    } else if (isFunction(then$$1)) {
+      handleForeignThenable(promise, maybeThenable, then$$1);
+    } else {
+      fulfill(promise, maybeThenable);
+    }
+  }
+}
+
+function resolve(promise, value) {
+  if (promise === value) {
+    reject(promise, selfFulfillment());
+  } else if (objectOrFunction(value)) {
+    var then$$1 = void 0;
+    try {
+      then$$1 = value.then;
+    } catch (error) {
+      reject(promise, error);
+      return;
+    }
+    handleMaybeThenable(promise, value, then$$1);
+  } else {
+    fulfill(promise, value);
+  }
+}
+
+function publishRejection(promise) {
+  if (promise._onerror) {
+    promise._onerror(promise._result);
+  }
+
+  publish(promise);
+}
+
+function fulfill(promise, value) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+
+  promise._result = value;
+  promise._state = FULFILLED;
+
+  if (promise._subscribers.length !== 0) {
+    asap(publish, promise);
+  }
+}
+
+function reject(promise, reason) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+  promise._state = REJECTED;
+  promise._result = reason;
+
+  asap(publishRejection, promise);
+}
+
+function subscribe(parent, child, onFulfillment, onRejection) {
+  var _subscribers = parent._subscribers;
+  var length = _subscribers.length;
+
+
+  parent._onerror = null;
+
+  _subscribers[length] = child;
+  _subscribers[length + FULFILLED] = onFulfillment;
+  _subscribers[length + REJECTED] = onRejection;
+
+  if (length === 0 && parent._state) {
+    asap(publish, parent);
+  }
+}
+
+function publish(promise) {
+  var subscribers = promise._subscribers;
+  var settled = promise._state;
+
+  if (subscribers.length === 0) {
+    return;
+  }
+
+  var child = void 0,
+      callback = void 0,
+      detail = promise._result;
+
+  for (var i = 0; i < subscribers.length; i += 3) {
+    child = subscribers[i];
+    callback = subscribers[i + settled];
+
+    if (child) {
+      invokeCallback(settled, child, callback, detail);
+    } else {
+      callback(detail);
+    }
+  }
+
+  promise._subscribers.length = 0;
+}
+
+function invokeCallback(settled, promise, callback, detail) {
+  var hasCallback = isFunction(callback),
+      value = void 0,
+      error = void 0,
+      succeeded = true;
+
+  if (hasCallback) {
+    try {
+      value = callback(detail);
+    } catch (e) {
+      succeeded = false;
+      error = e;
+    }
+
+    if (promise === value) {
+      reject(promise, cannotReturnOwn());
+      return;
+    }
+  } else {
+    value = detail;
+  }
+
+  if (promise._state !== PENDING) {
+    // noop
+  } else if (hasCallback && succeeded) {
+    resolve(promise, value);
+  } else if (succeeded === false) {
+    reject(promise, error);
+  } else if (settled === FULFILLED) {
+    fulfill(promise, value);
+  } else if (settled === REJECTED) {
+    reject(promise, value);
+  }
+}
+
+function initializePromise(promise, resolver) {
+  try {
+    resolver(function resolvePromise(value) {
+      resolve(promise, value);
+    }, function rejectPromise(reason) {
+      reject(promise, reason);
+    });
+  } catch (e) {
+    reject(promise, e);
+  }
+}
+
+var id = 0;
+function nextId() {
+  return id++;
+}
+
+function makePromise(promise) {
+  promise[PROMISE_ID] = id++;
+  promise._state = undefined;
+  promise._result = undefined;
+  promise._subscribers = [];
+}
+
+function validationError() {
+  return new Error('Array Methods must be provided an Array');
+}
+
+var Enumerator = function () {
+  function Enumerator(Constructor, input) {
+    this._instanceConstructor = Constructor;
+    this.promise = new Constructor(noop);
+
+    if (!this.promise[PROMISE_ID]) {
+      makePromise(this.promise);
+    }
+
+    if (isArray(input)) {
+      this.length = input.length;
+      this._remaining = input.length;
+
+      this._result = new Array(this.length);
+
+      if (this.length === 0) {
+        fulfill(this.promise, this._result);
+      } else {
+        this.length = this.length || 0;
+        this._enumerate(input);
+        if (this._remaining === 0) {
+          fulfill(this.promise, this._result);
+        }
+      }
+    } else {
+      reject(this.promise, validationError());
+    }
+  }
+
+  Enumerator.prototype._enumerate = function _enumerate(input) {
+    for (var i = 0; this._state === PENDING && i < input.length; i++) {
+      this._eachEntry(input[i], i);
+    }
+  };
+
+  Enumerator.prototype._eachEntry = function _eachEntry(entry, i) {
+    var c = this._instanceConstructor;
+    var resolve$$1 = c.resolve;
+
+
+    if (resolve$$1 === resolve$1) {
+      var _then = void 0;
+      var error = void 0;
+      var didError = false;
+      try {
+        _then = entry.then;
+      } catch (e) {
+        didError = true;
+        error = e;
+      }
+
+      if (_then === then && entry._state !== PENDING) {
+        this._settledAt(entry._state, i, entry._result);
+      } else if (typeof _then !== 'function') {
+        this._remaining--;
+        this._result[i] = entry;
+      } else if (c === Promise$1) {
+        var promise = new c(noop);
+        if (didError) {
+          reject(promise, error);
+        } else {
+          handleMaybeThenable(promise, entry, _then);
+        }
+        this._willSettleAt(promise, i);
+      } else {
+        this._willSettleAt(new c(function (resolve$$1) {
+          return resolve$$1(entry);
+        }), i);
+      }
+    } else {
+      this._willSettleAt(resolve$$1(entry), i);
+    }
+  };
+
+  Enumerator.prototype._settledAt = function _settledAt(state, i, value) {
+    var promise = this.promise;
+
+
+    if (promise._state === PENDING) {
+      this._remaining--;
+
+      if (state === REJECTED) {
+        reject(promise, value);
+      } else {
+        this._result[i] = value;
+      }
+    }
+
+    if (this._remaining === 0) {
+      fulfill(promise, this._result);
+    }
+  };
+
+  Enumerator.prototype._willSettleAt = function _willSettleAt(promise, i) {
+    var enumerator = this;
+
+    subscribe(promise, undefined, function (value) {
+      return enumerator._settledAt(FULFILLED, i, value);
+    }, function (reason) {
+      return enumerator._settledAt(REJECTED, i, reason);
+    });
+  };
+
+  return Enumerator;
+}();
+
+/**
+  `Promise.all` accepts an array of promises, and returns a new promise which
+  is fulfilled with an array of fulfillment values for the passed promises, or
+  rejected with the reason of the first passed promise to be rejected. It casts all
+  elements of the passed iterable to promises as it runs this algorithm.
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = resolve(2);
+  let promise3 = resolve(3);
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // The array here would be [ 1, 2, 3 ];
+  });
+  ```
+
+  If any of the `promises` given to `all` are rejected, the first promise
+  that is rejected will be given as an argument to the returned promises's
+  rejection handler. For example:
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = reject(new Error("2"));
+  let promise3 = reject(new Error("3"));
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // Code here never runs because there are rejected promises!
+  }, function(error) {
+    // error.message === "2"
+  });
+  ```
+
+  @method all
+  @static
+  @param {Array} entries array of promises
+  @param {String} label optional string for labeling the promise.
+  Useful for tooling.
+  @return {Promise} promise that is fulfilled when all `promises` have been
+  fulfilled, or rejected if any of them become rejected.
+  @static
+*/
+function all(entries) {
+  return new Enumerator(this, entries).promise;
+}
+
+/**
+  `Promise.race` returns a new promise which is settled in the same way as the
+  first passed promise to settle.
+
+  Example:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 2');
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // result === 'promise 2' because it was resolved before promise1
+    // was resolved.
+  });
+  ```
+
+  `Promise.race` is deterministic in that only the state of the first
+  settled promise matters. For example, even if other promises given to the
+  `promises` array argument are resolved, but the first settled promise has
+  become rejected before the other promises became fulfilled, the returned
+  promise will become rejected:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      reject(new Error('promise 2'));
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // Code here never runs
+  }, function(reason){
+    // reason.message === 'promise 2' because promise 2 became rejected before
+    // promise 1 became fulfilled
+  });
+  ```
+
+  An example real-world use case is implementing timeouts:
+
+  ```javascript
+  Promise.race([ajax('foo.json'), timeout(5000)])
+  ```
+
+  @method race
+  @static
+  @param {Array} promises array of promises to observe
+  Useful for tooling.
+  @return {Promise} a promise which settles in the same way as the first passed
+  promise to settle.
+*/
+function race(entries) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (!isArray(entries)) {
+    return new Constructor(function (_, reject) {
+      return reject(new TypeError('You must pass an array to race.'));
+    });
+  } else {
+    return new Constructor(function (resolve, reject) {
+      var length = entries.length;
+      for (var i = 0; i < length; i++) {
+        Constructor.resolve(entries[i]).then(resolve, reject);
+      }
+    });
+  }
+}
+
+/**
+  `Promise.reject` returns a promise rejected with the passed `reason`.
+  It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    reject(new Error('WHOOPS'));
+  });
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.reject(new Error('WHOOPS'));
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  @method reject
+  @static
+  @param {Any} reason value that the returned promise will be rejected with.
+  Useful for tooling.
+  @return {Promise} a promise rejected with the given `reason`.
+*/
+function reject$1(reason) {
+  /*jshint validthis:true */
+  var Constructor = this;
+  var promise = new Constructor(noop);
+  reject(promise, reason);
+  return promise;
+}
+
+function needsResolver() {
+  throw new TypeError('You must pass a resolver function as the first argument to the promise constructor');
+}
+
+function needsNew() {
+  throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
+}
+
+/**
+  Promise objects represent the eventual result of an asynchronous operation. The
+  primary way of interacting with a promise is through its `then` method, which
+  registers callbacks to receive either a promise's eventual value or the reason
+  why the promise cannot be fulfilled.
+
+  Terminology
+  -----------
+
+  - `promise` is an object or function with a `then` method whose behavior conforms to this specification.
+  - `thenable` is an object or function that defines a `then` method.
+  - `value` is any legal JavaScript value (including undefined, a thenable, or a promise).
+  - `exception` is a value that is thrown using the throw statement.
+  - `reason` is a value that indicates why a promise was rejected.
+  - `settled` the final resting state of a promise, fulfilled or rejected.
+
+  A promise can be in one of three states: pending, fulfilled, or rejected.
+
+  Promises that are fulfilled have a fulfillment value and are in the fulfilled
+  state.  Promises that are rejected have a rejection reason and are in the
+  rejected state.  A fulfillment value is never a thenable.
+
+  Promises can also be said to *resolve* a value.  If this value is also a
+  promise, then the original promise's settled state will match the value's
+  settled state.  So a promise that *resolves* a promise that rejects will
+  itself reject, and a promise that *resolves* a promise that fulfills will
+  itself fulfill.
+
+
+  Basic Usage:
+  ------------
+
+  ```js
+  let promise = new Promise(function(resolve, reject) {
+    // on success
+    resolve(value);
+
+    // on failure
+    reject(reason);
+  });
+
+  promise.then(function(value) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Advanced Usage:
+  ---------------
+
+  Promises shine when abstracting away asynchronous interactions such as
+  `XMLHttpRequest`s.
+
+  ```js
+  function getJSON(url) {
+    return new Promise(function(resolve, reject){
+      let xhr = new XMLHttpRequest();
+
+      xhr.open('GET', url);
+      xhr.onreadystatechange = handler;
+      xhr.responseType = 'json';
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.send();
+
+      function handler() {
+        if (this.readyState === this.DONE) {
+          if (this.status === 200) {
+            resolve(this.response);
+          } else {
+            reject(new Error('getJSON: `' + url + '` failed with status: [' + this.status + ']'));
+          }
+        }
+      };
+    });
+  }
+
+  getJSON('/posts.json').then(function(json) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Unlike callbacks, promises are great composable primitives.
+
+  ```js
+  Promise.all([
+    getJSON('/posts'),
+    getJSON('/comments')
+  ]).then(function(values){
+    values[0] // => postsJSON
+    values[1] // => commentsJSON
+
+    return values;
+  });
+  ```
+
+  @class Promise
+  @param {Function} resolver
+  Useful for tooling.
+  @constructor
+*/
+
+var Promise$1 = function () {
+  function Promise(resolver) {
+    this[PROMISE_ID] = nextId();
+    this._result = this._state = undefined;
+    this._subscribers = [];
+
+    if (noop !== resolver) {
+      typeof resolver !== 'function' && needsResolver();
+      this instanceof Promise ? initializePromise(this, resolver) : needsNew();
+    }
+  }
+
+  /**
+  The primary way of interacting with a promise is through its `then` method,
+  which registers callbacks to receive either a promise's eventual value or the
+  reason why the promise cannot be fulfilled.
+   ```js
+  findUser().then(function(user){
+    // user is available
+  }, function(reason){
+    // user is unavailable, and you are given the reason why
+  });
+  ```
+   Chaining
+  --------
+   The return value of `then` is itself a promise.  This second, 'downstream'
+  promise is resolved with the return value of the first promise's fulfillment
+  or rejection handler, or rejected if the handler throws an exception.
+   ```js
+  findUser().then(function (user) {
+    return user.name;
+  }, function (reason) {
+    return 'default name';
+  }).then(function (userName) {
+    // If `findUser` fulfilled, `userName` will be the user's name, otherwise it
+    // will be `'default name'`
+  });
+   findUser().then(function (user) {
+    throw new Error('Found user, but still unhappy');
+  }, function (reason) {
+    throw new Error('`findUser` rejected and we're unhappy');
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // if `findUser` fulfilled, `reason` will be 'Found user, but still unhappy'.
+    // If `findUser` rejected, `reason` will be '`findUser` rejected and we're unhappy'.
+  });
+  ```
+  If the downstream promise does not specify a rejection handler, rejection reasons will be propagated further downstream.
+   ```js
+  findUser().then(function (user) {
+    throw new PedagogicalException('Upstream error');
+  }).then(function (value) {
+    // never reached
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // The `PedgagocialException` is propagated all the way down to here
+  });
+  ```
+   Assimilation
+  ------------
+   Sometimes the value you want to propagate to a downstream promise can only be
+  retrieved asynchronously. This can be achieved by returning a promise in the
+  fulfillment or rejection handler. The downstream promise will then be pending
+  until the returned promise is settled. This is called *assimilation*.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // The user's comments are now available
+  });
+  ```
+   If the assimliated promise rejects, then the downstream promise will also reject.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // If `findCommentsByAuthor` fulfills, we'll have the value here
+  }, function (reason) {
+    // If `findCommentsByAuthor` rejects, we'll have the reason here
+  });
+  ```
+   Simple Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let result;
+   try {
+    result = findResult();
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+  findResult(function(result, err){
+    if (err) {
+      // failure
+    } else {
+      // success
+    }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findResult().then(function(result){
+    // success
+  }, function(reason){
+    // failure
+  });
+  ```
+   Advanced Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let author, books;
+   try {
+    author = findAuthor();
+    books  = findBooksByAuthor(author);
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+   function foundBooks(books) {
+   }
+   function failure(reason) {
+   }
+   findAuthor(function(author, err){
+    if (err) {
+      failure(err);
+      // failure
+    } else {
+      try {
+        findBoooksByAuthor(author, function(books, err) {
+          if (err) {
+            failure(err);
+          } else {
+            try {
+              foundBooks(books);
+            } catch(reason) {
+              failure(reason);
+            }
           }
         });
-
-        _render({
-          isFirstRendering: true,
-          instantSearchInstance: instantSearchInstance,
-          voiceSearchHelper: this._voiceSearchHelper
-        });
-      },
-      render: function render(_ref3) {
-        var instantSearchInstance = _ref3.instantSearchInstance;
-
-        _render({
-          isFirstRendering: false,
-          instantSearchInstance: instantSearchInstance,
-          voiceSearchHelper: this._voiceSearchHelper
-        });
-      },
-      dispose: function dispose(_ref4) {
-        var state = _ref4.state;
-
-        this._voiceSearchHelper.dispose();
-
-        unmountFn();
-        return state.setQuery('');
-      },
-      getWidgetState: function getWidgetState(uiState, _ref5) {
-        var searchParameters = _ref5.searchParameters;
-        var query = searchParameters.query;
-
-        if (query === '' || uiState && uiState.query === query) {
-          return uiState;
-        }
-
-        return _objectSpread({}, uiState, {
-          query: query
-        });
-      },
-      getWidgetSearchParameters: function getWidgetSearchParameters(searchParameters, _ref6) {
-        var uiState = _ref6.uiState;
-        return searchParameters.setQuery(uiState.query || '');
+      } catch(error) {
+        failure(err);
       }
-    };
-  };
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (connectVoiceSearch);
-
-/***/ }),
-/* 603 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = createVoiceSearchHelper;
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function createVoiceSearchHelper(_ref) {
-  var searchAsYouSpeak = _ref.searchAsYouSpeak,
-      onQueryChange = _ref.onQueryChange,
-      onStateChange = _ref.onStateChange;
-  var SpeechRecognitionAPI = window.webkitSpeechRecognition || window.SpeechRecognition;
-
-  var getDefaultState = function getDefaultState(status) {
-    return {
-      status: status,
-      transcript: '',
-      isSpeechFinal: false,
-      errorCode: undefined
-    };
-  };
-
-  var state = getDefaultState('initial');
-  var recognition;
-
-  var isBrowserSupported = function isBrowserSupported() {
-    return Boolean(SpeechRecognitionAPI);
-  };
-
-  var isListening = function isListening() {
-    return state.status === 'askingPermission' || state.status === 'waiting' || state.status === 'recognizing';
-  };
-
-  var setState = function setState() {
-    var newState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    state = _objectSpread({}, state, {}, newState);
-    onStateChange();
-  };
-
-  var getState = function getState() {
-    return state;
-  };
-
-  var resetState = function resetState() {
-    var status = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'initial';
-    setState(getDefaultState(status));
-  };
-
-  var onStart = function onStart() {
-    setState({
-      status: 'waiting'
-    });
-  };
-
-  var onError = function onError(event) {
-    setState({
-      status: 'error',
-      errorCode: event.error
-    });
-  };
-
-  var onResult = function onResult(event) {
-    setState({
-      status: 'recognizing',
-      transcript: event.results[0] && event.results[0][0] && event.results[0][0].transcript || '',
-      isSpeechFinal: event.results[0] && event.results[0].isFinal
-    });
-
-    if (searchAsYouSpeak && state.transcript) {
-      onQueryChange(state.transcript);
+      // success
     }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findAuthor().
+    then(findBooksByAuthor).
+    then(function(books){
+      // found books
+  }).catch(function(reason){
+    // something went wrong
+  });
+  ```
+   @method then
+  @param {Function} onFulfilled
+  @param {Function} onRejected
+  Useful for tooling.
+  @return {Promise}
+  */
+
+  /**
+  `catch` is simply sugar for `then(undefined, onRejection)` which makes it the same
+  as the catch block of a try/catch statement.
+  ```js
+  function findAuthor(){
+  throw new Error('couldn't find that author');
+  }
+  // synchronous
+  try {
+  findAuthor();
+  } catch(reason) {
+  // something went wrong
+  }
+  // async with promises
+  findAuthor().catch(function(reason){
+  // something went wrong
+  });
+  ```
+  @method catch
+  @param {Function} onRejection
+  Useful for tooling.
+  @return {Promise}
+  */
+
+
+  Promise.prototype.catch = function _catch(onRejection) {
+    return this.then(null, onRejection);
   };
 
-  var onEnd = function onEnd() {
-    if (!state.errorCode && state.transcript && !searchAsYouSpeak) {
-      onQueryChange(state.transcript);
+  /**
+    `finally` will be invoked regardless of the promise's fate just as native
+    try/catch/finally behaves
+  
+    Synchronous example:
+  
+    ```js
+    findAuthor() {
+      if (Math.random() > 0.5) {
+        throw new Error();
+      }
+      return new Author();
     }
+  
+    try {
+      return findAuthor(); // succeed or fail
+    } catch(error) {
+      return findOtherAuther();
+    } finally {
+      // always runs
+      // doesn't affect the return value
+    }
+    ```
+  
+    Asynchronous example:
+  
+    ```js
+    findAuthor().catch(function(reason){
+      return findOtherAuther();
+    }).finally(function(){
+      // author was either found, or not
+    });
+    ```
+  
+    @method finally
+    @param {Function} callback
+    @return {Promise}
+  */
 
-    if (state.status !== 'error') {
-      setState({
-        status: 'finished'
+
+  Promise.prototype.finally = function _finally(callback) {
+    var promise = this;
+    var constructor = promise.constructor;
+
+    if (isFunction(callback)) {
+      return promise.then(function (value) {
+        return constructor.resolve(callback()).then(function () {
+          return value;
+        });
+      }, function (reason) {
+        return constructor.resolve(callback()).then(function () {
+          throw reason;
+        });
       });
     }
+
+    return promise.then(callback, callback);
   };
 
-  var start = function start() {
-    recognition = new SpeechRecognitionAPI();
+  return Promise;
+}();
 
-    if (!recognition) {
+Promise$1.prototype.then = then;
+Promise$1.all = all;
+Promise$1.race = race;
+Promise$1.resolve = resolve$1;
+Promise$1.reject = reject$1;
+Promise$1._setScheduler = setScheduler;
+Promise$1._setAsap = setAsap;
+Promise$1._asap = asap;
+
+/*global self*/
+function polyfill() {
+  var local = void 0;
+
+  if (typeof global !== 'undefined') {
+    local = global;
+  } else if (typeof self !== 'undefined') {
+    local = self;
+  } else {
+    try {
+      local = Function('return this')();
+    } catch (e) {
+      throw new Error('polyfill failed because global object is unavailable in this environment');
+    }
+  }
+
+  var P = local.Promise;
+
+  if (P) {
+    var promiseToString = null;
+    try {
+      promiseToString = Object.prototype.toString.call(P.resolve());
+    } catch (e) {
+      // silently ignored
+    }
+
+    if (promiseToString === '[object Promise]' && !P.cast) {
+      return;
+    }
+  }
+
+  local.Promise = Promise$1;
+}
+
+// Strange compat..
+Promise$1.polyfill = polyfill;
+Promise$1.Promise = Promise$1;
+
+return Promise$1;
+
+})));
+
+
+
+//# sourceMappingURL=es6-promise.map
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(3)))
+
+/***/ }),
+/* 631 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = inlineHeaders;
+
+var encode = __webpack_require__(615);
+
+function inlineHeaders(url, headers) {
+  if (/\?/.test(url)) {
+    url += '&';
+  } else {
+    url += '?';
+  }
+
+  return url + encode(headers);
+}
+
+
+/***/ }),
+/* 632 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = jsonpRequest;
+
+var errors = __webpack_require__(607);
+
+var JSONPCounter = 0;
+
+function jsonpRequest(url, opts, cb) {
+  if (opts.method !== 'GET') {
+    cb(new Error('Method ' + opts.method + ' ' + url + ' is not supported by JSONP.'));
+    return;
+  }
+
+  opts.debug('JSONP: start');
+
+  var cbCalled = false;
+  var timedOut = false;
+
+  JSONPCounter += 1;
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  var cbName = 'algoliaJSONP_' + JSONPCounter;
+  var done = false;
+
+  window[cbName] = function(data) {
+    removeGlobals();
+
+    if (timedOut) {
+      opts.debug('JSONP: Late answer, ignoring');
       return;
     }
 
-    resetState('askingPermission');
-    recognition.interimResults = true;
-    recognition.addEventListener('start', onStart);
-    recognition.addEventListener('error', onError);
-    recognition.addEventListener('result', onResult);
-    recognition.addEventListener('end', onEnd);
-    recognition.start();
+    cbCalled = true;
+
+    clean();
+
+    cb(null, {
+      body: data,
+      responseText: JSON.stringify(data)/* ,
+      // We do not send the statusCode, there's no statusCode in JSONP, it will be
+      // computed using data.status && data.message like with XDR
+      statusCode*/
+    });
   };
 
-  var dispose = function dispose() {
-    if (!recognition) {
+  // add callback by hand
+  url += '&callback=' + cbName;
+
+  // add body params manually
+  if (opts.jsonBody && opts.jsonBody.params) {
+    url += '&' + opts.jsonBody.params;
+  }
+
+  var ontimeout = setTimeout(timeout, opts.timeouts.complete);
+
+  // script onreadystatechange needed only for
+  // <= IE8
+  // https://github.com/angular/angular.js/issues/4523
+  script.onreadystatechange = readystatechange;
+  script.onload = success;
+  script.onerror = error;
+
+  script.async = true;
+  script.defer = true;
+  script.src = url;
+  head.appendChild(script);
+
+  function success() {
+    opts.debug('JSONP: success');
+
+    if (done || timedOut) {
       return;
     }
 
-    recognition.stop();
-    recognition.removeEventListener('start', onStart);
-    recognition.removeEventListener('error', onError);
-    recognition.removeEventListener('result', onResult);
-    recognition.removeEventListener('end', onEnd);
-    recognition = undefined;
-  };
+    done = true;
 
-  var stop = function stop() {
-    dispose(); // Because `dispose` removes event listeners, `end` listener is not called.
-    // So we're setting the `status` as `finished` here.
-    // If we don't do it, it will be still `waiting` or `recognizing`.
+    // script loaded but did not call the fn => script loading error
+    if (!cbCalled) {
+      opts.debug('JSONP: Fail. Script loaded but did not call the callback');
+      clean();
+      cb(new errors.JSONPScriptFail());
+    }
+  }
 
-    resetState('finished');
-  };
+  function readystatechange() {
+    if (this.readyState === 'loaded' || this.readyState === 'complete') {
+      success();
+    }
+  }
 
-  var toggleListening = function toggleListening() {
-    if (!isBrowserSupported()) {
+  function clean() {
+    clearTimeout(ontimeout);
+    script.onload = null;
+    script.onreadystatechange = null;
+    script.onerror = null;
+    head.removeChild(script);
+  }
+
+  function removeGlobals() {
+    try {
+      delete window[cbName];
+      delete window[cbName + '_loaded'];
+    } catch (e) {
+      window[cbName] = window[cbName + '_loaded'] = undefined;
+    }
+  }
+
+  function timeout() {
+    opts.debug('JSONP: Script timeout');
+    timedOut = true;
+    clean();
+    cb(new errors.RequestTimeout());
+  }
+
+  function error() {
+    opts.debug('JSONP: Script error');
+
+    if (done || timedOut) {
       return;
     }
 
-    if (isListening()) {
-      stop();
-    } else {
-      start();
-    }
-  };
+    clean();
+    cb(new errors.JSONPScriptError());
+  }
+}
 
-  return {
-    getState: getState,
-    isBrowserSupported: isBrowserSupported,
-    isListening: isListening,
-    toggleListening: toggleListening,
-    dispose: dispose
+
+/***/ }),
+/* 633 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = createPlacesClient;
+
+var qs3 = __webpack_require__(634);
+var buildSearchMethod = __webpack_require__(612);
+
+function createPlacesClient(algoliasearch) {
+  return function places(appID, apiKey, opts) {
+    var cloneDeep = __webpack_require__(606);
+
+    opts = opts && cloneDeep(opts) || {};
+    opts.hosts = opts.hosts || [
+      'places-dsn.algolia.net',
+      'places-1.algolianet.com',
+      'places-2.algolianet.com',
+      'places-3.algolianet.com'
+    ];
+
+    // allow initPlaces() no arguments => community rate limited
+    if (arguments.length === 0 || typeof appID === 'object' || appID === undefined) {
+      appID = '';
+      apiKey = '';
+      opts._allowEmptyCredentials = true;
+    }
+
+    var client = algoliasearch(appID, apiKey, opts);
+    var index = client.initIndex('places');
+    index.search = buildSearchMethod('query', '/1/places/query');
+    index.reverse = function(options, callback) {
+      var encoded = qs3.encode(options);
+
+      return this.as._jsonRequest({
+        method: 'GET',
+        url: '/1/places/reverse?' + encoded,
+        hostType: 'read',
+        callback: callback
+      });
+    };
+
+    index.getObject = function(objectID, callback) {
+      return this.as._jsonRequest({
+        method: 'GET',
+        url: '/1/places/' + encodeURIComponent(objectID),
+        hostType: 'read',
+        callback: callback
+      });
+    };
+    return index;
   };
 }
 
+
 /***/ }),
-/* 604 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 634 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_InstantSearch__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_version__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers__ = __webpack_require__(384);
+
+
+exports.decode = exports.parse = __webpack_require__(635);
+exports.encode = exports.stringify = __webpack_require__(615);
+
+
+/***/ }),
+/* 635 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
+// If obj.hasOwnProperty has been overridden, then calling
+// obj.hasOwnProperty(prop) will break.
+// See: https://github.com/joyent/node/issues/1707
+function hasOwnProperty(obj, prop) {
+  return Object.prototype.hasOwnProperty.call(obj, prop);
+}
 
-var instantsearch = function instantsearch(options) {
-  return new __WEBPACK_IMPORTED_MODULE_0__lib_InstantSearch__["a" /* default */](options);
+module.exports = function(qs, sep, eq, options) {
+  sep = sep || '&';
+  eq = eq || '=';
+  var obj = {};
+
+  if (typeof qs !== 'string' || qs.length === 0) {
+    return obj;
+  }
+
+  var regexp = /\+/g;
+  qs = qs.split(sep);
+
+  var maxKeys = 1000;
+  if (options && typeof options.maxKeys === 'number') {
+    maxKeys = options.maxKeys;
+  }
+
+  var len = qs.length;
+  // maxKeys <= 0 means that we should not limit keys count
+  if (maxKeys > 0 && len > maxKeys) {
+    len = maxKeys;
+  }
+
+  for (var i = 0; i < len; ++i) {
+    var x = qs[i].replace(regexp, '%20'),
+        idx = x.indexOf(eq),
+        kstr, vstr, k, v;
+
+    if (idx >= 0) {
+      kstr = x.substr(0, idx);
+      vstr = x.substr(idx + 1);
+    } else {
+      kstr = x;
+      vstr = '';
+    }
+
+    k = decodeURIComponent(kstr);
+    v = decodeURIComponent(vstr);
+
+    if (!hasOwnProperty(obj, k)) {
+      obj[k] = v;
+    } else if (isArray(obj[k])) {
+      obj[k].push(v);
+    } else {
+      obj[k] = [obj[k], v];
+    }
+  }
+
+  return obj;
 };
 
-instantsearch.version = __WEBPACK_IMPORTED_MODULE_1__lib_version__["a" /* default */];
-instantsearch.snippet = __WEBPACK_IMPORTED_MODULE_2__helpers__["b" /* snippet */];
-instantsearch.highlight = __WEBPACK_IMPORTED_MODULE_2__helpers__["a" /* highlight */];
-Object.defineProperty(instantsearch, 'widgets', {
-  get: function get() {
-    throw new ReferenceError("\"instantsearch.widgets\" are not available from the ES build.\n\nTo import the widgets:\n\nimport { searchBox } from 'instantsearch.js/es/widgets'");
+var isArray = Array.isArray || function (xs) {
+  return Object.prototype.toString.call(xs) === '[object Array]';
+};
+
+
+/***/ }),
+/* 636 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = '3.34.0';
+
+
+/***/ }),
+/* 637 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*!
+ * escape-html
+ * Copyright(c) 2012-2013 TJ Holowaychuk
+ * Copyright(c) 2015 Andreas Lubbe
+ * Copyright(c) 2015 Tiancheng "Timothy" Gu
+ * MIT Licensed
+ */
+
+
+
+/**
+ * Module variables.
+ * @private
+ */
+
+var matchHtmlRegExp = /["'&<>]/;
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = escapeHtml;
+
+/**
+ * Escape special characters in the given string of html.
+ *
+ * @param  {string} string The string to escape for inserting into HTML
+ * @return {string}
+ * @public
+ */
+
+function escapeHtml(string) {
+  var str = '' + string;
+  var match = matchHtmlRegExp.exec(str);
+
+  if (!match) {
+    return str;
   }
-});
-Object.defineProperty(instantsearch, 'connectors', {
-  get: function get() {
-    throw new ReferenceError("\"instantsearch.connectors\" are not available from the ES build.\n\nTo import the connectors:\n\nimport { connectSearchBox } from 'instantsearch.js/es/connectors'");
+
+  var escape;
+  var html = '';
+  var index = 0;
+  var lastIndex = 0;
+
+  for (index = match.index; index < str.length; index++) {
+    switch (str.charCodeAt(index)) {
+      case 34: // "
+        escape = '&quot;';
+        break;
+      case 38: // &
+        escape = '&amp;';
+        break;
+      case 39: // '
+        escape = '&#39;';
+        break;
+      case 60: // <
+        escape = '&lt;';
+        break;
+      case 62: // >
+        escape = '&gt;';
+        break;
+      default:
+        continue;
+    }
+
+    if (lastIndex !== index) {
+      html += str.substring(lastIndex, index);
+    }
+
+    lastIndex = index + 1;
+    html += escape;
   }
-});
-/* harmony default export */ __webpack_exports__["a"] = (instantsearch);
+
+  return lastIndex !== index
+    ? html + str.substring(lastIndex, index)
+    : html;
+}
 
 
 /***/ })
