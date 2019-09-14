@@ -6,6 +6,7 @@ use App\Events\ThreadReceivedNewReply;
 use App\Filters\ThreadFilters;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
+use Stevebauman\Purify\Facades\Purify;
 
 class Thread extends Model
 {
@@ -98,6 +99,11 @@ class Thread extends Model
                 'user_id' => $userId ?: auth()->id()
             ])
             ->delete();
+    }
+
+    public function getBodyAttribute($body)
+    {
+        return Purify::clean($body);
     }
 
     public function getIsSubscribedToAttribute()
