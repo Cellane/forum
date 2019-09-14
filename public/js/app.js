@@ -62236,25 +62236,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["thread"],
+  props: ["initialThread"],
 
   data: function data() {
     return {
-      repliesCount: this.thread.replies_count,
-      locked: this.thread.locked,
+      thread: this.initialThread,
+      form: {},
       editing: false
     };
+  },
+  created: function created() {
+    this.resetForm();
   },
 
 
   methods: {
+    resetForm: function resetForm() {
+      this.form.title = this.thread.title;
+      this.form.body = this.thread.body;
+    },
     toggleLock: function toggleLock() {
       var _this = this;
 
-      var method = this.locked ? "delete" : "post";
+      var method = this.thread.locked ? "delete" : "post";
 
       axios[method]("/locked-threads/" + this.thread.slug).then(function () {
-        _this.locked = method === "post";
+        _this.thread.locked = method === "post";
+      });
+    },
+    cancel: function cancel() {
+      this.resetForm();
+      this.editing = false;
+    },
+    update: function update() {
+      var _this2 = this;
+
+      axios.patch(location.pathname, this.form).then(function () {
+        flash("Your thread has been updated!");
+        _this2.thread.title = _this2.form.title;
+        _this2.thread.body = _this2.form.body;
+        _this2.editing = false;
+      }).catch(function (error) {
+        flash("Something went wrong…", "danger");
+        console.error(error);
       });
     }
   },

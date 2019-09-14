@@ -5,13 +5,13 @@
 @endsection
 
 @section('content')
-  <thread-view :thread="{{ $thread }}" inline-template>
+  <thread-view :initial-thread="{{ $thread }}" inline-template>
     <div class="container">
       <div class="row">
         <div class="col-md-8" v-cloak>
           @include('threads._question')
 
-          <replies @added="repliesCount++" @removed="repliesCount--"></replies>
+          <replies @added="thread.replies_count++" @removed="thread.replies_count--"></replies>
         </div>
 
         <div class="col-md-4">
@@ -23,7 +23,7 @@
                 by
                 <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a>,
                 and currently has
-                <span v-text="repliesCount"></span> {{ str_plural('comment', $thread->replies_count) }}.
+                <span v-text="thread.replies_count"></span> {{ str_plural('comment', $thread->replies_count) }}.
               </p>
 
               <p>
@@ -32,7 +32,7 @@
                 <button
                   class="btn btn-default"
                   v-if="authorize('isAdmin')"
-                  v-text="locked ? 'Unlock' : 'Lock'"
+                  v-text="thread.locked ? 'Unlock' : 'Lock'"
                   @click="toggleLock"
                 ></button>
               </p>
