@@ -3,6 +3,7 @@
     <div class="form-group">
       <wysiwyg
         placeholder="Have something to say?"
+        id="body"
         v-model="body"
         :shouldClear="completed"
       ></wysiwyg>

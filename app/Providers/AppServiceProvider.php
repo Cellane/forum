@@ -15,6 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
+
         \View::composer('*', function ($view) {
             $channels = Cache::rememberForever('channels', function () {
                 return Channel::all();

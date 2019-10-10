@@ -4,6 +4,7 @@
     <trix-editor
       ref="trix"
       input="trix"
+      :id="id"
       :placeholder="placeholder"
       class="form-control"
       style="height: auto"
@@ -15,7 +16,7 @@
 import Trix from "trix"
 
 export default {
-  props: ["name", "value", "placeholder", "shouldClear"],
+  props: ["id", "name", "value", "placeholder", "shouldClear"],
 
   mounted() {
     this.$refs.trix.addEventListener("trix-change", e =>

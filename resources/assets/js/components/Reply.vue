@@ -32,7 +32,9 @@
       <div class="level">
         <template v-if="canUpdate">
           <template v-if="editing">
-            <button class="btn btn-xs btn-primary mr-1">Update</button>
+            <button class="btn btn-xs btn-primary mr-1" @click="update">
+              Update
+            </button>
             <button class="btn btn-xs mr-1" type="button" @click="cancel">
               Cancel
             </button>
