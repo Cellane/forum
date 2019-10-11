@@ -10,6 +10,7 @@
   "require": {
     "php": ">=5.6.4",
     "algolia/algoliasearch-client-php": "^2.4",
+    "guzzlehttp/guzzle": "^6.3",
     "kitetail/zttp": "^0.6.0",
     "laravel/framework": "5.5.*",
     "laravel/scout": "^7.1",
