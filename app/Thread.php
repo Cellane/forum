@@ -143,7 +143,7 @@ class Thread extends Model
 
     public function searchableAs()
     {
-        $env = env('APP_ENV');
+        $env = config('app.env');
 
         return "{$env}_threads";
     }
