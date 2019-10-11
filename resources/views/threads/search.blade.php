@@ -6,7 +6,7 @@
       <ais-index
         app-id="{{ config('scout.algolia.id') }}"
         api-key="{{ config('scout.algolia.key') }}"
-        index-name="threads"
+        index-name="{{ (new \App\Thread())->searchableAs() }}"
         query="{{ request('q') }}"
       >
         <div class="col-md-8">

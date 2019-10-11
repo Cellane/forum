@@ -143,11 +143,9 @@ class Thread extends Model
 
     public function searchableAs()
     {
-        if (env('APP_ENV') === 'testing') {
-            return 'test_threads';
-        }
+        $env = env('APP_ENV');
 
-        return 'threads';
+        return "{$env}_threads";
     }
 
     public function toSearchableArray()
