@@ -20,7 +20,6 @@ class CreateThreadsTable extends Migration
                 ->nullable();
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('channel_id');
-            $table->unsignedInteger('best_reply_id')->nullable();
             $table->string('title');
             $table->text('body');
             $table->unsignedInteger('replies_count')->default(0);
@@ -35,11 +34,6 @@ class CreateThreadsTable extends Migration
             $table->foreign('channel_id')
                 ->references('id')
                 ->on('channels');
-
-            $table->foreign('best_reply_id')
-                ->references('id')
-                ->on('replies')
-                ->onDelete('set null');
         });
     }
 
