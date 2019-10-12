@@ -1,0 +1,48 @@
+name: Test and deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Copy .env file
+        run: cp .env.ci .env
+
+      - name: Create database file
+        run: touch database/database.sqlite
+
+      - name: Generate the application key
+        run: php artisan key:generate
+
+      - name: Create a cache file
+        run: php artisan config:cache
+
+      - name: Create a route cache file
+        run: php artisan route:cache
+
+      - name: Migrate database
+        run: php artisan migrate
+
+      - name: Run test suite
+        run: composer run-script test
+
+      - name: Deploy to Dokku
+        uses: vitalyliber/dokku-github-action@b171919
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+          HOST: milanvit.net
+          PROJECT: forum
