@@ -30,9 +30,6 @@ jobs:
       - name: Create a cache file
         run: php artisan config:cache
 
-      - name: Create a route cache file
-        run: php artisan route:cache
-
       - name: Migrate database
         run: php artisan migrate
 
