@@ -16,8 +16,6 @@ class SearchTest extends TestCase
         config(['scout.driver' => 'algolia']);
         $search = 'foobar';
 
-        dd(config());
-
         create(Thread::class, [], 2);
         create(Thread::class, ['body' => "A thread with the {$search} term."], 2);
 

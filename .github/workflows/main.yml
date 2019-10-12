@@ -15,6 +15,12 @@ jobs:
         ports:
           - 6379:6379
 
+    env:
+      ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+      ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
+      ALGOLIA_SECRET: ${{ secrets.ALGOLIA_SECRET }}
+      RECAPTCHA_SECRET: ${{ secrets.RECAPTCHA_SECRET }}
+
     steps:
       - uses: actions/checkout@v1
 
