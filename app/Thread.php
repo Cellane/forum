@@ -83,6 +83,13 @@ class Thread extends Model
         $this->update(['best_reply_id' => $reply->id]);
     }
 
+    public function replyDeleted($reply)
+    {
+        if ($reply->id === (int)$this->best_reply_id) {
+            $this->update(['best_reply_id' => null]);
+        }
+    }
+
     public function subscribe($userId = null)
     {
         $this->subscriptions()->create([
