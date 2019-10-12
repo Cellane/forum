@@ -61,7 +61,7 @@
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
     ],
-    "test": "phpunit"
+    "test": "vendor/bin/phpunit"
   },
   "config": {
     "preferred-install": "dist",
