@@ -41,24 +41,6 @@ php artisan migrate
 
 ### Step 3
 
-reCAPTCHA is a Google tool to help prevent forum spam. You’ll need to create a
-free account (don’t worry, it’s quick).
-
-<https://www.google.com/recaptcha/intro/>
-
-Choose reCAPTCHA v2, and specify your local (and eventually production) domain
-name.
-
-Once submitted, you’ll see two important keys that should be referenced in your
-`.env` file.
-
-```env
-RECAPTCHA_KEY=PASTE_KEY_HERE
-RECAPTCHA_SECRET=PASTE_SECRET_HERE
-```
-
-### Step 4
-
 Until an administration portal is available, manually insert any number of
 “channels” (think of these as forum categories) into the `channels` table in
 your database.
@@ -69,7 +51,7 @@ Once finished, clear your server cache, and you’re all set to go!
 php artisan cache:clear
 ```
 
-### Step 5
+### Step 4
 
 Use your forum! Visit `http://forum.dev/threads` to create a new account and
 publish your first thread.
