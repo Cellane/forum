@@ -33,6 +33,12 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+Then, migrate your database to create the required tables.
+
+```bash
+php artisan migrate
+```
+
 ### Step 3
 
 reCAPTCHA is a Google tool to help prevent forum spam. You’ll need to create a
@@ -59,7 +65,7 @@ your database.
 
 Once finished, clear your server cache, and you’re all set to go!
 
-```shell
+```bash
 php artisan cache:clear
 ```
 
