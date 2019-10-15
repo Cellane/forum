@@ -79,16 +79,15 @@ class ReputationTest extends TestCase
     /** @test */
     public function a_user_earns_points_when_their_reply_is_favorited()
     {
-        $this->signIn();
-
         $thread = create(Thread::class);
         $reply = $thread->addReply([
-            'user_id' => auth()->id(),
+            'user_id' => create(User::class)->id,
             'body' => 'Some reply'
         ]);
         $total = Reputation::REPLY_POSTED + Reputation::REPLY_FAVORITED;
 
-        $this->post(route('favorite-replies.store', $reply));
+        $this->signIn()
+        ->post(route('favorite-replies.store', $reply));
 
         $this->assertEquals($total, $reply->owner->fresh()->reputation);
     }
@@ -96,12 +95,11 @@ class ReputationTest extends TestCase
     /** @test */
     public function a_user_loses_points_when_their_reply_is_unfavorited()
     {
-        $this->signIn();
-
-        $reply = create(Reply::class, ['user_id' => auth()->id()]);
+        $reply = create(Reply::class, ['user_id' => create(User::class)->id]);
         $total = Reputation::REPLY_POSTED + Reputation::REPLY_FAVORITED;
 
-        $this->post(route('favorite-replies.store', $reply));
+        $this->signIn()
+        ->post(route('favorite-replies.store', $reply));
 
         $this->assertEquals($total, $reply->owner->fresh()->reputation);
 
