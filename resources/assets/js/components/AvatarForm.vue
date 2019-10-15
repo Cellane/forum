@@ -3,7 +3,10 @@
     <div class="level">
       <img :src="avatar" width="50" height="50" class="mr-1" />
 
-      <h1>{{ user.name }}</h1>
+      <h1>
+        {{ user.name }}
+        <small>{{ user.reputation }} XP</small>
+      </h1>
     </div>
 
     <form v-if="canUpdate" method="POST" enctype="multipart/form-data">

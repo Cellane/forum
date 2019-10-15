@@ -43,6 +43,7 @@
         <a href="{{ route('profile', $thread->creator) }}">
           {{ $thread->creator->name }}
         </a>
+        ({{ $thread->creator->reputation }} XP)
         posted: <span v-text="thread.title"></span>
       </span>
     </div>

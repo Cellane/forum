@@ -84377,6 +84377,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -84535,7 +84538,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "width": "50",
       "height": "50"
     }
-  }), _vm._v(" "), _c('h1', [_vm._v(_vm._s(_vm.user.name))])]), _vm._v(" "), (_vm.canUpdate) ? _c('form', {
+  }), _vm._v(" "), _c('h1', [_vm._v("\n      " + _vm._s(_vm.user.name) + "\n      "), _c('small', [_vm._v(_vm._s(_vm.user.reputation) + " XP")])])]), _vm._v(" "), (_vm.canUpdate) ? _c('form', {
     attrs: {
       "method": "POST",
       "enctype": "multipart/form-data"
