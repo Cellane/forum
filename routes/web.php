@@ -27,8 +27,8 @@ Route::delete('/threads/{channel}/{thread}', 'ThreadController@destroy');
 Route::post('/locked-threads/{thread}', 'LockedThreadController@store')->name('locked-threads.store');
 Route::delete('/locked-threads/{thread}', 'LockedThreadController@destroy')->name('locked-threads.destroy');
 
-Route::post('/replies/{reply}/favorites', 'FavoriteController@store');
-Route::delete('/replies/{reply}/favorites', 'FavoriteController@destroy');
+Route::post('/replies/{reply}/favorites', 'FavoriteController@store')->name('favorite-replies.store');
+Route::delete('/replies/{reply}/favorites', 'FavoriteController@destroy')->name('favorite-replies.destroy');
 
 Route::get('/threads/{channel}/{thread}/replies', 'ReplyController@index');
 Route::post('/threads/{channel}/{thread}/replies', 'ReplyController@store');
